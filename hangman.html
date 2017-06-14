@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+</head>
+<body>
+
+<script>
+var words = ["explore", "grow", "study", "practice", "learning", "gschool", "javascript"];
+var myWord = words[Math.floor(Math.random() * words.length)];
+var answerArray = [];
+var remainingG = 15;
+for (i = 0; i< myWord.length; i++){
+  answerArray[i] = "_";
+  }
+var remainingLetters = myWord.length;
+while (remainingLetters > 0){
+  alert(answerArray.join(' '));
+  var guess = prompt("Guess a single letter or press Cancel to quit the game. ---------------------- GUESSES REMAINING = " + remainingG);
+  guess = guess.toLowerCase();
+  remainingG--;
+  if (guess == null){
+    break;
+  }
+  else if (guess.length !== 1) {
+    alert("Please enter only one single letter.");
+  }
+  else {
+    for (j=0; j<myWord.length; j++){
+      if (myWord[j] === guess && answerArray[j] === "_") {
+        answerArray[j] = guess;
+        remainingLetters--;
+      }
+      else if (remainingG == 0){
+        alert ("Sorry. You lose!");
+      }
+    }
+  }
+}
+alert(answerArray.join(" "));
+alert("Good Job! The correct answer was " + '"' + myWord + '"' + ".");
+</script>
+
+</body>
+</html>
