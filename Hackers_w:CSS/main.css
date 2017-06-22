@@ -1,0 +1,27 @@
+#Movie1 {
+  background-color: orange;
+}
+
+#Movie2 {
+  background-color: aqua;
+}
+
+#ColumnLeft {
+  Float : Left;
+}
+
+#ColumnRight {
+  Float : Right;
+}
+
+#Category {
+  list-style-type: none;
+}
+
+#AdditionalSearchBullets {
+  list-style-type: none;
+}
+
+#Category2 {
+  list-style-type: none;
+}
