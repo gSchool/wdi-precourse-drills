@@ -1,0 +1,34 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+tbody tr:nth-child(even) {
+    background: #F5F5F5;
+}
+tfoot {
+  background: #efefef;
+}
+th {
+  text-align: left;
+  color: #CD853F;
+}
+.view {
+  background: #C0C0C0;
+}
+.item {
+  text-align: left;
+}
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 50%;
+}
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+  background: #F5F5F5;
+}
+p1 {
+  color: #CD853F;
+}
