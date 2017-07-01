@@ -1,11 +1,37 @@
-.left-float {
-  float: left;
-  margin: 0 5%;
-  width: 50;
+body {
+  font-family: 'lato', sans-serif;
+  align-content: center;
 }
 
-.right-float {
-  float: right;
-  margin: 0 5%;
-  width:50%;
+div {
+    width: 500px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+
+.list-title {
+  font-size: 150%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(blue, gray);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0; padding: 0;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }
