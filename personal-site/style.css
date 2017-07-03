@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  background-image: url("https://images.unsplash.com/photo-1494971416041-5b9ec17a814b?dpr=1&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 100vh;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+a {
+  color: #fff;
+}
+
+.container{
+  width:80%;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 150%;
+  padding: 20px;
+  width: 75%;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  background-color: rgba(25, 25, 25, 0.5);
+  box-shadow: 2px 2px 5px rgb(25, 25, 25);
+}
+
+.header h1 {
+  color: rgb(240 , 240, 240);
+}
+
+.bodyblocks {
+  display: inline-block;
+  width: 30%;
+  min-width: 200px;
+  height: 150px;
+  padding: 10px;
+  margin: 15px 15px;
+  background-color: rgba(135, 135, 135, 0.5);
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 2px 2px 5px rgb(25, 25, 25);
+}
+.bodyblocks h2{
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.bodyblocks p{
+  margin-top: 10px;
+  color: black;
+  line-height: 150%;
+  letter-spacing: 120%;
+}
+.bodyblocks ul{
+  margin-top: 10px;
+  color: black;
+  list-style: disc;
+  margin-left: 25px;
+  text-align: left;
+}
+.sideContainer{
+  position: fixed;
+  top: 15%;
+  right: 15%;
+  max-width: 150px;
+  width: 15%;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgb(99, 2, 72);
+  border: 1px solid rgb(99, 2, 72);
+  box-shadow: 2px 2px 5px rgb(25, 25, 25);
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 110%;
+}
+
+.sideContainer a{
+  color: #ffffff;
+}
+
+.sideContainer:hover {
+  background-color: rgba(99, 2, 72, 0.5);
+
+}
+
+.main {
+  text-align: center;
+  font-size: 110%;
+  padding: 20px;
+  width: 75%;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  background-color: rgba(135, 135, 135, 0.6);
+  box-shadow: 2px 2px 5px rgb(25, 25, 25);
+}
+.main p{
+  text-align: left;
+}
+
+#button {
+  width: 250px;
+  text-align: center;
+  color: white;
+  background-color: green;
+  font-weight: bold;
+  margin: 15px auto 10px auto;
+  padding: 20px;
+}
+#button:hover {
+background-color: darkgreen;
+box-shadow: 2px 2px 5px rgb(25, 25, 25);
+
+}
+
+@media (max-width: 1000px){
+  .sideContainer {right: 1%;}
+}
