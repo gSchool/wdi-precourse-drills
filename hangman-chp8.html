@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HANGMAN 2</title>
+</head>
+<body>
+<script>
+  var word = pickWord();
+  var answerArray = setupAnswerArray(word);
+  var remainingLetters = word.length;
+
+  while (remainingLetters > 0) {
+    showPlayerProgress(answerArray);
+    var guess = getGuess();
+    if (guess === null) {
+      break;
+    } else if (guess.length !== 1) {
+      alert("Please enter a single letter.");
+    } else {
+      correctGuesses = updateGameState(guess, word, answerArray);
+      remainingLetters -= correctGuesses;
+      console.log(remainingLetters);
+    }
+  }
+  showAnswerAndCongratulatePlayer(answerArray);
+
+    function pickWord () {
+      var words = ["explore", "grow", "study", "practice", "learning", "gschool", "javascript"];
+      var word = words[Math.floor(Math.random() * words.length)];
+      return word;
+    };
+
+    function setupAnswerArray(word) {
+      var answerArray = [];
+      for (i = 0; i < word.length; i++){
+        answerArray[i] = "_";
+        }
+      return answerArray;
+    };
+
+    function showPlayerProgress(answerArray) {
+        alert(answerArray.join(' '));
+    };
+
+    function getGuess() {
+      var guess = prompt("Guess a single letter or press Cancel to quit the game.");
+      guess = guess.toLowerCase();
+      return guess;
+    };
+
+    function updateGameState(guess, word, answerArray) {
+      var correctGuesses = 0;
+      for (j = 0; j < word.length; j++){
+        if (word[j] == guess && answerArray[j] == "_") {
+          answerArray[j] = guess;
+          correctGuesses++;
+        }
+      }
+      return correctGuesses;
+    };
+    function showAnswerAndCongratulatePlayer(answerArray) {
+      alert(answerArray.join(" "));
+      alert("Good Job! The correct answer was " + '"' + word + '"' + ".");
+    };
+
+</script>
+</body>
+</html>
