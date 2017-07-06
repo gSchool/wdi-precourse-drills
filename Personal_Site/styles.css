@@ -1,0 +1,64 @@
+body {
+  background-image: url("clouds.jpg");
+  font-family: "Courier New", monospace;
+}
+
+h1 {
+  background-color: #76E6FF;
+  border: 2px solid grey;
+  max-width: 500px;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+section {
+  background-color: #B9F2FF;
+  font-size: 20px;
+  border: 2px solid grey;
+  max-width: 250px;
+  height: 50px;
+  text-align:center;
+  margin: auto;
+  margin-top:25px;
+}
+
+p {
+  background-color: #E1F9FF;
+  border: 2px solid grey;
+  max-width: 800px;
+  height:150px;
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+}
+
+ul {
+  background-color: #E1F9FF;
+  border: 2px solid grey;
+  width:150px;
+  height:auto;
+  margin:auto;
+  margin-top:25px;
+}
+
+.gif {
+  display:block;
+  margin: auto;
+  margin-top:25px;
+  text-align:center;
+}
+
+a {
+  display:block;
+  margin: auto;
+  margin-top:25px;
+  text-align: center;
+}
+
+#button1 {
+  display:block;
+  margin:auto;
+  margin-top:25px;
+  text-align:center;
+}
