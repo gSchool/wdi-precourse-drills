@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>Game Hangman!</title>
+
+<style>
+  h1 {
+    color: blue;
+    font-size: 55px;
+    padding: 15px;  }
+
+  p {
+    font-size: 25px;
+    font-family: cursive;
+    color: #5948c2;  }
+</style>
+
+</head>
+
+<body>
+  <h1>Hangman!</h1>
+
+<p> JavaScript Precourse programming challenge. </p>
+<p> by Nataliya Gapochka <em>(San Francisco Web Development g61WD program)</em> </p>
+
+<script>
+
+var pickWord = function(){
+// returns random word
+  var words = ["javascript","galvanize","table","island","computer"];
+  return words[Math.floor(Math.random() * words.length)]; }
+
+var setupAnswerArray = function(word){
+// returns the answer array
+var answer = [];
+  for (var i = 0; i < word.length; i++){
+       answer[i] = "_"; }
+  return answer; }
+
+var showPlayerProgress = function(answerArray){
+// uses alert to show player their progress
+    return alert(answerArray.join(" ")); }
+
+var getGuess = function(){
+// uses prompt to get a guess from the player
+      return prompt("Guess a letter, or click Cancel to stop playing.");  }
+
+var updateGameState = function(guess, word, answerArray){
+// updates answerArray and returns a number showing how many times the guess
+// appears in the word so remainingLetters can be updated
+    var number = 0;
+        for (var j = 0; j < word.length; j++){
+           if (word[j] === guess && answerArray[j] !== guess){
+               answerArray[j] = guess;
+                number++; } }
+  return number;  }
+
+var showAnswerAndCongratulatePlayer = function(answerArray){
+// uses alert to show the answer and congratulate the player
+      alert(answerArray.join(" "));
+      alert("Good job! The answer was " + word); }
+
+var word = pickWord();
+var answerArray = setupAnswerArray(word);
+var remainingLetters = word.length;
+
+while (remainingLetters > 0){
+  showPlayerProgress(answerArray);
+   var guess = getGuess();
+     if (guess === null){ break; }
+     else if (guess.length !== 1){
+         alert("Please enter a single letter."); }
+     else{
+         var correctGuesses = updateGameState(guess, word, answerArray);
+         remainingLetters -= correctGuesses; } }
+
+showAnswerAndCongratulatePlayer(answerArray);
+
+</script>
+</body>
+</html>
