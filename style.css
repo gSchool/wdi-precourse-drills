@@ -1,0 +1,32 @@
+img {
+  height: 32px;
+  width: 44px;
+}
+
+#hackers {
+  background-color: grey;
+}
+
+#frontline {
+  background-color: grey;
+}
+
+#akaHackers {
+  background-color: yellow;
+}
+
+#hackersgame {
+  background-color: yellow;
+}
+
+section {
+  float:left;
+  width:45%;
+  margin: 0 1.5%;
+}
+
+aside {
+  float: right;
+  width: 45%;
+  margin: 0 1.5%;
+}
