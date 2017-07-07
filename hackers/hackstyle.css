@@ -108,6 +108,10 @@ table {
 	border-spacing: 0;
 }
 
+.movies tr:nth-of-type(even){
+	background-color: #D3D3D3;
+}
+
 ul{
 	padding-left: 2em;
 	list-style-type: disc;
@@ -132,4 +136,13 @@ img{
 
 a:link {
 	text-decoration: none;
+}
+
+#results{
+float: left;
+}
+
+#search{
+float: left;
+padding-left: 20px;
 }
