@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji|Berkshire+Swash|Carrois+Gothic');
+
+header {
+  height: 130px;
+  background-color: #2d0725;
+}
+
+main {
+  background-image: url(myphoto2.jpg);
+  background-size: cover;
+  height: 1500px;
+}
+
+div {
+    background-image: url(myphoto1.jpg);
+    background-size: cover;
+    height: 1300px;
+}
+
+section {
+  width: 600px;
+  margin-left: 18%;
+}
+
+footer {
+  height: 150px;
+  background-color: #2d0725;
+  margin-top: -20px;
+  text-align: center;
+}
+
+img {
+  margin-left: 110px;
+}
+
+header h1 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #fff;
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 55px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #403933;
+  font-family: 'Baloo Paaji', cursive;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  text-align: center;
+}
+
+p, li {
+  font-family: 'Carrois Gothic', sans-serif;
+  color: #2d2c2a;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+table {
+  margin: 15px auto 25px;
+}
+
+td {
+  font-family: 'Carrois Gothic';
+  color: #2d2c2a;
+  font-size: 17px;
+}
+
+.hikes {
+  padding: 12px 0 28px 74px;
+  list-style: none;
+  background-image: url("trees.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.goals {
+    padding: 4px 68px 25px;
+    list-style: none;
+    background-image: url("target.png");
+    background-repeat: no-repeat;
+    background-size: 44px;
+
+  }
+
+button {
+  font-family: 'Carrois Gothic';
+  font-size: 20px;
+  background-color: lightpink;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:link {
+  color: #2d2c2a;
+}
+a:visited {
+  color: #2d2c2a;
+}
+a:hover {
+  color: #403933;
+}
+a:active {
+  color: #403933;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: #fff;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+}
+footer a:link {
+  color: #ea8fef;
+}
+footer a:visited {
+  color: #ea8fef;
+}
+footer a:hover {
+  color: #a291a3;
+}
+footer a:active {
+  color: #a291a3;
+}

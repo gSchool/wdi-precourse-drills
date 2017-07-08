@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="My Personal Website">
+    <title>Tina's Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1>Welcome to Tina's Personal Website!</h1>
+    </header>
+    <div>
+      <section>
+        <img src="feeling.gif" width="480" alt="how I feel about starting your new career">
+          <h1>The Aspiring Programmer</h1>
+          <p>I studied molecular and cell biology at UC Berkeley but I have always wanted to learn computer science and pursue a career in programming.
+            I am amazed by how technology has changed our world, and I aspire to become a successful software engineer in the high-tech industry
+            that currently has a high demand for women.</p>
+          <hr>
+          <h2>Goals after graduating from Galvanize's Immersive Program:</h2>
+          <button>Please click here to see the content of each goal.</button>
+          <ul>
+            <li class="goals number1">Goal #1</li>
+            <li class="goals number2">Goal #2</li>
+            <li class="goals number3">Goal #3</li>
+          </ul>
+          <hr>
+          <h3><a href="index.html">previous page</a></h3>
+      </section>
+    </div>
+    <footer>
+        <p>Target Icon made by <a href="http://icons.mysitemyway.com" target="_blank">Icons ETC</a> from <a href="http://icons.mysitemyway.com" target="_blank">icons.mysitemyway.com</a>
+          <br>GIF provided by
+          <a href="https://giphy.com" target="_blank">GIPHY</a>
+          <br>Website Developed By Tina Huang<br>© Copyright Information</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $(".number1").text("Find a good job at a great company full of talented people who can recognize my problem-solving ability.");
+        $(".number2").text("Develop creative web pages/apps to improve and enhance our daily lives.");
+        $(".number3").text("Utilize my newfound expertise to encourage more female coders to join the software industry workforce.");
+  });
+});
+    </script>
+  </body>
+</html>
