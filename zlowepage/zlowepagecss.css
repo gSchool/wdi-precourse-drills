@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Lobster|Revalia');
+font-size = 15pt;
+header {
+   background-size:cover;
+   background-image: url('https://yourconciergeservices.files.wordpress.com/2013/11/denver_skyline2.jpg?w=620');
+  height: 150px;
+  border-bottom-style: double;
+  }
+
+#centerBottom {
+  	color: white;
+	font-family: 'Lobster', cursive;
+	font-size: 15pt;
+}
+#fly {
+  	color: white;
+	font-family: 'Lobster', cursive;
+	font-size: 15pt;
+}
+#aboutme {
+	margin: 0 1.5% 24px 1.5%;
+	padding: 1px 40px;
+	font-size: 15pt;
+
+  	font-family: 'Crimson Text', serif;
+  	color: white;
+}
+.newheader{
+ text-align: center;
+}
+body {
+    background-image: url(http://www.designbolts.com/wp-content/uploads/2013/02/Free-Seamless-dry-wood-texture-For-3D-Mapping.jpg);
+    height: 100%;
+    margin: 0;
+    background-repeat: repeat;
+    background-attachment: cover;
+}
+
+.future {
+  font-family: 'Revalia', cursive;
+  color: red;
+  text-align: center;
+}
+.newheader {
+  text-decoration: underline;
+  font-size: 32pt;
+  color: white;
+  background: black;
+  border-radius: 100%;
+  padding: 0 0 0.5em;
+  padding-opacity: 30%;
+}
+
+header {
+   background-size:cover;
+   background-image: url('https://yourconciergeservices.files.wordpress.com/2013/11/denver_skyline2.jpg?w=620');
+  height: 150px;
+  border-bottom-style: double;
+  }
