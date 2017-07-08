@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ body { background-image: url('cloud.jpg');
+        font-weight: bold;
+        font-size: 24px;
+        font-family: Papyrus;
+        line-height: 1.5;
+        text-align: justify;
+        padding: 50px;
+      }
+
+span { font-weight: bolder;
+       font-size: 30px;
+       font-style: italic;
+      }
+
+.group { overflow: hidden;
+      }
+
+#p1 {  float:right;
+       padding: 30px;
+       height: 400px;
+     }
+#p2 {  float:right;
+      padding-right: 700px;
+     }
+
+.gif { overflow: hidden;
+      }
+
+.logo { padding-top: 44px;
+        padding-bottom: 44px;
+       }
+
+h1 { color: #57001e;
+     font-size: 70px;
+     font-weight: bold;
+     text-shadow: 4px 4px 5px #4f0048;
+     text-align: center;
+    }
+
+h2 { color: #57001e;
+     font-size: 40px;
+     font-weight: bold;
+     padding: 15px;
+     text-align: center;
+   }
+
+h3 { color: #57001e;
+     font-size: 35px;
+     font-weight: bold;
+     padding: 15px;
+    }
+
+h4 { color: #57001e;
+     font-size: 33px;
+     font-weight: bold;
+     padding-top:10px;
+   }
+
+a { color: brown;
+    text-decoration: none;
+   }
+
+p { text-indent: 1em;
+   }
+
+ol { list-style-type: decimal;
+    }
+
+ul { list-style-type: disc;
+    }
+
+.movieList { list-style-type: circle;
+             }
+
+.primary-footer { padding-bottom: 44px;
+                  padding-top: 44px;
+                 }
+
+button { background-color: blue;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 20px;
+          border: 3px;
+          border-radius: 8px;
+
+      }
+
+button:hover { background-color: lightblue;
+             }
