@@ -1,0 +1,42 @@
+img {
+  height: 32px;
+  width: 44px;
+}
+.hackers li{
+  padding-left: 45px;
+}
+.frontline li{
+  font-size: 80%;
+  padding-left: 45px;
+}
+.thehackers li{
+  padding-left: 45px;
+}
+.titles ul{
+  list-style: none;
+  padding-left: 5px;
+}
+.names ul {
+  list-style: none;
+  padding-left: 5px;
+}
+.keywords ul {
+  list-style: none;
+  padding-left: 5px;
+}
+.companies ul {
+  list-style: none;
+  padding-left: 5px;
+}
+.category ul {
+  list-style: circle;
+  padding-left: 40px;
+}
+.category ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+.additional ul {
+  list-style: disc;
+  padding-left: 40px;
+}
