@@ -2,3 +2,20 @@ img {
   height: 44px;
   width: 32px;
 }
+
+.movie:nth-child(2n+1) {
+  background-color: grey;
+}
+
+.container {
+  margin: 0 5%;
+}
+.col-main {
+  float: left;
+  width: 50%;
+}
+
+.col-search {
+  float: right;
+  width: 50%;
+}
