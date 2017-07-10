@@ -1,0 +1,42 @@
+  h1{
+  background:red;
+  padding:5%;
+  color:black;
+  /*clear:both;*/
+  width:90%;
+  border-radius:10px;
+}
+
+h2{
+  padding:10px;
+}
+
+.C1{
+  border-radius:10px;
+  float: left;
+  background:gray;
+  /*clear:both;*/
+  width: 35%;
+  padding:5%;
+}
+
+.C2 {
+  border-radius:10px;
+  background:gray;
+  float: right;
+  /*clear: both;*/
+  width: 35%;
+  padding:5%;
+}
+
+.colors #red {
+  border-radius:10px;
+  float:center;
+  background:red;
+}
+
+.colors #green {
+  border-radius:10px;
+  float:center;
+  background:green;
+}

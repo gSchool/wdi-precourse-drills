@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Georgia');
+@import url('https://fonts.googleapis.com/css?family=Garamond');
+
+.title{
+
+  font-family:Georgia;
+  text-align:center;
+  font-size:40px;
+  background:red;
+  border-radius:10px;
+}
+
+div{
+  /*margin-top:100px;*/
+  background:#DCDCDC;
+  border-radius:10px;
+  margin-bottom:5px;
+  font-size:20px;
+  font-family:Garamond;
+}
+
+h2{
+  font-family:Georgia;
+  left:10px;
+}
+
+button{
+  padding:5px;
+  background:gray;
+  border-radius:5px;
+  width:90%;
+  margin:2px;
+  font-family:Garamond;
+  font-size:20px;
+  font-weight: bold;
+  text-align:left;
+  /*border:none;*/
+}
+
+img{
+  height:200px;
+  width:250px;
+  border-radius:10px;
+  display:block;
+  margin:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+li{
+  padding:5px;
+  list-style-type: none;
+  font-family:Garamond;
+  font-size:20px;
+}
+.business{
+  padding:5px;
+  background:gray;
+  border-radius:5px;
+  width:90%;
+  margin:2px;
+  font-style:Garamond;
+  font-weight:bold;
+
+}
+
+#link{
+  clear:both;
+  text-align:center;
+  background:yellow;
+  border-radius:5px;
+  font:black;
+  font-size:30px;
+}
+
+.wiringtypes{
+  background:#6495ED;
+  border-radius:5px;
+  width:30%;
+  margin:5px;
+}
+
+.giphy-embed{
+ border:0px;
+}
