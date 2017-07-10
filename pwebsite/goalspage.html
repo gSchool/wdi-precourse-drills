@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Where I'm Going</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id = "goals">
+    <div class="career">
+      <h2>Career Goals?</h2>
+        <h4>These are some of the things I’m interested in:</h4>
+          <ul class="intrest">
+            <li>UI</li>
+            <li>Technology Integration in Education</li>
+            <li>Remote Work</li>
+            <li>Also maybe security</li>
+          </ul>
+          <p>I’m not sure what that may look like job wise, it maybe helping
+            small to midsize businesses with their online presence or working
+            for an education company with their digital content to help the
+            teachers and students who use that product. No matter what my job
+            ends up looking like I'm excited for this new chapter.</p>
+            <button><a href="personalwebsite.html">Who Am I?</a></button>
+            <button class="feel">How I Feel In Pictures</button>
+    </div>
+    <div id="popup">
+        <div>
+          <h1>My feelings in Gifs!</h1><input id="close" type="button" value="X" />
+        </div>
+      <img src="img/harry.gif"> <img src="img/80dance.gif">
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('.feel').on('click', function(){
+        $('#popup').css("display","block")
+    });
+    $('#close').on('click', function(){
+        $('#popup').css("display","none")
+    });
+  });
+    </script>
+  </body>
+</html>

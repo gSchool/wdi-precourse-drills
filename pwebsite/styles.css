@@ -1,0 +1,79 @@
+body{
+	background: url("img/greenhouse.jpg") no-repeat fixed center center / cover  rgba(0, 0, 0, 0);
+}
+
+.bio{
+	font-family: sans-serif;
+	background: #a0858b;
+	margin-top: 100px;
+	padding: 20px 5px 20px 20px;
+	width: 20em;
+	float: right;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+
+
+body#goals{
+	background: url("img/bowblack.jpg") no-repeat fixed center center / cover  rgba(0, 0, 0, 0);
+}
+
+div.career{
+	font-family: sans-serif;
+	background: #a0858b;
+	margin-top: 200px;
+	padding: 0px 5px 20px 20px;
+	width: 25em;
+	float: left;
+	border-radius: 10px 10px 10px 10px;
+}
+h2, h4.career{
+	text-align: center;
+	margin-bottom: -10px;
+}
+
+ul{
+	margin-top: -10px;
+}
+
+li.interest{
+	text-align: left;
+}
+
+button{
+	background: #6b4a52;
+	font-family: sans-serif;
+	font-size: 80%;
+	font-weight: 800;
+	border: 0px;
+	border-radius: 10px 10px 10px 10px;
+	padding: 5px;
+	width: 49%;
+}
+
+
+#popup{
+	border: 0px;
+	border-radius: 10px 10px 10px 10px;
+	font-family: sans-serif;
+	display: none;
+	position: absolute;
+	background: #000000;
+	color: #a0858b;
+	text-align: center;
+	padding: 20px;
+	padding-top: 5px;
+	top: 25%;
+	left: 25%;
+}
+
+#close {
+	text-align: right;
+	margin-right: 20px;
+	margin-top: -50px;
+	float: right;
+	background: #6b4a52;
+	border: 0px;
+	border-radius: 5px;
+}
