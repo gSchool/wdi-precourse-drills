@@ -1,6 +1,18 @@
 img {
-  height: 32px;
-  width: 44px;
+  height: 44px;
+  width: 32px;
+}
+.firstmovie {
+  background: yellow;
+}
+.secondmovie {
+  background: aqua;
+}
+.thirdmovie {
+  background: yellow;
+}
+.fourthmovie {
+  background: aqua;
 }
 .hackers li{
   padding-left: 45px;
@@ -18,7 +30,7 @@ img {
 }
 .names ul {
   list-style: none;
-  padding-left: 5px;
+  padding-left: 1px;
 }
 .keywords ul {
   list-style: none;
@@ -29,14 +41,48 @@ img {
   padding-left: 5px;
 }
 .category ul {
-  list-style: circle;
+  list-style: disc;
   padding-left: 40px;
 }
-.category ul {
-  list-style: disc;
+.tnest ul {
+  list-style: circle;
   padding-left: 40px;
 }
 .additional ul {
   list-style: disc;
   padding-left: 40px;
+}
+.leftside {
+  float:left;
+}
+.rightside {
+  float:right;
+}
+.movie {
+  height: 52px;
+  width: 100%;
+}
+.moviepic {
+  float:left;
+  margin: 0 1%;
+  width: 10%;
+}
+.movietext {
+  float:left;
+  width: 88%;
+  padding-top:10px;
+}
+.actor {
+  height: 52px;
+  width: 100%;
+}
+.actorpic {
+  float:left;
+  margin: 0 1%;
+  width: 10%;
+}
+.actortext {
+  float:left;
+  width: 88%;
+  padding-top:10px;
 }
