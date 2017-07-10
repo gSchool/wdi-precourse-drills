@@ -1,0 +1,18 @@
+body{
+  font-family: Arial;
+  margin:auto;
+}
+h1{
+  font-size:24px;
+  text-align: center;
+}
+div.col1{
+  float:left;
+  width:48%;
+  background-color:red
+}
+div.col2{
+  float:right;
+  width:48%;
+  background-color:green
+}
