@@ -1,0 +1,163 @@
+html, body, div, span, object,
+h1, p, blockquote, pre,
+a, code, em, img, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, canvas, details, embed,
+figure, figcaption, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+}
+
+code, h1 {
+  background: #7FFFD4;
+  border-radius: 6px;
+  color: #015249;
+  display: block;
+  padding: 24px 15px;
+  text-align: center;
+}
+.default {
+  background: none;
+  color: #666;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+
+.group {
+  background: #3CB371;
+  border-radius: 6px;
+  clear: both;
+  *zoom: 1;
+}
+.group,
+header,
+section {
+  margin: 24px 1.5% 24px 1.5%;
+}
+section {
+  float: left;
+  width: 30%;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, p {
+  margin-bottom: 22px;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.navbar {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/*
+  ========================================
+  Media
+  ========================================
+*/
+
+img {
+  background: #77C9D4;
+  border: 1px solid #015249;
+  float: right;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+}
+
+button {
+  background: #00FF7F;
+  border: 1px solid #015249;
+  float: left;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #015249;
+}
