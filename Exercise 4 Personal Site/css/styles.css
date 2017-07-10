@@ -1,0 +1,179 @@
+/* Typography Styling
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4. h5, h6 {
+font-family: 'Montserrat', sans-serif;
+}
+p, ul {
+    font-family: 'Roboto','Opens Sans' sans-serif;
+}
+
+/* Section Top Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#section-topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: visible;
+    z-index: 100;
+}
+
+#topnav-inner {
+    text-align: center;
+    line-height: 0;
+    background-color: #232717;
+}
+
+.floatnav {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    
+    list-style-type: none;    
+}
+
+.navitem {
+    float: left;
+
+}
+
+li a.navlink {
+    display: block;
+    padding: 9px 10px 9px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.navlink:hover {
+    background-color: #575B3B; 
+}
+
+/* Section Background Image
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#section-backimage {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#centeredname {
+    position: absolute;
+    top: 80%;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    color: #F3F2F0;
+    text-shadow: 1px 0px 10px #000000;
+    animation-duration: 3s;
+    animation-name: fadeIn;
+}
+
+/*/// centeredname animation ///*/
+@-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+
+#background {
+    background-image: url(heroimage.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+/* Section About Me
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#section-aboutme {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index:3;
+    color: #F3F2F0;
+    background-color: #575B3B;
+}
+
+/* Section Break
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#section-break{
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 400px;
+}
+
+#breaker {
+    background-image: url(dinofight.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+/* Section Resume
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#section-resume {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    z-index:3;
+    color: #04090B;
+    background-color: #F3F2F0;
+}
+
+.removelinespacing {
+    line-height: 1;
+}
+
+
+/* Section Contact Me
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#section-contact {
+    background-color: #232717;
+    color: white;
+}
+
+
+.contactform {
+    width: 100%;
+    margin-top: 20px;    
+    padding: 25px 15px 25px 25px;
+    color: #F3F2F0;
+    text-shadow: 1px 1px 1px #04090B;
+}
+    textarea {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    width: 90%;
+    height: 4em;
+    }
+
+input[type="submit"] {
+    background: #232717;
+    border: none;
+    color: #F3F2F0;
+    box-shadow: 1px 1px 5px #F3F2F0;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #575B3B;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #F3F2F0;
+    color: #232717;
+}
+
+
+
