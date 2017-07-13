@@ -1,0 +1,23 @@
+tr.even td {
+  background-color: #F0F8FF;
+  color: AliceBlue;
+}
+tr.odd td {
+  background-color: #FFFFFF;
+  color: white;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+header {
+  	margin: 0 1.5% 24px 1.5%;
+	text-align: center;
+}
+section {
+  float: left;
+   padding: 1px 40px;
+}
+aside {
+  float: right;
+   padding: 1px 40px;
+}
