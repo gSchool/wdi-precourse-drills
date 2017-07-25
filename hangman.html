@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var pickWord = function () {
+        var possibleWords = ["apple", "coffee", "knife", "dishwasher", "cupboard", "oven", "refrigerator"];
+
+        return possibleWords[Math.floor(Math.random() * possibleWords.length)];
+      };
+
+      var setupAnswerArray = function (word) {
+        var answerArray = [];
+        for (var i = 0; i < word.length; i++) {
+          answerArray.push("_");
+        }
+
+        return answerArray;
+      };
+
+      var showPlayerProgess = function (answerArray) {
+        alert("Remaining letters: " + answerArray.join(" "));
+      };
+
+      var getGuess = function () {
+        var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+
+        return guess;
+      };
+
+      var updateGameState = function (guess, word, answerArray) {
+        var correctGuesses = 0;
+        for (var i = 0; i < answerArray.length; i++) {
+          if (word[i] === guess) {
+            answerArray[i] = guess;
+            correctGuesses++;
+          }
+        }
+        alert("You correctly guessed " + correctGuesses + " letters");
+
+        return correctGuesses;
+      };
+
+      var showAnswerAndCongratulatePlayer = function (answerArray) {
+        alert("Congratulations, the word was ''" + answerArray.join("") + "'");
+      };
+
+      var word = pickWord();
+
+      var answerArray = setupAnswerArray(word);
+
+      var remainingLetters = word.length;
+
+      while (remainingLetters > 0) {
+        showPlayerProgess(answerArray);
+        var guess = getGuess();
+        if (guess === null) {
+          break;
+        } else if (guess.length !== 1) {
+          alert("Please enter a single letter.");
+        } else {
+          var correctGuesses = updateGameState(guess, word, answerArray);
+          remainingLetters -= correctGuesses;
+        }
+      }
+
+      showAnswerAndCongratulatePlayer(answerArray);
+    </script>
+  </body>
+</html>
