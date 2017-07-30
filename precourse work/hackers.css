@@ -1,0 +1,9 @@
+.special {
+  list-style: none;
+  vertical-align: middle;
+padding-left: 0;
+}
+td img{
+  height: 440;
+  width: 320;
+}
