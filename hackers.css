@@ -1,0 +1,28 @@
+.special {
+  list-style: none;
+  vertical-align: middle;
+padding-left: 0;
+}
+td img{
+  height: 44;
+  width: 32;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0
+}
+
+tr:nth-child(odd) {
+  background-color: #fbfbfb
+}
+
+.section1{
+  float: left;
+  width: 30%;
+  margin: 0 2%;
+}
+.section2{
+  float: right;
+  width: 30%;
+  margin: 0 10%;
+}
