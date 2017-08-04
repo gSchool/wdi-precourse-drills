@@ -1,0 +1,11 @@
+tr:nth-child(even) {
+  background: #dbfdf6;
+}
+
+section {
+  float:left;
+}
+
+aside {
+  float:right;
+}
