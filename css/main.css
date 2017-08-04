@@ -13,11 +13,11 @@ img {
 	padding-right: 5px;
 }
 
-.row1 {
+.rowcolor:nth-of-type(odd) {
 	background-color: rgb(231, 234, 242);
 }
 
-.row2 {
+.rowcolor:nth-of-type(even) {
 	background-color: rgb(208, 210, 249);
 }
 
