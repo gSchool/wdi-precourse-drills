@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman!</title>
+</head>
+<body>
+
+	<h1>Hangman!</h1>
+
+	<script>
+	//Functions
+	function pickWord() {	
+		//return a random word from an array of words
+		var randomWords = ["toast", "gravy", "rabbit", "milk", "scramble", "centipede", "dolphin", "telephone"];
+		return randomWords[Math.floor(Math.random() * randomWords.length)];
+	};
+	
+	function setupAnswerArray(word) {
+		//return the answer array
+		var blankArray = [];
+		for (var i = 0; i < word.length; i++) {
+			blankArray[i] = "_";
+		}
+		
+		return blankArray;
+	};
+	
+	function showPlayerProgress(answerArray) {
+		//Use alert to show the player their progress
+		alert(answerArray.join(" "));
+	};
+	
+	function getGuess() {
+		//Use prompt to get guess
+		return prompt("Enter a single letter.").toLowerCase();
+	};
+	
+	function updateGameState(guess, word, answerArray) {
+		//Update answerArray and return a number showing how many
+		//times the guess appears in the word so remainingLetters
+		//can be updated
+		var lettersGuessed = 0
+		for (var j = 0; j < word.length; j++) {
+			if (guess === word[j] && answerArray[j] === "_") {
+				answerArray[j] = guess;
+				lettersGuessed++;
+			}
+		}
+		if (lettersGuessed === 0) {
+			remainingGuesses--;
+		}
+		
+		return lettersGuessed;
+	};
+	
+	function showAnswerAndCongratulatePlayer(answerArray) {
+		//Use alert to show the answer and congratulate the player
+		alert(answerArray.join(" "));
+		alert("Congratulations! The word was " + word);
+	};
+	
+	function outOfGuesses() {
+		//Use alert to inform player they're out of guesses
+		alert(answerArray.join(" "));
+		alert("Sorry, you're out of guesses!");
+	}
+	
+	//variables
+	var word = pickWord();
+	var answerArray = setupAnswerArray(word);
+	var remainingLetters = word.length;
+	var remainingGuesses = 10;
+	
+	
+	//game loop
+	while (remainingLetters > 0 && remainingGuesses > 0) {
+		showPlayerProgress(answerArray);
+		var guess = getGuess();
+		if (guess === null) {
+			break;
+		} else if (guess.length !== 1) {
+			alert("Please enter a single letter.");
+		} else {
+			var correctGuesses = updateGameState(guess, word, answerArray);
+			remainingLetters -= correctGuesses;
+		}
+	}
+	if (remainingGuesses < 1) {
+		outOfGuesses();
+	} else {
+		showAnswerAndCongratulatePlayer(answerArray);
+	}
+	</script>
+</body>
+</html>
