@@ -1,0 +1,102 @@
+body {
+  background-image: url("kawaii.jpg");
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  border: 3px solid #76D7C4;
+  border-radius: 5px;
+  background-color: #E8F8F5;
+  margin: 50px 125px 50px 125px;
+  padding: 10px 10px 10px 10px;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.image {
+  display: inline-block;
+  border: 1px solid #ABB2B9;
+  background-color: #FFFFFF;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+button {
+    background-color: #E7BEFE;
+    border: 1px solid #8535B0;
+    border-radius: 3px;
+    color: black;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #8535B0;
+  border: 1px solid #E7BEFE;
+  color: white;
+}
+
+section {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+aside {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Audiowide", sans-serif;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+h3 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+p {
+  text-align: justify;
+  text-indent: 25px;
+  line-height: 1.5;
+}
+
+a:link {
+  text-decoration: none;
+  color: #FD1189;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #950950;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #900FFB;
+}
+
+ul {
+  list-style-type: circle;
+}

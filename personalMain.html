@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".imageContainer").hide();
+      $("button").click(function(){
+          $(".imageContainer").slideToggle("slow");
+        });
+    });
+    </script>
+    <link rel="stylesheet" href="personalStyles.css">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <meta charset="utf-8">
+    <title>Amanda's Personal Site</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>About Me</h1>
+    <p>Hi! I'm Amanda! I grew up in Pflugerville and have lived in the Austin
+      area my whole life. I have an older brother and sister, and most of
+      my family is in central Texas. I love food. Experimenting in the
+      kitchen is a passion of mine, and I love trying new restaurants. Dogs
+      are also a big part of my life. I worked at a kennel for six years
+      and am currently offering pet-sitting through Rover. I have a
+      Chihuahua/Italian Greyhound (or Italian Greyhuahua, if you will) named
+      Taco who is perfect in every way. I have a very close-knit group of
+      friends, including two Galvanize graduates, and a boyfriend named
+      Adam, who is also a software developer.</p>
+      <section>
+        <h2>Hobbies/Interests</h2>
+        <ul>
+          <li>Food & cooking</li>
+          <li>Craft beer</li>
+          <li>Dogs</li>
+          <li>Travel</li>
+          <li>Anime</li>
+          <li>Politics</li>
+          <li>Gardening</li>
+          <li>Hiking</li>
+          <li>Making jewelry</li>
+        </ul>
+      </section><aside>
+        <h3><a href="personalCareer.html">My Background & Goals</a></h3>
+      </aside>
+      <div class="centered"><button>Show/hide photos</button></div>
+      <div class="imageContainer">
+        <div class="image">
+          <img src="Taco1.jpg" alt="Taco Dog!">
+        </div><div class="image">
+          <img src="Taco2.jpg" alt="Taco Dog!">
+        </div><br>
+        <div class="image">
+          <img src="friends.jpg" alt="My friends">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
