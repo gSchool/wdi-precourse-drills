@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hangman!</title>
+</head>
+<body>
+  <h1>Hangman!</h1>
+  <div id = "displayresult"></div> <!-- JavaScript will add HTML here. -->
+</body>
+<script>
+  function pickWord() { //returns a random word from the wordChoices array
+    var wordChoices = ["javascript", "amazing", "monkey", "pancake", "galvanize"];
+    return wordChoices[Math.floor(Math.random() * wordChoices.length)];
+  }
+
+  function setupAnswerArray(answerWord) { //Creates an array with blank spaces for each letter in the answerWord
+    var answerArray = [];
+    for (var i = 0; i < answerWord.length; i++) {
+      answerArray[i] = "_";
+    }
+    return answerArray;
+  }
+
+  function showPlayerProgress(answerArray) { //Displays the currently filled in answerArray to the player
+    alert("Here's what you've guessed correctly so far: " + answerArray.join(" "));
+  }
+
+  function getGuess() { //Prompts user for next guess; converts that guess to lowercase letters
+    var guess = prompt("Please type a letter for your next guess. If you want to give up, select <cancel>.");
+    if (guess === null) {
+      return null;
+    } else {
+      return guess.toLowerCase();
+    }
+  }
+
+  function updateGameState(guess, word, answerArray) { //Updates the state of the game as noted below
+    var numberOfOccurences = 0; //This will be the number of times the guess appears in the answer
+    for (var i = 0; i < word.length; i++) {
+      if (guess === word[i]) { //Check for presense of guess in the word
+        if (guess === answerArray[i]) { //If the guess is good, make sure it hasn't been guessed before
+          numberOfOccurences = -1; //Set numberOfOccurences to special case -1 to indicate a repeat guess
+          alert("You've already guessed that letter!");
+          break;
+        } else { //Guess is good and original; add it into the answerArray and increase the numberOfOccurences
+          answerArray[i] = guess;
+          numberOfOccurences++;
+        }
+      }
+    }
+    if (numberOfOccurences === -1) { //Check for repeat letter condition to avoid incorrectly displaying the "letter is not in the word" message
+      return 0; //numberOfOccurences that should be returned by the function is actually 0
+    } else if (numberOfOccurences === 0){
+      alert("I'm sorry, that letter is not in the word.");
+    }
+    return numberOfOccurences;
+  }
+
+  function showAnswerAndCongratulatePlayer(answerArray) {
+    alert("Congratulations!!! You've correctly guessed the word: " + answerArray.join(""));
+  }
+
+  var word = pickWord();
+  var answerArray = setupAnswerArray(word);
+  var remainingLetters = word.length;
+
+  alert("Welcome to Hangman! Can you guess the word I'm thinking of?");
+
+  while (remainingLetters > 0) {
+    showPlayerProgress(answerArray);
+    var guess = getGuess();
+    if (guess === null) { //Player has selected cancel to quit the game early
+      alert("Thanks for playing!");
+      break;
+    } else if (guess.length !== 1) {
+      alert("Please enter a single letter.");
+    } else {
+      var correctGuesses = updateGameState(guess, word, answerArray);
+      remainingLetters -= correctGuesses;
+    }
+  }
+
+  if (remainingLetters === 0) { //Verify that player actually won the game as opposed to cancelling early
+    showAnswerAndCongratulatePlayer(answerArray);
+    document.getElementById("displayresult").innerHTML += "<h3>You won! (refresh page to play again)</h3>";
+  } else {
+    document.getElementById("displayresult").innerHTML += "<h3>You gave up. So sad...</h3>";
+  }
+
+</script>
+</html>
