@@ -1,0 +1,21 @@
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 5px;
+}
+
+section {
+	float: left;
+	width: 60%;
+}
+
+aside {
+	float: right;
+	width: 40%;
+}
+
+.movies tr:nth-of-type(even) {
+	background: rgba(0, 0, 255, .25);
+}
