@@ -1,0 +1,14 @@
+header {
+  text-align: center;
+  height: 50px;
+  color: white;
+  background-color: black;
+  font-size: 120%
+}
+
+
+footer {
+  height: 50px;
+  color: white;
+  background-color: black;
+}
