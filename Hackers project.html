@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+    tr:nth-of-type(2n+1){
+      background-color: lightgray;
+    }
+    tr:first-of-type {
+    background-color: white;
+    }
+    .otherside {
+      float: right;
+    }
+    .thisside {
+      float: left;
+    }
+    </style>
+
     <meta charset="utf-8">
     <title>'Hackers' Project</title>
   </head>
   <body>
     <h1>Resutls for "Hackers"</h1>
-      <h2>Titles</h2>
-      <ul style="list-style-type:none">
-          <a href="readme.md" target="_blank"><li><img height="44" width="32" float:left src="hackers.jpg">Hackers (1995)</li></a>
-          <a href="readme.md" target="_blank"><li><img height="44" width="32" float:left src="2000.jpg">2000 AD (2000) <br><i>aka Hackers</i></li></a>
-          <a href="readme.md" target="_blank"><li><img height="44" width="32" float:left src="frontline.jpg">Hackers (2001) (TV episode)<br><i>-Frontline (1983) (TV series)</i></li></a>
-          <a href="readme.md" target="_blank"><li><img height="44" width="32" float:left src="hackersgame.jpg">Hackers Game (2015)<br><i>aka "The Hackers"</i></li></a>
-      </ul>
+    <div class="thisside">
+    <table>
+      <th><h2>Titles</h2></th>
+        <tr>
+          <td><a href="readme.md" target="_blank"><img height="44" width="32" float:left src="hackers.jpg"></a></td>
+          <td><a href="readme.md" target="_blank">Hackers (1995)</a></td>
+        </tr>
+        <tr>
+          <td><a href="readme.md" target="_blank"><img height="44" width="32" float:left src="2000.jpg"></a></td>
+          <td><a href="readme.md" target="_blank">2000 AD (2000) <br><i>aka Hackers</i></a>
+        </tr>
+        <tr>
+          <td><a href="readme.md" target="_blank"><img height="44" width="32" float:left src="frontline.jpg"></a></td>
+          <td><a href="readme.md" target="_blank">Hackers (2001) (TV episode)<br><i>-Frontline (1983) (TV series)</i></a></td>
+        </tr>
+        <tr>
+          <td><a href="readme.md" target="_blank"><img height="44" width="32" float:left src="hackersgame.jpg"></a></td>
+          <td><a href="readme.md" target="_blank">Hackers Game (2015)<br><i>aka "The Hackers"</i></a></td>
+        </tr>
+
+    </table>
+
       <h2>Names</h2>
       <ul style="list-style-type:none">
         <li><img height="44" width="32" float:left src="amyacker.jpg"><a href="http://www.imdb.com/name/nm0009918/?ref_=nv_sr_1" target="_blank">Amy Acker (Actress, Angel(1999))</li></a>
@@ -29,7 +59,8 @@
         <li>Bleeker Street Media</li>
         <li>Bleeker Street Entertainment</li>
       </ul>
-      <h2>Category Search</h2>
+    </div>
+    <div class="otherside">  <h2>Category Search</h2>
       <ul>
         <li>All</li>
         <li>Name</li>
@@ -53,5 +84,6 @@
         <li>Advanced Title Search</li>
         <li>Advanced Name Search</li>
       </ul>
+    </div>
   </body>
 </html>
