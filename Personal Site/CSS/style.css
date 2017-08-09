@@ -1,0 +1,59 @@
+* {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 5px;
+    color: black;
+}
+
+
+/*Body*/
+#content h1 {
+    font-size: 96px;
+}
+#content .jumbotron {
+    text-align: center;
+}
+
+#content button {
+    font-size: 22px;
+}
+#content li{
+    font-size: 18px;
+    padding-top: 10px;
+    
+}
+
+#content p {
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+#content span{
+    padding-left: 2px;
+}
+.me {
+    float: right;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.secondjumbo img {
+    padding: 20px;
+}
+
+/*About*/
+
+#page .about_heading {
+    font-size: 96px;
+    text-align: center;
+}
+
+#page .about_paragraph {
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+}
+
+#page .me_inclass {
+    font-size: 34px;
+    padding-bottom: 20px;
+}

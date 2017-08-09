@@ -1,0 +1,45 @@
+/* List */
+.titles li {
+list-style-type: none;
+
+}
+a {
+text-decoration: none;
+}
+.names li {
+    list-style-type: none;
+}
+.keywords li {
+    list-style-type: none;
+}
+.companies li {
+    list-style-type: none;
+}
+
+.inside {
+    list-style: inside circle;
+}
+.titles li span {
+    font-size: 12px;
+}
+
+/* Headings */
+
+h2 {
+    padding-top: 30px;
+}
+
+/* New Columns */
+
+.column1{
+    float: left;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.column2 {
+    float: right;
+    width: 40%;
+    margin:0;
+}

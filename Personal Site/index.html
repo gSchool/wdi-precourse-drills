@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ellis | Brown</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous">
+        </script>
+
+        <script>
+        $( function() {
+    var state = true;
+    $( "#button" ).on( "click", function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          backgroundColor: "#aa0000",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 240
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
+  </script>
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Ellis Brown</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <button class="btn navbar-btn">Portfolio</button>      
+                </nav>
+            </header>
+
+            <div id="content">
+                <article>
+                    <div class="container">
+                        <div class="jumbotron" style="background-color: rgb(154, 171, 171) !important">
+                            <h1>Gavin Brown</h1>
+                            <p>The man behind the muscle!! <span class="glyphicon glyphicon-thumbs-up"></span><span class="glyphicon glyphicon-thumbs-up"></span></p>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <button id="button">A little about me :</button>
+                                    <ul id="effect">
+                                        <li>I am from <em>Denver, Colorado</em> the best city in America.</li>
+                                        <li>If I'm not reading I am lifting weights or eating <em>(no particular order)</em></li>
+                                        <li>I also spend a lot of time with family and friends, exploring the <b>Great Outdoors</b></li>
+                                        <li>I also own over 50 pairs of sneakers <em>("I know, a little excessive right")</em></li>
+                                    </ul>
+                                    <p><b>~Success is like a Science, if you have the Conditions you get the Result~</b> Oscar Wilde</p>
+                                </div>
+                                <div class="col-md-8">
+                                    <img class="me" src="Photos/IMG_0075.jpg" alt="Fountain in San Diego" height="600px" width="450px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jumbotron secondjumbo" style="background-color:rgb(154,171,171)">
+                            <h2>More Photos from San Diego:</h2>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="Photos/IMG_0056.jpg" alt="Nightview San Diego" height="250px" width="300px">
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <img src="Photos/IMG_0144.jpg" alt="Antelope" height="250px" width="300px">
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <img src="Photos/IMG_0048.jpg" alt="Sunset" height="250px" width="300px">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="Photos/IMG_0107.jpg" alt="Museum" height="250px" width="300px">
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <img src="Photos/IMG_0099.jpg" alt="Flower" height="250px" width="300px">
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <img src="Photos/IMG_0025.jpg" alt="DayTime View" height="250px" width="300px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <img src="" alt="">
+            </div>
+
+            <aside>
+                
+            </aside>
+        </div>
+    
+    </body>
+</html>
