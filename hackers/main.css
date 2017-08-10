@@ -1,0 +1,42 @@
+img{
+  height: 32px;
+  width: 44px;
+}
+body{
+  background-color: grey;
+
+}
+header{
+  color: black;
+  text-align: center;
+
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+#hackers{
+background-color: white;
+}
+#AD{
+  background-color: lavender;
+}
+#TV{
+  background-color: yellow;
+}
+#game{
+  background-color: aqua;
+}

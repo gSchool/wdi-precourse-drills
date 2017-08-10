@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman!</title>
+  </head>
+  <body>
+    <h1>Hangman</h1>
+
+    <script>
+    var words = [
+      'javascript',
+      'monkey',
+      'amazing',
+      'pancake'
+    ];
+    function pickWord(words){
+      return  words[Math.floor(Math.random() * words.length)];
+    };
+
+    function setupAnswerArray(word){
+      var answerArray = [];
+      for(var i = 0; i<word.length; i++){
+        answerArray[i] = "_";
+      }
+      return answerArray
+    }
+
+    function showPlayerProgress(answerArray){
+      alert(answerArray.join(" "));
+    }
+
+    function getGuess(){
+      return prompt("Guess a letter or click cancel to stop playing");
+    }
+
+    function updateGameState(){
+      for(var j = 0; j<word.length; j++){
+        if(word[j] === guess){
+          answerArray[j] = guess;
+          remainingLetters--;
+        }
+      }
+    }
+    function showAnswerAndCongratulatePlayer(){
+      alert(answerArray.join(" "));
+      alert("Good Job! The answer was " + word);
+    }
+
+    var word = pickWord(words);
+    var answerArray = setupAnswerArray(word);
+    var remainingLetters = word.length;
+
+    // The game loop
+    while (remainingLetters > 0) {
+      showPlayerProgress(answerArray);
+      var guess = getGuess();
+      if (guess === null) {
+        // Exit the game loop
+        break;
+      } else if (guess.length !== 1) {
+        alert("Please enter a single letter.");
+      } else {
+        updateGameState();
+      }
+      // The end of the game loop
+    }
+
+    showAnswerAndCongratulatePlayer()
+
+
+</script>
+  </body>
+</html>
