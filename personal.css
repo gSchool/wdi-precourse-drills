@@ -1,0 +1,52 @@
+html {
+  background-color: #010101;
+  background-image: url("https://ak2.picdn.net/shutterstock/videos/3995380/thumb/1.jpg");
+  background-position: left;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+  font-weight: bold;
+}
+
+h3 {
+  color: orange ;
+  font-weight: bold;
+}
+
+li {
+  color: #600FDB;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+p {
+  color: #600FDB;
+  font-family: cursive;
+  font-size: 20px;
+}
+img {
+  float: right;
+}
+a {
+  color: orange;
+}
+
+iframe {
+  float: left;
+}
+#nav {
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+
+#footer p {
+  color: orange;
+}
+
+button {
+  color: orange;
+  background-color: black;
+}
