@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="personal.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+    alert("Welcome to Surbhi's personal website!!")
+
+    $(document).ready(function() {
+      $(".info > li").click(function(){
+        $(".info > li").first().next().hide();
+      });
+    });
+    </script>
+
+  </head>
+  <body>
+    <div id="nav">
+			<ul>
+        <li><a href="personalsite.html"></a><button>Sign up</button></li>
+				<li><a href="personalsite.html"></a><button>Home</button></li>
+				<li><a href="personalsite.html"></a><button>About</button></li>
+			<li><a href="personalsite.html"></a><button>Contact</button></li>
+			</ul>
+		</div>
+
+    <h1><strong><em>My World in my Words</em></strong></h1>
+
+    <div>
+      <h3><em>About Me</em></h3>
+    <ul class="info">
+      <li>Full Name: Surbhi Sharma</li>
+      <li>Age: 29 <button>Click here!</button></li>
+      <li>Date of birth: February 6</li>
+      <li>Place of birth: India</li>
+      </ul>
+
+      <h3><em>Background</em></h3>
+      <img src="arabic.png" height="70" width="200" alt="My name in Arabic">
+      <p>I was born in New Delhi, India and at the age of 3, my family relocated to Dubai, UAE.
+        As far as I can remember, my childhood is filled with funny memories. Growing up in a different country allowed
+        me to be surrounded with people of different backgrounds and languages. I remember learning Arabic from 1st grade
+        up until 8th grade. </p>
+
+
+        <p>I remember being 12 years old when my parents broke the news to me about moving to New York. I was so happy to find
+          out that I was going to move to the city of dreams and that I'll have the opportunity and freedom to be what I was always
+          meant to be in life. It was bittersweet having to leave Dubai where I grew up and start a new life. Moving to the US came
+          with it's own challenges. It was a culture shock for my whole family and not knowing the language really well was hard on me. </p>
+
+          <p> After high school, I went on to college not having a clear picture in mind as to what I wanted to be. I felt lost in the crowd
+            and even though I did well in my chosen major at the time, it definitely wasn't where my heart was. After working in a career field
+            where I knew I did not belong, I've finally gotten the courage to take a leap of faith and pursue a new passion. A passion for coding.</p>
+
+            <p>It took me a few months of research and reading articles on where to start since it is a completely new career option for me. I
+              started out with <a href="https://www.codecademy.com/learn" target="_blank" title="Codecademy's website"><strong>Codecademy</strong></a> courses on
+              HTML and CSS. I loved learning computer-speak and being able to get an output right away felt rewarding. I took a prep course in JavaScript which
+              really helped solidify my decision to pursue web development.</p>
+
+          <iframe src="https://giphy.com/embed/11sBLVxNs7v6WA" width="480" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p> This is how I
+            felt when I got accepted to Galvanize and I feel like I've chosen the correct curriculum for me. I am really excited to begin the Web Development program at
+            Galvanize. I'm ready to take on the challenges that will come during the learning process and grow as a developer. I am also looking forward to meeting new people
+            and working together as a team.</p>
+          </div>
+
+          <div id="footer">
+			<p>
+				Webpage made by <u>Surbhi Sharma</u>
+			</p>
+
+		</div>
+    <div id="next">
+      <a href="personal2.html"><button>Click here to read more</button></a>
+    </div>
+  </body>
+</html>
