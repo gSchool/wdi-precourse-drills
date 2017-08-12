@@ -1,0 +1,209 @@
+/*-- FONTS --*/
+
+p, h1, h2, h3 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #1B98E0;
+}
+
+a:hover {
+  color: #188ACC;
+}
+
+a:active {
+  color: #4EADE5;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h1, h2, h3 {
+  font-family: 'Work Sans', serif;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  background-color: #1B98E0;
+  border: 0px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #fff;
+}
+
+button:focus {
+  outline: 0;
+}
+/*} Turns off Chrome blue shadow default*/
+
+button:hover {
+  background-color: #4EADE5;
+  transition: .5s background-color;
+}
+
+button:active {
+  background-color: #188ACC;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/*-- PADDING & MARGINS --*/
+
+body {
+  margin: 0px;
+}
+
+.md-pad-top-bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.pad-left {
+  padding-left: 30px;
+}
+
+.pad-bottom {
+  padding-bottom: 30px;
+}
+
+.mrg-left {
+  margin-left: 30px;
+}
+
+.mrg-bottom {
+  margin-bottom: 30px;
+}
+
+
+/*-- FULL PAGE STYLES --*/
+
+#content-wrapper {
+  margin: 0 auto;
+}
+
+
+/*-- WELCOME SECTION --*/
+
+.intro {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+div.title-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/akrotiri-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-wrapper h1, .title-wrapper p {
+  color: #ffffff;
+}
+
+
+/*-- GAMES --*/
+
+.game {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.game-img img {
+  width: 100%;
+  min-width: 300px;
+  display: block;
+}
+
+.mobile-title {
+  display: none;
+}
+
+
+/*-- FOOTER --*/
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media(max-width: 1100px) {
+  .game {
+    margin: 0 30px;
+  }
+  .title-wrapper {
+    margin-bottom: 0px;
+  }
+}
+
+@media(max-width: 800px) {
+  .game-img img {
+    min-width: 200px;
+  }
+}
+
+@media(max-width: 650px) {
+  h1 {
+    font-size: 4em;
+  }
+  .game {
+    flex-direction: column;
+  }
+  .mobile-title {
+    display: inline-block;
+    order: -1;
+  }
+  .game-text h2 {
+    display: none;
+  }
+  .game-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .game-text {
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  .buttons {
+    justify-content: space-around;
+  }
+  button {
+    flex-grow: 1;
+  }
+}
