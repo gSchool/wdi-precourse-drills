@@ -1,0 +1,19 @@
+img {
+    height: 32px;
+    width: 44px;
+}
+
+tbody.movies > tr:nth-of-type(odd) {
+    background-color: #CCC;
+}
+
+.column {
+    width: 50%;
+}
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
