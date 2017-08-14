@@ -1,0 +1,102 @@
+
+body {
+  border-style: solid;
+  background-color: snow;
+  border-width: 1px;
+  border-color: orange;
+
+
+
+}
+
+
+}
+
+header {
+  background-image: linear-gradient(darkgrey, dimgrey);
+}
+
+header h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 350%;
+  color: darkorange;
+  margin-left: 7px;
+}
+
+header h2 {
+
+  font-family: 'Amatica SC', cursive;
+  font-size: 220%;
+  color: #3e4d66;
+}
+
+section {
+
+  padding: 15px 25px 0px 25px;
+}
+
+section p {
+  font-family: 'Open Sans', sans-serif;
+}
+.contact {
+  font-family: 'Lato', sans-serif;
+  color: #3e4d66;
+  text-align: center;
+  background-image: linear-gradient(darkgrey, dimgrey);
+  padding: 5px 0px 5px 0px
+
+
+}
+
+
+.table1 {
+
+background-image: linear-gradient(darkgrey, dimgrey);
+
+
+
+}
+
+#skyline {
+width: 100%;
+
+}
+
+.about {
+  font-family: 'Amatica SC', cursive;
+  background-color: gainsboro;
+  padding: 10px, 20px, 10px, 20px;
+}
+
+
+
+.banner {
+  height: 108px;
+  width: 200px;
+  border-width: 2px;
+  border-color: darkslategrey;
+  border-radius:5px;
+  border-style: solid;
+  margin: 0px 5px 0px 15px;
+  float: left;
+}
+
+
+  .buttons {
+    margin-left:  15%;
+    margin-right: 15%;
+  }
+
+  .button1, .button2, .button3 {
+    padding: 10px 20px 10px 20px;
+    background-image: linear-gradient(orange,darkorange);
+
+    border-radius: 6px;
+    border-color: slategrey;
+    border-width: 1px;
+    color: darkslategray;
+    text-align: center;
+    margin: 0px 10px 15px 10px;
+    display: inline-block;
+    text-decoration: none;
+}
