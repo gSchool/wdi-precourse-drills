@@ -1,0 +1,67 @@
+body {
+  background-color: gainsboro;
+  margin: 0px 50px;
+}
+
+img {
+  height: 44px;
+  width: 32px;
+}
+
+h1, h3 {
+  font-family: 'Raleway', sans-serif;
+  color: darkslategrey;
+  padding-left: 5px;
+}
+
+li, td {
+  font-family: 'Open Sans', arial;
+  color: darkcyan;
+}
+.alpha {
+  background: #F6F6F5;
+}
+
+.beta {
+  background: #FBFBFB;
+}
+
+section {
+  float: left;
+  width: 70%;
+}
+
+aside {
+  float: right;
+  margin-right: auto;
+  width: 27%;
+
+}
+
+.titles, .names, .keywords, .companies, .category, .additional {
+  border-width: 1px;
+  border-color: F0F0EE;
+  border-radius: 6px;
+  border: solid;
+  padding: 5px 5px;
+  margin: 8px 5px;
+  background-color: #FFFFFF;
+}
+
+a {
+  color: lightslategrey;
+}
+
+a:hover {
+  color: lightskyblue;
+  background-color: linen;
+}
+
+a:visited {
+  color: slategrey;
+}
+
+a:visited:hover {
+  color:lightskyblue;
+  background-color: linen;
+}
