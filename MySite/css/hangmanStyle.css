@@ -1,0 +1,20 @@
+* {
+	text-align: center;
+}
+
+img.eulerImage {
+	max-width: 200px;
+	border-radius: 50%;
+	margin-top: 100px;
+}
+
+.eulerCode {
+	border: 1px solid grey;
+	background-color:#EEEEFF;
+	overflow: scroll;
+    width: 330px;    
+	padding: 10px;
+	text-align: left;
+	margin: auto;
+	margin-bottom: 100px;
+}

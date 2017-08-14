@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Dave Francese</title>
+  </head>
+
+  <body>
+    <div class="jumbotron">
+        <img id="me-img"  src="images/me.jpg" alt="picture of me" >
+        <h1>Dave Francese</h1> 
+        <div id="greeting">
+            <p>Have a look around to learn more about me!<br>
+            And thanks for stopping by!</p> 
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <!-- START BIO -->
+        <h2>Bio</h2>
+        <p>I was born and raised in North Carolina. After finishing high school I took off to Southern Illinois to study Digital Media with an emphasis in Audio Recording. In college I found a love for a lot of different things such as art, theater, web developement, computer programming, sound design, and electronics like modular synthesis and so much more.<br>
+        <br>After graduating, I moved back to North Carolina and found myself practicing graphic design and finally landing a job. I spent almost 5 years working professionally in the <a href="http://www.adobe.com/" target="_blank">Adobe Creative Suite</a>. I grew to want more, so...I moved out west to Santa Fe, New Mexico. Santa Fe is one of the most art-rich cities in the United States. My time there was a struggle with not a whole lot of opportunity. However I <em>was</em> given the opportunity to work with the talented people at <a href="https://meowwolf.com/" target="_blank"> Meow Wolf</a>, where they showed me the true power of programming. This is where my love for coding began.<br>
+        <br>Since my time in Santa Fe was not progressing like I had hoped, I decided to move to a larger city with a bit more growth. About 6 hours north, Denver, Colorado seemed like a good fit. At the moment I am studing to be a Web Developer at Galvanize, a bootcamp for those aspiring to be programmers in the Denver area.</p>
+        <a href="future.html"><button id="future-btn">To The Future</button></a>
+        <!-- START PROJECTS -->
+        <h2>Projects</h2>
+        
+        <div id="project-container">
+        <script>//$("#project-container").hide();</script>
+        
+            <div class="container marketing">
+                <!-- Three columns of text -->
+                <div class="row">
+                        <div class="col-lg-4">
+                            <div class="pro-content">
+                                <img class="rounded-circle" src="images/audioRecording.jpg" alt="studio image" width="140" height="140">
+                                <div class="pro-text">
+                                <h3>Audio Recording</h3>
+                                <p>Audio is one of my deepest passions. Since I can remember, I have been recording audio of all kinds. From when I was a kid sneaking in on my parents by placing a tape recorder in their room to find out where my Christmas presents may be hidden, to recording other bands and writing my own music.</p>
+                                <p><a class="btn btn-secondary" href="https://soundcloud.com/davefrancese" target="_blank" role="button">View details &raquo;</a></p>
+                            </div><!-- / .pro-content -->
+                            </div><!-- / .pro-text -->
+                            </div><!-- /.col-lg-4 -->
+                            <div class="col-lg-4">
+                            <div class="pro-content">
+                                <img class="rounded-circle" src="images/code.jpg" alt="code image" width="140" height="140">
+                                <div class="pro-text">
+                                    <h3>Web Developement</h3>
+                                    <p>I was first introduced to programming in college. I took an intro class for HTML and CSS and I fell in love with it, but the web is so much more than HTML/CSS. I later took a class in computer programming and grew an understanding for basic algorithms that made me want to take on JavaScript. So when I moved to Denver, Colorado in 2017 I jumped into a foundations class at Galvanize with the hope to go through their immersive, full-stack program.</p>
+                                    <p><a class="btn btn-secondary" href="hangman.html" target="_blank" role="button">View details &raquo;</a></p>
+                                </div><!-- / .pro-content -->
+                                </div><!-- /.col-lg-4 -->
+                            </div><!-- / .pro-text -->
+                            <div class="col-lg-4">
+                            <div class="pro-content">
+                                <img class="rounded-circle" src="images/newMexico.jpg" alt="NM Flag" width="140" height="140">
+                                <div class="pro-text">
+                                    <h3>New Mexico</h3>
+                                    <p>I lived in Santa Fe, New Mexico from July 2015 to March 2017. During that time I learned a lot about its people, culture, and land. It had a huge impact on me; so much so that I began to write a musical album based off of the state. The album intertwines autobiographical events with New Mexico myth and folklore. The album is set to release August of 2017.</p>
+                                    <p><a class="btn btn-secondary" href="https://homersparks.bandcamp.com/" target="_blank" role="button">View details &raquo;</a></p>
+                            </div><!-- / .pro-content -->
+                            </div><!-- / .pro-text -->
+                        </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+        </div>
+    </div>
+    <!-- Contact Button -->
+    <div id="contact">
+        <button onclick="location.href='mailto:davefrancese@gmail.com';" type="submit" id="submit" name="submit" class="btn btn-primary pull-right" value="send">Contact Me</button>
+        </form>
+    </div>
+</div>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">© Dave Francese 2017</span>
+        </div>
+    </footer>
+  </body>
+<script>$('.pro-text').hide();</script>
+</html>
