@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/hangmanStyle.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <!-- JavaScript Links -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- <h1>Hangman!</h1> -->
+        <img src="images/hangmanImage.jpg" alt="Hangman Image" style="width: 400px"/>
+        <br>
+        <button onclick="beginGame()">
+        Start Game</button>
+    </body>
+    <script>
+
+    // ------------------------- JAVASCRIPT GAME ----------------------------
+    
+    // All the words
+    var words = [
+	"javascript",
+	"monkey",
+	"amazing",
+	"pancake",
+    "lizard",
+    "banana",
+    "coffee",
+    "january",
+    "holiday",
+    "lunchtime",
+    "delicious",
+    "timeout"
+    ];
+
+    //FUNCTIONS FOR GAME
+    // pickWord function
+    var pickWord = function (words) {
+        return words[Math.floor(Math.random() * words.length)];
+    };
+    //answerArray function
+    // var setupAnswerArray = function () {
+    //     var answerArray = [];
+    //     for (var i = 0; i < word.length; i++) {
+    //         answerArray[i] = "_";
+    //     }
+    // }
+
+
+    // Variable that chooses a random word
+    var word = pickWord(words);
+    
+    // Variable/Loop to make blanks of length of chosen random word
+    var answerArray = [];
+    for (var i = 0; i < word.length; i++) {
+	    answerArray[i] = "_";
+    }
+
+    // Variable for chosen word length
+    var remainingLetters = word.length;
+
+    // Variable for Number of Guesses
+    var guessesLeft = word.length + 6;
+
+    // Array for already guessed letters
+    var guessedList = [];
+
+    // Boolean if a guess has already been guessed
+    var alreadyGuessed = true;
+
+    // Boolean if the guess is in the word
+    var correctGuess = true;
+
+    // GAME LOOP BELOW
+    function beginGame() { // FUNCTION TO BEGIN GAME
+    while (remainingLetters > 0 && guessesLeft > 0) {
+
+        alert("Number of guesses: " + guessesLeft + "\n\nYour word is: " + answerArray.join(" ") + "\n\nLetters already guessed: " + guessedList); // show player their progress
+        
+        // prompt user to guess a letter
+        var guess = prompt("Guess a letter, or click Cancel to stop playing.").toLowerCase();
+
+        if (guess === null) { // Checks if user clicks cancel
+            break;
+        } else if (guess.length !== 1) {   // Checks for more than one character
+            alert("Please enter a single letter.");
+        } else { 
+            if (guessedList.indexOf(guess) == -1) { // Checks if guess has already been guessed || -1 means index doesnt exist yet
+            guessedList.push(guess);
+            alreadyGuessed = false; 
+            correctGuess = true;
+            //guessesLeft--;
+            } else {
+                alreadyGuessed = true;
+                alert("You have already guessed this letter.");
+            } 
+            if (!alreadyGuessed) { 
+                for (var j = 0; j < word.length; j++) {
+                    if (word[j] === guess) {
+                        answerArray[j] = guess;
+                        remainingLetters--;
+                        
+                    }
+                }
+            }
+            guessesLeft--;
+        }
+    }
+    alert(answerArray.join(" "));
+    alert("Good job! The answer was " + word);
+}
+</script>
+</html>
