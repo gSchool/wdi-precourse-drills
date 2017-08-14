@@ -1,0 +1,17 @@
+img {
+  height: 32px;
+  width: 44px;
+}
+
+.column {
+  float: left;
+  border-width: 1px;
+}
+
+.odd {
+  background: linear-gradient(to right, #ffffff 0%, #6666ff 100%);
+}
+
+.even {
+  background: linear-gradient(to right, #ffffff 0%, #ff9900 100%);
+}
