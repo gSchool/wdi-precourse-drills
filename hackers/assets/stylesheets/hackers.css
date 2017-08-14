@@ -3,6 +3,38 @@ img {
   width: 44px;
 }
 
-.italicized {
-  font-style: italic;
+.movie1 {
+  background: green;
+}
+
+.movie2 {
+  background: purple;
+}
+
+.movie3 {
+  background: green;
+}
+
+.movie4 {
+  background: purple;
+}
+
+.resultDetails {
+  -moz-columns: 1 8em;
+  -webkit-columns: 1 8em;
+  columns: 1 8em;
+  float: left;
+  margin: 0 1.5%;
+  width: 50%;
+  position: relative;
+}
+
+.search {
+  -moz-columns: 1 8em;
+  -webkit-columns: 1 8em;
+  columns: 1 8em;
+  float: right;
+  margin: 0 1.5%;
+  width: 20%;
+  position: relative;
 }
