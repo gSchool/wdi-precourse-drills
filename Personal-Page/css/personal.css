@@ -1,0 +1,563 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+body {
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*---------------------------------------
+  Typorgraphy
+-----------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+h1 {
+  color: #ffff77;
+  font-size: 60px;
+  line-height: normal;
+}
+
+h2 {
+  color: #2b2b2b;
+  font-size: 35px;
+  line-height: 52px;
+  margin-top: 0px;
+  margin-left: 70px;
+}
+
+h3 {
+  color: #282828;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  float: right;
+  padding-right: 250px;
+}
+
+h4 {
+  color: #353535;
+  font-size: 20px;
+}
+
+p, .hello {
+  font-size: 24px;
+  float: left;
+  margin-left: 20px;
+  color: #ffef96
+}
+
+p {
+  color: #034f84;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  margin-right: 0;
+}
+
+li.future {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.bg-grey {
+  background: #2b2b2b !important;
+}
+
+.go-down {
+  padding-top: 50px;
+  padding-left: 50px;
+  position: fixed;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*----------------------------
+        Image Gallery
+-----------------------------*/
+
+.container-one {
+  background: linear-gradient(to right, #034f84 0%, #7aaacc 100%);
+}
+
+.container-one p, .container-two p {
+  margin-left: 80px;
+}
+
+.container-two {
+  background: linear-gradient(to right, #034f84 0%, #7aaacc 100%);
+}
+
+.rows {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+}
+.rows > .column {
+  padding: 0 8px;
+}
+
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rows.other {
+  padding-left: 300px;
+}
+.rows.other > img.family {
+  border-radius: 50%;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+
+.column .pano {
+  height: 300px;
+  width: auto;
+  float: none;
+}
+
+.two {
+  margin-left: 510px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  position: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img {
+  height:90%;
+  width: 90%;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+img.buzz-lightyear {
+  width: 400px;
+  height: auto;
+}
+
+img.family-giraffe {
+  height: 310px;
+  width: auto;
+}
+
+.hover-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+
+/*----------------------------------
+          Social Media Bar
+-----------------------------------*/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+   font-family: "entypo", sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#sticky-social {
+   left: 0;
+   position: fixed;
+   top: 100px;
+   z-index: 99999;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+#sticky-social a:hover span {
+   left: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998;}
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover,
+#sticky-social a[class*="gplus"] span { background: #dd4b39; }
+
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span { background: #007bb6; }
+
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span { background: #3F729B; }
+
+#sticky-social a[class*="github"],
+#sticky-social a[class*="github"]:hover,
+#sticky-social a[class*="github"] span { background: #221F1F; }
+
+
+
+
+
+/*---------------------------------------
+  Button
+-----------------------------------------*/
+
+.section-btn {
+  background: #000000;
+  border: none;
+  border-radius: 50px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding: 18px 32px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+button {
+  margin-top: 50px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #ffef96;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #F0B2B2;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 18px;
+    padding-bottom: 100px;
+    background-color: #F0B2B2;
+    display: none;
+    color: #993333;
+}
+
+
+/*even number accordian*/
+button.accordionTwo {
+    background-color: #ffef96;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordionTwo.active, button.accordionTwo:hover {
+    background-color: #F0B2B2;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panelTwo {
+    /*padding: 18px;*/
+    padding-bottom: 100px;
+    background-color: #F0B2B2;
+    display: none;
+    color:#993333;
+}
+
+div.panelTwo.story {
+  padding-bottom: 300px;
+  padding-right: 50px;
+}
+/*-----------------------------------------
+  Home section
+-----------------------------------------*/
+
+#home {
+  background: linear-gradient(to right, #034f84 0%, #7aaacc 100%);
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -webkit-flex;
+   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+   align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: right;
+}
+
+.image {
+  position: relative;
+  width: 60%; /* for IE 6 */
+  height: 80%;
+  margin: 20px;
+  box-shadow: 10px 10px 100px #034f84;
+}
+
+.home-thumb {
+  padding-right: 30px;
+}
+
+
+/*---------------------------------------
+  Footer section
+-----------------------------------------*/
+
+footer {
+  background: #ffef96;
+  text-align: center;
+  padding: 5px;
+}
+
+footer p {
+  position: center;
+  float: none;
+}
+
+/*---------------------------------------
+  Mobile Responsive styles
+-----------------------------------------*/
+
+@media (max-width: 980px) {
+  #home {
+    height: 55vh;
+  }
+
+  .service-thumb {
+    margin-top: 12px;
+    margin-bottom: 22px;
+  }
+
+  .contact-info {
+    margin-top: 22px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #home {
+    height: 85vh;
+  }
+}
+
+
+@media (max-width: 580px) {
+
+  h1 {
+    font-size: 29px;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  #home {
+    height: 95vh;
+  }
+
+  .contact-info {
+    margin-top: 42px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  #home {
+    height: 125vh;
+  }
+}
