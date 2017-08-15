@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+      //pick a random word (from list)
+      function pickWord() {
+        var words = [
+          "games",
+          "orienteering",
+          "cycling",
+          "beer",
+          "coffee"
+        ];
+        var pick = words[Math.floor(Math.random() * words.length)];
+        return pick;
+      }
+      var word = pickWord();
+      console.log(word);
+
+      //set up array of blanks, equal to length of random word
+      function setUpAnswerArray() {
+        var answerArray = [];
+        for ( i = 0; i < word.length; i++ ) {
+          answerArray[i] = " _ ";
+        }
+        return answerArray;
+      }
+      var answerArray = setUpAnswerArray(word);
+      //console.log(answerArray);
+
+      var remainingLetters = word.length;
+
+      //show progress of blanks vs letters
+      function showPlayerProgress() {
+        alert("Decode this word: " + answerArray.join(" "));
+      }
+
+      //take input, store guessed letter in 'guess'
+      function getGuess() {
+        var guess = prompt("Guess a letter. Click Cancel to stop playing.");
+        return guess;
+      }
+      console.log(guess);
+      //take guess, compare to word, update answer array
+      function updateGameState(guess, word, answerArray) {
+        for ( j = 0; j < word.length; j++ ) {
+          if ( word[j] === guess.toLowerCase() ) { //if guess right
+            if ( answerArray[j] === " _ " ) { //and if not guessed yet
+              remainingLetters--; //count down remaining letters
+              console.log(remainingLetters);
+            }
+            answerArray[j] = guess.toLowerCase(); //ADD lowercase answer to array
+            console.log(answerArray);
+          }
+        }
+        return answerArray;
+      }
+
+      while (remainingLetters > 0) {
+        showPlayerProgress(answerArray);
+        var guess = getGuess();
+        if (guess === null) {
+          break;
+        } else if (guess.length !== 1) {
+          alert("Please enter a single letter.");
+        } else {
+          var correctGuesses = updateGameState(guess, word, answerArray);
+          //remainingLetters -= correctGuesses;
+        }
+      }
+
+      function showAnswerAndCongratulatePlayer(answerArray) {
+        if ( answerArray.join("") === word ) {
+          alert("Good job! The answer was " + word);
+        }
+      }
+
+      showAnswerAndCongratulatePlayer(answerArray);
+
+    </script>
+  </body>
+</html>
