@@ -1,0 +1,29 @@
+body {
+  background-image: url('PurpleBackground.jpg');
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+}
+h1 {
+  color: #87f26a;
+}
+h3 {
+  color: #87f26a;
+}
+.header {
+  color: #f7b66c;
+}
+.intro {
+  text-align: center;
+}
+#workplease {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #401d4c;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #163a17;
+}
