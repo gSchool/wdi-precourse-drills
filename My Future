@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('button').click(function(){
+        $('p, h1, h2, ul').fadeIn('slow')
+        $('button').fadeOut('fast')
+      });
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css">
+    <meta charset="utf-8">
+    <title>About Luke Romberg: His Future</title>
+  </head>
+  <body class="myfuture">
+    <div class="center">
+      <a class="href" href="home"><h1>Luke Romberg <br><h3>The man, the myth, the legend.</h3></h1></a>
+    <nav>
+      <a class="header" href="My Past">My Past</a>
+      <a class="header" href="My future">My Future</a>
+    </nav>
+    <button id="mybutton1">Click Me and say "oooh"</button>
+    <h2 class="hidden">A bit about my future plans...</h2>
+    <p class="hidden">I have plans to create and manage my own web development company. <br>The focus of this company will be to
+    help guide small business owners into the 21st century without breaking the bank. <br>I cannot wait to finish
+    Galvanize and be able to code all sorts of fun stuff! <br>I absolutely love problem solving and have simply adored all
+    the brain teasers we've had to complete.</p>
+    <ul style="list-style: none" class="hidden">
+      <h2 class="hidden">I will officially know I've made it when...</h2>
+      <li>I am sitting in my Nissan GTR</li>
+      <li>I have $100,000 in my checking account</li>
+      <li>I have personally launched 7 profitable businesses</li>
+    </div>
+  </ul>
+  </body>
+</html>
