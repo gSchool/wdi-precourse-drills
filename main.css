@@ -30,3 +30,7 @@ footer {
 .names {
   align-items: center;
 }
+
+ul {
+  list-style-type: square;
+}
