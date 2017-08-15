@@ -1,0 +1,85 @@
+body {
+  font-family: sans-serif;
+  color: white;
+  background-color: black;
+  background-image: url("https://cdn.pixabay.com/photo/2015/03/16/04/39/night-675377_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.hidden {
+  display: none;
+}
+#mybutton1 {
+  padding: 15px 25px;
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: #77b28b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px darkgray;
+}
+#mybutton {
+  padding: 15px 25px;
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #cdb7e8;
+  background-image: url('https://cdn.pixabay.com/photo/2016/08/31/06/58/fairyland-canyon-1632749_1280.jpg');
+  border: none;
+  border-radius: 15px;
+}
+.myfuture {
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/11/19/28/fern-1250903_1280.jpg");
+  background-position: top;
+}
+.home {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/14/03/11/ace-1822466_1280.jpg");
+  background-position: top;
+  background-size: cover;
+}
+.homeimage {
+  padding-top: 100px;
+}
+.padding {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.href {
+  text-decoration: none;
+  color: white;
+}
+nav {
+  padding-bottom: 30px;
+  font-size: 20px;
+  color: white;
+  text-decoration-color: black;
+  border-color: orange;
+}
+h1 {
+  margin-bottom: 1%;
+  font-size: 40px;
+  color: white;
+}
+p {
+  font-family: lightgray;
+  font-size: 20px;
+}
+.center {
+  text-align: center;
+}
+.header {
+  color: white;
+}
+h3 {
+  padding-bottom: 20px;
+  font-size: 10px;
+}
+.small {
+  font-size: 10px;
+}

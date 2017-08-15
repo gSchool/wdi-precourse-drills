@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css">
+    <meta charset="utf-8">
+    <title>About Luke Romberg</title>
+  </head>
+  <body class="home" class="homeimage">
+    <div class="center">
+      <h1>Luke Romberg <br><h3>The man, the myth, the legend.</h3></h1>
+    <nav>
+      <h2>Welcome! Select from the options below:</h2>
+      <a class="header" class="padding" href="My Past"><img length="250px" height="250px" src="http://news.jrn.msu.edu/entlife/files/2015/12/spn-cas-let-me-tell-you-my-story.gif"></a>
+      <a class="header" class="padding" href="My future"><img length="250px" height="250px" src="https://s-media-cache-ak0.pinimg.com/originals/02/65/c1/0265c1f08a3bb8f8f8198ef15c87cfef.gif"></a>
+    </nav>
+  </body>
+</html>
