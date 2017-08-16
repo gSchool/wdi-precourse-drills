@@ -1,0 +1,36 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+img {
+  width: 32px;
+  height: 44px;
+}
+
+h2 {
+  color: #B7950B;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+table tr:nth-child(even) {
+  background-color: #dad4d4;
+}
+
+table tr:nth-child(odd) {
+  background-color: #efecec;
+}
+
+
+td {
+  padding: 0px 10px 0px 0px;
+}
+
+.tableFooter {
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tStyle {
+  padding: 10px;
+  border-width: 0px;
+}
