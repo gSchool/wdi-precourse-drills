@@ -1,0 +1,22 @@
+* {
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+}
+.header{
+  background-image: url(http://static.tvtropes.org/pmwiki/pub/images/burt_reynolds.jpg);
+  background-color: red;
+}
+h1 {
+  background-image:url("theonlypictureever.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: lightblue;
+  text-align: center;
+  padding: 250px;
+}
+p {
+  font-size: large;
+  background-image:url(https://cdn.pixabay.com/photo/2015/10/14/12/52/plaid-987605_960_720.jpg);
+  padding:20px;
+}
