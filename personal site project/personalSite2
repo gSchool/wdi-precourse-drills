@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css2">
+    <meta charset="utf-8">
+    <title>The Future</title>
+  </head>
+  <body>
+    <h1>Where I'm heading</h1>
+        <p>I've spent the past decade of my life working in the service industry, as a cook, dishwasher, server, restaurant manager and, most recently, as a kitchen manager.  <br> I'm incredibly excited to begin the next chapter of my life and Galvanize is the first step. </p>
+    <img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-images/gSchool/fs-precourse/learn/images/bmo.gif" width="100" length="100" alt="dancing robot thing">
+  </body>
+</html>

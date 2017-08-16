@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href=CSS>
+    <meta charset="utf-8">
+    <title>My Super Exciting Totally Thrilling Utterly and Awe-Inspiringly Beautiful Personal Web Site of Excellence</title>
+  </head>
+  <body>
+      <h1>A Bit About Me</h1>
+    <h2>Hi everyone!</h2>
+      <p>My name is David Robbins.  I go by Jake-- its my middle name-- and I've used it off and on since I a youngin' <br> My father's name is also David, so I was constantly confused as a child. <br>I've been living in Colorado for about fourteen years.  I've also lived in Canada, Argentina and glamorous Spokane, Washington.</p>
+
+<div class="hobbiesUl">
+      <h3>Some of my interests include...</h3>
+      <ul>
+        <li>Climbing</li>
+        <li>Camping</li>
+        <li>Motorcyling</li>
+      </ul>
+</div>
+<div class="hobbiesOl">
+        <h3>I also enjoy (in order of competence)...</h3>
+    <table>
+    <tr>
+      <td><img src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_960_720.jpg" width="100" length="100" ></td>
+      <td>Reading </td>
+    </tr>
+    <tr>
+    <td><img src="https://cdn.pixabay.com/photo/2016/01/09/18/28/old-1130743_960_720.jpg" width="100" length="100" alt=""></td>  <td>Writing</td>
+    </tr>
+    <tr>
+      <td><img src="https://cdn.pixabay.com/photo/2016/03/27/19/57/black-and-white-1284026_960_720.jpg" width="100" length="100"></td>
+      <td>Guitar</td>
+    </tr>
+    </table>
+</div>
+
+<div class="more">
+  <button><a href="personalSite2", target="blank"><h2>This was about the extent of web design accumen two months ago...<h2></a></button
+
+</div>
+  </body>
+</html>

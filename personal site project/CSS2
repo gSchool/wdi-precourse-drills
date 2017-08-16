@@ -1,0 +1,12 @@
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2014/07/28/20/39/landscape-404072_960_720.jpg);
+  background-position: top;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  background-color: black;
+  color: gray;
+  padding-top: 30px;
+  margin-top: 0px;
+}
