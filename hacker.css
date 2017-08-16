@@ -1,0 +1,24 @@
+/* Page Attributes */
+
+body {
+     background-color: #020202;
+}
+
+section {
+  float: left;
+  margin: 0 1.5%;
+}
+
+aside {
+  float: right;
+  margin: 0 1.5%;
+}
+
+/* Element Styling */
+
+h1, h2 { color:#ff0000;
+}
+
+p, ul, li { color: #ffffff;}
+
+h1, h2, p, ul, li {font-family: Arial,sans-serif;}
