@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>About Me</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="assets/stylesheets/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+  
+</head>
+
+<body>
+  <!-- About Me -->
+  <div class="aboutMe">
+  <header>
+    <div class="topnav" id="myTopnav">
+      <nav>
+       <a href="index.html">Home</a>
+       <a href="page2.html">About Me</a>
+      </nav>
+    </div>
+  </header>  
+  
+  <div class="tabs">
+	<nav class="tab-list">
+		<a class="tab active" href="#two">Current State</a>
+		<a class="tab" href="#three">Excitement Level</a>
+	</nav>
+
+	<div id="two" class="tab-content show">
+	  <img src="assets/stylesheets/images/jonsnow1.png" style="width:360px;height:215px;">
+	</div>
+
+	<div id="three" class="tab-content">
+	  <img src="assets/stylesheets/images/excited.gif" style="width:360px;height:215px;">
+	</div>
+  </div>
+  </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript">
+</script>
+
+<script>
+$(".tab-list").on("click", ".tab", function(e) {
+	e.preventDefault();
+
+	$(".tab").removeClass("active");
+	$(".tab-content").removeClass("show");
+	$(this).addClass("active");
+	$($(this).attr("href")).addClass("show");
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+body {
+  line-height: 1.75;
+  text-align: center;
+  background: url("images/texture2.png")
+}
+
+.homepage {
+
+}
+
+.aboutMe {
+
+}
+
+.home {
+  font-family: 'PT Sans', sans-serif;
+  margin: 30px auto;
+  padding: 25px 25px;
+  color: #1E0278;
+  font-size: 16.5pt;
+  font-weight: normal;
+  border-style: solid;
+  border-width: medium;
+  border-radius: 5px;
+  width: 640px;
+}
+
+.topnav {
+  font-family: 'Droid Sans', sans-serif;
+  background-color: rgba(255, 255, 255, .25);
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+.topnav a {
+  text-align: center;  
+  padding: 0 30px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #1E0278;
+}
+
+#here {
+  color: #1E0278;
+  text-decoration: underline;
+}
+
+a:link {
+ text-decoration: none;
+ color: #1E0278;
+}
+
+a:visited {
+ text-decoration: none;
+ color: rgba(0, 50, 0, 0.25);
+}
+
+a:hover {
+ color: white;
+ text-decoration: none;
+}
+
+a:active {
+ text-decoration: none;
+}
+
+.tabs {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.tab-list {
+  padding-bottom: 1rem;
+}
+
+.tab {
+  border: 1px solid transparent;
+  border-radius: 40px;
+  display: inline-block;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  color: rgba(255, 255, 255, .6);
+  font-weight: 700;
+  background: rgba(10, 20, 30, .2);
+}
+
+.tab.active {
+  color: white;
+  background: url("images/texture3.png");
+  border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.tab-content {
+  display: none;
+  padding: 1.5rem;
+  color: #4a5666;
+}
+
+.show {
+  display: block;
+}
