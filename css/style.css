@@ -1,0 +1,38 @@
+.oddRow {
+  background-color: lightgreen;
+}
+
+.evenRow {
+  background-color: lightblue;
+}
+
+/* set up clearfix  */
+.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  clear:both;
+  *zoom:1;
+}
+.title {
+  text-align: center;
+  height: 40px;
+  background-color: pink;
+}
+
+/* set up columns */
+.left-column {
+  float: left;
+  margin: 0 5px 5px 30px;
+  width: 45%;
+}
+.right-column {
+  float: right;
+  margin: 0 5px;
+  width: 42%;
+}
