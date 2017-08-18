@@ -1,0 +1,22 @@
+img {
+  height: 44px;
+}
+
+
+tr:nth-child(even) {
+  background: #eff2f7;
+}
+
+tr:nth-child(odd) {
+  background: #f7f3ef;
+}
+
+section {
+  float: left;
+  width: 60%;
+}
+
+aside {
+  float: left;
+  width: 40%;
+}
