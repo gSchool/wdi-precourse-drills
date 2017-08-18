@@ -1,0 +1,265 @@
+body {
+  margin: 0px;
+}
+
+input:focus {
+  box-shadow: none;
+}
+
+/*PADDING & MARGINS*/
+.margin-bottom {
+  margin-bottom: 100px;
+}
+
+.margin-top {
+  margin-top: 100px;
+}
+
+.md-mrg-top {
+  margin: 50px;
+}
+
+.md-mrg-bottom {
+  margin-bottom: 50px;
+}
+
+/*TEXT STYLES*/
+a {
+	text-decoration: none;
+  color: #5FBD5A;
+  transition: .4s color;
+}
+
+a:hover {
+  color: #9ee69a;
+}
+
+a:focus {
+  color: #5abd95;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #104373;
+  font-size: 3em;
+  margin: 20px 0px;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  color: #104373;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a.button {
+  text-transform: uppercase;
+  padding: 15px 50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  border: none;
+  background-color: #FF7218;
+  color: #fff;
+  transition: .5s background-color;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
+}
+
+a.button:hover {
+  background-color: #FD8940;
+}
+
+a.button:active {
+  background-color: #EB650F;
+}
+
+
+/*.soManyColors {
+  animation: so-many-colors 3s;
+}
+
+@keyframes so-many-colors {
+  0% {
+    background-color: #FF7218;
+  }
+  25% {
+    background-color: #C2DB62;
+  }
+  50% {
+    background-color: #5FBD5A;
+  }
+  75% {
+    background-color: #5ABDB5;
+  }
+  100% {
+    background-color: #21205F;
+  }
+
+}*/
+
+
+
+/*NAVIGATION*/
+ul.menu {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  padding-left: 0px;
+	height: 50px;
+}
+
+.navigation {
+  background-color: #0A0707;
+}
+
+.navigation li {
+	list-style: none;
+	padding: 11px 35px;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.navigation li a {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1em;
+  color: #5FBD5A;
+  transition: .4s color, .4s border;
+  border-bottom: 3px solid rgba(158, 230, 154, 0);
+}
+
+li#home {
+	margin-right: auto;
+}
+
+li#home a {
+  color: #C2DB62;
+}
+
+/*mobile menu*/
+.mobile-menu li {
+  padding: 16px 0px;
+  transition: .5s background-color;
+}
+
+.mobile-menu li:active {
+  background-color: #1b1b1b;
+}
+
+.mobile-menu {
+  padding-left: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.menu-burger {
+  width: 24px;
+  margin-top: 4px;
+}
+
+.menu-burger span {
+	background-color: #ffffff;
+	padding: 1px 12px;
+	margin-bottom: 6px;
+	display: list-item;
+}
+
+/*Turn menu burger into a close 'X'*/
+.line-1 {
+	transition: transform .5s;
+	transform-origin: 100% 0%;
+}
+
+.active-1 {
+	transform: rotate(-45deg);
+}
+
+
+.line-2 {
+	transition: opacity .5s;
+}
+
+.active-2 {
+	opacity: 0;
+}
+
+.line-3 {
+	transition: transform .5s;
+	transform-origin: 100% 100%;
+}
+
+.active-3 {
+	transform: rotate(45deg);
+}
+
+/*SECTIONS*/
+img {
+  display: flex;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+section {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.splash {
+  background: url("images/rj-orienteering-iceland.jpg") no-repeat center;
+  background-size: cover;
+  height: 400px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
+
+#hi {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+h1#hi {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+
+/*MEDIA QUERIES*/
+@media(max-width: 860px) {
+  /*hide desktop menu*/
+  .menu > li:not(:first-child):not(:last-child) {
+    display: none;
+  }
+}
+
+@media(min-width: 860px) {
+  .menu-burger {
+    display: none;
+  }
+
+  /*apply hover styles to desktop only*/
+  .navigation li a:hover {
+    color: #9ee69a;
+    border-bottom: 3px solid rgba(158, 230, 154, 1);
+  }
+
+  .navigation li a:active {
+    color: #5abd95;
+    border-bottom: 3px solid #5abd95;
+  }
+}
