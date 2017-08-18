@@ -1,0 +1,141 @@
+body {
+  background: linear-gradient(to left top, rgb(33, 33, 33), rgb(225, 227, 225)) fixed;
+  /*The following two lines of code are to set up a fade-in effect for the pages.*/
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+body.fade-out { /*This section also is part of the page fade-in effect.*/
+  opacity: 0;
+  transition: 1s opacity;
+}
+
+body, button {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2vw;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+small {
+  font-size: 0.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+strong {
+  font-weight: 1000;
+  font-size: 1.2em;
+}
+
+h1, h2, h3, h4, button {
+  text-shadow: /*simulates an outline around text*/
+  -1px -1px 0 rgb(255, 255, 255),
+  1px -1px 0 rgb(255, 255, 255),
+  -1px 1px 0 rgb(255, 255, 255),
+  1px 1px 0 rgb(255, 255, 255);
+}
+
+a {
+  color: rgb(182, 119, 0);
+}
+
+#title1, #title2, #arrow {
+  position: relative;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+#title1 {
+  align-items: flex-end;
+}
+
+#title2, #arrow {
+  align-items: flex-start;
+}
+
+#sideface {
+  position: fixed;
+  right: 0;
+  max-width: 50%;
+  z-index: -1;
+}
+
+#sideface img {
+  position: fixed;
+  right: 0;
+  overflow: hidden;
+  /*height will be set by jQuery based on the current window height*/
+}
+
+#main {
+  position: relative;
+  max-width: 60%;
+  z-index: 0;
+}
+
+.textbox {
+  border: 2px solid white;
+  background-color: rgba(255, 214, 191, .7);
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.textbox img {
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 90%;
+  border: 2px solid white;
+}
+
+.textbox div {
+  width: 45%;
+  display:inline-block;
+  vertical-align: top;
+}
+
+.littlelist {
+  font-size: .8em;
+}
+
+button {
+  background-color: rgba(106, 106, 106, .7);
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+  background-color: rgba(50, 50, 50, .7);
+}

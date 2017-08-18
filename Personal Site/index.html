@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A Wee Bit About Me</title>
+    <!-- The following adds a font from Google's CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--jQuery linked from Google's content delivery network -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Following line hides the page immediately on load to set up for fade effect. -->
+    <script>document.body.className += ' fade-out';</script>
+    <div id="sideface">
+      <img src="images\Me_pen_strokes.png">
+      <!-- Following image is dissolved in by jQuery on scrolling the page -->
+      <img id="grayed" src="images/Me_stylized_gray.png" style="display:none">
+    </div>
+    <div id="title1">
+      <h3>A Wee Bit About:</h3>
+    </div>
+    <div id="title2">
+      <h1>Kevin Springer</h1>
+    </div>
+    <div id="arrow">
+      <a href="#main"><img src="images/down_arrow.png"></a>
+    </div>
+    <div id="main">
+      <div class="textbox">
+        <p>Hi there! My name is Kevin, and I grew up in San Jose, California.</p>
+      </div>
+      <p></p>
+      <div class="textbox">
+        <p>This is my son, Kian:<br>
+          <img src="images/kian.jpg"><br>
+          He's two, and has just acquired a new favorite phrase:<br>
+          <strong><em>"Uh oh."</em></strong></p>
+      </div>
+      <p></p>
+      <div class="textbox">
+        <p>In my spare time, I love:</p>
+        <div>
+          <ul class="littlelist">
+            <li>Tinkering with Tech</li>
+            <li>Photography</li>
+            <li>Binging <em>Silicon Valley</em> &amp; <em>Game of Thrones</em></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="littlelist">
+            <li>Biking</li>
+            <li>Rollerblading</li>
+            <li>Shh...<small>Video Games</small></li>
+            <li>Home Improvement</li>
+          </ul>
+        </div>
+      </div>
+      <p></p>
+      <div class="textbox">
+        <p>Add one helping of <em><a href="future.html">Galvanize</a></em>!</p>
+      </div>
+      <p id="end"></p>
+    </div>
+  </body>
+</html>

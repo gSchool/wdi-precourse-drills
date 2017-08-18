@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A Wee Bit About Me... Tomorrow</title>
+    <!-- The following adds a font from Google's CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--jQuery linked from Google's content delivery network -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- Following line hides the page immediately on load to set up for fade effect. -->
+    <script>document.body.className += ' fade-out';</script>
+    <div id="sideface">
+      <img src="images/Me_stylized_gray.png">
+      <!-- Following image is dissolved in by jQuery on scrolling the page -->
+      <img id="grayed" src="images/Me_stylized.png" style="display:none">
+    </div>
+    <div id="title1">
+      <h3>galvanize += nextAdventure!;</h3>
+    </div>
+    <div id="main">
+      <div class="textbox">
+        <p><strong>Undergrad = USC Film School</strong><br>
+          I loved special effects and it's combination of film and computers!<br>
+          ref = <a href="http://www.rhythm.com" target="_blank">Rhythm &amp; Hues Studios</a></p>
+      </div>
+      <p></p>
+      <div class="textbox">
+        <p>After graduation, I took some CS classes at SJSU, but then left to follow my career.</p>
+      </div>
+      <p></p>
+      <div class="textbox">
+        <p><strong>NBC Bay Area = 18yrs Directing &amp; Supervising Production</strong></p>
+      </div>
+      <p></p>
+      <div class="textbox">
+        <p><strong>MBA at Santa Clara university</strong><br>
+          I took evening classes while working.</p>
+      </div>
+      <p></p>
+      <div class="textbox">
+        <p><strong>Moved to Seattle December 2016!</strong></p>
+      </div>
+      <p></p>
+      <div class="textbox">
+        <p><strong>Ready for a new direction: Galvanize!</strong><br>
+          I miss coding and am excited to reinvent myself and learn new things!</p>
+      </div>
+      <p></p>
+      <div class="textbox">
+        <h4>And just maybe, bring together all my skills and experiences into something creative and awesome!</h4>
+        <h3>Sooo...</h3>
+        <p><button>I'm Feeling Lucky</button></p>
+        <!--- The following element is hidden until the button is pressed. -->
+        <p id="gif" style="display:none">
+          <!-- <iframe src="https://giphy.com/embed/l2JdTAyoFqDY6nEis" width="480" height="366" frameborder="0" class="giphy-embed" allowfullscreen></iframe><br> -->
+          <iframe id="giphy" src="https://giphy.com/embed/l2JdTAyoFqDY6nEis" frameborder="0" class="giphy-embed" allowfullscreen></iframe><br>
+          <small>(Because, yeah, there'll be some bugaboos along the way.)</small>
+        </p>
+      </div>
+      <p></p>
+    </div>
+    <div id="arrow">
+        <a href="index.html#end"><img src="images/left_arrow.png"></a>
+    </div>
+  </body>
+</html>
