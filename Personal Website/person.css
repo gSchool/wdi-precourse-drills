@@ -1,0 +1,103 @@
+
+
+div {
+  margin: 16px;
+}
+
+* {
+  text-align: center;
+  font-family: Montserrat;
+}
+
+h2, h4 {
+  color: white;
+}
+
+h3 {
+  padding: 0 15px 15px 15px;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+.jumbotron {
+  background: #2980b9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #e0e2e5;
+}
+
+.blur{
+	-webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+	opacity: 0.8;
+}
+
+.name {
+  display: none;
+}
+
+#sj {
+  background-image: url("images/sanjose.jpg");
+  background-size: cover;
+  height: 160px;
+  width: 280px;
+}
+
+#pdx {
+  background-image: url("images/pdx.jpg");
+  background-size: cover;
+  height: 160px;
+  width: 280px;
+}
+
+#chi {
+  background-image: url("images/chi.jpg");
+  background-size: cover;
+  height: 160px;
+  width: 280px;
+}
+
+#jerz {
+  background-image: url("images/jersey.jpg");
+  background-size: cover;
+  height: 160px;
+  width: 280px;
+}
+
+#philly {
+  background-image: url("images/philly.jpg");
+  background-size: cover;
+  height: 160px;
+  width: 280px;
+}
+
+#midland {
+  background-image: url("images/midland.jpg");
+  background-size: cover;
+  height: 160px;
+  width: 280px;
+}
+
+#fut {
+  background: #2980b9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+#back {
+  background: url("https://lh3.googleusercontent.com/-LG-a3FTTAuQ/VyoycbI4QsI/AAAAAAAAPso/J7Dt_vsT5HsExFedRvepaOGY-PmJHoKMg/w530-h278-p-rw/warpspeed-maythefourth.gif");
+  background-size: cover;
+}
+
+#awesome {
+    display: block;
+    margin: 0 auto;
+}
