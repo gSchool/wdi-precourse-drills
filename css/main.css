@@ -1,0 +1,48 @@
+img {
+	height: 44px;
+	width: 32px;
+	vertical-align: middle;
+	margin: 2px;
+}
+
+.list {
+	border-spacing: 0;
+}
+
+.list td {
+	padding-right: 5px;
+}
+
+.rowcolor:nth-of-type(odd) {
+	background-color: rgb(231, 234, 242);
+}
+
+.rowcolor:nth-of-type(even) {
+	background-color: rgb(208, 210, 249);
+}
+
+mainsection, sidebar {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 1.5%;
+}
+
+mainsection {
+	width: 450px;
+}
+
+sidebar {
+	position: fixed;
+	width: 210px;
+	font-size: small;
+}
+
+sidebar table {
+	border: 2px solid rgb(200, 200, 200);
+	background-color: rgb(245, 245, 245);
+}
+
+sidebar td {
+	padding-left: 15px;
+	padding-right: 15px;
+}
