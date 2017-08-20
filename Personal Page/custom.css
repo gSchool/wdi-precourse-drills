@@ -1,0 +1,109 @@
+html {
+  height: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  background: #10d7f2;
+  background: -webkit-linear-gradient(#e49aed, #10d7f2);
+  background: -o-linear-gradient(#e49aed, #10d7f2);
+  background: -moz-linear-gradient(#e49aed, #10d7f2);
+  background: linear-gradient(#e49aed, #10d7f2);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  height: 100%;
+  font-family: 'Arial',serif;
+}
+
+.nav {
+  background-color: #595959;
+  color: #ffffff;
+  list-style: none;
+  text-align: left;
+  padding: 40px 80px 40px 80px;
+}
+
+.nav > li {
+  display: inline-block;
+  padding-right: 100px;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav > li > a:hover {
+  color: #d63ae8
+}
+
+.name {
+  font-size: 40pt;
+  text-shadow: 5px 2px 4px grey;
+  text-align: center;
+}
+
+.headshot {
+  border: 2px solid;
+  float: right;
+  height: 60%;
+
+  margin: 120px;
+}
+
+.infoBlurb {
+  width: 45%;
+  height: 30%;
+  float: left;
+  margin: 80px;
+  text-indent: 40px;
+  font-size: 20px;
+}
+
+.infoBlurb2 {
+  margin: 30px;
+  font-size: 20px;
+  text-indent: 40px;
+}
+
+.gif {
+  margin-left: 37%
+}
+
+.gifExplain {
+  text-align: center;
+  font-size: 40pt;
+}
+
+.gif2 {
+  margin-left: 39%;
+}
+
+.list1 {
+  width: 290px;
+  border: 2px solid;
+  margin: 30px 15px;
+  padding: 0px 5px;
+  float: left;
+
+}
+.list2 {
+  width: 290px;
+  border: 2px solid;
+  margin: 30px 37%;
+  padding: 0px 5px;
+  float: none;
+
+}
+.list3 {
+  width: 290px;
+  border: 2px solid;
+  margin: 30px 15px;
+  padding: 0px 5px;
+  float: right;
+
+}
+
+.Hobbies {
+  width: 1200px;
+  margin: 0 auto;
+}
