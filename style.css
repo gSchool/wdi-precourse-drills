@@ -1,0 +1,23 @@
+section {
+  float: left;
+  width: 60%;
+  padding: 2%;
+}
+
+aside {
+  float: left;
+  width: 28%;
+  padding: 2%;
+}
+
+table {
+  width: 100%;
+}
+
+.movies tr:nth-child(odd) {
+  background-color: #dedede;
+}
+
+.movies tr:nth-child(even) {
+  background-color: #7e7e7e;
+}
