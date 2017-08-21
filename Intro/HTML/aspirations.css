@@ -1,0 +1,84 @@
+* {
+  /* Default in Normalize */
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #3e4543;
+  font-size: 50px;
+  margin: 0px;
+}
+
+h2, h3 {
+  margin: 0px;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 25;
+    padding: 0 1.5em 0 1.5em;
+  }
+
+/*nav {
+  font-size: 20px;
+  font-family: 'Walter Turncoat', cursive;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}*/
+
+header {
+  margin: 0px;
+  color: #3e4543;
+  font-family: 'Rock Salt', cursive;
+  font-size: 150%;
+}
+
+main {
+  background-color: #737f7b;
+  color: white;
+  font-family: 'Handlee', cursive;
+}
+
+footer {
+  margin: 0px;
+  height: 150px;
+  background-color: #9fc9ca;
+  color: white;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+#life {
+  width: 100%;
+}
+
+img {
+  width: 50%;
+  text-align: center;
+}
+
+p,
+h3 {
+  font-family: arial, sans-serif;
+}
+
+.wrapper {
+  width: 980px;
+  margin: auto;
+}
+
+.wrapper:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.column {
+  width: 300px;
+  color: #000;
+  float: left;
+  margin: 10px;
+}
+
+.column:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
