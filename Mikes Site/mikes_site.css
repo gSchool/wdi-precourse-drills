@@ -1,0 +1,83 @@
+main {
+  background-color: #32cd32;
+  width: 95%;
+  margin: auto;
+}
+
+
+.title-contain {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 55px;
+  padding-bottom: 15px;
+}
+#introduction {
+  color: #acacac;
+  margin-top: 55px;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+#life {
+  color: #acacac;
+
+}
+#sect1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  background-color: #c2c2c2;
+  margin: 15px auto;
+  width: 90%;
+  font-family: 'Raleway', sans-serif;
+}
+img {
+  padding: 2px;
+  background-color: yellow;
+  border: 3px solid #c2c2c2;
+  width: 200px;
+  height: 200px;
+
+}
+#images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif;
+  /*border: 3px solid black;*/
+}
+.dysfunc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 55px;
+}
+.home-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+  width: 25%;
+
+}
+.hobby-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+}
+#foot {
+  background-color: #c2c2c2;
+  padding: 25px;
+  margin: 15px auto;
+}
+
+#hometown {
+  color: black;
+}
+
+.email {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
