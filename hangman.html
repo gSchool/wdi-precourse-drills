@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+  </head>
+  <body>
+    <script>
+    var pickWord = function () {
+      var words = ["javascript", "monkey", "amazing", "pancake", "demon"];
+      var word = words[Math.floor(Math.random() * words.length)];
+      return word;
+    };
+
+    var setupAnswerArray = function (word) {
+      var answerArray = [];
+      for (var i = 0; i < word.length; i++) {
+        answerArray[i] = "_";
+      }
+
+      var remainingLetters = word.length;
+    };
+
+    var showPlayerProgress = function (answerArray) {
+      alert(answerArray.join(" "));
+    };
+
+    var getGuess = function () {
+      var guess = prompt("Guess a letter or click Cancel to stop playing");
+
+    };
+
+    var updateGameState = function (guess, word, answerArray) {
+      if (guess == null) {
+        break;
+      } else if (guess.length !== 1) {
+        alert("Please enter a single letter")
+      } else {
+        for (var j = 0; j < word.length; j++) {
+          if (word[j] === guess) {
+            answerArray[j] = guess;
+            remainingLetters--;
+          }
+        }
+      }
+      return guess;
+    };
+
+    var showAnswerAndCongragulatePlayer = function (answerArray) {
+      alert(answerArray.join(" "));
+      alert("Good job! The answer was " + word);
+    };
+    </script>
+  </body>
+</html>
