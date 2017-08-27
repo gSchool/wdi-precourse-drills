@@ -1,0 +1,10 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+}
+
+p {
+  margin: 10px;
+  padding: inherit;
+  text-align: center;
+}
