@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Hangman</title>
+
+</head>
+
+<body>
+
+  <h1>Rio's Hangman Game!</h1>
+
+  <script>
+		var words = ["kvothe",
+					 "auri",
+	    			 "denna",
+	    			 "elodin",
+	    			 "abenthy",
+					 "haliax",
+					 "selitos",
+					 "tempi"];
+	  
+	  var guess;
+	  var word = pickWord();
+	  var remainingLetters = word.length;
+	  var answerArray = setupAnswerArray();
+	//Limit guesses because this is hangman//
+	  var guesses = 14;
+	  
+
+	// Pick a random word//
+	function pickWord() {
+	    var word = words[Math.floor(Math.random() * words.length)];
+	    return word
+	}
+
+	
+
+	// Set up the answer array//
+	function setupAnswerArray() {
+	    var answerArray = [];
+	    for (var i = 0; i < word.length; i++) {
+	        answerArray[i] = "_";
+	    }
+			return answerArray;
+	}
+
+	// The game loop//
+	  
+	function updateGameState() {
+	    while (remainingLetters > 0 && guesses > 0) {
+	        // Show the player their progress//
+			
+	        alert(answerArray.join(" "));
+	    getGuess();
+		}
+	   showAnswerAndCongratulatePlayer(); 
+	}
+	  
+	updateGameState();
+	
+	// Get a guess from the player//
+	function getGuess() {
+	    var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+		if (guess === null){
+			guesses = 0;
+		}
+		
+	   else if (guess.length !== 1) {
+	        alert("Please enter a single letter.");
+	    } 
+		
+		else {
+	        guess = guess.toLowerCase();
+	        if (word.indexOf(guess) == -1) {guesses--;}
+			
+	        for (var j = 0; j < word.length; j++) {
+	            if (word[j] === guess && answerArray[j] === "_") {
+	                answerArray[j] = guess;
+	                remainingLetters--;
+	            }
+	        }
+	    }
+	}
+
+
+	// Show the answer and congratulate the player//
+	function showAnswerAndCongratulatePlayer() {
+	    (answerArray.join(" "));
+
+	    if (guesses > 0) {
+	        alert("Awesome! The answer was " + word);
+	    }
+
+	    if (guesses === 0) {
+	        alert("Wah-wah! The answer was " + word);
+	    }
+	}
+	 </script>
+
+
+</body>
+
+</html>
