@@ -1,0 +1,9 @@
+.titles ul, .names ul, .keywords ul, .companies ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+img {
+  height: 32px;
+  width: 44px;
+}
