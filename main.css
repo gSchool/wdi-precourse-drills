@@ -7,3 +7,38 @@ img {
   height: 32px;
   width: 44px;
 }
+
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+
+section {
+  margin: 40px 0px;
+}
+
+.col-left, .col-right {
+  float: left;
+  margin: 0px 20px;
+  width: 45%;
+}
+
+
+/*
+  ============================
+  Clearfix
+  ============================
+*/
+
+.col-holder:before,
+.col-holder:after {
+  content: "";
+  display: table;
+}
+
+.col-holder:after {
+  clear: both;
+}
+
+.col-holder {
+  clear: both;
+}
