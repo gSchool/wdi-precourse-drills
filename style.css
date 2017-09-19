@@ -1,0 +1,11 @@
+#even {
+  background-color: silver;
+}
+
+#odd {
+  background-color: grey;
+}
+
+section {
+  float: left;
+}
