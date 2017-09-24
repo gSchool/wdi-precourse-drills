@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+  <head>
+      <title>Results for "Hackers"</title>
+      </head>
+    <body>
+      <h1>Results for "Hackers"</h1>
+      <h2>Titles</h2>
+        <table>
+          <tr>
+            <td><img src="/Users/patrickbiffle/Documents/Galvanize/Pre-Course Work/EXERCISE 1_HTML/html-images/hackers.jpg"  width="32" height="44" alt="Hackers"></td>
+            <td> <a href="README.md" target="_blank">Hackers (1995)</a></td>
+          </tr>
+          <tr>
+            <td scope="row" rowspan="2"><img src="/Users/patrickbiffle/Documents/Galvanize/Pre-Course Work/EXERCISE 1_HTML/html-images/2000.jpg" width="32" height="44" alt="2000"></th>
+            <td> <a href="README.md" target="_blank">2000 AD (2000) </a></td>
+          </tr>
+          <tr>
+            <td><i>aka "Hackers"</i></td>
+          </tr>
+          <tr>
+            <td scope="row" rowspan="2"><img src="/Users/patrickbiffle/Documents/Galvanize/Pre-Course Work/EXERCISE 1_HTML/html-images/frontline.jpg" width="32" height="44" alt="Frontline"></th>
+            <td> <a href="README.md" target="_blank">Hackers (2001) (TV Episode) </a></td>
+          </tr>
+          <tr>
+            <td><small><a href="README.md" target="_blank">- Frontline (1983) (TV Series) </a></small></td>
+          </tr>
+          <tr>
+            <td scope="row" rowspan="2"><img src="/Users/patrickbiffle/Documents/Galvanize/Pre-Course Work/EXERCISE 1_HTML/html-images/hackersgame.jpg" width="32" height="44" alt="Hacker's Game"></th>
+            <td><a href="README.md" target="_blank">Hacker's Game (2015)</a></td>
+          </tr>
+          <tr>
+            <td><i>aka "The Hackers"<i></td>
+        </table>
+        <h2>Names</h2>
+          <table>
+            <tr>
+              <td><img src="/Users/patrickbiffle/Documents/Galvanize/Pre-Course Work/EXERCISE 1_HTML/html-images/amyacker.jpg" width="32" height="44" alt="Amy Acker"></td>
+              <td> <a href="http://www.imdb.com/name/nm0009918/?ref_=fn_al_nm_1">Amy Acker</a> (actress, Angel (1999))</td>
+            </tr>
+            <tr>
+              <td><img src="/Users/patrickbiffle/Documents/Galvanize/Pre-Course Work/EXERCISE 1_HTML/html-images/drewvan.jpg" width="32" height="44" alt="Drew Van Acker"></td>
+              <td> <a href="http://www.imdb.com/name/nm3216408/?ref_=nv_sr_1">Drew Van Acker</a> (Actor, Pretty LIttle Liars (2010))</td>
+            </tr>
+            <tr>
+              <td><img src="/Users/patrickbiffle/Documents/Galvanize/Pre-Course Work/EXERCISE 1_HTML/html-images/buddyhackett.jpg" width="32" height="44" alt="Buddy Hackett"></td>
+              <td> <a href="http://www.imdb.com/name/nm0004983/?ref_=nv_sr_1">Buddy Hackett</a> (Actor, The LIttle Mermaid (1989))</td>
+            </tr>
+            <tr>
+              <td><img src="/Users/patrickbiffle/Documents/Galvanize/Pre-Course Work/EXERCISE 1_HTML/html-images/emilywickersham.jpg" width="32" height="44" alt="Emily Wickersham"></td>
+              <td> <a href="http://www.imdb.com/name/nm2278978/?ref_=nv_sr_1">Emily Wickersham</a> (Actress, I Am Number Four(2011))</td>
+            </tr>
+          </table>
+        <h2>Keywords</h2>
+          <p>hacker (180 titles)</p>
+        <h2>Companies</h2>
+          <dl>
+            <dt>Douglas, Gorman, Rothacker &amp; Wilhelm</dt>
+            <dt>Crackerjack Management</dt>
+            <dt>Bleeker Street Media</dt>
+            <dt>Bleeker Street Entertainment</dt>
+          </dl>
+        <h2>Category Search</h2>
+          <ul>
+            <li>All</li>
+            <li>Name</li>
+            <li>Title</li>
+              <ul>
+                <li>Movie</li>
+                <li>TV</li>
+                <li>TV Episode</li>
+                <li>Video Game</li>
+              </ul>
+              <li>Character</li>
+              <li>Company</li>
+              <li>Keyword</li>
+              <li>Plot Summaries</li>
+              <li>Biographies</li>
+              <li>Quotes</li>
+          </ul>
+        <h2>Additional Search Options</h2>
+          <ul>
+            <li>Advanced Search</li>
+            <li>Advanced Title Search</li>
+            <li>Advanced Name Search</li>
+          </ul>
+    </body>
+  </HTML>
