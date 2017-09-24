@@ -3,6 +3,32 @@ img {
   width: 32px;
 }
 
-.frontline {
-  font-size: 10px;
+/*
+====================
+colorz
+====================
+*/
+
+.blue {
+  background-color:	#0000ff;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+/*
+====================
+Columns
+====================
+*/
+
+.col1 {
+  float: left;
+  width: 30%;
+}
+
+.col2 {
+  float: right;
+  width: 60%;
 }
