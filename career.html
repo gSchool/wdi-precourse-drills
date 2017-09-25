@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+<!-- Loading in fonts from Google. -->
+      <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+<!-- Loading the stylesheet I made for these pages. -->
+      <link rel="stylesheet" type="text/css" href="personal.css" />
+<!-- Loading in jQuery from Google. -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jQuery script for content. -->
+      <script>
+        $(document).ready( function() {
+          // Hiding the content so page loads with headers.
+          $(".detail").hide();
+          // Making content fade in or out when main heading title is clicked.
+          $("h1").click(function(){
+            $(".detail").fadeToggle(1000);
+          });
+        });
+      </script>
+<!-- Page title. -->
+      <title>Where I&rsquo;m Going</title>
+    </head>
+
+<!-- Main body of site -->
+    <body>
+
+<!-- Main heading of page and image. -->
+      <section class="title">
+        <h1>Where I&rsquo;m Going</h1>
+        <div class="detail">
+          <img class="animation" src="bio-images/cat-in-tie.gif" alt="Cat wearing a business tie." />
+        </div>
+      </section>
+
+<!-- Various content sections. Career, education, hopes, dreams. -->
+      <section class="career">
+        <h2>Career Goals</h2>
+        <p class="detail">I want to have a career as a web developer for a major firm,
+        working up to a senior development position.</p>
+      </section>
+
+      <section class="education">
+        <h2>Education Goals</h2>
+        <p class="detail">My immediate education goal is to graduation from the Web Development
+        program at Galvanize. Over the long term, I would like to complete my Bachelor&rsquo;s degree in
+        philosophy at the University of Texas.</p>
+      </section>
+
+      <section class="hopes">
+        <h2>Hopes</h2>
+        <p class="detail">I hope to have steady gainful employment that is challenging but provides
+        enough time to also pursue art.</p>
+      </section>
+
+      <section class="dreams">
+        <h2>Dreams</h2>
+        <ul class="detail">
+          <li>The one where I am at a house looking for a ring.</li>
+          <li>The one where every time I step off stage I am entering another stage.</li>
+          <li>The one where I am cooking a recipie but adding physical pages from the recipie to the dish.</li>
+          <li>The one where I think I'm in a Friends episode because I fell asleep while Friends was on.</li>
+        </ul>
+      </section>
+
+      <section id="outgoing">
+        <h3><a href="bio.html">But who am I?</a></h3>
+      </section>
+    </body>
+
+  </html>

@@ -1,0 +1,71 @@
+html {
+  font-size : 16px;
+}
+
+body {
+  font-family : 'Titillium Web', sans-serif;
+  background-color : grey;
+}
+
+a:link, a:visited {
+  color : silver;
+  text-decoration : none;
+  font-family : 'Baumans', cursive;
+  font-size : 2rem;
+  border : 1px solid black;
+  margin : 4px 4px 4px 4px;
+  display : inline-block;
+  float: right;
+}
+
+a:hover, a:active {
+  background-color : white;
+}
+
+h1 {
+  font-family : 'Baumans', cursive;
+  font-size : 3rem;
+  text-align : center;
+}
+
+h1:hover {
+  color : white;
+}
+
+h2 {
+  font-family : 'Baumans', cursive;
+  font-size : 2rem;
+  text-align: right;
+}
+
+section {
+  width: 45%;
+  background-color : silver;
+  padding : 0px 10px 0px 10px;
+  margin: 5px 5px 5px 5px;
+  float : left;
+  border-right : 5px solid white;
+}
+
+section.title {
+  width : 100% ;
+  background-color : grey;
+  border : none ;
+}
+
+#outgoing {
+  background-color : grey;
+  border : none ;
+}
+
+img.selfie {
+  width : 50%;
+  display : block;
+  margin : auto;
+}
+
+img.animation {
+  width : 75%;
+  display : block;
+  margin : auto;
+}

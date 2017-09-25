@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+<!-- Loading in fonts from Google. -->
+      <link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+<!-- Loading the stylesheet I made for these pages. -->
+      <link rel="stylesheet" type="text/css" href="personal.css" />
+<!-- Loading in jQuery from Google. -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- jQuery script for content. -->
+      <script>
+        $(document).ready( function() {
+          // Hiding the content so page loads with headers.
+          $(".detail").hide();
+          // Making content fade in or out when main heading title is clicked.
+          $("h1").click(function(){
+            $(".detail").fadeToggle(1000);
+          });
+        });
+      </script>
+<!-- Page title. -->
+      <title>Who I Am</title>
+    </head>
+
+<!-- Main body of site -->
+    <body>
+<!-- Main heading of page and image. -->
+      <section class="title">
+        <h1>Who I Am</h1>
+        <div class="detail">
+          <img class="selfie" src="bio-images/lance.jpg" alt="Picture of Lance Hunter" />
+        </div>
+      </section>
+
+<!-- Various content sections. Bio, work experience, hobbies. -->
+      <section class="biography">
+        <h2>Basic Biography</h2>
+        <p class="detail">My name is Robert Lance Hunter. I was born in North Richland Hills, Texas in April of 1980.
+        I graduated Richland High School in 1998 and moved to Austin to attend the University of Texas.
+        I have lived in Austin ever since.</p>
+      </section>
+
+      <section class="chunks">
+        <h2>Work History</h2>
+        <p class="detail">I spent the last 11 years working as a Technical Support Advisor for Apple. Before
+        that I had worked at UPS, Pete&rsquo;s Dueling Piano Bar, and the Univerity of Texas Department
+        of Chemistry&rsquo;s Information Technology Department.</p>
+      </section>
+
+      <section >
+        <h2>Hobbies</h2>
+        <ul class="detail">
+          <li>Improvised Theater</li>
+          <li>Installation Art</li>
+          <li>Sketch Comedy</li>
+          <li>Set Construction</li>
+          <li>Weightlifting</li>
+        </ul>
+      </section>
+
+<!-- Link to other page. -->
+
+      <section id="outgoing">
+        <h3><a href="career.html">But where am I going?</a></h3>
+      </section>
+
+
+    </body>
+
+  </html>
