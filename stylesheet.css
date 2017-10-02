@@ -1,0 +1,12 @@
+.moviecolor{
+  background-color: #525252;
+}
+.column1,
+.column2{
+  display: inline-block;
+  width:50%;
+  vertical-align: top;
+}
+h1{
+  text-align: center;
+}
