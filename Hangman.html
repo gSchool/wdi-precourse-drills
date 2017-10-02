@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+function pickWord()
+{
+  var randWord = ['Apple', 'Paper', 'Carpet', 'copper','explain' ,'tenuous' ,'decisive' ,'notice' ,'educated' ,'branch'];
+  var randWordFinal = randWord[Math.floor(Math.random()*randWord.length)];
+  var chars = randWordFinal.split('');
+  console.log(chars)
+  return chars
+}
+
+
+function setupAnswerArray(word)
+{
+  var answer = []
+  for (i=0;i<word.length; i++)
+    answer.push("_")
+  return answer
+}
+
+
+function getGuess()
+{
+  guess = prompt("Please enter your guess");
+  return guess
+}
+
+
+function updateGameState(guess, word, answerArray)
+{
+  numCharChange = 0
+  for(i=0; i<word.length; i++)
+  {
+    if (guess == word[i])
+    {
+      numCharChange++
+      answerArray[i] = guess
+    }
+  }
+  return numCharChange
+}
+
+
+function showPlayerProgress()
+{
+  alert(answerArray)
+}
+
+function showAnswerAndCongratulatePlayer(answerArray)
+{
+  alert("You Win! Answer: " + answerArray)
+}
+
+var word = pickWord();
+var answerArray = setupAnswerArray(word);
+var remainingLetters = word.length;
+while (remainingLetters > 0) {
+ showPlayerProgress(answerArray);
+ var guess = getGuess();
+ if (guess === null) {
+ break;
+ } else if (guess.length !== 1) {
+ alert("Please enter a single letter.");
+ } else {
+ var correctGuesses = updateGameState(guess, word, answerArray);
+ remainingLetters -= correctGuesses;
+ }
+}
+showAnswerAndCongratulatePlayer(answerArray);
+</script>
+</head>
+
