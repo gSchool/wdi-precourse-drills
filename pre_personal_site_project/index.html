@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Ben Casalino | Galvanize</title>
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <!-- external css -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- jq link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="head-main">
+        <h1>༼ つ ◕_◕ ༽つ </h1>
+        <h2>Hello World! </h2>
+        <p> My name is Ben Casalino. I grew up Phoenix Arizona and have been in Denver alomst a year now. Before moving to Denver
+            I've spent the last 5 years in Portland working in graphic design and slowly building up my interest in web dev and gaining skills!
+            <br>
+            <br> When I'm not coding, I run a fantasy basbetball league and play soccer all around the city. I am  Also
+            really into electronic music production specifically with Abelton and am always trying to make anything when I have the
+            time!
+            <br>
+            <br>
+            <br>
+            <a href="about.html" class="test button"> PAGE TWO / MORE ABOUT ME </a>
+
+        </p>
+        <br>
+        <nav>
+
+            <a href="#gif1" class="button"> COOL GIF #1 </a>
+            <a href="#gif2" class="button"> COOL GIF #2 </a>
+            <a href="#gif3" class="button"> COOL GIF #3 </a>
+            <a href="#gif4" class="button"> COOL GIF #4 </a>
+
+        </nav>
+        <br>
+    </div>
+
+    <div id="main" class="hide">
+        <div id="gif1">
+            <img alt="alt" src="images/messi.gif">
+
+        </div>
+
+        <div id="gif2">
+            <img alt="alt" src="images/office.gif">
+        </div>
+
+        <div id="gif3">
+            <img alt="alt" src="images/bron.gif">
+        </div>
+        <div id="gif4">
+            <img alt="alt" src="images/jerry.gif">
+        </div>
+
+        <!-- main -->
+
+    </div>
+    <!-- jq show hide tabs function -->
+    <script>
+        $('body').on('click', 'nav a', function (e) {
+            $('#main').removeClass('hide');
+            $('#main').children().addClass('hide');
+            $($(this).attr('href')).removeClass('hide');
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

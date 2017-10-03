@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Ben Casalino - Hangman JS Game</title>
+</head>
+
+<body>
+    <h1> ENTER A LETTER IN THE PROMPT TO BEGIN:</h1>
+    <br>
+
+    <button><a href="javascript:history.go(0)"> RESET GAME</a></button>
+
+    <script>
+        // Array / Word bank
+        function pickWord() {
+            // array of possible words that can be answers 
+            var randomWords = ["westbrook", "durant", "curry", "bird", "jordan", "james", "nash", "barkley"];
+            // returns a random word contained within the array 
+            return randomWords[Math.floor(Math.random() * randomWords.length)];
+        };
+
+        // this function returns a random word from the above array and replaces its word length with " _ " in a new array called blankArray
+        function setupAnswerArray(word) {
+            var blankArray = [];
+            for (var i = 0; i < word.length; i++) {
+                blankArray[i] = "_";
+            }
+            return blankArray;
+        };
+
+        function showPlayerProgress(answerArray) {
+
+            alert(answerArray.join(" "));
+        };
+
+        // displays the prompt text and converts the entered guess to lowercase 
+        function getGuess() {
+            return prompt("Enter a single letter below as a guess.").toLowerCase();
+        };
+
+        function updateGameState(guess, word, answerArray) {
+            //Update answerArray and return a number showing how many
+            //times the guess appears in the word so remainingLetters
+            //can be updated
+            var lettersGuessed = 0
+            for (var j = 0; j < word.length; j++) {
+                if (guess === word[j] && answerArray[j] === "_") {
+                    answerArray[j] = guess;
+                    lettersGuessed++;
+                }
+            }
+            if (lettersGuessed === 0) {
+                remainingGuesses--;
+            }
+
+            return lettersGuessed;
+        };
+
+        function showAnswerAndCongratulatePlayer(answerArray) {
+            //Use alert to show the answer and congratulate the player
+            alert(answerArray.join(" "));
+            alert("You win! The answer is... " + word);
+        };
+
+        function outOfGuesses() {
+            //Use alert to inform player they're out of guesses // reaches 0 
+            alert(answerArray.join(" "));
+            alert("Sorry, you're out of guesses!");
+        }
+
+        //variables
+        var word = pickWord();
+        var answerArray = setupAnswerArray(word);
+        var remainingLetters = word.length;
+        // amount of total guesses / works only for incorrect guesses in order to decrease 
+        var remainingGuesses = 10;
+
+
+        //game loop that checks if the players first has any guesses remaining and if letters remaning 
+        // which leads to an out of guesses prompt or a winner prompt
+        while (remainingLetters > 0 && remainingGuesses > 0) {
+            showPlayerProgress(answerArray);
+            var guess = getGuess();
+            if (guess === null) {
+                break;
+            } else if (guess.length !== 1) {
+                alert("Please enter a single letter to guess.");
+            } else {
+                var correctGuesses = updateGameState(guess, word, answerArray);
+                remainingLetters -= correctGuesses;
+            }
+        }
+        if (remainingGuesses < 1) {
+            outOfGuesses();
+        } else {
+            showAnswerAndCongratulatePlayer(answerArray);
+        }
+    </script>
+</body>
+
+</html>
