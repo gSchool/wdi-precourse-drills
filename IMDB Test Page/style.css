@@ -1,0 +1,15 @@
+tr.film:nth-of-type(odd) {
+  background-color: cadetblue;
+}
+
+tr.film:nth-of-type(even) {
+  background-color: aqua;
+}
+
+section.body {
+  float: left;
+}
+
+section.footer {
+  float: left;
+}
