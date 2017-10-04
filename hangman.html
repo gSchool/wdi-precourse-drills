@@ -1,0 +1,89 @@
+<!-- Jason Benford -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman</title>
+  <meta charset="utf-8" content="text">
+</head>
+<body>
+  <script type="text/javascript">
+    var pickWord = function() {
+      var words = [
+        "javascript",
+        "galvanize",
+        "angular",
+        "express",
+        "node",
+        "asynchronous"
+      ];
+      return words[Math.floor(Math.random() * words.length)];
+    };
+
+    var setupAnswerArray = function(word) {
+      return word.split('').fill('_');
+    };
+
+    var showPlayerProgress = function(answerArray) {
+      alert(answerArray.join(" "));
+    }
+
+    var getGuess = function(answerArray) {
+      return prompt("Hangman!\n\n"  + "Guess a letter:\n\n" + answerArray.join(' '));
+    };
+
+    var updateGameState = function(guess, word, answerArray) {
+      var correctGuesses = 0;
+
+      while (word.indexOf(guess) >= 0) {
+        answerArray[word.indexOf(guess)] = guess;
+        word = word.replace(guess, '-');
+        correctGuesses++;
+      }
+      alert(correctGuesses.toString() + " correct letters!");
+
+      return correctGuesses;
+    };
+
+    var showAnswerAndCongratulatePlayer = function(answerArray) {
+      return confirm("Congratulations!  The answer is " + answerArray.join('') + ".  Do you want to play again?");
+    };
+
+    var playing = true;
+    var word = '';
+    var guess = '';
+    var remainingLetters = 0;
+    var answerArray = [];
+
+    while (playing) {
+      word = pickWord();
+      answerArray = setupAnswerArray(word);
+      remainingLetters = word.length;
+      guess = '';
+      while (remainingLetters > 0) {
+        //showPlayerProgress(answerArray);
+        guess = getGuess(answerArray);
+        while (answerArray.includes(guess)) {
+          guess = getGuess(answerArray);
+        }
+        if (guess === null) {
+          break;
+        } else if (guess.length > 1) {
+          alert("Please enter a single letter.");
+        } else if (guess.toUpperCase().charCodeAt(0) < 65 || guess.toUpperCase().charCodeAt(0) > 91) {
+          alert("You have to enter a letter!");
+        } else {
+          var correctGuesses = updateGameState(guess, word, answerArray);
+          remainingLetters -= correctGuesses;
+        }
+      }
+      if (guess === null) {
+        if (!confirm("Do you want to play a new word?")) {
+          break;
+        }
+      } else {
+        playing = showAnswerAndCongratulatePlayer(answerArray);
+      }
+    }
+  </script>
+</body>
+</html>
