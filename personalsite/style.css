@@ -1,0 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+CUSTOM STYLING
+*/
+body {
+  background-color: #ccc;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.1em;
+}
+
+#top-bar {
+  background: linear-gradient(to top, #3680d7, #3e7b9d);
+}
+
+  #page-title {
+    font-size: 3em;
+    margin: 20px;
+    margin-left: 100px;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  nav {
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+    margin-right: 100px;
+  }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 50px;
+      text-transform: uppercase;
+      font-size:1.2em;
+      color: black;
+    }
+
+    nav a:hover {
+      color: white;
+      text-shadow: 0px 1px 2px black;
+    }
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  max-width: 900px;
+  background-color: white;
+}
+
+  section a {
+    color: #888;
+    text-decoration: none;
+  }
+
+    section a:hover {
+      color: #555;
+    }
+
+  section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  section p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+  }
+
+    section p img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+  section:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+
+img.float-right {
+  float: right;
+  margin: 10px;
+  margin-right: 0px;
+}
+
+img.float-left {
+  float: left;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+a, button {
+  transition-property: all;
+  transition-duration: 0.35s;
+  transition-delay: 0s;
+}
+
+button {
+  position: relative;
+  font-size: 30px;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3680d7;
+  background-color: white;
+  border-color: #3680d7;
+  border-style: solid;
+  border-width: 3px;
+  padding: 15px;
+  border-radius: 25px;
+  float: right;
+  margin: 20px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+  outline: 0px;
+}
+
+button:hover {
+  box-shadow: 5px 5px 4px rgba(0,0,0,.4);
+  margin-right: 16px;
+  margin-left: 18px;
+  margin-bottom: 18px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+button:active {
+  margin: 20px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+  font-size: 30px;
+  color: white;
+  background: #3680d7;
+}
+
+.set-course {
+  display: inline-block;
+  margin: 40px;
+  float: right;
+}
+
+#warp {
+  background: url("img/warp.gif") no-repeat center center fixed;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
