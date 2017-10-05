@@ -1,7 +1,85 @@
 
+/* --- Container -- */
+
+.container {
+  width: 1000px;
+}
+
+/* --- Clearfix --- */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display:table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/* --- Columns --- */
+
+ .main,
+ .sidebar {
+   float: left;
+   border-radius: 12px;
+   border: 1px solid #E8E8E8;
+   margin: 5px;
+   padding: 5px;
+ }
+
+.main {
+  width: 646px;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+/* --- Movie Titles --- */
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.movies tr:nth-child(odd) {
+  background: #f6f6f5;
+}
+
+.movies tr:nth-child(even) {
+  background: #fbfbfb;
+}
+
+/* --- Names --- */
+
+.names tr:nth-child(odd) {
+  background: #f6f6f5;
+}
+
+.names tr:nth-child(even) {
+  background: #fbfbfb;
+}
+
+/* --- Images --- */
+
 img {
   display: block;
-  
   height: 44px;
   width: 32px;
+}
+
+/* --- Misc Styles --- */
+
+h2 {
+  color: #A58500;
+}
+
+.sidebar {
+  background: #F5F5F4;
 }
