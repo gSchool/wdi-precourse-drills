@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+background-color: grey;
+}
+.hue{
+  color: maroon;
+}
+.hue2{
+  color: yellow;
+}
+</style>
+<body>
+  <div>
+<h1 class = 'hue'><b>Where Christopher is going</b></h1>
+<p>I am excited to start Galvanize.  It will be something completely different. I
+  have waited tables for almost 20 years, but now it's time for something new.
+</p>
+</div>
+<div>
+  <h2 class = 'hue2'>Galvanize is a great move</h2>
+  <p>I looking forward to learning web development.  I like the idea of being creative
+  and problem solving.  It is a lot more involved mentally than my current job.
+  </p>
+  <p>I hope to learn enough to get a job at one of the many tech companies in Austin.
+  I know there are more and more each week.  I hope to get an entry position that will allow
+  me to learn more in the real world.  The type of company is not important to me.  I would also
+  like to make my own site in the future.
+  </p>
+</div>
+<p><image src = 'https://tctechcrunch2011.files.wordpress.com/2015/04/codecode.jpg?w=736&zoom=2' alt= 'code up close' style ="width:332px;height:144px" ></p>
+</body>
+</head>
+</html>
