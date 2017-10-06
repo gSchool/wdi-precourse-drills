@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .left{
+        float:left;
+      }
+      .right{
+        float:right;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>"Results for "Hackers"</title>
+  </head>
+  <body>
+
+    <h1><b> Results for "Hackers" </b></h1>
+    <div class="left">
+    <h2>Titles</h2>
+    <dl>
+    <dt><p><img src="http://fr.web.img3.acsta.net/c_215_290/pictures/17/04/25/16/11/108654.jpg" alt="Angelena Jolie and Johnny Lee Miller" style="width:32px;height:44px"><a href="http://www.imdb.com/title/tt0113243/"> Hackers (1995)</a></p></dt>
+    <dt><p><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTM2ODMxMTE4Nl5BMl5BanBnXkFtZTYwOTgyOTg4._V1_.jpg" alt="2000 AD movie poster" style="width:32px;height:44px"><a href="http://www.imdb.com/title/tt0214728/?ref_=nv_sr_1"> 2000 AD (2000)</a></p></dt>
+    <dd><p>aka "Hackers"</p></dd>
+    <dt><p><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAyNTk4MDc1MF5BMl5BanBnXkFtZTgwNzk4NzMyMjE@._V1_.jpg" alt="Frontline in white font with red background" style="width:32px;height:44px"><a href="http://www.imdb.com/title/tt0278472/?ref_=fn_tt_tt_9"> Hackers (2001) (TV Episode)</a></p></dt>
+    <dd><p>-Frontline (1983) (TV series)</p></dd>
+    <dt><p><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTA2NjIxNTQ4MTdeQTJeQWpwZ15BbWU4MDMxMzMwMTQx._V1_UX182_CR0,0,182,268_AL_.jpg" alt="Hackers kissing" style="width:32px;height:44px"><a href="http://www.imdb.com/title/tt3140724/?ref_=nv_sr_2">Hacker's Game (2015)</a></p></dt>
+    <dd><p>aka "The Hackers"</p></dd>
+  </dl>
+    <h2><b>Names</b></h2>
+    <p><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNjg5Mzc0MV5BMl5BanBnXkFtZTcwODg0NTM2OQ@@._V1_UY317_CR19,0,214,317_AL_.jpg" alt="photo of Amy Acker" style="width:32px;height:44px"><a href="http://www.imdb.com/name/nm0009918/?ref_=fn_al_nm_1">Amy Acker (Actress, Angel (1999))</a></p>
+    <p><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwNzM1MTQ1OF5BMl5BanBnXkFtZTcwMDQ5MTU4OA@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="photo of Drew Van Acker" style="width:32px;height:44px"><a href="http://www.imdb.com/name/nm3216408/?ref_=nv_sr_1"> Drew Van Acker (Actor, Pretty Little Liars(2010))</a></p>
+    <p><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY0NjI1OTU3MF5BMl5BanBnXkFtZTYwNTgxNTcz._V1_UX214_CR0,0,214,317_AL_.jpg" alt="photo of Buddy Hackett" style="width:32px;height:44px"><a href="http://www.imdb.com/name/nm0004983/?ref_=nv_sr_1">Buddy Hackett(Actor, The Little Mermaid (1989))</a></p>
+    <p><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjk2MDYzNzEyMF5BMl5BanBnXkFtZTgwOTkxMzI4NzE@._V1_UY317_CR32,0,214,317_AL_.jpg" alt="photo of Emily Wickersham" style="width:32px;height:44px"><a href="http://www.imdb.com/name/nm2278978/?ref_=nv_sr_1">Emily Wickersham (Actress, I am Number Four, (2011))</a></p>
+    <h2><b> Keywords</b></h2>
+
+    <p> hacker (180 titles)</p>
+
+    <h2><b>Companies</b></h2>
+
+  <p>Douglas, Gorman, Rothacker, & Wilhelm (DGRW)</p>
+  <p>Crackerjack Management</p>
+  <p>Bleeker Street Media</p>
+  <p>Bleeker Street Media</p>
+  <p>Bleeker Street Entertainment</p>
+</div>
+<div class="right">
+    <h2><b>Category Search</b></h2>
+    <dl>
+    <dt><li> All</li></dt>
+    <dt><li> Name</li></dt>
+    <dt><li> Title</li></dt>
+    <dd><li> Movie</li></dd>
+    <dd><li> TV</li></dd>
+    <dd><li> TV Episode</li></dd>
+    <dd><li> Video Game</li></dd>
+    <dt><li> Character</li></dt>
+    <dt><li> Keyword</li></dt>
+    <dt><li> Plot Summaries</li></dt>
+    <dt><li> Biographies </li></dt>
+    <dt ><li> Quotes </li></dt>
+    </dl>
+    <h2>Additional Search Options</h2>
+    <li> Advanced Search</li>
+    <li> Advanced Title Search</li>
+    <li> Advanced New Search</li>
+  </div>
+  </body>
+</html>
