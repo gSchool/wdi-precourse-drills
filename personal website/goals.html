@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Meet Melissa</title>
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <script src="jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="main-nav">
+      <ul>
+        <li>Melissa Warren</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="goals.html">Career</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <aside>
+    <ul>
+      <a href="#" id="education">
+        <li id="education-link">Education</li>
+      </a>
+      <a href="#" id="goals">
+        <li id="goals-link">Goals</li>
+      </a>
+      <a href="#" id="for-fun">
+        <li id="for-fun-link">For Fun</li>
+      </a>
+    </ul>
+  </aside>
+
+
+  <section class="hidden">
+    <article id="education-p">
+      <p>I went to school in Memphis (go Tigers) and have a BFA in graphic design.  In college, I was able to take a
+      few basic coding classes and really enjoyed them. </p>
+      <p>It's definitely been a while since I've taken those classes and things have changed a bit in the coding world.
+        I have been enjoying getting my feet wet again and look forward to learning everything that I can.</p>
+    </article>
+    <article id="goals-p">
+      <p>Afer college, it was challenging finding a job in my field, so after I moved to Austin I ended up falling into
+      retail management.</p>
+      <p>It was fun for a while, but it was not challenging, and after missing so many holidays with my family I decided
+      it was time to start over.</p>
+      <p>I am looking forward to beginning a new career after Galvanize that actually involves something that I enjoy and that
+      will continue to challenge me.</p>
+    </article>
+    <article id="for-fun-p">
+      <p>How I feel about quitting retail and doing something I enjoy. Also, Seinfeld.</p>
+      <iframe src="https://giphy.com/embed/12UlfHpF05ielO" width="270" height="153" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/excited-seinfeld-12UlfHpF05ielO"></a></p>
+    </article>
+  </section>
+
+
+
+
+  <script>
+
+    $(document).ready(function() {
+      $("#education").click(function() {
+        $("#education-p").fadeToggle();
+      });
+      $("#goals").click(function() {
+        $("#goals-p").fadeToggle();
+      });
+      $("#for-fun").click(function() {
+        $("#for-fun-p").fadeToggle();
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

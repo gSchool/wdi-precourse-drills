@@ -1,0 +1,221 @@
+html {
+  background: url("../images/desk-mod.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  color: #a39a86;
+}
+.main-nav {
+  margin: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+.main-nav li {
+  display: inline;
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #dad9d7;
+}
+.main-nav li:last-child {
+  border-right: none;
+}
+.main-nav a,
+aside a {
+  color: #a39a86;
+  text-decoration: none;
+}
+.main-nav a:hover {
+  color: #151911;
+   transition: color 1s;
+}
+aside {
+  width: 100px;
+  height: 200px;
+  padding-top: 20px;
+  margin-left: 40px;
+  float: left;
+
+}
+#about-me {
+  background: url("../images/dot-1.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+
+}
+#about-me:hover {
+  background: url("../images/dot-1-hov.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  transition: 0.4s ease-in;
+}
+#hobbies {
+  background: url("../images/dot-2.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin-top: 35px;
+}
+#pets {
+  background: url("../images/dot-1.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin-top: 65px;
+}
+#pets:hover {
+  background: url("../images/dot-1-hov.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin-top: 65px;
+  transition: 0.4s ease-in;
+}
+#hobbies:hover {
+  background: url("../images/dot-2-hov.jpg");
+  display: visible;
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin-top: 35px;
+  transition: 0.4s ease-in;
+}
+a #about-me-link,
+a #hobbies-link,
+a #pets-link {
+  visibility: hidden;
+  padding-left: 30px;
+}
+a:hover #about-me-link,
+a:hover #hobbies-link,
+a:hover #pets-link {
+  visibility: visible;
+  transition: 0.4s ease-in;
+}
+
+.hidden {
+  float: left;
+  width: 300px;
+  height: 300px;
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #5B5D58;
+}
+.hidden p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#about-me-p,
+#hobbies-p,
+#pets-p {
+  display: none;
+}
+#hobbies-p {
+  margin-top: 35px;
+}
+#pets-p {
+  margin-top: 65px;
+}
+/*-------------Goals--------------*/
+
+#education {
+  background: url("../images/dot-1.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+
+}
+#education:hover {
+  background: url("../images/dot-1-hov.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  transition: 0.4s ease-in;
+}
+#goals {
+  background: url("../images/dot-2.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin-top: 35px;
+}
+#for-fun {
+  background: url("../images/dot-1.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin-top: 65px;
+}
+#for-fun:hover {
+  background: url("../images/dot-1-hov.jpg");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin-top: 65px;
+  transition: 0.4s ease-in;
+}
+#goals:hover {
+  background: url("../images/dot-2-hov.jpg");
+  display: visible;
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  position: fixed;
+  margin-top: 35px;
+  transition: 0.4s ease-in;
+}
+a #education-link,
+a #goals-link,
+a #for-fun-link {
+  visibility: hidden;
+  padding-left: 30px;
+}
+a:hover #education-link,
+a:hover #goals-link,
+a:hover #for-fun-link {
+  visibility: visible;
+  transition: 0.4s ease-in;
+}
+/*
+.hidden {
+  float: left;
+  width: 300px;
+  height: 300px;
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #5B5D58;
+}
+.hidden p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+*/
+#education-p,
+#goals-p,
+#for-fun-p {
+  display: none;
+}
+#goals-p {
+  margin-top: 35px;
+}
+#for-fun-p {
+  margin-top: 65px;

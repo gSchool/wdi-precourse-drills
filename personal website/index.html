@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Meet Melissa</title>
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <script src="jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="main-nav">
+      <ul>
+        <li>Melissa Warren</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="goals.html">Career</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <aside>
+    <ul>
+      <a href="#" id="about-me">
+        <li id="about-me-link">About Me</li>
+      </a>
+      <a href="#" id="hobbies">
+        <li id="hobbies-link">Hobbies</li>
+      </a>
+      <a href="#" id="pets">
+        <li id="pets-link">Pets</li>
+      </a>
+    </ul>
+  </aside>
+
+
+  <section class="hidden">
+    <article id="about-me-p">
+      <p>Hi! Nice to meet you, I'm Melissa. I grew up in Memphis, TN and moved to Austin almost six years ago.</p>
+      <p>I love almost everything about living in Austin, except the traffic (of course). I also do prefer the BBQ in Memphis over Austin, but I'm careful about who I tell that to because I've found it can lead to some heated debates.</p>
+      <p>Feel free to click around and find out a little bit more about me!</p>
+    </article>
+    <article id="hobbies-p">
+      <p>There are a lot of things that I enjoy doing, but lately in my spare time I have been renovating my apartment. </p>
+      <p>I recently just finished updating my fireplace and it was a little bit more involved than I thought it was going to be at the beginning, but it was definitely worth it.</p>
+      <p>I also enjoy any outdoor activity (when it's not 100 degrees), reading, and of course, NetFlix.</p>
+    </article>
+    <article id="pets-p">
+      <p>Another one of my favorite things to do is hang out with my dog Jimmy. He is a schnauzer mix and loves to get dirty, especially after baths.</p>
+      <p> He is not a big fan of the car, but he is getting better especially after his recent discovery of dog bones at the PTerry's drive thru window.</p>
+    </article>
+  </section>
+
+
+
+
+  <script>
+
+    $(document).ready(function() {
+      $("#about-me").click(function() {
+        $("#about-me-p").fadeToggle();
+      });
+      $("#hobbies").click(function() {
+        $("#hobbies-p").fadeToggle();
+      });
+      $("#pets").click(function() {
+        $("#pets-p").fadeToggle();
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>
