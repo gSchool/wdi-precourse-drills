@@ -1,0 +1,13 @@
+tr:nth-child(even) {
+  background-color: #EEE;
+}
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 40%;
+}
+aside {
+  float: left;
+  margin: 0 1.5%;
+  width: 40%;
+}
