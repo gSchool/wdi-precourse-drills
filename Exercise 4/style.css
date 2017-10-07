@@ -1,0 +1,60 @@
+
+.background {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -10;
+}
+.eyes {
+position: fixed;
+height:25.2%;
+width:13%;
+left: 45.8%;
+top: 44%;
+z-index: -9;
+}
+
+.new {
+  font-size: 75px;
+  font-family: "Franklin Gothic Medium";
+  background-color: #DAA520;
+  border-radius: 25px;
+  float: left;
+}
+.who, .p2 {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-right: 9px;
+    clear: both;
+    position: relative;
+}
+
+.who {
+  font-size: 75px;
+  font-family: "Franklin Gothic Medium";
+  background-color: #DAA520;
+  border-radius: 25px;
+  text-align: center;
+  align-content: center;
+  float: left;
+  position: relative;
+}
+
+.p2 {
+  font-size: 20px;
+   height:auto;
+   max-width: 500px;
+   border-radius: 25px;
+   background-color: aquamarine;
+   font-family: "Franklin Gothic Medium";
+   text-align: center;
+   float: right;
+   position:relative;
+ }
+
+#redButton {
+float: right;
+color: red;
+}
