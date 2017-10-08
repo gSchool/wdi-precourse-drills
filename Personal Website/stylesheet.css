@@ -1,0 +1,103 @@
+
+
+body {
+  text-align: center;
+  background-image: url();
+}
+
+nav {
+  text-align: center;
+  margin: 20px;
+}
+
+nav a {
+  padding: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+nav a:active {
+  background-color: #4CAF50;
+   color: white;
+}
+.gif {
+  border: 10px;
+  padding: 10px;
+}
+
+.yes{
+  /*text-align: left;*/
+  width: 300px;
+  padding: 50px;
+  border: 20px solid #0088dd;
+}
+.left {
+  border: 20px solid #0088dd;
+}
+.bigger {
+border: 15px solid #0088dd;
+}
+.big {
+  border: 12px solid #0088dd;
+}
+.smaller {
+  border: 10px solid #0088dd;
+}
+.small {
+  border: 5px solid #0088dd;
+}
+.smallest {
+  border: 2px solid #0088dd;
+}
+.goals {
+  text-align: center;
+  padding: 50px;
+  border: 20px solid #0088dd;
+}
+.pet {
+  height:400px;
+  width: 400px;
+  position:relative;
+  top: -850px;
+  float: right;
+  margin-left: -400px;
+  box-shadow: 5px 5px;
+}
+.hike2 {
+  height:400px;
+  width: 400px;
+  float: right;
+  position: relative;
+  top: -400px;
+  box-shadow: 5px 5px;
+}
+
+.info {
+  text-align: center;
+}
+
+button {
+  float: left;
+  position: relative;
+  top: -1000px;
+  margin-right: 1000px;
+  background-color: red;
+  font-size: 20px;
+
+
+}
+
+span {
+  float: left;
+  position: relative;
+  top: -600px;
+  margin-left: 490px;
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+
+
+}
