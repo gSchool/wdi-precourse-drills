@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Hangman!</title>
+  </head>
+
+  <body>
+    <h1>Hangman!</h1>
+
+    <script>
+
+    //===========================================================
+
+    // Return a random word.
+    function pickWord() {
+      // The words array contains all of the words used in the game.
+      var words = [
+        "javascript",
+        "monkey",
+        "amazing",
+        "pancake",
+        "tacos",
+        "excellent"
+      ];
+
+      // Picks a random word from the words array.
+      return words[Math.floor(Math.random() * words.length)];
+    };
+
+
+    //===========================================================
+
+    // When the loop finishes, the answerArray will be the same
+    // length as the word.
+    function setupAnswerArray(word) {
+      // Return the answer array.
+      var answerArray = [];
+
+      for (var i = 0; i < word.length; i++) {
+        answerArray[i] = "_";
+      }
+
+      return answerArray;
+    };
+
+
+    //===========================================================
+
+    // Alert shows the player their progress, i.e. show letters correctly guessed,
+    // and blank spaces for letters not yet guessed. The elements in the
+    // answerArray are joined into a string with a space in between elements.
+    function showPlayerProgress(answerArray) {
+      alert("This is your word:  " + answerArray.join(" ") +
+      "\n\nYou have " + guesses +" guesses left.");
+    };
+
+
+    //===========================================================
+
+    function getGuess() {
+      // Prompt is used to get guess from player.
+      return prompt("Guess a letter or click Cancel to stop playing").toLowerCase();
+    };
+
+
+    //===========================================================
+
+    function updateGameState(guess, word, answerArray) {
+      var sameLetter = 0
+      // Update the game state (answerArray) with the guess.
+      for (var j = 0; j < word.length; j++) {
+        // Check if the current letter matches the player's guess.
+        if (word[j] === guess) {
+          // Update the answerArray with the current guess.
+          answerArray[j] = guess;
+          sameLetter++;
+        }
+      }
+
+      return sameLetter;
+    };
+
+
+    //===========================================================
+
+    function showAnswerAndCongratulatePlayer(answerArray) {
+      // Show the answerArray to player.
+      showPlayerProgress(answerArray);
+
+      if (guesses > 0) {
+        alert("Good job!  The answer was " + answerArray.join("") +".");
+      } else {
+        alert("Game over!  You ran out of guesses...");
+      }
+
+    };
+
+
+    //===========================================================
+
+    var name = prompt("What's your name?");
+    alert("Hello " + name + ".  Let's play Hangman!");
+
+    var word = pickWord();
+    var answerArray = setupAnswerArray(word);
+    // Keeps track of how many letters are left to be guessed.
+    var remainingLetters = word.length;
+    // Max number of guesses before game is over.
+    var guesses = 10;
+
+    while (remainingLetters > 0 && guesses > 0) {
+      showPlayerProgress(answerArray);
+      var guess = getGuess();
+
+      // If Canel button is clicked, the guess will be null and break exits loop.
+      if (guess === null) {
+        break;
+      // The player guess has to be one letter.
+      } else if (guess.length !== 1) {
+        alert("Please enter a single letter.");
+      } else {
+        guesses--;
+        console.log(guesses);
+        // Update the game state with the guess.
+        var correctGuess = updateGameState(guess, word, answerArray);
+        // Update the remainingLetters array with the letter/s from the
+        // correct guess.
+        remainingLetters -=correctGuess;
+      }
+
+    }
+
+    showAnswerAndCongratulatePlayer(answerArray);
+
+    </script>
+  </body>
+
+</html>
