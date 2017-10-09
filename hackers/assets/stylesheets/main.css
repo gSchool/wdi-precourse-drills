@@ -1,0 +1,27 @@
+.no-bullet li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.odd {
+  color: orange;
+}
+
+.even {
+  color: green;
+}
+
+.column-left {
+  float: left;
+  margin: 0 1.5%;
+  width: 40%;
+}
+
+.column-right {
+  float: right;
+  margin: 0 1.5%;
+  width: 40%
+}

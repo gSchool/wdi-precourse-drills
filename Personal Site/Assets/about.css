@@ -1,0 +1,178 @@
+/* Eric Meyer CSS style reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My code starts here */
+
+/* Get header items all along top */
+.header a, .header h1, .footer p, .footer a {
+  display: inline-block;
+  color: #14213D;
+  font-family: 'Baloo Bhaijaan', sans-serif;
+  font-size: 2vw;
+  margin: 1.5em auto;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Add cover background */
+#cover {
+  background: url("background.jpg") no-repeat fixed center;
+  background-size: cover;
+  height: 900px;
+}
+
+/* Center and style header items */
+.header {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+	z-index: 1;
+}
+
+/* Style name */
+#name {
+  color: #FCA311;
+  font-size: 3vw;
+  padding: 0px 50px;
+}
+
+/* Style About Me */
+.cover-about {
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 19em;
+}
+
+h2 {
+	color: #FFF;
+	font-family: 'Baloo Bhaijaan', sans-serif;
+	font-size: 5vw;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/* Photo and text size/alignment */
+.about {
+	margin: 5% auto 2% auto;
+	padding: 3em;
+	width: 90%;
+}
+
+.about img, .about p {
+	float: left;
+}
+
+.about img {
+	width: 30%;
+	border-radius: 5%;
+}
+
+.about p {
+	width: 25em;
+	padding: 3em 1em 1em 3em;
+	margin-bottom: 5em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2vw;
+}
+
+/* Style props p */
+.props p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5vw;
+	width: 30%;
+	display: block;
+	text-align: center;
+	margin: 1em auto;
+}
+
+/* Center props images */
+.props-img {
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.props img {
+	margin: auto 1em;
+}
+
+/* Size props images */
+#props1, #props4 {
+	width: 12%;
+}
+
+#props2 {
+	width: 6%;
+}
+
+#props3 {
+	width: 8%;
+}
+
+#props5 {
+	width: 6%;
+}
+
+/* Style footer */
+.footer {
+	text-align: center;
+	background: url("background.jpg") no-repeat fixed center;
+	background-size: cover;
+}
+
+.footer p {
+	margin: 2em;
+	color: #FFF;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
