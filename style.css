@@ -1,0 +1,21 @@
+
+
+#search{
+
+  float: right;
+  width: 30%;
+  margin: 0 1.5%;
+}
+#main {
+  margin: 0 1.5%;
+  width: 70%;
+}
+
+
+ .alter-background{
+
+   background-color: silver;
+   width: 70%;
+   overflow: hidden;
+
+ }
