@@ -1,0 +1,29 @@
+
+
+li:nth-of-type(even){
+    background-color: #dcdfe5;
+    width: 500px;
+    height: 44px;
+}
+
+li:nth-of-type(odd){
+    background-color: #eaecef;
+    width: 500px;
+    height: 44px;
+}
+
+#column1 {
+    float:right;
+}
+
+#images {
+    height: 44px;
+    width: 32px;
+    float: left;
+}
+
+#imgcontainer{
+    height: 176px;
+    width: 32px;
+    float: left;
+}
