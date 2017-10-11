@@ -85,3 +85,16 @@ p {
 .imageSection img {
   height: 200px;
 }
+
+@media screen and (max-width: 1024px) {
+  .headerBar {
+    background-color: #001b42;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headerBar {
+    background-color: red;
+  }
+}
