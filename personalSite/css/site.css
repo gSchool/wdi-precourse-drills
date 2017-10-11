@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Champagne & Limousines Bold";
+    src: url('Champagne & Limousines Bold.ttf');
+}
+
+body {
+  font-family: "Champagne & Limousines Bold";
+}
+p {
+  color: #001b42;
+}
+
+.header {
+  /* put the gist in the center */
+  margin: auto;
+  width: 60%;
+  height: 200px;
+  background-image: url("../site_images/swirl.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  margin-top: 0;
+  font-family: "Champagne & Limousines Bold";
+}
+.header h1 {
+  color: #001b42;
+  margin-top: 60px;
+  font-size: 40px;
+}
+.header h4 {
+  width: 500px;
+  color: #001b42;
+  margin:auto;
+  font-size: 25px;
+}
+.header img {
+  width: 100%;
+}
+.content {
+  /* put the gist in the center */
+  margin: auto;
+  width: 60%;
+}
+.headerBar {
+  background-color: #001b42;
+  color: white;
+  text-align: left;
+  height: 30px;
+}
+.headerBar h3 {
+  padding-top: 5px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.centerButton {
+  padding-top: 30px;
+  margin:auto;
+  width: 200px;
+}
+
+.contentTable {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+.contentTable img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.tableCellDiv  {
+  width: 100px;
+}
+.previousToggleContent {
+  display: none;
+}
+.presentToggleContent {
+  display: none;
+}
+.imageSection {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+.imageSection img {
+  height: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .headerBar {
+    background-color: #001b42;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headerBar {
+    background-color: red;
+  }
+}
