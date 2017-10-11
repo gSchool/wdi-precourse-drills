@@ -1,0 +1,21 @@
+.red {
+  background-color: #ffb3b3;
+}
+
+.blue {
+  background-color: #99b3ff;
+}
+
+.columns {
+  display: inline-block;
+}
+
+.columns1 {
+  float: left;
+  width: 50%;
+}
+
+.columns2 {
+  float: right;
+  width: 50%;
+}
