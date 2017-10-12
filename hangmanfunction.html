@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hang Man Game</title>
+</head>
+
+<body>
+	<h1>Welcome to the Hang Man Game</h1>
+	<p>Can you guess the word before it is too late?</p>
+
+	<script>
+		//function to pick a secret word
+		function pickWord() {
+			var words = ["head", "body", "intestines", "lungs", "arteries", "veins", "femur", "aorta"];
+			var word = words[Math.floor(Math.random() * words.length)];
+			return word;
+		}
+		
+		//function to setup answer array 
+		function setupAnswerArray(word) {
+			var answerArray = [];
+			for(var i = 0; i < word.length; i++) {
+			answerArray[i]= "_";
+			}
+			return answerArray;
+		}
+		
+		var remainingLetters = word.length;
+
+		//game loop
+		while (remainingLetters > 0) {
+
+		//function to show player progress
+		function showPlayerProgress(answerArray) {
+			alert(answerArray.join(" "));
+		}
+		
+		//function to get player guess
+		function getGuess() {
+			var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+			return guess;
+		}
+
+		//function to cancel game, check player's input is one letter, and update the answer array with the players guess
+		function updateGameState(guess, word, answerArray) {
+			if(guess === null) {
+					break;
+			} else if (guess.length !== 1) {
+					alert("Please enter a single letter");
+			} else {
+				for(var j = 0; j < word.length; j++) {
+				if(word[j] === guess) {
+					answerArray[j] = guess;
+					remainingLetters--;
+					} 
+				}
+			}
+		}
+
+		//function to end game
+		function showAnswerAndCongratulatePlayer (answerArray) {
+			alert(answerArray.join(" "));
+			alert("Good Job! The answer was " + word);
+		}
+
+		//calling of end game function
+		showAnswerAndCongratulatePlayer(answerArray);
+	
+	</script>
+</body>
+</html>
