@@ -1,0 +1,41 @@
+#movies tr:nth-of-type(2n+1){
+  background-color: #808080;
+}
+
+img {
+  height: 44px;
+  width: 32px;
+}
+
+.col-1-2 {
+  width: 40%;
+  float: left
+}
+
+.col-2-2 {
+  width: 40%;
+  float: right;
+}
+
+.col-1-2,
+.col-2-2 {
+  vertical-align: top;
+}
+
+.grid,
+.col-1-2,
+.col-2-2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}

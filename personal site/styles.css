@@ -1,0 +1,33 @@
+/** various selections for styling of different HTML elements**/
+
+body {
+  background-color: #808080;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  color: #800000;
+  font-size: 25px;
+  text-shadow: 1px 2px black;
+}
+
+p {
+  font-family: 'Georgia', serif;
+  color: #000080;
+  font-size: 18px;
+}
+
+/**all lists, list items, and links will share the same formatting**/
+ol,ul,li,a {
+  font-family: 'Arial';
+  color: #FFFFFF;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.personalPic {
+  display: none;
+}
