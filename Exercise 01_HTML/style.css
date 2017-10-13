@@ -1,0 +1,46 @@
+table {
+  width: 100%;
+  /*width: 360px;*/
+
+}
+
+img {
+  width: 32px;
+  height: 44px;
+  padding-right: 7px;
+  float: left;
+}
+
+a {
+  display: table-cell;
+  white-space: nowrap;
+}
+
+.inline {
+  display: table-cell;
+  white-space: nowrap;
+}
+
+.aka {
+  font-style: italic;
+  margin-top: 1px;
+  display: block;
+}
+
+.tvDetails {
+  font-size: 12px;
+  margin-top: 1px;
+  display: inline-block;
+}
+
+.actorInline {
+  font-size: 12px;
+  margin-top: 1px;
+  display: table-cell;
+  white-space: nowrap;
+}
+
+.noListStyle {
+  list-style: none;
+  padding-left: 0px;
+}
