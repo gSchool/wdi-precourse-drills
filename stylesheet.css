@@ -1,0 +1,216 @@
+body {
+  background-color: black;
+}
+
+.header {
+  background-color: #809fff;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+
+.header button {
+  background-color: #999999;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  width: 47%;
+  font-size: 30px;
+  font-family: garamond;
+  border: solid black 1px;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  cursor: pointer;
+}
+
+.header button.selected {
+  background-color: #666666;
+}
+
+.banner {
+  background-image: url(https://static.wixstatic.com/media/43840b_c1b0881ae98e4dcaa05ccb4009a0e40e~mv2_d_3054_1506_s_2.jpg/v1/fill/w_882,h_435,al_c,q_90,usm_0.66_1.00_0.01/43840b_c1b0881ae98e4dcaa05ccb4009a0e40e~mv2_d_3054_1506_s_2.webp);
+  width: 100%;
+  height: 195px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h1 {
+  position: relative;
+  text-align: center;
+  font-size: 120px;
+  margin: 0px;
+  font-family: times;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  position: relative;
+  top: 20px;
+}
+
+.mainquestion {
+  background-color:#809fff;
+  margin: auto;
+  width: 100%;
+  height: 150px;
+}
+
+.mainquestion h1 {
+  text-align: center;
+  font-size: 110px;
+  font-family: garamond;
+  color: black;
+  margin: 0px;
+  text-shadow:
+   -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+     1px 1px 0 white;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+}
+
+.dropdown {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  display:none;
+}
+
+.dropdown div {
+  display: inline-block;
+  background-color: #999999;
+  margin: 5px;
+  width: 30%;
+  height: 400px;
+  border: solid white 5px;
+  vertical-align: middle;
+}
+
+.quickfacts h2{
+  text-align: center;
+  font-family: garamond;
+  font-size: 55px;
+  position: relative;
+  bottom: 20px;
+}
+
+.quickfacts table {
+  position: relative;
+  bottom: 50px;
+  margin: 5px;
+}
+
+.quickfacts td {
+  border: solid white 2px;
+  height: 50px
+}
+
+.question {
+  text-align: left;
+  font-style: bold;
+  font-family: times;
+  font-size: 18px;
+  background-color: #809fff;
+}
+
+.answer {
+  text-align: center;
+  font-family: garamond;
+  font-size: 18px;
+  background-color: white;
+}
+
+.photo img {
+  margin: 20px;
+  width: 90%;
+  height: 90%;
+}
+
+
+.bio h2 {
+  text-align: center;
+  font-family: garamond;
+  font-size: 55px;
+  position: relative;
+  bottom: 20px;
+}
+
+.bio p {
+  text-align: center;
+  font-size: 22px;
+  font-family: garamond;
+  margin: 10px;
+}
+
+.goals h2 {
+  text-align: center;
+  font-family: garamond;
+  font-size: 55px;
+  position: relative;
+  bottom: 20px;
+}
+
+.goals li {
+  text-align: left;
+  font-size: 22px;
+  font-family: garamond;
+  position: relative;
+  bottom: 20px;
+}
+
+.gif h2 {
+  text-align: center;
+  font-family: garamond;
+  font-size: 40px;
+  position: relative;
+  bottom: 20px;
+}
+
+.gif img {
+  margin: 20px;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  bottom: 60px;
+}
+
+.future h2 {
+  text-align: center;
+  font-family: garamond;
+  font-size: 40px;
+  position: relative;
+  bottom: 20px;
+}
+
+.future p {
+  text-align: center;
+  font-size: 22px;
+  font-family: garamond;
+  margin: 10px;
+}
+
+.footer {
+  background-color: #809fff;
+  margin: auto;
+  text-align: center;
+}
+
+.social {
+  width: 70px;
+  height: 70px;
+}
+
+.footer div {
+  display: inline-block;
+  margin: 5px 50px;
+}
