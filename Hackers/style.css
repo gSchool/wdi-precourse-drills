@@ -1,0 +1,22 @@
+
+.h1 {
+color: white;
+  background: #E86448
+}
+
+.h2 {
+  color: black;
+  background: #E5598C
+}
+
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 50%;
+}
+
+aside {
+  float: right;
+  margin: 0 1.5%;
+
+}
