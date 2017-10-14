@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+function pickWord() {
+  var words = [
+    "marmalade",
+    "moose",
+    "juice",
+    "goose",
+    "fruit",
+    "bed",
+    "amazing"
+  ];
+    return words[Math.floor(Math.random()* words.length)];
+}
+
+function setupAnswerArray(word) {
+  var answerArray = [];  // the "var" keeps it within the function scope
+  for (var i = 0; i < word.length;i++) {
+          answerArray[i] = " _ ";
+  }
+  return answerArray;    // the return value allows the assignment to store the correct thing
+}
+
+function showPlayerProgress(answerArray) {
+  alert(answerArray.join(" "));
+}
+
+
+function getGuess() {
+  var guess = prompt("Guess a letter!");
+  return guess;
+}
+
+var updateGameState = function(guess, word, answerArray){
+  var occuranceOfGuess = 0;
+  for (var j = 0; j < word.length; j++) {
+    if(word[j] === guess) {
+      answerArray[j] = guess;
+      occuranceOfGuess ++;
+    }
+  }
+  return occuranceOfGuess;
+};
+function showAnswerAndCongratulatePlayer(answerArray) {
+  alert("Congratulations, You did it! " + word + " was the correct answer!")
+}
+var word = pickWord();
+var answerArray = setupAnswerArray(word); var remainingLetters = word.length;
+console.log(remainingLetters);
+while (remainingLetters > 0) { showPlayerProgress(answerArray); var guess = getGuess();
+if (guess === null) {
+break;
+} else if (guess.length !== 1) {
+alert("Please enter a single letter.");
+} else {
+var correctGuesses = updateGameState(guess, word, answerArray);
+  remainingLetters -= correctGuesses; }
+}
+showAnswerAndCongratulatePlayer(answerArray);
+console.log(answerArray);
+console.log(word);
+console.log(guess);
+console.log(remainingLetters);
+
+</script>
+</body>
+</html>
