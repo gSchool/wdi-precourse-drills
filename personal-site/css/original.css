@@ -1,0 +1,132 @@
+/*-- basic style --*/
+
+body {
+  background: #fff;
+  color: #555;
+  font: 100% 'Open Sans', sans-serif;
+}
+
+header {
+  background: #ADDFFF;
+  border-bottom: .5em solid #008080;
+  padding: 6em 2em 3em;
+}
+
+main {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 320px;
+  padding: 0 1em;
+}
+
+article {
+  background-color: #F1FFFF;
+  border: 1px solid #008080;
+}
+
+footer {
+  background: #ADDFFF;
+  border-top: .5em solid #008080;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+h1 {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 2em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  margin: 0;
+  margin: 0px;
+  text-align: center;
+}
+
+a {
+  color: #555;
+}
+
+a:hover {
+  color: teal;
+}
+
+/*-- logo frames --*/
+
+.header-logo-frame {
+  background-image: url(../imgs/red-robot-head.png);
+}
+
+.footer-logo-frame {
+  background: url(../imgs/red-robot-butterfly.png) center no-repeat, url(../imgs/hills.png) bottom no-repeat;
+}
+
+
+
+/*-- small screen nav menu --*/
+
+.menu-icon {
+  background: url(../imgs/menu-icon.png);
+}
+
+
+nav.menu.menu-active>ol {
+  background-color: rgba( 225, 255, 255, .95);
+  z-index: auto;
+}
+
+nav.menu.menu-active>ol>li>a {
+  color: #555;
+}
+
+nav.menu.menu-active>ol>li>a:hover, nav.menu.menu-active>ol>li>a:active {
+  color: teal;
+}
+
+/*-- .content4 contact icons --*/
+
+.icon img:hover {
+  background-image: url(../imgs/icon-background.png);
+}
+
+@media screen and (min-width: 650px) {
+  /*-- basic style --*/
+  header {
+    padding: 4em 0 0 0;
+  }
+  footer {
+    height: 6em;
+  }
+  section {
+    border-left: 1px solid #008080;
+    border-right: 1px solid #008080;
+    border-top: 1px solid #008080;
+    padding-bottom: 2em;
+  }
+  /*-- logo frames --*/
+  .header-logo-frame {
+    background: url(../imgs/red-robot-butterfly.png) center no-repeat, url(../imgs/hills.png) bottom no-repeat;
+    height: 350px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .footer-logo-frame {
+    display: none;
+  }
+  /* show and set up tab navigation for big screen */
+  label.tabs {
+    display: inline-block;
+    padding: 1em;
+  }
+  label.tabs:hover {
+    color: #008080;
+  }
+  input:checked+label {
+    border-left: 1px solid #008080;
+    border-right: 1px solid #008080;
+    color: #555;
+  }
+
+}

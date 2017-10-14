@@ -1,0 +1,257 @@
+/* -- main styles -- */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+header {
+  margin: 0 auto;
+  min-width: 320px;
+  text-align: center;
+}
+
+footer {
+  min-width: 320px;
+}
+
+section {
+  padding: 1em;
+}
+
+article {
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+article:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2, h3, h4 {
+  padding-bottom: 1em;
+}
+
+address {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0 0 2em;
+}
+
+iframe {
+  display: none;
+}
+
+/*-- logo frames --*/
+
+.header-logo-frame {
+  background-repeat: no-repeat;
+  height: 200px;
+  margin: 0 auto;
+  width: 169px;
+}
+
+.footer-logo-frame {
+  height: 350px;
+  margin: auto;
+  width: 100%;
+}
+
+/*-- hide big screen nav & small screen active nav --*/
+
+input.tabs, label.tabs, nav.menu>ol {
+  display: none;
+}
+
+/*-- small screen nav menu --*/
+
+.menu-active,.menu-unactive {
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+nav.menu > .menu-frame {
+  height: 50px;
+  left: 1em;
+  overflow: hidden;
+  position: absolute;
+  top: 1em;
+  width: 50px;
+}
+
+.menu-icon {
+  background-repeat: no-repeat;
+  display: block;
+  height: 110px;
+  position: absolute;
+  width: 50px;
+}
+
+.menu-active .menu-icon {
+  background-position: 0 -60px;
+  z-index: 999;
+}
+
+.menu-unactive .menu-icon {
+  background-position: 0 0;
+}
+
+.menu.menu-active > ol {
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: .95;
+  padding-top: 5em;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.menu.menu-active>ol>li {
+  padding-bottom: 1em;
+}
+.menu.menu-active>ol>li>a {
+  font-size: 2.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*-- .content1 bubble .png --*/
+
+.bubble-left {
+  float: left;
+  margin: 0 40px 0 0;
+  shape-outside: circle(65px at 45px 45px);
+  width: 100px;
+}
+
+.bubble-right {
+  float: right;
+  margin: 0 0 0 20px;
+  position: relative;
+  shape-outside: circle(65px at 25px 25px);
+  top: -10px;
+  width: 100px;
+}
+
+/*-- .content2 zoof world styles list --*/
+
+ul {
+  margin: 0 1em 1em ;
+}
+
+.styles-list {
+  list-style-type: none;
+}
+
+.styles-list img{
+  height: 24px;
+  margin-right: 6px;
+  width: 20px;
+}
+
+
+
+/*-- .contnet3 resume --*/
+
+table tbody {
+  border: 1px solid #555;
+  border-collapse: collapse;
+  border-radius: 15px;
+  border-spacing: 1em;
+  display: block;
+  margin: 1em auto;
+  padding: 1em;
+  width: 100%;
+}
+
+td {
+  padding: .3em;
+}
+
+td.company {
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+td.company a {
+  color: #000;
+}
+
+td:nth-child(1) {
+  width: 30%;
+}
+
+/*-- .content4 contact icons --*/
+
+a.icon img {
+  height: 75px;
+  margin: 0 1em;
+  width: 75px;
+}
+
+a.icon img:hover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 98% 98%;
+}
+
+
+@media screen and (min-width: 650px) {
+
+  section {
+    display: none;
+  }
+  iframe {
+    -moz-transform: scale(0.95);
+    -moz-transform-origin: 0 0;
+    -ms-transform: scale(0.95);
+    -ms-transform-origin: 0 0;
+    -ms-zoom: 0.95;
+    -o-transform: scale(0.95);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.95);
+    -webkit-transform-origin: 0 0;
+    background-color: #fff;
+    border: 1px solid black;
+    display: block;
+    height: 500px;
+    padding: 1px;
+    transform: scale(0.95);
+    transform-origin: 0 0;
+    width: 100%;
+  }
+  /*-- hide small screen nav --*/
+  /* menu.js doesnt need to append to dom if screen is not small? */
+  .menu {
+    display: none;
+  }
+  .tabs {
+    font-weight: 600;
+    text-align: center;
+  }
+  .tab1:checked~.content1, .tab2:checked~.content2, .tab3:checked~.content3, .tab4:checked~.content4 {
+    display: block;
+  }
+  .title {
+    display: none;
+  }
+}
