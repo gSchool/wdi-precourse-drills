@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="150"
+   viewBox="0 0 999.99998 150"
+   id="svg5109"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="hills.svg"
+   inkscape:export-filename="/Users/ianbuchanan/Desktop/zoofs-world/imgs/hills.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs5111">
+    <linearGradient
+       id="linearGradient5604"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#4bdb19;stop-opacity:1;"
+         offset="0"
+         id="stop5606" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5629-6">
+      <rect
+         style="opacity:0.5;fill:#4bdb19;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.67400002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5631-6"
+         width="1327.3405"
+         height="163.64471"
+         x="-630.62146"
+         y="371.77856" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5629-6-2">
+      <rect
+         style="opacity:0.5;fill:#4bdb19;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.67400002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5631-6-5"
+         width="1327.3405"
+         height="163.64471"
+         x="-630.62146"
+         y="371.77856" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4166">
+      <rect
+         style="opacity:1;fill:#4bbb19;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.4601922;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4168"
+         width="1226.2545"
+         height="161.81808"
+         x="-584.54614"
+         y="-554.38062"
+         transform="scale(1,-1)" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="522.66109"
+     inkscape:cy="-10.956388"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1217"
+     inkscape:window-height="734"
+     inkscape:window-x="60"
+     inkscape:window-y="42"
+     inkscape:window-maximized="0"
+     inkscape:snap-path-clip="false" />
+  <metadata
+     id="metadata5114">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(480.25493,-523.99434)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(-87.737105,30.724899)">
+    <g
+       id="g4147">
+      <ellipse
+         transform="matrix(0.41461139,0,0,-1.3687361,584.28684,628.14184)"
+         clip-path="url(#clipPath5629-6-2)"
+         ry="112.12693"
+         rx="574.77679"
+         cy="368.74811"
+         cx="37.089359"
+         id="path4148-0-5"
+         style="opacity:1;fill:#4b8d19;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.98735589;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <ellipse
+         transform="matrix(0.50950571,0,0,-1.1874956,775.73628,560.76048)"
+         clip-path="url(#clipPath5629-6)"
+         ry="112.12693"
+         rx="574.77679"
+         cy="368.74811"
+         cx="37.089359"
+         id="path4148-0"
+         style="opacity:1;fill:#4bbb19;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.98735589;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <ellipse
+         cx="37.089359"
+         cy="368.74811"
+         rx="574.77679"
+         ry="112.12693"
+         transform="matrix(0.50950571,0,0,-0.63197856,362.11838,367.36617)"
+         clip-path="url(#clipPath4166)"
+         id="path4148"
+         style="opacity:1;fill:#4bdb19;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.67400002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

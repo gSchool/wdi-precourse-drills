@@ -1,0 +1,177 @@
+/*-- basic style --*/
+
+body {
+  background: #ffbf00;
+  font: 100% ' Papyrus', fantasy;
+}
+
+header {
+  background: #ffbf00;
+  padding: 6em 2em 3em;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 320px;
+}
+
+article {
+  border-bottom: 1px solid #000;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+footer {
+  background: #ffbf00;
+  color: white;
+  height: 12em;
+}
+
+section {
+  background: #fcf0cc;
+  border-left: 1px solid #9b7400;
+  border-right: 1px solid #9b7400;
+
+}
+
+section.content1 {
+  border-top: 1px solid #9b7400;
+}
+
+section.content4 {
+  border-bottom: 1px solid #9b7400;
+}
+
+h1 {
+  font-size: 2em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: 0px;
+}
+
+h2, h3, h4 {
+  padding-bottom: 0;
+}
+
+a {
+  color: #000
+}
+
+a:hover {
+  color: #0000ff;
+}
+
+p {
+  font-family: Papyrus, fantasy;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  line-height: 20px;
+  margin: 0 0 20px;
+}
+
+/*-- logo frames --*/
+
+.header-logo-frame {
+  background-image: url(../imgs/blue-robot-head.png);
+}
+
+.footer-logo-frame {
+  background: url(../imgs/scarab.png) center no-repeat;
+  height: 200px;
+}
+
+
+
+/*-- small screen nav menu --*/
+
+.menu-icon {
+  background: url(../imgs/egypt-menu-icon.png);
+}
+
+nav.menu.menu-active>ol {
+  background: #fcf0cc;
+}
+
+nav.menu.menu-active>ol>li>a {
+  color: #000;
+}
+
+nav.menu.menu-active>ol>li>a:hover, nav.menu.menu-active>ol>li>a:active {
+  color: #0000ff;
+}
+
+/*-- .content3 resume table */
+
+table tbody {
+  border-radius: 0;
+}
+
+/*-- .content4 contact icons --*/
+
+.icon img:hover {
+  background-image: url(../imgs/blue-icon-hover.png);
+}
+
+@media screen and (min-width: 650px) {
+  /*-- basic style --*/
+  header {
+    padding: 4em 0 0 0;
+  }
+  footer {
+    height: 200px;
+  }
+  section {
+    border: 1px solid #9b7400;
+    display: none;
+    margin: 0 5em;
+    min-height: 340px;
+  }
+  .header-logo-frame {
+    background: url(../imgs/blue-robot-butterfly.png) center no-repeat, url(../imgs/dunes.png) center bottom no-repeat;
+    height: 350px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  /*-- add padding so image stays within section --*/
+  section.content1 {
+    padding-bottom: 4em;
+  }
+  /*-- vertically align contact icons --*/
+  section.content4 address {
+    margin-top: 65px;
+  }
+  /* show and set up tab navigation for big screen */
+  label.tabs {
+    border: none;
+    clear: left;
+    display: inline-block;
+    float: left;
+    height: 3em;
+    left: 1em;
+    line-height: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-top: .5em;
+    position: relative;
+    transform: rotate(270deg);
+    width: 5em;
+  }
+  label.tabs:hover {
+    text-decoration: underline;
+  }
+  input:checked+label {
+    background: #fcf0cc;
+    border-left: 1px solid #9b7400;
+    border-right: 1px solid #9b7400;
+    border-top: 1px solid #9b7400;
+    color: #0000ff;
+  }
+}

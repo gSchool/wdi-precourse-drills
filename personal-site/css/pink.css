@@ -1,0 +1,182 @@
+/*-- basic style --*/
+
+body {
+  background: #000;
+  color: #555;
+  font: 100% 'Courier New', 'Courier', sans-serif;
+  font-weight: 600;
+}
+
+header {
+  background: linear-gradient(#000, #fff);
+  border-bottom: .5em solid #fff;
+  color: #fff;
+  padding: 6em 0 3em;
+}
+
+main {
+  background: linear-gradient( to bottom, #fff, #000, #fff);
+  margin: 0 auto;
+  padding: 1em;
+}
+
+article {
+  background-color: #FFD9E5;
+  border-radius: 15px;
+}
+
+footer {
+  background: linear-gradient(#fff, #000);
+  border-top: .5em solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 1.5em;
+}
+
+h1 {
+  background: url(../imgs/pink-short-band.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1em;
+  margin-bottom: 0;
+  margin-top: 1em;
+  padding: 1em;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+h2, h3, h4 {
+  color: #000;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #ff00ff;
+}
+
+/*-- logo frames --*/
+
+.header-logo-frame {
+  background-image: url(../imgs/pink-robot-head.png);
+}
+
+.footer-logo-frame {
+  background: url(../imgs/pink-robot-butterfly.png) center no-repeat, linear-gradient(white, black);
+}
+
+
+/*-- small screen nav menu --*/
+
+.menu {
+  background: #D3D3D3;
+  border-bottom-right-radius: 10px;
+}
+
+.menu-icon {
+  background: url(../imgs/pink-menu-icon.png);
+}
+
+.menu-active div.menu-icon {
+  z-index: 1000;
+}
+
+nav.menu-active>ol {
+  background: linear-gradient(#000, #fff);
+}
+
+nav.menu-active>ol>li>a {
+  color: #fff;
+  font-weight: 700;
+}
+
+nav.menu-active>ol>li>a:hover, nav.menu-active>ol>li>a:active {
+  color: #FF00FF;
+}
+
+/*-- .content3 resume table */
+
+table tbody {
+  border: 1px solid #ff00ff;
+  margin: 1em 0;
+  padding: .4em;
+}
+
+/*-- .content4 contact icons --*/
+
+.icon img:hover {
+  background-image: url(../imgs/pink-icon-hover.png);
+}
+
+@media screen and (min-width: 700px) {
+  /*-- basic style --*/
+  header {
+    background: linear-gradient(#fff, #000);
+    border-bottom: .5em solid #000;
+    padding: .1em;
+  }
+  main {
+    background: #000;
+    max-width: 800px;
+  }
+  footer {
+    background: linear-gradient(#000, #fff);
+    background: url(../imgs/pink-long-band.png);
+    background-position: center;
+    background-repeat: repeat-x;
+    border-top: .5em solid #000;
+    height: 12em;
+  }
+  section {
+    border: 1px solid #ff00ff;
+    border-radius: 10px;
+    padding-bottom: 2em;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  /*-- logo frames --*/
+  .header-logo-frame {
+    background: url(../imgs/pink-robot-butterfly.png) center bottom no-repeat;
+    height: 322px;
+    margin: 2em auto;
+    width: 200px;
+  }
+  .footer-logo-frame {
+    display: none;
+  }
+  /* show and set up tab navigation for big screen */
+  label.tabs {
+    border: .1em solid transparent;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: -.2em 0 -.1em;
+    padding: 15px 25px;
+  }
+  label.tabs:hover {
+    color: #ff00ff;
+  }
+  input:checked+label {
+    background: #fff;
+    border: 1px solid #ff00ff;
+    border-bottom: 1px solid #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #000;
+    margin-bottom: -1px;
+  }
+  .tab1:checked~.content1 {
+    border-top-left-radius: 0;
+  }
+}
