@@ -1,0 +1,186 @@
+
+
+header {
+  background-image: url("file:///Users/erincernich/Desktop/eacernich_website%20precourse/header%20background.jpg");
+  text-align: center;
+  padding: 2px;
+}
+
+.heroheader {
+  font-family: "BonvenoCF";
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  font-size: 72px;
+  text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
+  line-height: 1;
+}
+
+.topnav {
+  text-decoration-color: black;
+  text-align: center;
+  padding: 12px;
+  font-family: "BonvenoCF";
+  border-bottom: solid;
+  border-width: thin;
+
+}
+
+a:hover {
+  background-color: #e2cfcf;
+}
+
+nav li {
+   padding: 20px 20px;
+   font-size: 18px;
+   color: black;
+}
+
+nav a {
+   padding: 20px 20px;
+   font-size: 18px;
+   color: black;
+}
+
+h2 {
+  font-family: "JennaSue";
+  font-size: 72px;
+  text-align: center;
+  line-height: 0.5;
+}
+
+h3 {
+  font-family: "JennaSue";
+  font-size: 72px;
+  text-align: left;
+  line-height: 0.5;
+  margin-left: 20px;
+}
+
+.erinpic {
+  float: right;
+  width: 150px;
+  margin: 0 0 0 20px;
+  padding: 15px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.tenor-gif-embed {
+  float: right;
+  width: 35%;
+  padding: 15px;
+  border: 1px solid black;
+  margin-top: 15px;
+
+}
+
+section {
+  margin: 15px;
+  padding: 15px;
+  border-bottom: solid;
+  border-color: gray;
+  font-size: 24px;
+
+}
+
+span {
+    float: left;
+    width: 0.7em;
+    margin-right: 25px;
+    font-size: 400%;
+    font-family: "BonvenoCF";
+    line-height: 80%;
+}
+
+.column {
+  float: left;
+  font-size: 18px;
+  width: 31%;
+  height: 350px;
+  margin: 0px 10px 15px 10px;
+  display: inline-block;
+  padding: 5px;
+  background-color: #e2cfcf;
+  text-align: center;
+}
+
+button {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:15px;
+  margin-bottom: auto;
+  display:block;
+  padding: 10px;
+  font-family: "BonvenoCF";
+  font-size: 20px;
+  background-color: #008b8b;
+}
+
+button a {
+  color: black;
+}
+
+button ul {
+  color; black;
+}
+
+h4 {
+  font-size: 18px;
+  text-decoration: underline;
+
+}
+footer {
+    background-color: #F1F1F1;
+    margin-top:15px;
+    font-family: "BonvenoCF";
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 0.5;
+    padding: 10px;
+
+}
+footer a {
+  color: black;
+}
+
+footer li {
+  color: black;
+}
+
+.pg2intro {
+  margin: 0px 10px 15px 20px;
+  padding: 10px;
+}
+
+ul {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+aside {
+  margin: 40px 0px 15px 0px;
+}
+
+#downBox {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: solid 1px #c3c3c3;
+    font-family: "BonvenoCF";
+    font: 22px;
+}
+
+#downBox {
+    padding: 50px;
+    display: none;
+}
+
+#topSlide {
+    padding: 5px;
+    text-align: center;
+    background-color: gray;
+    border: solid 1px #c3c3c3;
+    font-family: "BonvenoCF";
+    font: 24px;
