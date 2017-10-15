@@ -121,9 +121,6 @@ button a {
   color: black;
 }
 
-button ul {
-  color; black;
-}
 
 h4 {
   font-size: 18px;
@@ -184,3 +181,4 @@ aside {
     border: solid 1px #c3c3c3;
     font-family: "BonvenoCF";
     font: 24px;
+  }
