@@ -1,0 +1,18 @@
+section1 {
+  float:left;
+  margin: 1.5%;
+  width:auto;
+}
+
+#orangeRow {
+  background: orange;
+}
+
+#greenRow {
+  background: #40F328;
+}
+p {
+  float:left;
+  margin: 0 1.5%;
+  width:auto;
+}
