@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheettdc.css">
+</head>
+<a href="tomdotcom.html" id="titleline"><center><h1> Thomas Palzkill </h1></center><a>
+  <u><b><h2> About Me: </h2></b></u>
+  <body>
+  <u><h3> Brief Introduction:</h3></u>
+    <center><p> Hi there, my name is Tom Palzkill. I am a 23 year old recent college
+      graduate from Houston - Go Coogs! I recently quit my job as a
+      waiter and moved to Austin to start at galvanize; I'm excited to pursue
+      a new career in a new city.   </p></center>
+
+  <u><h3>Hobbies:</h3></u>
+    <ul id="hobbies">
+      <li> Baseball </li>
+      <li> Relaxing
+       </li>
+      <li> Hiking </li>
+      <li> Climbing </li>
+      <li> Video Games</li>
+    </ul>
+
+  <u><h3> Interests:</h3></u>
+  <ul id="interests">
+     <li> Politics </li>
+     <li> Sports:
+       <ul>
+         <li>Baseball - ASTROS</li><img src=astrosBanner.png alt="banner" id= "banner">
+         <li>F1</li>
+         <li>Basketball</li>
+         <li>Football</li>
+       </ul>
+     <li> Music:
+       <ul>
+         <li>Rap</li>
+         <li>Garage Rock</li>
+         <li>Punk</li>
+         <li>Some Jazz</li>
+       </ul>
+     <li> Reading </li>
+     <li> James Bond </li>
+   </ul>
+  <u><h3>Education/Accomplishments</h3></u>
+  <ul id="education" >
+     <li><strong> University of Houston:  </strong><br>
+       <span>Bachelors of Science - Political Science - 2017</span></li>
+     <li><strong>Eagle Scout</strong></li>
+ </ul>
+ <script>
+$( "li" ).hover(
+  function() {
+    $( this ).append( $( "<span> ***</span>" ) );
+  }, function() {
+    $( this ).find( "span:last" ).remove();
+  }
+);
+
+$( "li.fade" ).hover(function() {
+  $( this ).fadeOut( 100 );
+  $( this ).fadeIn( 500 );
+});
+</script>
+ </body>
+</html>

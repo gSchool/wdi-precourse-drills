@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheettdc.css">
+</head>
+<a href="tomdotcom.html" id="titleline"><center><h1> Thomas Palzkill </h1></center><a>
+    <u><b><h2> The Future: </h2></b></u>
+         <h3> Plans </h3>
+         <center><p> I would like to pursue a job as a junior developer as soon as I finish at Galvanize, then I'm getting a dog. </p></center>
+         <u><h3>Places I'd Like to Visit:</h3></u>
+           <ul id="hobbies">
+             <li> Scotland </li>
+             <li> Australia </li>
+             <li> Cape Town </li>
+             <li> Alaska </li>
+             <li> Paris </li>
+           </ul>
+
+           <script>
+           $( "li" ).hover(
+            function() {
+              $( this ).append( $( "<span> ***</span>" ) );
+            }, function() {
+              $( this ).find( "span:last" ).remove();
+            }
+           );
+
+           $( "li.fade" ).hover(function() {
+            $( this ).fadeOut( 100 );
+            $( this ).fadeIn( 500 );
+           });
+           </script>
+</html>
