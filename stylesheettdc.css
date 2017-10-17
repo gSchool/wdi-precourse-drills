@@ -1,0 +1,60 @@
+
+#buttons {
+  display: inline;
+  background-color: lightblue;
+  width: 15px;
+  padding-left: 20%;
+  padding-right: 20%;
+  border: 1px solid black;
+}
+#titleline {
+  text-decoration: none;
+  background-color: white;
+  width: 0px;
+  padding-left: 0%;
+  padding-right: 0%;
+  border: 0px solid black;
+  text-align: center;
+}
+#banner {
+  float: right;
+  width: 50%;
+  height: 50%;
+  padding-bottom: 20px;
+}
+#education {
+  font-size: 80%;
+}
+a:visited{
+  color: black;
+}
+h1 {
+  font-family: sans-serif;
+}
+h2 {
+  font-size: 150%;
+}
+h3 {
+border:2px solid Tomato;
+font-size: 150%;
+}
+
+img {
+  padding: 50px;
+}
+p {
+   font-size: 180%;
+ }
+li {
+   font-size: 200%;
+ }
+li li {
+  font-size: 80%;
+}
+body {
+  border: 3px solid orange;
+  border-radius: 15px;
+  margin: 15px;
+  font-family: verdana;
+  background-color: cream;
+}
