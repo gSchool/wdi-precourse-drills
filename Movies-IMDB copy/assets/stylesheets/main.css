@@ -1,0 +1,15 @@
+
+.movies tr:nth-child(even) {
+  background: #d3d3d3;
+}
+
+section {
+  float: left;
+  margin: 0 2%;
+  width: 63%;
+}
+
+aside {
+  float: right;
+  width: 30%;
+}
