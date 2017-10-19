@@ -1,0 +1,9 @@
+.title {
+  display: block;
+}
+
+img {
+  height: 100px;
+  display: block;
+  padding: 4px;
+}
