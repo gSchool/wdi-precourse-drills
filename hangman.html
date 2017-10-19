@@ -1,0 +1,70 @@
+
+<script type="text/javascript">
+// Create an array of words
+  var pickWord = function(){
+  //Return a random word
+  var words = ["javascript","amazing","pancake","monkey"];
+  var word = words[Math.floor(Math.random() * words.length)];
+  // console.log(word);
+  return word;
+};
+var word = pickWord();
+var setupAnswerArray = function(word){
+  //Return the answer array
+//  var word = pickWord();
+  var answerArray = [];
+  for (var i = 0; i < word.length; i++) {
+    answerArray[i] = "_";
+  }
+  // console.log(answerArray);
+  return answerArray;
+};
+var answerArray = setupAnswerArray(word);
+console.log(answerArray);
+var showPlayerProgress = function(answerArray){
+  //Use alert to show the player their progress
+  var answerArray = setupAnswerArray(word);
+  alert(answerArray.join(""));
+};
+showPlayerProgress();
+var getGuess = function(){
+  //Use prompt to get a guess
+  return prompt("Guess a letter, or click Cancel to stop playing.");
+//  return guess;
+};
+var updateGameState = function(guess, word, answerArray){
+  //update answerArray and return a number showing how many times
+  // the guess appears in the word so remainingLetters
+  //can be updated
+  var count = 0;
+for(var j = 0; j < word.length; j++){
+  if(word[j] === guess){
+    answerArray[j] = guess;
+    count++;
+  }
+}
+return count;
+};
+var remainingLetters = word.length;
+var showAnserAndCongratulatePlayer = function (answerArray){
+  //Use alert to show the answer and congratulate the player
+  alert("Good job! The answer was " + answerArray.join(""));
+};
+
+while(remainingLetters > 0){
+  showPlayerProgress(answerArray);
+  var guess = getGuess();
+  if(guess === null){
+    break;
+  }else if(guess.length !== 1){
+    alert("Please enter a single letter. ");
+  } else{
+    var guesses = updateGameState(guess, word, answerArray);
+    remainingLetters -= guesses;
+  }
+}
+
+showAnserAndCongratulatePlayer(answerArray);
+
+
+</script>
