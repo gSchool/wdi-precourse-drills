@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman!</title>
+  </head>
+  <body>
+    <h1>Hangman!</h1>
+    <script>
+
+    alert("Let's play hangman!");
+
+    var pickWord = function () {
+      var words = ['apple', 'banana', 'cat', 'dog', 'elephant', 'fruit', 'garden', 'holiday', 'inkblot', 'juice', 'kangaroo', 'lemonade', 'monsoon', 'nectar', 'octopus', 'porcupine', 'quick', 'rat', 'snake', 'tomato', 'vixen', 'watermelon', 'xylophone', 'yellow', 'zebra'];
+
+      return words[Math.floor(Math.random() * words.length)];
+    }
+
+    var setupAnswerArray = function (word) {
+      var answerArray = [];
+      for (var i = 0; i < word.length; i++) {
+        answerArray[i] = '_';
+      }
+      return answerArray;
+    }
+
+    var showPlayerProgress = function(answerArray) {
+      alert("Guess a letter and try to figure out this word:  " + answerArray.join(' '));
+    }
+
+    var getGuess = function() {
+        return prompt('Guess a letter, or click cancel to stop playing.');
+    }
+
+    var updateGameState = function(guess, word, answerArray) {
+      var letterUse = 0;
+      for (var j = 0; j < word.length; j++) {
+        if (word[j] === guess) {
+          answerArray[j] = guess;
+          letterUse++;
+        }
+      }
+      return letterUse;
+    }
+
+    var showAnswerAndCongratulatePlayer = function (answerArray) {
+      showPlayerProgress(answerArray);
+      alert('Good job! The answer was ' + word + '!');
+      answerArray.join('');
+    }
+
+    var word = pickWord();
+    var answerArray = setupAnswerArray(word);
+    var remainingLetters = word.length;
+
+    while (remainingLetters > 0) {
+      showPlayerProgress(answerArray);
+      var guess = getGuess();
+        if (guess === null) {
+          break;
+        } else if (guess.length !== 1) {
+          alert('Please enter a single letter.');
+        } else {
+          var correctGuesses = updateGameState(guess, word, answerArray);
+          remainingLetters -= correctGuesses;
+        }
+      }
+
+      showAnswerAndCongratulatePlayer(answerArray);
+      // wanted to work this code in but ran out of time, wanted to prioritize jQuery and the personal site project.
+    //   if (word.includes(guess.toLowerCase())) {
+    //       for (var j= 0; j < word.length; j++) {
+    //         if (word[j] === guess.toLowerCase()) {
+    //           answerArray[j] = guess.toLowerCase();
+    //         }
+    //         // if (!answerArray.includes('_')) {
+    //         //   alert('Good job! The answer was: ' + word);
+    //         //   break;
+    //         // }
+    //       }
+    //     } else {
+    //         numberOfGuesses--;
+    //     }
+    //   }
+    //   // end of the game loop
+    // }
+    // // show the answer and congratulate player
+    // if (!answerArray.includes('_')) {
+    //   alert('Good job! The answer was: ' + word);
+    // }
+    // if (answerArray.includes('_')) {
+    //   alert('Better luck next time! The answer was: ' + word);
+    // }
+
+    </script>
+  </body>
+</html>
