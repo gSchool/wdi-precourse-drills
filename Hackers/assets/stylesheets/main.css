@@ -130,8 +130,8 @@ table {
     border-spacing: 1;
 }
 img {
-    display: block;
-    width: 32px;
+    display: table-cell;
+    width: 34px;
     height: 44px;
 }
 #title-text {
@@ -146,8 +146,29 @@ th {
 #italic {
     font-style: italic;
 }
+.grey {
+    background-color: lightgrey;
+}
+.white {
+    background-color: white;
+}
+.width-thing {
+    width: 540px;
+    background-color: lightgrey;
+}
 .margin-top {
     margin-top: 20px;
+}
+.margin-top-two {
+    margin-top: 20px;
+    background-color: aquamarine;
+}
+.column-one {
+    float: left;
+    background-color: aqua;
+}
+.column-two {
+    float: right;
 }
 #category-search {
     font-weight: bold;
