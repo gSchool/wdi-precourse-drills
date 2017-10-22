@@ -1,0 +1,63 @@
+<script>
+let pickWord = function () {
+  let wordArray = [
+    "javascript",
+    "monkey",
+    "amazing",
+    "pancake"
+  ]
+  return wordArray[Math.floor(Math.random()*4)];
+}
+
+let setupAnswerArray = function (word) {
+  let answerArray = [];
+  for (i=0; i<word.length; i++) {
+    answerArray.push("_");
+  }
+  return answerArray;
+}
+
+let showPlayerProgress = function (answerArray) {
+  alert(answerArray.join(" "));
+}
+
+let getGuess = function () {
+  let guess = prompt("Guess a letter, or click Cancel to stop playing.")
+  return guess;
+}
+
+let updateGameState = function (guess, word, answerArray) {
+  let correctGuesses = 0;
+  for (i=0; i<word.length; i++) {
+    if (word[i] === guess) {
+      answerArray[i] = guess;
+      correctGuesses ++;
+    }
+  }
+  return correctGuesses;
+}
+
+let showAnswerAndCongratulatePlayer = function (answerArray) {
+  alert(answerArray.join(" "));
+  alert("Good job! The answer was " + answerArray.join(""));
+}
+
+var word = pickWord();
+var answerArray = setupAnswerArray(word);
+var remainingLetters = word.length;
+
+while (remainingLetters > 0) {
+  showPlayerProgress(answerArray);
+  var guess = getGuess();
+  if (guess === null) {
+    break;
+  } else if (guess.length !== 1) {
+    alert("Please enter a single letter.");
+  } else {
+    var correctGuesses = updateGameState(guess, word, answerArray);
+    remainingLetters -= correctGuesses;
+  }
+}
+
+showAnswerAndCongratulatePlayer(answerArray);
+</script>
