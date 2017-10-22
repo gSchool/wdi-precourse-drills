@@ -1,0 +1,35 @@
+img {
+  height: 44px;
+  width: 32px;
+}
+
+
+#Hackers1 {
+  background: green;
+}
+#AD {
+  background: orange;
+}
+#Frontline {
+  background: orange;
+}
+#Hackers2 {
+  background: orange;
+}
+#Hackerstv {
+  background: green;
+}
+#HackersGame {
+  background: green;
+}
+#Hackers3 {
+  background: green;
+}
+
+.d1 {
+  float: left;
+}
+
+.d2 {
+  float: right;
+}
