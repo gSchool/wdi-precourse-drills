@@ -1,0 +1,23 @@
+.hackers{
+  background: red;
+}
+
+.hackers-ad{
+  background: yellow;
+}
+
+.hackers-tv{
+  background: green;
+}
+
+.hackers-game{
+  background: blue;
+}
+
+.column-a{
+  float:left;
+}
+
+.column-b{
+  float:right;
+}
