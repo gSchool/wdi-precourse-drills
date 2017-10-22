@@ -1,0 +1,72 @@
+// var word = pickWord();
+// var answerArray = setupAnswerArray(word);
+// var remainingLetters = word.length;
+//
+// while (remainingLetters > 0) {
+//   showPlayerProgress(answerArray);
+//
+//   var guess = getGuess();
+//   if (guess === null) {
+//     break;
+//   } else if (guess.length !== 1) {
+//     alert("Please enter a single letter.");
+//   } else {
+//     var correctGuesses = updateGameState(guess, word, answerArray);
+//     remainingLetters -= correctGuesses;
+//   }
+// }
+// showAnswerAndCongratulatePlayer(answerArray);
+
+var pickWord = function () {
+  var words = [];
+  var randomIdx = Math.floor(Math.random() * words.length);
+  return words[randomIdx];
+
+
+};
+var setupAnswerArray = function (word) {
+  var answerArray = [];
+
+  for (var i = 0; i < word.length; i++) {
+    var char = word[i];
+    answerArray.push(char);
+  }
+  return answerArray;
+};
+
+
+var showPlayerProgress = function (answerArray) {
+  return alert(answerArray);
+};
+
+
+var getGuess = function (guess, word, answerArray) {
+  alert('Are you ready to guess?')
+  // var playerGuess = // user input
+};
+
+
+var updateGameState = function (guess, word, answerArray) {
+
+  if (answerArray.indexOf(guess) !== -1) {
+
+    var repeatCount = 1;
+
+    for (var i = 0; i < word.length; i++) {
+      var char = word[i];
+
+      if (char === guess) {
+        repeatCount++;
+      }
+    }
+    return repeatCount;
+  }
+}
+  // Update answerArray and return a number showing how many
+  // times the guess appears in the word so remainingLetters
+  // can be updated
+};
+
+var showAnswerAndCongratulatePlayer = function (answerArray) {
+  alert('Congratulations, the answer was' + word);
+};
