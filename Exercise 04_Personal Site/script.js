@@ -5,7 +5,7 @@ var cards = [
   title: "About Me",
   alt: "Menu-About Me",
   subtitle: "Old News",
-  content: "Hi! 👋 <br><br> My name is Angela. I was born in Atlanta, GA and lived in Baton Rouge, LA before moving to the beautiful PNW when I was five. My husband’s name is James (that's him in the blue hat on the other side of Blitz - he’s alright, I guess…) and we have a dog named Ms. Pepper Potts (she’s great!). <br><br> #GoHawks!",
+  content: "Hi! 👋 My name is Angela. I was born in Atlanta, GA and lived in Baton Rouge, LA before moving to the beautiful PNW when I was five. My husband’s name is James (that's him in the blue hat on the other side of Blitz - he’s alright, I guess…) and we have a dog named Ms. Pepper Potts (she’s great!). <br><br> #GoHawks!",
 },
 
 {
