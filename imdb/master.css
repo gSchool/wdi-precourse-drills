@@ -1,0 +1,39 @@
+dd {
+  margin-left: 0px;
+}
+
+
+.new{
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+img{
+  width: 32px;
+  height: 44px;
+  ;
+}
+
+.new a.new1{
+  background-color: red;
+}
+
+.new a.new2{
+  background-color: green;
+}
+
+/*
+COLUMN
+*/
+
+section {
+  float: left;
+  width: 63%;
+}
+aside {
+  float: right;
+  width: 30%;
+}
+footer {
+  margin-bottom: 0;
+}
