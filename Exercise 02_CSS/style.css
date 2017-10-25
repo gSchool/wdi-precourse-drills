@@ -1,0 +1,54 @@
+#column1 {
+  display: inline-block;
+  width: 66%;
+}
+
+#column2 {
+  display: inline-block;
+  width: 33%;
+}
+
+table {
+  display: table;
+  width: 100%;
+}
+
+td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+
+img {
+  width: 32px;
+  height: 44px;
+  padding-right: 7px;
+  float: left;
+}
+
+.inline {
+  display: table-cell;
+}
+
+.aka {
+  font-style: italic;
+  display: inline;
+}
+
+.tvDetails {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.actorInline {
+  font-size: 12px;
+  display: inline;
+}
+
+.noListStyle {
+  list-style: none;
+  padding-left: 0px;
+}
