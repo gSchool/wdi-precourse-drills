@@ -1,18 +1,47 @@
 function parseCSV(input){
-    let result = {};
+  let result = {};
 
-    // get all the lines
-    const splitInput = input.split('\n');
+  // get all the lines
+  const splitInput = input.split('\n');
 
-    // Get properties from line 1 & put them into an object.
-	let headerLine = splitInput[0];
-	let splitHeader = headerLine.split(', ');
-    for(let key in splitHeader) {
-        result[key] = [];
+  // Split Header items into an array
+  let headerLine = splitInput[0];
+  let splitHeader = headerLine.split(', ');
+
+  // Split Each Line of CSV Data into an Array
+  let csvData = [];
+  for (let i = 1; i < splitInput.length; i++) {
+    let dataLine = splitInput[i];
+    let splitData = dataLine.split(', ');
+    csvData.push(splitData);
+  }
+
+  // Load headers and Data into Result object
+  for (let key in splitHeader) {
+    let objData = [];
+    for (i = 0; i < csvData.length; i++) {
+      objData.push(csvData[i][key]);
     }
-
-
+    result[splitHeader[key]] = objData;
+  }
+  return result;
 }
+
+
+let testInput = `id, Product, Price, Markup, Quantity
+1, "Red T-Shirt", 10, 20, 5
+2, "Blue T-Shirt", 10, 20, 8
+3, "Green T-Shirt", 10, 15, 15
+4, "Yellow T-Shirt", 10, 20, 3`;
+
+parseCSV(testInput);
+
+
+
+
+
+
+// Other Problems //
 
 function simpleEncrypt(str){
     let result = '';
@@ -58,6 +87,6 @@ function daysOfChristmas(n) {
             strChristmasSpirit += `${days[j]} `;
         }
         strChristmasSpirit += `\n`;
-    } 
+    }
     return strChristmasSpirit;
 }
