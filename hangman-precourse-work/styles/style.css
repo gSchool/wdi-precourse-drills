@@ -1,0 +1,13 @@
+body {
+  background-color: skyBlue;
+}
+
+html {
+  font-family: 'VT323', monospace;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 20em;
+  text-align: center;
+}
