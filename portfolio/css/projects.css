@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* STRUCTURE */
+#pagewrap {
+    padding: 5px;
+    width: 960px;
+    margin: 20px auto;
+}
+#content {
+    width: 282px;
+    float: left;
+    padding: 5px 15px;
+}
+#middle {
+    width: 282px; /* Account for margins + border values */
+    float: left;
+    padding: 5px 15px;
+    margin: 0px 10px 5px 10px;
+}
+#sidebar {
+    width: 282px;
+    padding: 5px 15px;
+    float: left;
+}
+footer {
+    clear: both;
+    padding: 0 15px;
+}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+    #pagewrap {
+        width: 94%;
+    }
+    #content {
+        width: 41%;
+        padding: 1% 4%;
+    }
+    #middle {
+        width: 41%;
+        padding: 1% 4%;
+        margin: 0px 0px 5px 5px;
+        float: right;
+    }
+    #sidebar {
+        clear: both;
+        padding: 1% 4%;
+        width: auto;
+        float: none;
+    }
+
+}
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+    #content {
+        width: auto;
+        float: none;
+    }
+    #middle {
+        width: auto;
+        float: none;
+        margin-left: 0px;
+    }
+    #sidebar {
+        width: auto;
+        float: none;
+    }
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 2em;
+    }
+    #sidebar {
+        display: none;
+    }
+}
+#content, #middle, #sidebar {
+    border-radius: 15px;
+}
+#content {
+    background: #f8f8f8;
+}
+#sidebar {
+    background: #f0efef;
+}
+#middle {
+    background: #f0efef;
+}
+#content, #middle, #sidebar {
+    margin-bottom: 5px;
+}
