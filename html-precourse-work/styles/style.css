@@ -1,0 +1,31 @@
+h1 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+section, aside {
+  margin-bottom: 1em;
+}
+
+.movies:nth-of-type(even) {
+  background-color: thistle;
+}
+
+.movies:nth-of-type(odd) {
+  background-color: LightSteelBlue;
+}
+
+.wrapper {
+  float: left;
+  margin: 0 1.5%;
+  width: 70%;
+}
+
+.search {
+  float: left;
+  margin: 0 1.5%;
+  width: 24%;
+}
