@@ -1,0 +1,7 @@
+
+tr:nth-child(odd) {background: lightgrey}
+tr:nth-child(even) {background: white}
+
+.colOne {float: left }
+
+.colTwo {float: right}
