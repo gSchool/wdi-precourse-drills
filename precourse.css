@@ -1,0 +1,20 @@
+.hackers {
+  color : green;
+}
+.AD {
+  color : orange;
+}
+.tv {
+  color : red;
+}
+.game {
+  color : purple;
+}
+.columnl {
+  float : left;
+  width : 50%;
+}
+.columnr {
+  float : right;
+  width : 50%;
+}
