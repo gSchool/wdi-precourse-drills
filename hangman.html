@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yo, hangman</title>
+  </head>
+  <body>
+    <h1> That was the hangman game</h1>
+
+    <script>
+      // Create an array of words
+      var words = [
+        "javascript",
+        "monkey",
+        "amazing",
+        "pancake"
+      ];
+
+      // Pick a random word
+      function pickWord(list) {
+        return(list[Math.floor(Math.random() * list.length)]);
+      }
+
+      var word = pickWord(words);
+
+
+      // Set up the answer array
+
+      function setupAnswerArray(wordToUse) {
+        var arrayToReturn = [];
+        for (var i = 0; i < wordToUse.length; i++) {
+          arrayToReturn[i] = "_";
+        }
+        return(arrayToReturn);
+      }
+
+
+      var answerArray = setupAnswerArray(word);
+
+      var remainingLetters = word.length;
+
+
+
+      // Show the player their progress
+      function showPlayerProgress(progress) {
+        alert(progress.join(" "));
+      }
+
+      // Update the game state with the guess
+      function updateGameState(useGuess) {
+        for (var j = 0; j < word.length; j++) {
+          if (word[j] === useGuess) {
+            answerArray[j] = useGuess;
+            remainingLetters--;
+          }
+        }
+      }
+
+      // Get a guess from the player
+      function getGuess() {
+          return( prompt("Guess a letter, or click Cancel to stop playing."));
+      }
+
+      // Show the answer and congratulate the player
+      function showAnswerAndCongratulations() {
+        alert(answerArray.join(" "));
+        alert("Good job! The answer was " + word);
+      }
+
+      // The game loop
+      while (remainingLetters > 0) {
+
+        showPlayerProgress(answerArray);
+
+        guess = getGuess();
+        if (guess === null) {
+          // Exit the game loop
+          break;
+        } else if (guess.length !== 1) {
+          alert("Please enter a single letter.");
+        } else {
+          updateGameState(guess);
+        }
+      }
+      // The end of the game loop
+
+
+      // Show the answer and congratulate the player
+      showAnswerAndCongratulations();
+      </script>
+  </body>
+</html>
