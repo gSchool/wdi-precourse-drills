@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Hangman!</title>
+
+</head>
+
+<body>
+
+    <h1>Hangman!</h1>
+
+    <script>
+
+var words = [ "hella", "word", "tight", "dope", "antidisestablishmentarianism"];
+var pickWord = words[Math.floor(Math.random()*words.length)];
+alert("Let's play hangman!");
+
+var setupAnswerArray = [];
+
+
+for(var i = 0; i < pickWord.length; i++){
+setupAnswerArray[i]= "_";
+}
+
+var updateGameState = pickWord.length;
+
+while (updateGameState > 0) {
+  alert(setupAnswerArray.join(" "));
+  var getGuess = prompt("Guess a letter!")
+  if (getGuess === null) {
+    break;
+  }
+  else if (getGuess.length !== 1) {
+    alert("One letter at a time, dog.")
+  } else {
+    for (var j= 0; j< pickWord.length; j++){
+      if(pickWord[j] === getGuess) {
+        setupAnswerArray[j] = getGuess;
+        updateGameState--;
+      }
+    }
+  }
+}
+var showPlayerProgress = alert(setupAnswerArray.join(" "));
+var showAnswerAndCongratulatePlayer = alert("Congrats! The word was " + pickWord);
+
+</script>
+
+</body>
+
+</html>
