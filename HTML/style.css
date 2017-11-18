@@ -1,0 +1,11 @@
+/*it worked*/
+img {
+  height:32px;
+  width:44;
+}
+.odd {
+  background: rgb(222, 222, 222)
+}
+.even {
+  background: rgb(242, 242, 242)
+}
