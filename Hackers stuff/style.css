@@ -1,0 +1,38 @@
+body
+{
+	background-color: #F9F5EE;
+}
+#top
+{
+	background-color: #E8B153;
+	color:white;
+	text-align: center;
+	padding: 10px 10px 10xp 10px;
+}
+#collum1
+{
+	background-color: #FEDDA5;
+	color:white;
+	width: 700px;
+	float: left;
+	padding: 20px;
+}
+#container
+{
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#collum2
+{
+	background-color: #FEDDA5;
+	color:white;
+	width: 700px;
+	float: right;
+	padding: 20px;
+}
+#header
+{
+	text-align: center;
+	background-color: #E8B153;
+}
