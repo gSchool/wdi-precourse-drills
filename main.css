@@ -1,0 +1,36 @@
+#wrapper {
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+}
+
+p {
+  font-family: 'Spectral SC', serif;
+  font-size: 18px;
+}
+
+h2 {
+  font-family: 'Spectral SC', serif;
+}
+
+h1 {
+  font-family: 'Spectral SC', serif;
+}
+
+body {
+  background-color: #4286f4;
+}
+
+header {
+    background: #4BD4DE;
+    border-radius: 5px;
+    height: 100px;
+}
+
+footer {
+  background-color: #251eed;
+}
