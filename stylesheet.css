@@ -1,0 +1,19 @@
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 45.5%;
+}
+
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 45.5%
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
