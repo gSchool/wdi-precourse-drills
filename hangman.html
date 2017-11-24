@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+</head>
+<body>
+	<script>//There are notes in the Script for organization.  There are also notes for code that I missed or did incorrectly the first time.
+
+//FUNCTIONS
+		//pickWord
+		var pickWord=function () {
+			var words = [
+				"javascript",
+				"monkey",
+				"amazing",
+				"pancake"
+			];
+
+			return words[Math.floor(Math.random() * words.length)]//Missed the Return 1st time
+		};
+
+		//setupAnswerArray
+		var setupAnswerArray=function(word) {
+			var answerArray=[];
+			for (var i = 0; i < word.length; i++) {
+			answerArray[i] = "_";
+			}
+
+			return answerArray//Missed the Return 1st time
+		};
+
+		//showPlayerProgres
+		var showPlayerProgress=function(answerArray) {
+			alert(answerArray.join(" "));
+		};
+
+		//getGuess
+		var getGuess=function() {
+			prompt("Guess a letter, or click Cancel to stop playing.");
+		};
+
+		//updateGameState
+		var updateGameState = function (guess, word, answerArray) {
+      		var appearances = 0;
+      		for (var j = 0; j < word.length; j++) {
+       		if (word[j] === guess) {
+          	answerArray[j] = guess;
+          	appearances++;//The "appearances" part of this is confusing.  I dont remember this code being talked about in the book, nor could I get my program to run without it.
+        }
+      }
+      return appearances;
+    };
+		
+		//showAnswerAndCongratulatePlayer
+		var showAnswerAndCongratulatePlayer = function (answerArray) {
+      		showPlayerProgress(answerArray);
+      		alert("Good job! The answer was " + answerArray.join(""));
+    };
+
+//FUNCTION CALLS
+
+		/*   I had originally tried to create the pickWord call without an array prior to the function, like this:
+
+		var word=pickWord([
+			"javascript",
+			"monkey",
+			"amazing",
+			"pancake",
+		]);
+		*/
+
+		var word=pickWord();
+		var answerArray=setupAnswerArray(word);
+		var remainingLetters=word.length;
+
+		while (remainingLetters > 0) { showPlayerProgress(answerArray); var guess = getGuess();
+      		if (guess === null) {
+        	break;
+      		} else if (guess.length !== 1) {//this line is getting an error that I spent hours trying to mend and could not figure it out.
+       		 alert("Please enter a single letter.");
+      		} else {
+       			var correctGuesses = updateGameState(guess, word, answerArray);
+        		remainingLetters -= correctGuesses;
+			}
+
+		}
+
+		showAnswerAndCongratulatePlayer(answerArray);
+
+	</script>
+	</body>
+</html>
