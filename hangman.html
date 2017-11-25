@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hangman!</title>
+  </head>
+  <body>
+    <h1>Hangman!</h1>
+    <script>
+      var setupAnswerArray = [
+        "crazy" ,
+        "strength" ,
+        "congratulations" ,
+        "coding"
+      ];
+      var pickWord = setupAnswerArray[Math.floor(Math.random() * setupAnswerArray.length)];
+      var showPlayerProgress = [];
+        for (var i = 0; i < pickWord.length; i++) {
+          showPlayerProgress[i] = "_";
+      }
+      var updateGameState = pickWord.length;
+        while(updateGameState > 0) {
+          alert(showPlayerProgress.join(" "));
+          var getGuess = prompt("Guess a letter, or click Cancel to stop playing.");
+          if (getGuess === null) {
+            break;
+          }
+          else if (getGuess.length !== 1) {
+            alert("Please enter a single letter.");
+          }
+          else {
+            for (var j = 0; j < pickWord.length; j++) {
+              if (pickWord[j] === getGuess) {
+                showPlayerProgress[j] = getGuess;
+                updateGameState--;
+              }
+            }
+          }
+        }
+      var showAnswerAndCongratulatePlayer = "Good job! The answer was "
+      alert(showPlayerProgress.join(" "));
+      alert(showAnswerAndCongratulatePlayer + pickWord);
+    </script>
+  </body>
+</html>
