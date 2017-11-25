@@ -1,0 +1,29 @@
+.head {
+    background-image:url("https://lh3.googleusercontent.com/fZM-2ysU2W3MPUQFxVPmgG7Xo_83pyjYPWJt3YqpGnwXaNOw_FTnN2CpmK6UeWjnzGA=h900");
+    color:white;
+    text-align:center;
+   text-shadow: 2px 2px 4px #000000;
+    font-size: 35px;
+    font-family: impact;
+    border-style:solid;
+    border-color:black;
+    border-width:25px
+    
+    
+}
+.topnav {
+    text-align:center;
+    font-size:50px;
+    font-family:monospace;
+    
+}
+.goals {
+    font-size:28px;
+    background-image:url("http://arilikeairy.org/wordpress/wp-content/uploads/2015/01/Goals.jpg");
+    background-size: 2000px 800px;
+    background-repeat:no-repeat;
+    text-align:center;
+    font-family:luminari;
+     font-size: 30px;
+     
+}
