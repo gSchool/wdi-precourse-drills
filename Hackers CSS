@@ -1,0 +1,14 @@
+.table tr:nth-child(2n) {
+  color: Purple;
+}
+
+.table tr {
+  color: Green;
+}
+.right {
+    float:left;
+}
+
+.left {
+    float:right;}
+    
