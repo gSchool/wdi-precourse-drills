@@ -1,0 +1,100 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+body {
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+header.masthead {
+  font-family: 'Advent Pro', sans-serif;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  color: #000;
+  background-image: url(../img/background.gif);
+  background-position: center;
+  background-size: cover
+}
+
+header.masthead .header-content {
+  position: relative;
+  width: 100%;
+  padding: 150px 0px 150px;
+  text-align: center
+}
+
+header.masthead .header-content .header-content-inner h1 {
+  font-size: 80px;
+  font-weight: 700;
+  text-shadow: 4px 4px 2px #666666;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase
+}
+
+header.masthead .header-content .header-content-inner p {
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, .7)
+}
+
+button {
+  background-color: #c0c0c0;
+  box-shadow: 5px 5px 2px #666666;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px 0px 12px 0px;
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+}
+
+.content p {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 32px;
+}
+
+.center {
+  text-align: center;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  text-align:center
+}
+
+.social ul {
+  margin: 0;
+  padding: 2px;
+}
+
+.social ul li {
+  margin: 2px;
+  list-style: none outside none;
+  display: inline-block;
+}
+
+.social i {
+  width: 48px;
+  height: 48px;
+  color: #000;
+  font-size: 28px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.social i:hover {
+  color: #000;
+}
