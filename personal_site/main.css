@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+ul.nav {
+  margin: 0;
+  padding: 1em;
+}
+
+main.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+}
+
+.Profile_pic {
+  background: url(./images/me.jpeg);
+  background-position: center top;
+  background-size: cover;
+  box-shadow: 0 14px 12px 0 rgba(0, 0, 0, 0.17);
+}
+
+
+.text {
+  padding: 2em;
+}
+.cube {
+  position: absolute;
+  right: 0;
+  bottom: -1em;
+  transition: all 1s ;
+}
+
+.crush {
+  transform: rotateX(55deg);
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav > li {
+  padding-right: 1em;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: black;
+}
