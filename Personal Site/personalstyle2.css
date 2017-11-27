@@ -1,0 +1,19 @@
+.c {
+	float: left;
+	width: 50%;
+	margin: 1.66%;
+}
+
+body {
+	font-family: Inconsolata;
+	background: #42f4dc;
+}
+
+#gif {
+	padding-top: 100px;
+}
+
+p: hover {
+	background: yellow;
+
+}	
