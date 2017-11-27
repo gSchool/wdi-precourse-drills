@@ -1,0 +1,12 @@
+#movieTable tbody tr:nth-child(even){
+  background: red;
+}
+#movieTable tbody tr:nth-child(odd){
+  background: green;
+}
+.column1{
+  float: left;
+}
+.column2 {
+  float: center;
+}
