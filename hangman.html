@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HANGMAN GAME</title>
+	<script type="text/javascript">
+		
+var words = ["testify", "moreover", "science", "javascript"];
+var pickWord = function() {
+	return words[Math.floor(Math.random()*words.length)];
+}
+
+var setupAnswerArray = function(word) {
+	i = [];
+	i.length = word.length;
+	return i;
+}
+
+var showPlayerProgress = function(answerArray)  {
+	alert(answerArray);
+}
+
+var getGuess = function () {
+	letter = prompt("Guess a letter!");
+	return letter; 
+}
+
+var updateGameState = function(guess, word, answerArray) {
+	var j = 0
+	for (i = 0; i < word.length; i++) {
+		if (guess === word[i]) {
+			answerArray[i] = word[i];
+			j += 1;
+		}
+	} return j; 
+}
+
+var showAnswerAndCongratulatePlayer = function (answerArray) {
+	alert("'" + answerArray + "'" + " is the word! Congratulations, you solved it!");
+}
+
+var word = pickWord();
+var answerArray = setupAnswerArray(word);
+var remainingLetters = word.length;
+
+while (remainingLetters > 0) {
+	showPlayerProgress(answerArray);
+	var guess = getGuess();
+	if (guess === null) {
+		break;
+	} else if (guess.length !== 1) {
+		alert("Please enter a single letter.");
+	} else {
+		var correctGuesses = updateGameState(guess, word, answerArray);
+		remainingLetters -= correctGuesses;
+	}
+}
+
+showAnswerAndCongratulatePlayer(answerArray);
+
+	</script>
+</head>
+<body>
+	<h1>ITS A HANGMAN GAME!</h1>
+</body>
+</html>
