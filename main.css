@@ -10,10 +10,24 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+* {
+  font-family: 'Hind', sans-serif;
+
+}
+
+.button {
+  color: #b3d9ff;
+  border-radius: 8px;
+  padding: 32px, 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /*
