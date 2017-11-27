@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+.column1 {
+	float: left;
+	width: 50%;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.column2 {
+	float: right;
+	width: 50%;
+	verticle-align: top;
+	display: inline-block;
+	margin-top: 0px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
