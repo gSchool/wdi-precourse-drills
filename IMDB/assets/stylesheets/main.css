@@ -1,32 +1,38 @@
-h1 {
-  font-size: 20px;
+* {
+  box-sizing: border-box;
 }
 
-#batman {
-  background: url("https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_.jpg") 0 50% no-repeat;
-  list-style-type: none;
-  padding-left: 12px;
-  background-size: 12px;
+body{
+  margin: 0;
 }
 
-#animated {
-  background: url("https://images-na.ssl-images-amazon.com/images/M/MV5BNzI5OWU0MjYtMmMwZi00YTRiLTljMDAtODQ0ZGYxMDljN2E0XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX676_CR0,0,676,999_AL_.jpg") 0 50% no-repeat;
-  list-style-type: none;
-  padding-left: 12px;
-  background-size: 12px;
+.column {
+  float: left;
+  width: 50%;
 }
 
-.img {
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#title1 {
+  background-color: red;
+}
+
+#title2 {
+  background-color: gray;
+}
+
+img {
   height: 32px;
-  width: 44px;
+  width: 32px;
 }
 
-
-
-
-
-
-
+ol, ul {
+  list-style: none;
+}
 
 /*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,7 +54,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-// HTML5 display-role reset for older browsers 
+HTML5 display-role reset for older browsers 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -72,3 +78,21 @@ table {
   border-spacing: 0;
 }
 */
+
+/*ol, ul {
+  list-style: none;
+}
+
+li {
+  margin: 25px;
+}
+
+img {
+  width: 32px;
+  height: 20px;
+}
+
+#right {
+  float: right;
+  width: 50%
+}*/
