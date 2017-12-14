@@ -1,0 +1,15 @@
+
+#name-list, #title-list, #companies-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#name-list img {
+  height: 44px;
+  width: 32px;
+}
