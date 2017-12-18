@@ -1,0 +1,45 @@
+footer.aboutme {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  text-align: center;
+  background-color: rgb(189,204,193);
+    .copyright {
+    top: -8px;
+    font-size: .75em;
+  }
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+          li {
+            display: inline-block;
+          }
+    }
+      a.social {
+          display: inline-block;
+          text-indent: -9999px;
+          margin-left: 5px;
+          width: 30px;
+          height: 30px;
+          background-size: 30px 30px;
+          opacity: .4;
+          transition: all .5s;
+      }
+          a.facebook {
+            background-image: url(https://media.giphy.com/media/ijEiXYEo9DBxm/giphy.gif);
+            border-radius: 100%;
+          }
+        a.linkedin {
+          background-image: url(http://www.pngall.com/wp-content/uploads/2016/07/Linkedin-PNG-Picture.png);
+        }
+        a.github {
+          background-image: url(https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png);
+        }
+        a.social:hover {
+          opacity: 1;
+        }
+        @media(min-width: $tablet-breakpoint){
+              font-size: 1.3em;
+        }
+}
