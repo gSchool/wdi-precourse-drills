@@ -1,0 +1,76 @@
+.homepage-main-nav ul  {
+  padding-left: 0;
+  text-align: center;
+  position: fixed;
+  left: 220px;
+  bottom: 300px;
+      li {
+          list-style: none;
+          padding: 10px 0;
+          transition: .5s;
+            :hover{
+              background-color: rgba(255,255,255, .3);
+            }
+        }
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 4em;
+      }
+  @media(min-width: $desktop-breakpoint){
+    position: fixed;
+    left: 530px;
+    bottom: 140px;
+      a {
+        font-size: 1.6em;
+      }
+  }
+}
+
+
+.aboutme-main-nav {
+  width: 100%;
+  background: rgb(238,235,222);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  border-bottom: 4px solid rgb(243,212,205);
+  top: 0;
+  left: 0;
+    ul {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+      li {
+        padding: 5px 10px 10px 10px;
+      }
+      a {
+        transition: all .5s;
+        text-decoration: none;
+        color: grey;
+        padding: 1em;
+        margin: 0;
+      }
+      a:hover {
+        color: white;
+        background-color: grey;
+      }
+      @media(min-width: $tablet-breakpoint){
+        max-width: 1200px;
+        padding: 0 30px;
+      }
+    }
+    .nav .name {
+    display: none;
+    margin-right: auto;
+    color: grey;
+      @media(min-width: $tablet-breakpoint){
+        display: block;
+      }
+    }
+}

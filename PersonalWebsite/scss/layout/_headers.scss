@@ -1,0 +1,108 @@
+.homepage-content {
+      color: #f1f1f1;
+      width: 100%;
+      h1{
+        font-size: 6em;
+        position: fixed;
+        left: 140px;
+        bottom: 600px;
+      }
+    @media(min-width: $desktop-breakpoint){
+        padding: 10px;
+        h1{
+          font-size: 4em;
+          bottom: 300px;
+          left: 430px;
+          font-weight: 100;
+        }
+    }
+}
+
+header.aboutme {
+  text-align: center;
+  background-image: url(../media/images/backgroundphoto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  line-height: 1.5;
+      .profile-image {
+        margin-top: 51px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 10px solid rgb(202,226,208);
+        transition: all .5s;
+        @media(min-width: $tablet-breakpoint){
+          margin-top: 100px;
+        }
+     }
+      .profile-image:hover {
+        transform: scale(1.2) rotate(5deg);
+      }
+      .tag {
+        background-color: #eeebde;
+        opacity: 0.95;
+        padding: 10px;
+        display: table;
+        margin: 10px auto;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        bottom: -10px;
+            @media(min-width: $tablet-breakpoint){
+              bottom: -52px;
+            }
+        }
+      @media(min-width: $tablet-breakpoint){
+        min-height: 470px;
+
+      }
+}
+
+header.aspirations {
+  text-align: center;
+  background-image: url(../media/images/backgroundphoto3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  line-height: 1.5;
+      .profile-image {
+        margin-top: 135px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 10px solid rgb(202,226,208);
+        transition: all .5s;
+     }
+      .profile-image:hover {
+        transform: scale(1.2) rotate(5deg);
+      }
+      .tag {
+        background-color: #eeebde;
+        opacity: 0.95;
+        padding: 10px;
+        display: none;
+        margin: 10px auto;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        bottom: -10px;
+            @media(min-width: $tablet-breakpoint){
+              bottom: -309px;
+              display: table
+            }
+        }
+      @media(min-width: $tablet-breakpoint){
+        min-height: 470px;
+
+      }
+}
+
+
+ .card h2 {
+   display: inline;
+ }
