@@ -1,0 +1,15 @@
+.ltblue {
+  background: LightSkyBlue;
+}
+.ltyellow {
+  background: Khaki;
+}
+section {
+  float: left;
+  margin: 0 1.5%;
+}
+aside {
+  float: center;
+  margin: 0 1.5%;
+
+}
