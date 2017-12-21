@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Matthew Hyrka</title>
+    <link rel="stylesheet" href="PPStyle.css">
+    <style type="text/css">a {text-decoration: none}</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.bio').hide();
+      $('#earlyLife').on('click', function() {
+        $('.bio').slideToggle();
+      });
+      $('#catHacker').hide();
+      $('#theFuture').on('click', function(){
+        $('#catHacker').slideToggle();
+      })
+    });
+    </script>
+  </head>
+  <body>
+
+
+    <style media="screen">
+      body {
+        background-image: url("/Users/sallywhite/Desktop/SPACE.jpg");
+      }
+    </style>
+    <h1 id="bigName">M A T T H E W // H Y R K A</h1>
+
+    <div class="btn-group" align="center">
+      <button id="earlyLife">Early Life</button>
+      <button id="music"><a href="http://theblackcadillacs.com/" style="white">Music</a></button>
+      <button id="theFuture">The Future...</button>
+    </div>
+    <div class="bio"><p>
+      I was born and raised in TN. I attended the University of Tennessee
+      from 2006-2010 (Go Vols) and graduated with a degree in Political Science.
+      After graduation I decided to take my band on tour. We played over a hundred
+      shows a year and were featured at Bonnaroo, Hangout, Voodoo, Summer Camp,
+      and myriad other smaller festivals. The music business is a cruel mistress
+      so despite some success and encouraging progress we eventually decided that
+      touring was no longer what we wanted to do and went on hiatus. I moved to
+      Denver last October and excited for the next chapter in my life.
+    </p>
+
+    </div>
+
+    <iframe id="catHacker" src="https://giphy.com/embed/o0vwzuFwCGAFO" width="480" height="480"
+    frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-hacker-webs-o0vwzuFwCGAFO"></a></p>
+
+  </body>
+</html>
