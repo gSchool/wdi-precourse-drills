@@ -79,3 +79,14 @@ img {
 	list-style-type: disc;
 	list-style-position: inside;
 }
+
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
