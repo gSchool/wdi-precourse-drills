@@ -83,3 +83,8 @@ ul {
   list-style-type: circle;
   padding-left: 15px;
 }
+
+section {
+  float: left;
+  width: 40%;
+}
