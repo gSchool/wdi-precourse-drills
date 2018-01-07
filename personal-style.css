@@ -1,0 +1,92 @@
+/* -- Header -- */
+.group,
+header,
+aside,
+body,
+footer {
+  margin: 1% 1.5%;
+}
+
+aside {
+  float: left;
+  width: 45%;
+}
+
+body {
+  float: left;
+  width: 55%;
+}
+
+.style {
+  background-color: #00829E;
+  border-bottom: 2px solid;
+  border-radius: 6px;
+  border-top: 2px solid;
+  width: 97%;
+}
+
+img {
+  border-radius: 6px;
+  float: left;
+  height: 550px;
+  margin: 8px;
+  width: 400px;
+}
+
+footer {
+  font-size: 2px;
+}
+
+span {
+  color: white;
+}
+
+/* -- Navigation -- */
+
+.nav {
+  font-size: 20px;
+  font-style: oblique;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.navigation {
+  border-collapse: collapse;
+  text-align: right;
+}
+
+.navigation li {
+  background-color: #00B6DE;
+  border: 3px solid #00B6DE;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 20px 30px;
+  padding: 3px;
+}
+
+/* -- Clearfix -- */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  background: #eaeaed;
+  border-radius: 6px;
+  clear: both;
+  *zoom: 1;
+}
+
+
+
+/* -- Typography -- */
+
+h1 {
+  color: white;
+  font-size: 50px;
+  text-transform: capitalize;
+}
