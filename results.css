@@ -1,0 +1,28 @@
+img {
+  height: 32px;
+  width: 44px;
+}
+
+.column {
+  float: left;
+  margin: 0 1.5%;
+  width: 100%;
+}
+
+.titles {
+  border-collapse: separate;
+}
+
+.titles tr:nth-child(even) td:last-child {
+  background: #f0f0f3;
+}
+
+.titles td {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
+}
+
+footer {
+  clear: both;
+  margin-bottom: 0;
+}
