@@ -1,0 +1,42 @@
+.ltgrey {
+  background-color: #f4f7f7;
+}
+
+.grey {
+  background-color: #dee0e0;
+}
+
+section {
+  float: left;
+  width: 70%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f4f7f7;
+  border-radius: 10px;
+}
+
+aside {
+  float: right;
+  width: 27%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f4f7f7;
+  border-radius: 10px;
+}
+
+table {
+  width: 90%;
+  padding-left: 1%;
+}
+
+h1 {
+  padding-left: 1%;
+}
+
+h2 {
+  padding-left: 1%;
+}
+
+p {
+  padding-left: 1%;
+}

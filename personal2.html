@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Personal Brady</title>
+  <link rel="stylesheet" type="text/css" href="personalstyle.css">
+  <script src="jquery-3.2.1.min.js"></script>
+  <meta name="description" content="LET&#39;S GOOOOO!!1!1!!1111!!1!">
+  <meta name="keywords" content="Personal Brady">
+  <meta name="author" content="Jane Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Personal Brady">
+  <meta property="og:image" content="hyperspacebit.jpg">
+  <meta property="og:description" content="Personal Brady">
+</head>
+
+<body background="hyperspace.jpg">
+  <div class="wrap">
+    <div></div>
+
+  </div>
+  <aside class="fadedsec">
+    <h1>Brady Personal Page 2</h1>
+    <button class="button">Hi again! Click this button.
+<p class="small purp">*(only when this button turns purple)</p>
+</button>
+    <div class="hidden">
+      <h3>...Where I'm Going</h3>
+      <p> I am very excited to learn to make weird interactive digital art and connect to and communicate with every human on Earth through technology.
+        <br>
+        <br> I have ~12 web/programming based projects that I have been brainstorming and planning for years.
+        <br>
+        <br>Goals then include:
+        <ul>
+          <li>9 web apps/websites</li>
+          <li>learning to program LED lights</li>
+          <li>learning crypto programming (prbly Solidity first)</li>
+          <li>bolstering learning of digital music production with programming knowledge</li>
+          <li>putting it all together in a digital global superfuture framework to dissolve differences and borders.</li>
+          <li class="faded">(in more ordered fashion)</li>
+          <li class="fin">Fin pg.2</li>
+
+        </ul>
+        <p>
+          <center> Now, do whatever </center>
+        </p>
+      </p>
+    </div>
+  </aside>
+
+  <script>
+    $(document).ready(function() {
+      $('button').on('mouseenter', function() {
+        $('button').addClass("purple");
+      });
+      $('button').on('mouseleave', function() {
+        $('button').removeClass("purple");
+      });
+      $('button').on('click', function() {
+        $('.hidden').slideDown().removeClass("hidden");
+      });
+    });
+  </script>
+
+  <script>
+    var looper;
+    var degrees = 0;
+
+    function rotateAnimation(el, speed) {
+      var elem = document.getElementById(el);
+      if (navigator.userAgent.match("Chrome")) {
+        elem.style.WebkitTransform = "rotate(" + degrees + "deg)";
+      } else if (navigator.userAgent.match("Firefox")) {
+        elem.style.MozTransform = "rotate(" + degrees + "deg)";
+      } else if (navigator.userAgent.match("MSIE")) {
+        elem.style.msTransform = "rotate(" + degrees + "deg)";
+      } else if (navigator.userAgent.match("Opera")) {
+        elem.style.OTransform = "rotate(" + degrees + "deg)";
+      } else {
+        elem.style.transform = "rotate(" + degrees + "deg)";
+      }
+      looper = setTimeout('rotateAnimation(\'' + el + '\',' + speed + ')', speed);
+      degrees++;
+      if (degrees > 359) {
+        degrees = 1;
+      }
+      document.getElementById("status").innerHTML = "rotate(" + degrees + "deg)";
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#DIV_1').attr('class', 'animatable');
+      setTimeout(function() {
+        $('#DIV_1').removeClass('animatable');
+      }, 1000)
+    });
+  </script>
+
+
+  <a href="personal1.html">
+
+<img id="img1" src="solarbit.png" alt="cog1" style="transform: rotate(246deg);">
+<script>rotateAnimation("img1",30);</script>
+<iframe width="0" height="0" src="https://www.youtube.com/embed/utHG1MOxe_g?&autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="" autoplay="1"></iframe>
+
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl1039'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="./BITCOIN HYPERSPACE_files/tcc_l.combined.1.0.6.min.js"></script>
+
+</a></body>
+
+</html>
