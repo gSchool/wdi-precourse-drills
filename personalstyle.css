@@ -1,0 +1,101 @@
+section {
+  font-family: "Helvetica";
+  float: left;
+  width: 30%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f4f7f7;
+  border-radius: 10px;
+  background-color: white
+}
+
+aside {
+  font-family: "Helvetica";
+  position: relative;
+  left: 50px;
+  top: 50px;
+  width: 30%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f4f7f7;
+  border-radius: 10px;
+  background-color: white;
+}
+
+button {
+  text-shadow: 1px 1px #ededed;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1 {
+  padding: 1%;
+  text-shadow: 1px 1px #ededed;
+}
+
+h3 {
+  padding: 1%;
+  text-shadow: 1px 1px #ededed;
+}
+
+p {
+  padding: 1%;
+  text-shadow: 1px 1px #ededed;
+}
+
+.faded {
+  opacity: 0.2;
+}
+
+.fadedsec {
+  opacity: 0.7;
+}
+
+#img1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.button {
+  background-color: #dee0e0;
+  /* not green */
+  border: none;
+  color: black;
+  padding: 10px 5px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.fin {
+  font-family: cursive;
+  font-style: italic;
+}
+
+.green {
+  background-color: #0ed600;
+}
+
+.purple {
+  background-color: #1700ad;
+}
+
+.small {
+  font-size: 14px;
+  opacity: 0.8;
+  font-style: italic;
+  font-color: ;
+  text-shadow: 1px 1px #0ed600;
+}
+
+.purp {
+  text-shadow: 5px 5px #1700ad;
+}

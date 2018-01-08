@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Personal Brady</title>
+  <link rel="stylesheet" type="text/css" href="personalstyle.css">
+  <script src="jquery-3.2.1.min.js"></script>
+  <meta name="description" content="LET&#39;S GOOOOO!!1!1!!1111!!1!">
+  <meta name="keywords" content="Personal Brady">
+  <meta name="author" content="Jane Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Personal Brady">
+  <meta property="og:image" content="hyperspacebit.jpg">
+  <meta property="og:description" content="Personal Brady">
+</head>
+
+<body background="hyperspace.jpg">
+  <div class="wrap">
+    <div></div>
+
+  </div>
+  <section class="fadedsec">
+    <h1>Brady Personal Page 1</h1>
+    <button class="button">Hi there! Click this button.
+<p class="small">*(only when this button turns green)</p>
+</button>
+    <div class="hidden">
+      <h3>Where I'm From...</h3>
+
+      <p> Hi, I'm Brady.
+        <br>I'm from Seattle and I recently moved to Berkeley from Los Angeles.
+        <br>
+        <br>I'm deeply into music, crypto, consciousness, tech, farmer's markets, motorcycles, and our global hyperfuture.
+        <br>
+        <br>Hobbies then include:
+        <ul>
+          <li>drums</li>
+          <li>live shows</li>
+          <li>reddit crypto blackholes</li>
+          <li>futurism</li>
+          <li>instagramming food rarely (enjoying the moment)</li>
+          <li>motolove</li>
+          <li>and hippie shit.</li>
+          <li class="faded">(in unordered fashion)</li>
+          <li class="fin">Fin pg.1</li>
+
+        </ul>
+        <p>
+          <center> Now, click the spinning bitcoin &#62; </center>
+        </p>
+      </p>
+    </div>
+  </section>
+
+  <script>
+    $(document).ready(function() {
+      $('button').on('mouseenter', function() {
+        $('button').addClass("green");
+      });
+      $('button').on('mouseleave', function() {
+        $('button').removeClass("green");
+      });
+      $('button').on('click', function() {
+        $('.hidden').slideDown().removeClass("hidden");
+      });
+    });
+  </script>
+
+  <script>
+    var looper;
+    var degrees = 0;
+
+    function rotateAnimation(el, speed) {
+      var elem = document.getElementById(el);
+      if (navigator.userAgent.match("Chrome")) {
+        elem.style.WebkitTransform = "rotate(" + degrees + "deg)";
+      } else if (navigator.userAgent.match("Firefox")) {
+        elem.style.MozTransform = "rotate(" + degrees + "deg)";
+      } else if (navigator.userAgent.match("MSIE")) {
+        elem.style.msTransform = "rotate(" + degrees + "deg)";
+      } else if (navigator.userAgent.match("Opera")) {
+        elem.style.OTransform = "rotate(" + degrees + "deg)";
+      } else {
+        elem.style.transform = "rotate(" + degrees + "deg)";
+      }
+      looper = setTimeout('rotateAnimation(\'' + el + '\',' + speed + ')', speed);
+      degrees++;
+      if (degrees > 359) {
+        degrees = 1;
+      }
+      document.getElementById("status").innerHTML = "rotate(" + degrees + "deg)";
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#DIV_1').attr('class', 'animatable');
+      setTimeout(function() {
+        $('#DIV_1').removeClass('animatable');
+      }, 1000)
+    });
+  </script>
+
+
+  <a href="personal2.html">
+
+<img id="img1" src="solarbit.png" alt="cog1" style="transform: rotate(246deg);">
+<script>rotateAnimation("img1",30);</script>
+<iframe width="0" height="0" src="https://www.youtube.com/embed/utHG1MOxe_g?&autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="" autoplay="1"></iframe>
+
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl1039'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="./BITCOIN HYPERSPACE_files/tcc_l.combined.1.0.6.min.js"></script>
+
+</a></body>
+
+</html>
