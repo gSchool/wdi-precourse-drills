@@ -1,0 +1,17 @@
+html {
+  font-family: "Helvetica";
+}
+
+section {
+  float: left;
+  width: 500px;
+}
+
+#surprise {
+  font-size: 16px;
+  position: relative;
+  height: 40px;
+  Width: 120px;
+  top: 20px;
+  left: 20px;
+}
