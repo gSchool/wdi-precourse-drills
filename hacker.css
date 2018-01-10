@@ -1,0 +1,39 @@
+table .movie1 {
+  background: orange;
+}
+
+table .movie2{
+  background: green;
+}
+
+table .movie3 {
+  background: green;
+}
+
+table .movie4{
+  background: red;
+}
+
+
+table .movie5{
+  background: red;
+}
+
+table .movie6 {
+  background: blue;
+}
+
+table .movie7{
+  background: blue;
+}
+
+.left-col{
+  float:left;
+  margin: 40px;
+  width: 200px;
+}
+.right-col{
+  float:right; 
+    margin: 40px;
+    width: 200px;
+  }
