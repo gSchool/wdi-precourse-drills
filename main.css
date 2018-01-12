@@ -1,0 +1,20 @@
+div p:nth-child(odd) {
+
+	background: red;
+
+}
+
+div p:nth-child(even) {
+
+	background: blue;
+}
+
+section {
+
+	float: left;
+}
+
+aside {
+
+	float: right;
+}
