@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hangman</title>
+</head>
+
+
+<body>
+	<h1>Hangman!</h1>
+	
+	<script>
+	var words = [
+		"money",
+		"blessed",
+		"computer",
+		"turtle"
+	];
+	
+	var pickWord = words[Math.floor(Math.random() * words.length)];
+	
+	var setupAnswerArray = [];
+	for (var i= 0; i < pickWord.length; i++) {
+		setupAnswerArray[i] = "_";
+	}
+	var showPlayerProgress = pickWord.length;
+	
+	while (showPlayerProgress > 0) {
+		
+		alert(setupAnswerArray.join(" "));
+	
+		var getGuess = prompt("Guess a letter, or click cancel to stop playing.");
+		if (getGuess === null) {
+			break;
+		} else if (getGuess.length !== 1){
+			alert("Please enter a single letter.");
+		} else {
+			for (var j = 0; j < pickWord.length; j++) {
+				if (pickWord[j] === getGuess) {
+					setupAnswerArray[j] = getGuess;
+					showPlayerProgress--;
+				}
+			}
+		}
+	}
+	
+	
+	alert(setupAnswerArray.join(" "));
+	alert("Good Job! The Answer was " + pickWord);
+	
+	</script>
+</body>
+</html>
