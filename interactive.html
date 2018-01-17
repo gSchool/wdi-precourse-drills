@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playing with the DOM</title>
+</head>
+<body>
+  <h1 id="heading">Hello World!</h1>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script>
+    var counter = 0;
+    var speed = 1000;
+    var clickCount = 0;
+    var move = function() {
+      switch (counter % 4) {
+        case 0:
+        $("#heading").offset({left:0,top:0});
+        break;
+        case 1:
+        $("#heading").offset({left:200,top:0});
+        break;
+        case 2:
+        $("#heading").offset({left:200,top:200});
+        break;
+        case 3:
+        $("#heading").offset({left:0,top:200});
+        break;
+      }
+      counter++;
+    }
+    var intervalId = setInterval(move, speed);
+
+    $("html").click(function(event) {
+      clearInterval(intervalId);
+      speed -= 100;
+      intervalId = setInterval(move, speed);
+      clickCount++;
+      if (clickCount >= 10) {
+        clearInterval(intervalId);
+        $("#heading").text("You Win!!!");
+      }
+    });
+  </script>
+</body>
+</html>
