@@ -51,7 +51,7 @@ function drawMessage(message, x, y) {
   ctx.textAlign = "left";
   ctx.fillStyle = "black";
   ctx.fillText(message, x, y);
-};
+}
 
 function drawMultilineMessages(messages, x, y) {
   "use strict";
