@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <title>Webpage Stuff</title>
-    </header>
+    <link>
+        <title>IMDB Results</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
+    <div id="left">
     <h1>Results for "Hackers"</h1>
     <h3>Titles</h3>
     <table>
         <tr>
-            <img src="images/hackers.jpg" alt="Hackers' Poster" width="32" height="44">
+            <td><img src="images/hackers.jpg" alt="Hackers' Poster" width="32" height="44"></td>
             <td><a href="misc/README.md">Hackers (1995)</a></td>
         </tr>
-        <tr>
-            <img src="images/2000.jpg" alt="2000 Poster" width="32" height="44">
+        <tr id="odd">
+            <td><img src="images/2000.jpg" alt="2000 Poster" width="32" height="44"></td>
             <td><a href="misc/README.md">2000 AD (2000)</a><br/> <i>aka "Hackers"</i></td>
         </tr>
         <tr>
-            <img src="images/frontline.jpg" alt="Frontline Poster" width="32" height="44">
+            <td><img src="images/frontline.jpg" alt="Frontline Poster" width="32" height="44"></td>
             <td><a href="misc/README.md">Hackers (2001) (TV Episode)</a><br/><small>- Frontline (1983) (TV Series)</small></td>
         </tr>
-        <tr>
-            <img src="images/hackersgame.jpg" alt="Hacker's Game Poster" width="32" height="44">
+        <tr id="odd">
+            <td><img src="images/hackersgame.jpg" alt="Hacker's Game Poster" width="32" height="44"></td>
             <td><a href="misc/README.md">Hacker's Game (2015)</a><br/> <i>aka "The Hackers"</i></td>
         </tr>
     </table>
     <h3>Names</h3>
     <table>
     <tr>
-        <img src="images/amyacker.jpg" alt="Amy Acker" width="32" height="44">
+        <td><img src="images/amyacker.jpg" alt="Amy Acker" width="32" height="44"></td>
         <td><a href="http://www.imdb.com/name/nm0009918/">Amy Acker (Actress, Angel (1999))</a></td>
     </tr>
-    <tr>
-        <img src="images/drewvan.jpg" alt="Drew Van Acker" width="32" height="44">
+    <tr id="odd">
+        <td><img src="images/drewvan.jpg" alt="Drew Van Acker" width="32" height="44"></td>
         <td><a href="http://www.imdb.com/name/nm3216408/?ref_=fn_al_nm_1">Drew Van Acker (Actor, Pretty Little Liars (2010))</a></td>
     </tr>
     <tr>
-        <img src="images/buddyhackett.jpg" alt="Buddy Hackett" width="32" height="44">
+        <td><img src="images/buddyhackett.jpg" alt="Buddy Hackett" width="32" height="44"></td>
         <td><a href="http://www.imdb.com/name/nm0004983/?ref_=nv_sr_2">Buddy Hackett (Actor, The Little Mermaid (1989))</a></td>
     </tr>
-    <tr>
-        <img src="images/emilywickersham.jpg" alt="Emily Wichersham" width="32" height="44">
+    <tr id="odd">
+        <td><img src="images/emilywickersham.jpg" alt="Emily Wichersham" width="32" height="44"></td>
         <td><a href="http://www.imdb.com/name/nm2278978/?ref_=nv_sr_2">Emily Wichersham (Actress, I Am Number Four (2011))</a></td>
     </tr>
     </table>
@@ -52,6 +54,8 @@
         Bleeker Street Media<br/>
         Bleeker Street Entertainment
     </p>
+    </div>
+    <div id="right">
     <h3>Category Search</h3>
     <list>
         <ul>
@@ -80,5 +84,6 @@
             <li>Advanced Name Search</li>
         </ul>
     </list>
+    </div>
 </body>
 </html>
