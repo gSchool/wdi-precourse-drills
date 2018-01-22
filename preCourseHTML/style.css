@@ -1,0 +1,22 @@
+#odd {
+    background: bisque;
+}
+
+tr {
+    background: cornsilk;
+}
+
+div {
+    border-style: solid;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
