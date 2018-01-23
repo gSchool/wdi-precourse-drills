@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
     <meta charset="utf-8">
     <title>IMDB Results for Hackers</title>
   </head>
   <body>
     <h1>Results for Hackers</h1>
+    <section>
     <h3>Titles</h3>
       <table>
-        <tr>
+        <tr style="background-color:darkolivegreen">
           <td>
             <img src="/Users/macbook/Downloads/html-images/hackers.jpg" alt="Hackers movie poster-Their crime is curiosity" height="44" width="32">
           </td>
@@ -16,7 +18,7 @@
             <a href="README.md">Hackers (1995)</a>
           </td>
         </tr>
-        <tr>
+        <tr style="background-color:silver">
           <td>
             <img src="/Users/macbook/Downloads/html-images/2000.jpg" alt="2000 AD movie poster-A Hong Kong Legends Production" height="44" width="32">
           </td>
@@ -25,7 +27,7 @@
             <p>aka "Hackers"</p>
           </td>
         </tr>
-        <tr>
+        <tr style="background-color:darkolivegreen">
           <td>
             <img src="/Users/macbook/Downloads/html-images/frontline.jpg" alt="Frontilne logo" height="44" width="32">
           </td>
@@ -34,7 +36,7 @@
             <p>-Frontline (1983)(TV Series)</p>
           </td>
         </tr>
-        <tr>
+        <tr style="background-color:silver">
           <td>
             <img src="/Users/macbook/Downloads/html-images/hackersgame.jpg" alt="Hacker's Game movie poster-Keep Your Enemies Close" height="44" width="32">
           </td>
@@ -86,6 +88,8 @@
       <p>Crackerjack Management</p>
       <p>Bleeker Street Media</p>
       <p>Bleeker Street Entertainment</p>
+    </section>
+    <aside>
     <h3>Cateogry Search</h3>
       <ul>
         <li>All</li>
@@ -110,5 +114,6 @@
         <li>Advanced Title Search</li>
         <li>Advanced Name Search</li>
       </ul>
+    </aside>
   </body>
 </html>
