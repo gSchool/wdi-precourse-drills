@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta charset="utf-8">
+    <title>IMDB Results for Hackers</title>
+  </head>
+  <body>
+    <h1>Results for Hackers</h1>
+    <section>
+    <h3>Titles</h3>
+      <table>
+        <tr style="background-color:darkolivegreen">
+          <td>
+            <img src="/Users/macbook/Downloads/html-images/hackers.jpg" alt="Hackers movie poster-Their crime is curiosity" height="44" width="32">
+          </td>
+          <td>
+            <a href="README.md">Hackers (1995)</a>
+          </td>
+        </tr>
+        <tr style="background-color:silver">
+          <td>
+            <img src="/Users/macbook/Downloads/html-images/2000.jpg" alt="2000 AD movie poster-A Hong Kong Legends Production" height="44" width="32">
+          </td>
+          <td>
+            <a href="README.md">2000 AD(2000)</a>
+            <p>aka "Hackers"</p>
+          </td>
+        </tr>
+        <tr style="background-color:darkolivegreen">
+          <td>
+            <img src="/Users/macbook/Downloads/html-images/frontline.jpg" alt="Frontilne logo" height="44" width="32">
+          </td>
+          <td>
+            <a href="README.md">Hackers (2001)(TV Episode)</a>
+            <p>-Frontline (1983)(TV Series)</p>
+          </td>
+        </tr>
+        <tr style="background-color:silver">
+          <td>
+            <img src="/Users/macbook/Downloads/html-images/hackersgame.jpg" alt="Hacker's Game movie poster-Keep Your Enemies Close" height="44" width="32">
+          </td>
+          <td>
+            <a href="README.md">Hacker's Game (2015)</a>
+            <p>aka "The Hackers"</p>
+          </td>
+        </tr>
+      </table>
+    <h3>Names</h3>
+      <table>
+        <tr>
+          <td>
+            <img src="/Users/macbook/Downloads/html-images/amyacker.jpg" alt="A headshot of Amy Acker at a movie premier" height="44" width="32">
+          </td>
+          <td>
+            <a href="http://www.imdb.com/name/nm0009918/">Amy Acker (Actress, Angel(1999))</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/Users/macbook/Downloads/html-images/drewvan.jpg" alt="a promo professional picture of Drew VanAcker in dress pants, dress shirt, vest and tie." height="44" width="32">
+          </td>
+          <td>
+            <a href="http://www.imdb.com/name/nm3216408/?ref_=fn_al_nm_1">Drew Van Acker (Actor, Pretty Little Liars(2010))</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/Users/macbook/Downloads/html-images/buddyhackett.jpg" alt="A loveable picture of Buddy Hackett in big ground glasses." height="44" width="32">
+          </td>
+          <td>
+            <a href="http://www.imdb.com/name/nm0004983/?ref_=fn_al_nm_1">Buddy Hackett (Actor, The Little Mermaid(1989))</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/Users/macbook/Downloads/html-images/emilywickersham.jpg" alt="A professional headshot of Emily Wickershame with a stern look on her face." height="44" width="32">
+          </td>
+          <td>
+            <a href="http://www.imdb.com/name/nm2278978/?ref_=fn_al_nm_1">Emily Wickersham (Actress, I Am Number Four(2011))</a>
+          </td>
+        </tr>
+      </table>
+    <h3>Keywords</h3>
+      <p>hacker (180 titles)</p>
+    <h3>Companies</h3>
+      <p>Douglas, Gorman, Rothacker & Wilhelm(DGRW)</p>
+      <p>Crackerjack Management</p>
+      <p>Bleeker Street Media</p>
+      <p>Bleeker Street Entertainment</p>
+    </section>
+    <aside>
+    <h3>Cateogry Search</h3>
+      <ul>
+        <li>All</li>
+        <li>Name</li>
+        <li>Title</li>
+          <ul>
+            <li>Movie</li>
+            <li>TV</li>
+            <li>TV episode</li>
+            <li>Video Game</li>
+          </ul>
+        <li>Character</li>
+        <li>Company</li>
+        <li>Keyword</li>
+        <li>Plot Sumamry</li>
+        <li>Biographies</li>
+        <li>Quotes</li>
+      </ul>
+    <h3>Additonal Search Options</h3>
+      <ul>
+        <li>Advanced Search</li>
+        <li>Advanced Title Search</li>
+        <li>Advanced Name Search</li>
+      </ul>
+    </aside>
+  </body>
+</html>
