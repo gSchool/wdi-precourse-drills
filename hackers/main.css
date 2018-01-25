@@ -1,0 +1,12 @@
+#color1 {
+  background: green;
+}
+#color2{
+  background: red;
+}
+section{
+  float:left;
+}
+aside{
+  float:right;
+}
