@@ -1,0 +1,16 @@
+.titles tr:nth-child(even) {
+	background: hsl(0, 0%, 92%);
+}
+
+.column1{
+	float: left;
+	margin: 0 1.5%;
+	width: 63%;
+}
+
+aside {
+	float: right;
+	margin: 0 1.5%;
+	width: 30%;
+
+}
