@@ -27,6 +27,46 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+div {
+  clear: left;
+}
+
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+section {
+  float: left;
+  margin: 0 0%;
+  width: 10%;
+  display: inline-block;
+  width: 30%;
+}
+aside {
+  float: right;
+  margin: 0 15%;
+  width: 40%;
+}
+
+
+
 body {
   line-height: 1;
   padding-left: 10px;
@@ -49,6 +89,14 @@ td {
   vertical-align: middle;
 }
 
+
+col1 {
+  float: left;
+}
+
+col2 {
+  float: right;
+}
 
 img {
   background: #eaeaed;
