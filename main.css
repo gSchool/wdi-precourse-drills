@@ -2,3 +2,8 @@ img {
   height: 44px;
   width: 32px;
 }
+
+section {
+  float: left;
+  width: 50%;
+}
