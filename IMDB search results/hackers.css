@@ -1,0 +1,12 @@
+table:first-of-type tr:nth-child(odd)
+{
+  background: rgba(65, 0, 35, .10)
+}
+
+column1 {
+  float: left;
+}
+
+column2  {
+  float: left;
+}
