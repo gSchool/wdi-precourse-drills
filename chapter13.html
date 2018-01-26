@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas id="canvas" width="700" height="600"></canvas>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+
+    var circle = function(x, y, radius, style, fillCircle) {
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
+      if (fillCircle) {
+        ctx.fillStyle = style;
+        ctx.fill();
+      }
+      else {
+        ctx.strokeStyle = style;
+        ctx.stroke();
+      }
+    };
+    var fillCircle = function(x, y, radius, style) {
+      circle(x, y, radius, style, true);
+    };
+
+    // snow man
+    var snowMan = function(x, y) {
+      circle(x, y, 30, "black", false);
+      circle(x, y + 80, 50, "black", false);
+      fillCircle(x, y + 4, 5, "orange");
+      fillCircle(x, y + 55, 5, "black");
+      fillCircle(x, y + 75, 5, "black");
+      fillCircle(x, y + 95, 5, "black");
+      fillCircle(x - 10, y - 5, 5, "black");
+      fillCircle(x + 10, y - 5, 5, "black");
+    };
+    snowMan(200, 100);
+    snowMan(350, 100);
+
+    var drawPoints = function(points) {
+      ctx.beginPath();
+      for (var i = 0; i < points.length; i++) {
+        var x = points[i][0];
+        var y = points[i][1];
+        if (i === 0) {
+          ctx.moveTo(x, y);
+        }
+        else {
+          ctx.lineTo(x, y);
+        }
+      }
+      ctx.stroke();
+    }
+    //drawPoints([[50,50], [50,100], [100,100], [100, 50], [50,50]]);
+    drawPoints([[50,50], [50,100], [25,120], [100, 50], [70,90], [100,90], [70,120]]);
+
+    $("#canvas").mousemove(function(event) {
+      fillCircle(event.pageX, event.pageY, 3, "pink");
+    });
+
+    var drawHangman = function(stage) {
+      ctx.strokeStyle = "black";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      switch (stage) {
+        case 0:
+          // head
+          circle(65, 245, 15, "black", false);
+          break;
+        case 1:
+          // neck
+          ctx.moveTo(65, 260);
+          ctx.lineTo(65, 275);
+          break;
+        case 2:
+          // torso
+          ctx.moveTo(65, 275);
+          ctx.lineTo(65, 325);
+          break;
+        case 3:
+          // left arm
+          ctx.moveTo(65, 275);
+          ctx.lineTo(30, 295);
+          break;
+        case 4:
+          // right arm
+          ctx.moveTo(65, 275);
+          ctx.lineTo(100, 295);
+          break;
+        case 5:
+          // left leg
+          ctx.moveTo(65, 325);
+          ctx.lineTo(25, 370);
+          break;
+        case 6:
+          // right leg
+          ctx.moveTo(65, 325);
+          ctx.lineTo(105, 370);
+          break;
+      }
+      ctx.stroke();
+    }
+    for (var i = 0; i < 7; i++) {
+      drawHangman(i);
+    }
+  </script>
+</body>
+</html>

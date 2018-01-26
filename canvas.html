@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas id="canvas" width="700" height="600"></canvas>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var colors = ["pink", "purple", "fuchsia", "cyan", "lime", "chocolate", "blue", "green"];
+    for (var i = 0; i < 8; i++) {
+      ctx.fillStyle = colors[i];
+      ctx.fillRect(i*50,0,50,100);
+    }
+
+    ctx.fillStyle = "red";
+    ctx.fillRect(120,120,20,20);
+    ctx.fillRect(128, 140, 4, 10);
+    ctx.fillRect(100, 150, 60, 4);
+    ctx.fillRect(115, 154, 30, 30);
+    ctx.fillRect(115, 184, 4, 25);
+    ctx.fillRect(141, 184, 4, 25);
+
+    ctx.strokeStyle = "deepPink";
+    ctx.lineWidth = 4;
+    ctx.strokeRect(10, 10, 100, 20);
+
+    ctx.strokeStyle = "turquoise";
+    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.moveTo(180, 180);
+    ctx.lineTo(220, 220);
+    ctx.moveTo(220, 180);
+    ctx.lineTo(180, 220);
+    ctx.stroke();
+
+    ctx.fillStyle = "skyBlue";
+    ctx.beginPath();
+    ctx.moveTo(300, 300);
+    ctx.lineTo(300, 260);
+    ctx.lineTo(330, 230);
+    ctx.lineTo(360, 260);
+    ctx.lineTo(360, 300);
+    ctx.lineTo(300, 300);
+    ctx.fill();
+
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "green";
+    ctx.beginPath();
+    ctx.arc(50, 300, 20, 0, Math.PI / 2, false);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(100, 300, 20, 0, Math.PI, false);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(150, 300, 20, 0, Math.PI * 2, false);
+    ctx.stroke();
+
+    var circle = function(x, y, radius, style, fillCircle) {
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
+      if (fillCircle) {
+        ctx.fillStyle = style;
+        ctx.fill();
+      }
+      else {
+        ctx.strokeStyle = style;
+        ctx.stroke();
+      }
+    };
+    var fillCircle = function(x, y, radius, style) {
+      circle(x, y, radius, style, true);
+    };
+    ctx.lineWidth = 4;
+    circle(400, 200, 10, "red", false);
+    circle(400, 200, 20, "orange", false);
+    circle(400, 200, 30, "yellow", false);
+    circle(400, 200, 40, "green", false);
+    circle(400, 200, 50, "blue", false);
+    circle(400, 200, 60, "purple", false);
+
+    // snow man
+    var snowMan = function(x, y) {
+      circle(x, y, 30, "black", false);
+      circle(x, y + 80, 50, "black", false);
+      fillCircle(x, y + 4, 5, "orange");
+      fillCircle(x, y + 55, 5, "black");
+      fillCircle(x, y + 75, 5, "black");
+      fillCircle(x, y + 95, 5, "black");
+      fillCircle(x - 10, y - 5, 5, "black");
+      fillCircle(x + 10, y - 5, 5, "black");
+    };
+    snowMan(550, 100);
+    snowMan(550, 300);
+  </script>
+</body>
+</html>
