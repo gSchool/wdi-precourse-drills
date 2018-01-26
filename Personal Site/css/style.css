@@ -1,0 +1,231 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #edeae8;
+}
+
+/*-----------------------------------*/
+/*-----Introdcution Page Styling-----*/
+/*-----------------------------------*/
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url('../images/skepticalyellow.jpg');
+  display: table;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+  margin-left: 75%;
+}
+
+.content {
+  max-width: auto;
+  margin-left: 40%;
+  text-align: center;
+}
+
+.main {
+  font-family: 'Play', sans-serif;
+  font-size: 120px;
+  margin: 0;
+  padding: 0;
+}
+
+.main2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.btn {
+  background-color: black;
+  border: none;
+  border-radius: 70px;
+  color: #d5c008;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-family: 'Archivo', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.btn:hover {
+  background-color: #d5c008;
+  color: black;
+  border: 1px solid black;
+}
+/*--------------------------------------*/
+/*----------About Pages Styling---------*/
+/*--------------------------------------*/
+
+/*------------Grid Setup------------*/
+.grid  {
+  height: 100%;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header"
+  "content1 content2"
+  "footer footer"
+}
+
+/*-----------Grid Row 1 Style-------------*/
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 2% 0;
+  font-size: 75px;
+  font-family: 'Play', sans-serif;
+}
+
+.header p {
+  font-size: 25px;
+  font-family: 'Play', sans-serif;
+  padding: 0% 18%;
+  margin-bottom: 3%;
+}
+
+.header img{
+  padding-bottom: 4%;
+}
+
+figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+ figure:hover #imgnj {
+	opacity: .5;
+}
+
+#njgif {
+  margin-bottom: 3%;
+  display: none;
+}
+
+/*-----------Grid Row 2 Style------------*/
+.content1 {
+  grid-area: content1;
+  color: #edeae8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  background-color: #c60000;
+  padding: 3%;
+}
+
+.content1 h1 {
+  margin: 1%;
+  font-size: 24px;
+}
+
+.content1 p {
+  margin: 1%;
+}
+
+.innercontent {
+  padding: 10%;
+  text-align: center;
+}
+
+ul {
+  padding-top: 7%;
+  padding-left: 28%;
+  font-size: 25px;
+  list-style-type: square;
+  text-align: left;
+  display: none;
+}
+
+.content2 {
+  grid-area: content2;
+  color: #edeae8;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #c60000;
+  padding: 3.8%;
+}
+
+#hurlgif {
+  display: none;
+}
+
+#mevictoryimg {
+  display: none;
+}
+
+/*-------Button Style-------*/
+.btn2 {
+  background-color: #edeae8;
+  border: none;
+  border-radius: 70px;
+  color: #c60000;
+  padding: 8px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Archivo', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.btn2:hover {
+  background-color: #c60000;
+  color: #edeae8;
+  border: 1px solid #edeae8;
+}
+
+#nowbtn {
+  margin-right: 25%;
+  margin-bottom: 3%;
+}
+
+/*-----------Grid Row 3 Style------------*/
+.footer {
+  grid-area: footer;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #edeae8;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: blue; */
+}
+
+.leftarrow {
+  padding-left: 25%;
+}
+
+.rightarrow {
+  text-align: right;
+  padding-right: 25%;
+}
+
+figure .hover {
+	opacity: 1;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+figure:hover .hover {
+	opacity: .5;
+}
