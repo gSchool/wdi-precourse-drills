@@ -25,11 +25,10 @@
     <p><img src="HSEJMC.png" alt="HSEJMC.png" width="70%" height="70%"> 
         <p>From left to right is Holly, Sean, James, Ellijah, Marley, and Cringer.</p>
 <br>
-        <h3></h3>
-        <p>Please input a number between 1 and 10:</p>
-        <input id="numb">
-        <button type="button" onclick="myFunction()">Submit</button>
-        <p id="demo"></p>
+<p>Please input a number between 1 and 10:</p>
+<input id="numb">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
 
 </body>
 
@@ -41,13 +40,14 @@ function myFunction() {
     x = document.getElementById("numb").value;
 
     // If x is Not a Number or less than one or greater than 10
-    if (isNaN(x) || x <= 5 || x > 5) {
-        text = "If I am ever tired or late for class it is the cats' fault for keeping me up all night.";
-    } else {
+    if (isNaN(x) || x < 1 || x > 10) {
         text = "Input not valid, enter in a number between 1 and 10.";
+    } else {
+        text = "If I am ever tired or late for class it is the cats' fault for keeping me up all night.";
     }
     document.getElementById("demo").innerHTML = text;
 }
+
 </script>
 
 </html>

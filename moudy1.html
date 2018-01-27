@@ -34,31 +34,25 @@
 </section>
 
 <img src="giphy.gif" alt="giphy.gif" width="300" height="250">
+<br>
 
-<p>Please input a number between 1 and 10:</p>
+<!--JQUERY -->
+<p><strong>Click the text below that you do not agree with.</strong></p>
+<p>Herding cats seems impossible!</p>
+<p>I like the pizza that always seems to be provided at Galvanize hosted training and events.</p>
+<p>Breakfast for dinner is sometimes good.</p>
 
-<input id="numb">
-
-<button type="button" onclick="myFunction()">Submit</button>
-
-<p id="demo"></p>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-function myFunction() {
-    var x, text;
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script> 
 
-    // Get the value of the input field with id="numb"
-    x = document.getElementById("numb").value;
 
-    // If x is Not a Number or less than one or greater than 10
-    if (isNaN(x) || x < 1 || x > 10) {
-        text = "Input not valid.";
-    } else {
-        text = "Congratulations on letting the cat out of the bag.";
-    }
-    document.getElementById("demo").innerHTML = text;
-}
-</script>
+</body>
 
 </html>
 

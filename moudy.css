@@ -17,7 +17,7 @@ html {
     background-color: rgb(240, 236, 222)
 }
 
-body {
+body, script {
     color: rgb(3, 23, 49);
     font-size: 20px;
     border-style: groove;
@@ -30,7 +30,6 @@ body {
         padding-bottom: 30px;
         padding-left: 30px;
     }
-
 
     ul {
         list-style-type: none;
@@ -59,4 +58,15 @@ body {
 
     .active {
         background-color: #4CAF50;
+    }
+
+
+/*JQuery*/
+    img {
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+    
+    img[data-src] {
+        opacity: 0;
     }
