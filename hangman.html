@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman!</title>
+  </head>
+  <body>
+    <h1>Hi there :-)</h1>
+    <p>Note: all the words are islands in Indonesia. Good luck! ;-)</p>
+    <script>
+        // Function Definitions //
+
+
+        var pickWord = function () {
+         // Return a random word
+         let words = ["borneo","java","sumatra","papua","bali","sulawesi","timor","komodo"]
+         return words[Math.floor(Math.random()*words.length)]
+        };
+
+        var setupAnswerArray = function (word) {
+          return word.split("").map(x => "_")
+        };
+
+        var showPlayerProgress = function (answerArray) {
+         alert(`Current progress is:${answerArray.join(" ")}`);
+        };
+
+        var getGuess = function () {
+         return prompt("Guess a letter, or click Cancel to stop playing.");
+        };
+
+        var updateGameState = function (guess, word, answerArray) {
+          for (i = 0; i < word.length; i++) {
+            if (guess === word[i]) {
+              answerArray[i] = guess;
+              remainingLetters--;
+            }
+          }
+         return
+        };
+
+        var showAnswerAndCongratulatePlayer = function (answerArray) {
+         alert(`Nice work! You won the game. The word was: ${answerArray.join("")}`)
+        };
+
+        // Main program code //
+
+        var word = pickWord();
+
+        var answerArray = setupAnswerArray(word);
+
+        var remainingLetters = word.length;
+
+        while (remainingLetters > 0) {
+
+         showPlayerProgress(answerArray);
+
+         var guess = getGuess();
+
+         if (guess === null) {
+           break;
+         } else if (guess.length !== 1) {
+           alert("Please enter a single letter.");
+         } else {
+           updateGameState(guess, word, answerArray);
+         }
+        }
+        showAnswerAndCongratulatePlayer(answerArray);
+
+    </script>
+  </body>
+</html>
