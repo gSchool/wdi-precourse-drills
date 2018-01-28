@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hi there! You've reached Ian</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Buongiorno!</h1>
+      <p>Hi! My name is Ian. I was born in Austin in the 80s, so I am automatically cool since I was here before Austin was all hipster. That's how this works, right?</p>
+      <nav>
+        <ul>
+          <ul>
+            <li class="page">Page 1</li>
+            <li><a href="#likes">Likes</a></li>
+            <li><a href="#woodworking">Woodworkin'</a></li>
+          </ul>
+          <ul>
+            <li class="page"><a href="personal2.html">Page 2</a></li>
+            <li><a href="personal2.html#background">Background</a></li>
+            <li><a href="personal2.html#hopes">Hopes 'n Dreams</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <a id="likes"></a>
+      <h2>Things I like</h2>
+      <p>I definitely enjoy all of these things, and probably others:</p>
+      <ol>
+        <li>Playing with my cat. Okay, she's not <em>my</em> cat actually. She's a neighborhood cat, who has started coming into my yard all the time -- from where, I know not. She's all black though. So, my wife wanted to call her <strong>Smoky</strong> (she's a literalist) whereas I favored an old-lady name such as <strong>Barbara</strong>. So we compromised and called her <strong>Smoky Barbara</strong>. I think this is a strong name. But while I've been 'on break' since I quit my job, I've basically just been playing with Smoky outside everyday.<br/>
+        <img class="gif" src="https://media.giphy.com/media/3ohzdHb9vMEkpuEy40/giphy.gif" alt="Happy cat GIF"></li>
+        <li>Ultimate frisbee, and table tennis, and trail running. Basically only silly / obscure / hipster activities.</li>
+        <li>Audiobooks and podcasts. Am consuming them constantly. Helps me learn about the world.</li>
+        <li>Writing and philosophizing on my blog, on Facebook, with my friends, etc. I'm fascinated by politics, ethics, religion, race relations, etc. This is all fueled by #3 above.</li>
+        <li>My wife, Nicole.</li>
+        <li>Woodworking.</li>
+      </ol>
+      <h2>Tools in my workshop</h2>
+      <a id="woodworking"></a>
+      <p>See #6 above in <strong>Things I like</strong> was woodworking. And I needed to create a long list of things as a way to give this page a little more vertical height. So this should work. <strong>Here are some of the things that can be found in the backyard workshop we use for wood projects and such</strong>.</p>
+      <ul>
+        <li>Table saw</li>
+        <li>Compound miter saw</li>
+        <li>Circular saw (actually 2)</li>
+        <li>Drill press</li>
+        <li>Compact router</li>
+        <li>Router table</li>
+        <li>Dust collector</li>
+        <li>Shop vac</li>
+        <li>Belt sander</li>
+        <li>Orbital sander</li>
+        <li>Angle grinder</li>
+      </ul>
+    </div>
+  <script type="text/javascript">
+      // Init fades
+      $('header').fadeIn('slow');
+      $('.main').delay(300).fadeIn('slow');
+
+      // Set up nav fades
+      $('nav ul ul li a').mouseenter(function(){
+        $(this).fadeTo(300,0.6);
+      });
+      $('nav ul ul li a').mouseleave(function(){
+        $(this).fadeTo(300,1);
+      });
+
+      // Set up body p fades
+      $('.main p,.main li,h2,h3').mouseenter(function(){
+        $(this).css("background-color", "silver");
+      });
+      $('.main p,.main li,h2,h3').mouseleave(function(){
+        $(this).css("background-color", "lightgray");
+      });
+
+
+  </script>
+  </body>
+</html>

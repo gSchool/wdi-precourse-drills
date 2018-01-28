@@ -5,6 +5,7 @@ img {
 
 tr:nth-child(even) {
   background: lightgray;
+  color:black;
 }
 
 #left {
@@ -15,4 +16,75 @@ tr:nth-child(even) {
 #right {
   position: relative;
   float: right;
+}
+
+
+.main {
+  width:90%;
+  max-width: 1200px;
+  padding:0px 15px;
+  display: none;
+}
+
+.main li {
+  margin: 25px 0px;
+}
+
+html {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: lightgray;
+  color:black;
+}
+
+header {
+  margin:0px;
+  background: darkslategray;
+  color:white;
+  padding: 10px 20px 20px;
+  display: none;
+}
+
+nav {
+  color:white;
+  display: block;
+  background: #272F38;
+  padding:10px 0px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding:0px;
+}
+
+nav ul li {
+  display: inline;
+  margin:0px 10px;
+}
+
+nav ul ul li {
+  text-transform: uppercase;
+}
+
+nav ul ul li a {
+  text-decoration: none;
+  color:white;
+  background-color:inherit;
+  opacity: 0.9
+}
+
+nav ul ul li.page {
+  font-size:1.3em;
+  font-weight: bold;
+}
+
+nav ul ul {
+  display: block;
+  margin: 20px 0px;
+}
+
+img.gif{
+  max-width: 500px;
+  width:100%;
+  height:auto;
 }
