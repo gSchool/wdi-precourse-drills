@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hi there! You've reached Ian</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <header>
+      <h1>Buongiorno!</h1>
+      <p>Hi! My name is Ian. I was born in Austin in the 80s, so I am automatically cool since I was here before Austin was all hipster. That's how this works, right?</p>
+      <nav>
+        <ul>
+          <ul>
+            <li class="page"><a href="personal1.html">Page 1</a></li>
+            <li><a href="personal1.html#likes">Likes</a></li>
+            <li><a href="personal1.html#woodworking">Woodworkin'</a></li>
+          </ul>
+          <ul>
+            <li class="page">Page 2</li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#hopes">Hopes 'n Dreams</a></li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <a id="background"></a>
+      <h2>Background</h2>
+      <h3>Education</h3>
+      <p>I studied Linguistics at the University of Texas at Austin. I had a real hard time figuring out what to do with myself around this time in my life, so I ended up just majoring in something that seemed really interesting. But, definitely not lucrative. Luckily, I grew up using Macs all the time, thanks to my dad, and thanks to barely being inside the zone for the Eanes School District. So that helped later.</p>
+      <h3>Career</h3>
+      <p>In my early 20s I traveled around the world for a while, managed to do a short documentary-filmmaking apprenticeship in Colorado, then settled back in Austin and worked for <strong>Bananarchy(!)</strong>, Austin's favorite frozen banana stand. I set up Bananarchy's Wordpress site around then, which involved some custom CSS and a bit of PHP work.</p>
+      <p>Having some basic web design experience helped me get my first real, stable job, which was as a support rep for <strong>Volusion</strong> (an ecommerce platform). I hung out in Support for about a year before moving into the Design department to serve as a small-projects coordinator for a couple of years.</p>
+      <p>My first job that felt like being a grown-up was in 2013 with <strong>Blue Fish Development Group</strong> -- a tiny, but very sharp, custom software development team -- where I came on as a (super underqualified) Implementation Consultant. I worked on a variety of document-management and machine-learning projects, doing configuration and responding to client requirements. It was a good company but a bad fit for me.</p>
+      <p>Finally, in 2015 I jumped on board with <strong>AcademicWorks</strong>, which was a growing software startup, whose products were designed to help colleges and universities streamline their scholarship process and serve out financial aid more efficiently. I came on as a Client Engagement Manager, basically meaning that I served as the primary owner for delivering a client's system to them, training and consulting with them, and making sure the product could be launched on time. This was a GREAT job and an extremely well-run, chill, fair, purpose-minded company. We got bought by Blackbaud in early 2017, and since then a lot of people have slowly been leaking out the door. Including, finally, me, in January 2018.</p>
+      <a id="hopes"></a>
+      <h2>Hopes 'n Dreams</h2>
+      <p>I've known for years that I had the aptitude for software development, but have avoided it because I was <em>afraid</em> that coding would be boring or socially isolating. But <em>then</em> I saw how the engineering team was run at AcademicWorks (see above) and that really changed my perception of the field. At AW the engineers collaborated regularly, and on top of that (if you can believe this) seemed to be good people who possessed some social skills! Not to mention there was a great atmosphere of mutual mentorship that I observed on the team, largely due to the cooperative values that Aaron Scruggs has fostered there.</p>
+      <p>In short, all this changed my mind, and made me <em>wish</em> to be a part of a small, growing software startup, in a collaborative atmosphere, working on a product that does something useful for the public good. In summary, I'd like to be a web developer working at <em>the AcademicWorks of 3 years ago</em>, or something along those lines.</p>
+      <p>How I feel about starting code school:</p>
+      <img class="gif" src="https://media.giphy.com/media/cEYFeDB8PpXqYekMuPK/giphy.gif" alt="Nic Cage excitement GIF">
+    </div>
+    <script type="text/javascript">
+        // Init fades
+        $('header').fadeIn('slow');
+        $('.main').delay(300).fadeIn('slow');
+
+        // Set up nav fades
+        $('nav ul ul li a').mouseenter(function(){
+          $(this).fadeTo(300,0.6);
+        });
+        $('nav ul ul li a').mouseleave(function(){
+          $(this).fadeTo(300,1);
+        });
+
+        // Set up body p fades
+        $('.main p,h2,h3').mouseenter(function(){
+          $(this).css("background-color", "silver");
+        });
+        $('.main p,h2,h3').mouseleave(function(){
+          $(this).css("background-color", "lightgray");
+        });
+    </script>
+  </body>
+</html>
