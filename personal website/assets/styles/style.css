@@ -1,0 +1,20 @@
+body {
+  background-color: blue;
+};
+
+#title{
+  font-size: 24px;
+  color: blue;
+};
+
+h2 {
+  display: none;
+};
+
+#pictures {
+  height: 20%;
+};
+
+img {
+  height: 100px;
+};
