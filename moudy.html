@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Sean Moudy</title>
+
+<head>
+  <link rel="stylesheet" href="moudy.css">
+</head>
+
+<body>
+        <ul>
+            <li><a class="active" href="moudy.html">Introduction</a></li>
+            <li><a href="moudy1.html">Future</a></li>
+        </ul>
+
+<h1>Sean Moudy</h1>
+
+<p> My name is Sean Moudy. I grew up in Arkansas and experienced the 
+    Department of Defense for about 15 years. I live in Denver with my wife (Holly)
+    and two sons (Ellijah and James). We have two cats (Marley and Cringer). 
+    Below is a set of pictures showing all six of us. I enjoy flyfishing, 
+    skiing, research and development, and hiking.
+  <br>
+    <a href="moudy1.html">Click for my future plans.</a></p>
+
+    <p><img src="HSEJMC.png" alt="HSEJMC.png" width="70%" height="70%"> 
+        <p>From left to right is Holly, Sean, James, Ellijah, Marley, and Cringer.</p>
+<br>
+<p>Please input a number between 1 and 10:</p>
+<input id="numb">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+
+</body>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid, enter in a number between 1 and 10.";
+    } else {
+        text = "If I am ever tired or late for class it is the cats' fault for keeping me up all night.";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+</script>
+
+</html>
