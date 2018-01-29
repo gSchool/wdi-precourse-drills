@@ -1,0 +1,28 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+img {
+  height: 32px;
+  width: 44px;
+}
+
+.row1 {
+  background: silver;
+}
+
+.row2 {
+  background: white;
+}
+
+.col1 {
+  float: left;
+  margin: 0 1.5%;
+  width: 45.5%;
+}
+
+.col2{
+  float: right;
+  margin: 0 1.5%;
+  width: 45.5%;
+}
