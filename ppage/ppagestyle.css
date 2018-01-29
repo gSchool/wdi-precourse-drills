@@ -1,0 +1,47 @@
+body {
+  background: #66bae3;
+  font-family: Georgia;
+  margin: 0 2.5%;
+  font-size: 18px;
+}
+.opening{
+  font-size: 24px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+section {
+  float: left;
+  width:60%;
+}
+aside {
+  float: right;
+  width: 35%;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  height: 225px;
+  width: 300px;
+}
+.flip {
+  transform:rotate(180deg);
+}
+.vertical {
+  height: 300px;
+  width:225px;
+}
+.excited {
+  text-align: center;
+}
+button {
+  background-color: red;
+  font-size: 18px;
+}
+footer {
+  clear : both;
+  text-align: center
+}
