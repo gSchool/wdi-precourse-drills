@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman!</title>
+</head>
+<body>
+  <h1>Hangman!</h1>
+<script>
+  var words = [
+    "javascript",
+    "monkey",
+    "amazing",
+    "pancake"
+];
+var word = words[Math.floor(Math.random() * words.length)];
+var answerArray = [];
+  for (var i = 0; i < word.length; i++) {
+    answerArray[i] = "_"
+  }
+var remainingLetters = word.length;
+while (remainingLetters > 0) {
+  alert(answerArray.join(" "));
+  var guess = prompt("Guess a letter!");
+  if (guess === null) {
+    break;
+  } else if (guess.length !== 1) {
+    alert("Multiple letters detected, self destruct sequence initiated...");
+  } else {
+    for (var j = 0; j < word.length; j++) {
+      if (word[j] === guess) {
+        answerArray[j] = guess;
+        remainingLetters--;
+      } }
+  }
+  }
+  alert(answerArray.join(" "));
+  alert("Well done, the word was " + word);
+</script>
+</body>
+</html>
+
+<!--
+Pseudo Code
+Pick a random word
+While the word has not been guessed {
+  Show the player their current progress
+  Get a guess from the player
+  If the player wants to quit the game {
+    Quit the game
+  }
+  Else If the guess is not a single letter {
+    Tell the player to pick a single letter
+  }
+  Else {
+    If the guess is in the word {
+      Update the player's progress with the guess
+    }
+} }
+Congratulate the player on guessing the word-->
