@@ -1,0 +1,40 @@
+#small-text{
+  font-style: italic;
+  font-size: 14px;
+  margin-top: auto;
+}
+img{
+  height: 44px;
+  width: 32px;
+}
+
+#br{
+  font-size: 12px;
+}
+
+
+#row1{
+  background: rgba(128, 128, 128, .25)
+}
+
+#row2{
+  background: rgba(192, 192, 192, .25)
+}
+
+section{
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+
+aside{
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+#titles tr:nth-child(even) {background: #CCC}
+}
+
+#titles tr:nth-child(odd) {background: #FFF}
+}
