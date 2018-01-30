@@ -1,17 +1,9 @@
-#small-text{
-  font-style: italic;
-  font-size: 14px;
-  margin-top: auto;
-}
+
+
 img{
   height: 44px;
   width: 32px;
 }
-
-#br{
-  font-size: 12px;
-}
-
 
 #row1{
   background: rgba(128, 128, 128, .25)
@@ -33,8 +25,19 @@ aside{
   width: 30%;
 }
 
-#titles tr:nth-child(even) {background: #CCC}
+
+#titles tr:nth-child(even) {
+  background: #CCC
 }
 
-#titles tr:nth-child(odd) {background: #FFF}
+
+#titles tr:nth-child(odd) {
+  background: #FFF
+}
+
+
+#small-text{
+  font-style: italic;
+  font-size: 14px;
+  margin-top: auto;
 }
