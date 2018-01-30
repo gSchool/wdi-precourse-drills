@@ -1,4 +1,15 @@
 img {
-  height: 32px;
-  width: 44px;
+    height: 32px;
+    width: 44px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
 }
