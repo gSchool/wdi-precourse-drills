@@ -1,0 +1,11 @@
+header {
+  font-size: 40px;
+  font-weight: bold
+}
+ul.empty  {
+  list-style-type: none
+}
+img {
+  height: 32px;
+  width: 44px;
+}
