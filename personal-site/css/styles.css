@@ -51,6 +51,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     width: 60%;
     margin-left: 25px;
+    color: grey;
 }
 
 .content h1 {
@@ -61,4 +62,13 @@ body {
     font-size: 6rem;
     line-height: 5.5rem;
     margin-top: 270px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    margin-bottom: 25px;
+}
+
+.content img {
+    width: 250px;
 }
