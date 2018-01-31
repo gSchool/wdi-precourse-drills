@@ -1,0 +1,14 @@
+/* section {
+    border: 1px solid black;
+} */
+section.main {
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+
+section.search {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
