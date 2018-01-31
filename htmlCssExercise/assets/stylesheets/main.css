@@ -3,4 +3,12 @@ img {
     height: 44px
 }
 
+columnLeft {
+    float: left;
+}
+
+columnRight {
+    float: right;
+}
+
 /* This is a comment */
