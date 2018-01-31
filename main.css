@@ -1,0 +1,19 @@
+p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  height: 32px;
+  width: 44px;
+}
+
+tr.one td {
+  color: black;
+  background-color: red;
+}
+tr.two td {
+  color: black;
+  background-color: yellow;
+}
