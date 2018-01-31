@@ -1,0 +1,21 @@
+/*it worked*/
+img {
+  height:32px;
+  width:44;
+}
+.odd {
+  background: rgb(222, 222, 222)
+}
+.even {
+  background: rgb(242, 242, 242)
+}
+section {
+  float:left;
+  margin: 1;
+  width:70%
+}
+aside {
+  float:right;
+  margin:1;
+  width:30%
+}
