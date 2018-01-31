@@ -53,7 +53,7 @@ body {
     top: 0;
     left: 250px;
     font-family: 'Open Sans', sans-serif;
-    width: 60%;
+    margin-right: 25px;
     margin-left: 25px;
     color: grey;
 }
