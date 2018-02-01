@@ -66,28 +66,9 @@ body {
   ========================================
 */
 
-/* .group:before,
-.group:after {
-  content: "";
-  display: table;
-} */
-/* .group:after {
-  clear: both;
-} */
 .group {
   clear: both;
-  *zoom: 1;
 }
-
-/* .aboutMe {
-  clear: both;
-  text-align: center;
-}
-
-.pic {
-  clear: both;
-} */
-
 
 /*
   ========================================
@@ -154,10 +135,6 @@ a {
 
   text-decoration: none;
 }
-/* COMPLETE IN JQUERY! */
-/* a:hover {
-  color: #a9b2b9; */
-}
 p a {
   border-bottom: 1px solid #dfe2e5;
 }
@@ -176,7 +153,7 @@ p a {
   ========================================
 */
 
-button {
+.button {
   background: transparent;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -187,17 +164,15 @@ button {
   letter-spacing: .5px;
   margin: 0;
   padding: 10px 20px;
+  position: relative;
   text-transform: uppercase;
-  transition: top 0.2s;
 }
 
-
-/* COMPLETE IN JQUERY! */
-
+/* jQuery! */
 .highlight{
   background: #fff;
   color: #666;
-  top: -10px;
+
 }
 
 
@@ -270,7 +245,7 @@ button {
 .hero {
   color: #fff;
   text-align: center;
-  letter-spacing: 0.75
+  letter-spacing: 0.5px
 }
 .hero h2 {
   font-size: 36px;
@@ -286,12 +261,14 @@ button {
   /* background: radial-gradient(#648880, #293f50); */
   float: left;
   margin: 2% 2% 2%;
+  position:relative;
   width: 60%;
 }
 
 aside {
   float: right;
 	margin: 2% 2% 2%;
+  position: relative;
   width: 30%;
 }
 
