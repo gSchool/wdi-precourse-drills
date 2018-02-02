@@ -1,0 +1,19 @@
+.header , .footer{
+  background-color: #0a507c;
+  height: 6rem;
+  display: flex;
+
+}
+.header h1, .footer h1{
+
+  color: #fefefe;
+  font-weight: 300;
+  width: 100%;
+  font-size: 3rem;
+  margin: auto;
+}
+
+
+.footer {
+  clear: both;
+}

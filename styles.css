@@ -1,0 +1,20 @@
+img {
+  height: 44px;
+  width: 32px;
+}
+.odd {
+  background-color: burlywood;
+}
+.even {
+  background-color: lightgrey;
+}
+.left-side {
+  float: left;
+  margin: 0 1.5%;
+  width: 60%;
+}
+.right-side {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
