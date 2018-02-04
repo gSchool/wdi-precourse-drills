@@ -1,0 +1,91 @@
+body {
+  width: 672px;
+  font-family: 'trebuchet ms';
+}
+.headline {
+    text-align: center;
+    text-shadow: 2px 2px #c6c6c6;
+}
+h1, h2, h3{
+  display: inline;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+.p1 {
+  position: relative;
+  left: +20px;
+}
+.headline {
+  height: 115px;
+  background: linear-gradient(#303030, #e2e2e2);
+}
+.tagline {
+  font-size: 36px;
+  font-variant: small-caps;
+  line-height: 60%;
+}
+.asterisk {
+  list-style: none;
+  font-size: 14px;
+}
+#boulderFriends{
+  text-decoration: line-through;
+  text-decoration-color: #c81616;
+}
+.visual{
+  float: left;
+  padding: 25px;
+  width: 360px;
+}
+.hobbies{
+  float: right;
+  display: block;
+  position: relative;
+}
+.cook{
+  float:right;
+  display: block;
+}
+.pc {
+  padding: 5px;
+  width: 154px;
+  height: 110px
+}
+.places {
+  color: #c81616;
+  text-align: center;
+}
+.navigation ul {
+text-align: center;
+font: bold 16px;
+margin: 0;
+padding: 0;
+}
+.navigation li {
+display: inline-block;
+}
+.navigation a {
+background: #000000;
+border-right: 1px solid rgba(0, 0, 0, .3);
+color: #fff;
+padding: 12px 60px;
+text-decoration: none;
+}
+.navigation a:hover {
+  background: #e2e2e2;
+  text-decoration-color: #000000;
+box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
+}
+.navigation li:first-child a {
+border-radius: 4px 0 0 4px;
+}
+.navigation li:last-child a {
+border-right: 0;
+border-radius: 0 4px 4px 0;
+}
+.navButton a {
+  background: #000000
+  text-decoration: none;
+}
