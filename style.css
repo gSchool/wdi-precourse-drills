@@ -1,0 +1,43 @@
+.light-row{
+  background-color: #fbfbfb;
+}
+
+.dark-row{
+  background-color: #f6f6f5;
+}
+
+.image{
+  height:44px;
+  width:32px;
+}
+
+#column-1{
+  float:left;
+  border:solid;
+  border-radius:5px;
+  border-color:black;
+  border-width:0.5px;
+  padding-left:1%;
+  padding-right:1%;
+  width:auto;
+}
+
+#column-2{
+  float:right;
+  border:solid;
+  border-radius:5px;
+  border-color:black;
+  border-width:0.5px;
+  padding-left:1%;
+  padding-right:1%;
+  background-color:#f5f5f4;
+  width:auto;
+}
+
+.table{
+  width:100%;
+}
+
+.td-image{
+  width:32px;
+}
