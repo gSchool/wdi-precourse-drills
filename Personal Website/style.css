@@ -1,0 +1,202 @@
+h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 48px;
+  color:white;
+  vertical-align:top;
+  margin:0px;
+}
+
+h2{
+  font-family: 'Archivo Black', sans-serif;
+  font-size:32px;
+  color:white;
+  margin:0px;
+}
+
+body{
+  background-image: url("Pikes-Peak.png");
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-color:#0D384B;
+}
+
+hr{
+  color:white;
+  width:75%;
+}
+
+p{
+  color:white;
+}
+
+table{
+  width:100%;
+}
+
+.link{
+  color:white;
+}
+
+/*----- Begin Left Column -----*/
+.left-spacer{
+  width:2.5%;
+}
+
+.left-column{
+  width:30%;
+  padding:10px;
+  vertical-align:top;
+}
+
+.social{
+  margin:0px;
+  max-width:20px;
+  height:auto;
+}
+
+.social-info{
+  margin:3px;
+  font-family:'Archivo Narrow', sans-serif;
+  font-size:22px;
+}
+
+/*----- End Left Column -----*/
+/*----- Begin Center Column ------*/
+.center-column{
+  width:35%;
+  text-align:left;
+  background-color:white;
+  padding:20px;
+  vertical-align:top;
+}
+
+.profile{
+  width:96px;
+  float:left;
+  padding-right:10px;
+}
+
+.profile-name{
+  font-family: 'Archivo Narrow', sans-serif;
+  color:#ff946d;
+  vertical-align:top;
+}
+
+.profile-history{
+  color:black;
+  font-family: 'Archivo Narrow', sans-serif;
+  margin:0px;
+  font-size:20px;
+}
+
+.summary-header{
+  font-family:'Archivo Black', sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+}
+
+.summary-hr{
+  width:100%;
+}
+
+.button{
+  color:white;
+  background-color:#415A67;
+  height:40px;
+  font-size:22px;
+  font-family:'Archivo Black', sans-serif;
+  border:solid 1px;
+  border-color:black;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:5px;
+  padding-bottom:5px;
+  text-decoration:none;
+}
+
+
+/*----- End Center Column *-----/
+/*----- Begin Right Column -----*/
+.right-spacer{
+  width:2.5%;
+}
+
+
+
+.right-column{
+  width:30%;
+  vertical-align:top;
+  text-align:center;
+}
+
+.gif{
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+.popout{
+  color:white;
+  background-color:#0D384B;
+  width:60%;
+  height:40px;
+  font-size:20px;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.first-day{
+  text-transform:uppercase;
+  color:white;
+  font-family:'Archivo Black', sans-serif;
+  font-size:24px;
+}
+
+.gif-div{
+  text-align:center;
+}
+/*----- End Right Column ------*/
+
+/*----- Begin About.html -----*/
+.bottom-hr{
+  width:75%;
+}
+
+.contact-info{
+  text-align:center;
+  font-family:'Archivo Narrow', sans-serif;
+  font-size:18px;
+  color:white;
+}
+
+.left-column-2{
+  width:25%;
+}
+
+.center-column-2{
+  width:50%;
+  text-align:left;
+  background-color:white;
+  padding:20px;
+  vertical-align:top;
+}
+
+.right-column-2{
+  width:25%;
+}
+
+.button-2{
+  color:white;
+  background-color:#415A67;
+  height:40px;
+  font-size:22px;
+  font-family:'Archivo Black', sans-serif;
+  border:solid 1px;
+  border-color:black;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:5px;
+  padding-bottom:5px;
+  text-decoration:none;
+}
+/*----- End About.html -----*/
