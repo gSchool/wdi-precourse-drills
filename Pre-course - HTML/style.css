@@ -1,0 +1,13 @@
+div {
+	display:inline-block;
+	width: 40%;
+	vertical-align:top;
+}
+
+.movies tr:nth-child(even) {
+    background-color: olive;
+}
+
+.movies tr:nth-child(odd) {
+    background-color: lime;
+}
