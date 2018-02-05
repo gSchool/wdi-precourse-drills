@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/junction/bg.jpg) center no-repeat fixed;
+  background-size: cover;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.header .navbar-header a:hover {
+  border-left: 2px solid white;
+}
+
+.header .navbar {
+  background-color: rgba(0,0,0,0.7);
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.header  .navbar a {
+  color: grey;
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+}
+
+.header .nav li:hover {
+  background-color: rgba(244,73,61,0.9);
+  border-left: 2px solid white;
+}
+
+.junction-header {
+  margin-top: 50px;
+}
+
+.junction-header .navbar-brand img {
+  height: 25px;
+  width: 25px;
+  margin-left: 150px;
+}
+
+.junction-header .navbar {
+  background-color: rgba(0,0,0,0.7);
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.junction-header .navbar a {
+  color: white;
+}
+
+.junction-header .nav li:hover {
+  text-decoration: underline;
+}
+
+.junction-h1 h1 {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  margin-top: 60px;
+  text-shadow: 0px 2px 5px rgba(0,0,0,.5);
+  margin-bottom: 60px;
+}
+
+.junction-buttons .container{
+  width: 1024px;
+  margin: auto;
+}
+
+.junction-buttons img {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+.junction-buttons h2 {
+  color: white;
+  text-shadow: 0px 2px 5px rgba(0,0,0,.5);
+  text-align: center;
+  font-size: 32px;
+}
+
+.junction-buttons p {
+  color: white;
+  text-shadow: 0px 2px 5px rgba(0,0,0,.5);
+  text-align: center;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: 0.75px;
+}
+
+.junction-join-button a {
+  background-color: rgba(0,255,188,0.5);
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  width: 100px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 16px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.junction-join-button a:hover {
+  background-color: rgba(0,0,0,.5)
+}
+
+.junction-footer {
+  height: 50px;
+  width: 100%;
+  padding: 12px 0px;
+  background-color: rgba(0,0,0,.5);
+  margin-top: 260px;
+  bottom: 0;
+  width: 100%;
+}
+
+.junction-footer ul {
+  list-style: none;
+}
+
+.junction-footer li {
+  display: inline;
+  text-align: center;
+  padding: 0px 20px;
+  color: grey;
+}
+
+.junction-footer a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.junction-footer a:hover {
+  color: #00ffbc;
+  text-decoration-color: #00ffbc;
+  text-decoration: none;
+  border-bottom: 1px solid #00ffbc;
+  padding-bottom: 2px;
+}
+
+/* laptop/desktop: 1680-1920width x 1050-1200height = 21.5-30inch display, 1080p TV */
+/* this includes any screen size larger than 1600px, remember to set max limits! */
+@media only screen and (max-width: 10000px) {
+
+}
+
+
+/* tablet-landscape: 1280-1440width x 720-1024height */
+/* laptop/desktop: 1280-1600width x 720-900height = 14-20inch display, 720p TV */
+@media only screen and (max-width: 1600px) {
+
+}
+
+/* tablet-portrait: 720-1024width x 1280-1440height */
+/* tablet-landscape: 800-1024width x 480-768height */
+@media only screen and (max-width: 1024px) {
+
+  .col-sm-12 {
+    box-sizing: border-box;
+    width: 100vw;
+  }
+
+}
+
+/* When nav-toggle-button not displayed, the nav will float right for tablet-landscape and larger */
+@media only screen and (min-width: 768px) {
+
+  .header .collapse ul{
+    float: right;
+  }
+
+}
+
+/* tablet-portrait: 480-768width x 800-1366height */
+/* mobile-landscape: 598-768width x -360-432height */
+@media only screen and (max-width: 768px) {
+  
+  .junction-header .navbar-brand img {
+    margin-left: 0;
+  }
+
+}
+
+/* mobile-portrait: 360-432width x 598-768height */
+/* mobile-landscape: 480width x 320-360height */
+/* tablet-portrait: 480width x 800height */
+@media only screen and (max-width: 480px) {
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    height: 100vh;
+    width: auto;
+    font-family: serif;
+    font-weight: bold;
+  }
+
+  .junction-buttons .container{
+    width: 100vw;
+    margin: auto;
+  }
+
+  .row {
+    display: block;
+    width: 100vw;
+  }
+
+  .junction-buttons img {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .col-sm-12 {
+    width: 100vw;
+    float: left;
+    clear: right;
+  }
+
+}
+
+/* mobile-portrait: 320width x 480-568height */
+@media only screen and (max-width: 320px) {
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    height: 100vh;
+    width: auto;
+    font-family: serif;
+    font-weight: bold;
+  }
+
+  .junction-buttons .container{
+    width: 100vw;
+    margin: auto;
+  }
+
+  .row {
+    display: block;
+    width: 100vw;
+  }
+
+  .col-xs-12 {
+    width: 100vw;
+    float: left;
+    clear: right;
+  }
+
+}

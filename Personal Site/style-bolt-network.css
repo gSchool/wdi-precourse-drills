@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0.7);
+    border-bottom: none;
+}
+
+.navbar a {
+    color: grey;
+    font-family: Raleway, sans-serif;
+}
+
+.nav li:hover {
+  background-color: rgba(244,73,61,0.9);
+}
+
+.container {
+	max-width: 940px; 
+	padding: 0 10px;
+	margin: 0px auto;
+}
+
+.header {
+	background-color: black;
+	height: 600px;
+	margin-top: 50px;
+}
+
+.row {
+	margin-top: 50px;
+}
+
+.header img {
+	height: 34px;
+	width: 180px;
+}
+
+.header ul {
+	float: right;
+	list-style: none;
+}
+
+.header li {
+	display: inline;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
+}
+
+#blue-link a {
+	color: #0393ff;
+	display: inline-block;
+	text-align: center;
+	line-height: 38px;
+	vertical-align: middle;
+	width: 90px;
+	height: 38px;
+	border: 1px solid #0393ff;
+	border-radius: 3px;
+}
+
+#blue-link a:hover {
+	color: white;
+	background-color: #0393ff;
+	text-decoration: none;
+}
+
+#white-link a {
+	color: white;
+	margin-right: 40px;
+}
+
+#white-link a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid white;
+	padding-bottom: 2px;
+}
+
+.header h1 {
+	font-family: "Oxygen", sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 64px;
+	font-weight: 300;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+.blue-button a {
+	display: block;
+	margin: 0px auto;
+	padding: 0px 20px;
+	color: #0393ff;
+	text-align: center;
+	line-height: 38px;
+	vertical-align: middle;
+	height: 38px;
+	border: 1px solid #0393ff;
+	border-radius: 3px;
+}
+
+.blue-button a:hover {
+	color: white;
+	background-color: #0393ff;
+	text-decoration: none;
+}
+
+#blue-button-width {
+	display: block;
+	width: 120px;
+	margin: 0px auto;
+}
+
+form {
+	display: block;
+	text-align: center;
+	margin-top: 80px;
+}
+
+#form-search {
+    height: 34px;
+    margin-right: 20px;
+ 	margin-top: -18px;
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+    width: 400px;
+}
+
+#form-search:hover {
+	color: white;
+	border-bottom: 1px solid #0393ff;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+input {
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
+	padding-left: 10px;
+}
+
+#form-button {
+	display: inline-block;
+}
+
+.content-1 {
+	background: url("diagmonds_@2X.png");
+	background-size: 141px 142px;
+	padding-bottom: 120px;
+}
+
+.content-1 h2 {
+	font-family: "Oxygen", sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	color: #0393ff;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.content-1 p {
+	margin-bottom: 45px;
+	font-size: 16px;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	color: white;
+	padding-top: 5px;
+}
+
+.content-1 .thumbnail {
+	background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.thumbnail {
+	display: block;
+	margin-bottom: -20px;
+}
+
+.feature {
+	height: 420px;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/bolt-network/feature.jpg) center center no-repeat;
+	background-size: 100%;
+}
+
+.feature h2 {
+	padding-top: 180px;
+	font-family: "Oxygen", sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	color: #0393ff;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.feature p {
+	font-size: 16px;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
+	text-align: center;
+	color: white;
+}
+
+.footer {
+	height: 280px;
+	background-color: black;
+}
+
+.footer ul {
+	list-style: none;
+}
+
+.footer li {
+	margin-left: -40px;
+}
+
+.footer h3 {
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 18px;
+}
+
+.footer a:hover {
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+	padding-bottom: 1px;
+}

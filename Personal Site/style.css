@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Raleway, sans-serif;
+}
+
+.navbar-header a:hover {
+  border-left: 2px solid white;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,0.7);
+  border-bottom: none;
+}
+
+.navbar a {
+  color: grey;
+}
+
+.nav li:hover {
+  background-color: rgb(244,73,61);
+  border-left: 2px solid white;
+}
+
+.nav ul {
+  background-color: rgba(244,73,61,0.9);
+  list-style: none;
+  position: absolute;
+  left: -9999px; 
+}
+.nav li ul a li {
+  color: white;
+}
+.nav li:hover ul {
+  box-sizing: border-box;
+  left: -2px; 
+  height: 280px;
+  width: 83px;
+}
+.nav li:hover li {
+  box-sizing: border-box;
+  height: 40px;
+  width: 83px;
+  text-align: center;
+  border-left: 2px solid white;
+}
+.nav li ul a:hover {
+  text-decoration: none;
+}
+
+#header {
+  background: url(http://wallpaper-gallery.net/images/colorado-mountains-wallpaper/colorado-mountains-wallpaper-15.jpg) no-repeat center center;
+  height: auto;
+  background-size: cover;
+}
+
+#header p {
+  font-weight: 200;
+  font-stretch: condensed;
+  font-size: 32px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  height: 400px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 960px;
+  margin: 0px auto;
+}
+
+.main {
+  height: 500px;
+}
+
+.main h2 {
+  text-align: center;
+  color: rgba(0,0,0,.7);
+  border-bottom: 2px solid rgba(0,0,0,.7);
+  padding-bottom: 10px;
+}
+
+.main img {
+  display: block;
+  text-align: center;
+  height: 120px;
+  width: 255.2px;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0px 2px 20px rgba(0,0,0,.5);
+}
+
+.section { 
+  width: 255.2px;
+  height: 120px;
+  position: relative;
+  perspective: 800px;
+  margin: 20px auto;
+}
+
+.flipping-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.flipping-image:hover {
+  transform: rotateY( 180deg );
+}
+
+.flipping-image figure {
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flipping-image .back {
+  backface-visibility: hidden;
+  transform: rotateY( 180deg );
+  margin-top: -140px;
+  height: 120px;
+  width: 255.2px;
+  box-shadow: 0px 2px 20px rgba(0,0,0,.5);
+  border: 2px outset rgba(37, 75, 169, 0.5);
+}
+
+.flipping-image .front {
+  backface-visibility: hidden;
+}
+
+.back h3 {
+  margin-top: 0;
+}
+
+.back p {
+  text-align: center;
+  margin-top: -30px;
+  padding: 0px 5px;
+}
+
+.back a {
+  text-align: center;
+  font-size: 24px;
+  color: rgba(0,0,0,0.7);
+  text-decoration: none;
+}
+
+.back a:hover {
+  color: rgb(37, 75, 169);
+}
+
+.back h3:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(37, 75, 169);
+  background-color: rgba(0,0,0,0.1);
+}
+
+.footer {
+  height: 100px;
+  background-color: black;
+}
+
+.footer h3 {
+  font-size: 18px;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.footer a:hover {
+  color: white;
+}

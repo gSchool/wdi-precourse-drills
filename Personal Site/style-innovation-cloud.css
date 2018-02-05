@@ -1,0 +1,378 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+}
+
+.header .navbar-header a:hover {
+  border-left: 2px solid white;
+}
+
+.header .navbar {
+  background-color: rgba(0,0,0,0.7);
+  border-bottom: none;
+  border-radius: 0;
+  width: 100%;
+}
+
+.header .navbar a {
+  color: grey;
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+}
+
+.header .nav li:hover {
+  background-color: rgba(244,73,61,0.9);
+  border-left: 2px solid white;
+}
+
+.innovation-header {
+  margin-top: -70px;
+  height: 800px;
+  text-align: center;
+  padding-top: 175px;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.innovation-header h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 116px;
+  font-weight: bold;
+  line-height: 90%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.innovation-header p {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: 80px;
+  letter-spacing: 8px;
+  display: table;
+  margin: auto;
+  background-color: rgba(255,255,255,0.3);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+.innovation-header a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Arial;
+  background-color: black;
+  padding: 10px 50px;
+  position: relative;
+  top: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+
+}
+
+.innovation-header a:hover {
+  background-color: #117bff;
+  transition: 0.5s;
+}
+
+.innovation-navigation-header .navbar {
+  background-color: black;
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.innovation-navigation-header  .navbar li {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+.innovation-navigation-header .nav li:hover {
+  background-color: #117BFF;
+  transition: 0.5s;
+}
+
+.content-1 .container {
+  margin: 80px auto;
+}
+
+.content-1 img {
+  height:126px;
+  width:198px;
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+.content-1 h2 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: black;
+  transform: scale(1, 1.1);
+}
+
+.content-1 p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  transform: scale(1, 1.1);
+  font-size: 16px;
+  color: grey;
+  padding: 5px 0px;
+}
+
+.stay-connected {
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) center center no-repeat;
+  height: 600px;
+  background-width: auto;
+}
+
+.stay-connected .container {
+  position: relative;
+  height: 200px;
+  top: 200px;
+  text-align: right;
+}
+
+.stay-connected h2 {
+  font-size: 30px;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  transform: scale(1, 1.1);
+}
+
+.stay-connected p {
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;	 
+  transform: scale(1, 1.1);
+  font-size: 15px;
+  color: white;
+  line-height: 120%;
+  padding: 10px 0 px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#a {
+  text-align: right;
+}
+
+.stay-connected a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Arial;
+  background-color: black;
+  padding: 10px 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.stay-connected a:hover {
+  background-color: #117bff;
+  transition: background .5s;  
+}
+
+.footer {
+  height: 100px;
+  background-color: black;
+}
+
+.footer p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  transform: scale(1, 1.1);
+  font-size: 15px;	 
+  color: white;
+  margin-top: 42px;
+}
+
+/* laptop/desktop: 1680-1920width x 1050-1200height = 21.5-30inch display, 1080p TV */
+/* this includes any screen size larger than 1600px, remember to set max limits! */
+@media only screen and (max-width: 2560px) {
+
+}
+
+/* tablet-landscape: 1280-1440width x 720-1024height */
+/* laptop/desktop: 1280-1600width x 720-900height = 14-20inch display, 720p TV */
+@media only screen and (max-width: 1600px) {
+
+}
+
+/* tablet-portrait: 720-1024width x 1280-1440height */
+/* tablet-landscape: 800-1024width x 480-768height */
+@media only screen and (max-width: 1024px) {
+  
+  .content-1 .container {
+    width: 100%;
+    margin: 40px auto;
+  }
+
+  .content-1 h2 {
+    font-size: 24px;
+  }
+
+  .content-1 p {
+  font-size: 14px;
+  }
+
+}
+
+/* When nav-toggle-button not displayed, the nav will float right for tablet-landscape and larger */
+@media only screen and (min-width: 768px) {
+
+  .header .collapse ul{
+    float: right;
+  }
+
+}
+
+/* tablet-portrait: 480-768width x 800-1366height */
+/* mobile-landscape: 598-768width x -360-432height */
+@media only screen and (max-width: 768px) {
+
+  .innovation-header h1 {
+    font-size: 72px;
+    margin-top: 25px;
+  }
+
+  .innovation-header {
+    margin-top: -70px;
+    height: 500px;
+    text-align: center;
+    padding-top: 175px;
+  }
+
+  .innovation-header p {
+    position: relative;
+    top: 40px;
+    letter-spacing: 6px;
+  }
+
+  .innovation-header a {
+    font-size: 14px;
+    position: relative;
+    top: 70px;
+  }
+
+  .content-1 .container {
+    padding: 0;
+    text-align: center;
+  }
+
+  .content-1 img {
+    height:94px;
+    width:150px;
+    float: none;
+    display: block;
+    clear: both;
+    margin: 0px auto;
+  }
+
+  .content-1 h2 {
+    font-size: 24px;
+  }
+
+  .content-1 p {
+  font-size: 14px;
+  width: 90%;
+  margin: 0px auto;
+  }
+
+  .stay-connected h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    transform: scale(1, 1.1);
+    font-size: 24px;
+  }
+
+  .stay-connected p {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0 px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  #a {
+    text-align: center;
+  }
+
+  .stay-connected a {
+    font-size: 14px;
+    padding: 10px 40px;
+  }
+
+  .footer {
+    height: 80px;
+    background-color: black;
+  }
+
+  .footer p {
+    font-size: 14px;
+    margin-top: 33px;
+  }
+
+}
+
+/* mobile-portrait: 360-432width x 598-768height */
+/* mobile-landscape: 480width x 320-360height */
+/* tablet-portrait: 480width x 800height */
+@media only screen and (max-width: 480px) {
+
+  .innovation-header h1 {
+    font-size: 50px;
+    margin-top: 25px;
+  }
+
+  .innovation-header p {
+    font-size: 14px;
+    position: relative;
+    top: 40px;
+    letter-spacing: 4px;
+  }
+
+  .innovation-header a {
+    font-size: 12px;
+    padding: 10px 50px;
+    position: relative;
+    top: 60px;
+  }
+
+  .stay-connected { 
+  height: 400px;
+  }
+
+  .stay-connected .container {
+  top: 100px;
+  }
+
+  .footer p {
+  font-size: 12px;
+  }
+
+}
+
+/* mobile-portrait: 320width x 480-568height */
+@media only screen and (max-width: 320px) {
+
+  .innovation-header h1 {
+    font-size: 36px;
+    margin-top: 0px;
+  }
+
+  .innovation-header p {
+    font-size: 12px;
+  }
+
+}

@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0.7);
+    border-bottom: none;
+}
+
+.navbar a {
+    color: grey;
+    font-family: Raleway, sans-serif;
+}
+
+.nav li:hover {
+  background-color: rgba(244,73,61,0.9);
+}
+
+.container {
+	max-width: 970px; 
+	padding: 0px 10px;
+	margin: 0px auto;
+}
+
+.header {
+	height: 80px;
+	margin-top: 50px;
+	background-color: black;
+}
+
+.header img {
+	width: 210px;
+	height: 50px;
+	margin-top: 15px;
+	float: left;
+}
+
+form {
+	float: right;
+	margin-top: 28px;
+}
+
+#form-search {
+	color: grey;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	padding-bottom: 3px;
+	width: 240px;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#form-search:hover {
+	color: white;
+	border-bottom: 1px solid #1a77ff;
+}
+
+#form-button a {
+	color: white;
+	border-bottom: 1px solid #1a77ff;
+	padding: 0px 10px;
+	padding-bottom: 5px;
+	margin-left: 10px;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+#form-button a:hover {
+	text-decoration: none;
+	color: #1a77ff;
+}
+
+.navigation {
+	height: 40px;
+	background-color: #152230;
+}
+
+.navigation ul {
+	display: table-row;
+	list-style: none;
+	height: 40px;
+}
+
+.navigation li {
+	display: table-cell;
+	line-height: 40px;
+	vertical-align: center;
+	color: white;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.navigation a {
+	display: table-cell;
+	vertical-align: middle;
+	height: 40px;
+	padding: 0px 20px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.navigation a:hover {
+	text-decoration: none;
+	background-color: #1a77ff;
+}
+
+.content-1 {
+	height: 500px;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/newsroom/bass-bg.jpg) center center no-repeat;
+	background-size: 100%;
+}
+
+.content-1 .col-md-5 {
+	padding: 40px;
+}
+
+#date {
+	font-size: 16px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.content-1 h2 {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    transform: scale(1.2,1);
+    margin-left: 30px;
+}
+
+.border-bottom {
+	border-bottom: 5px solid #1a77ff;
+	padding-bottom: 3px;
+}
+
+#border-bottom {
+	border-bottom: 5px solid #1a77ff;
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.content-1 p {
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-top: 20px;
+}
+
+.content-2 {
+	height: 690px;
+	background-color: #f2f2f2;
+	padding-top: 60px;
+}
+
+.content-2 p a {
+	margin-bottom: 20px;
+}
+
+.col-md-8 {
+	padding: 20px 40px 40px 40px;
+	background-color: white;
+	height: 350px;
+}
+
+.col-md-8 h3 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 20px 0px 40px 0px;
+    padding-left: 10px;
+    transform: scale(1.1,1);
+    margin-left: 17px;
+}
+
+.col-md-8 p {
+	margin-bottom: 10px;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #333;
+}
+
+.col-md-8 a { /*add a div class for both a's for margin bottom*/
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-bottom: 3px solid #1a77ff;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+}
+
+.col-md-8 a:hover {
+	text-decoration: none;
+	border-bottom: 3px solid #333;
+}
+
+.col-md-8 ul {
+	list-style: none;
+	margin-left: -40px;
+}
+
+.col-md-4 {
+	padding: 20px 40px 40px 40px;
+	background-color: #152230;
+	height: 350px;
+}
+
+.col-md-4 h3 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 20px 0px 40px 0px;
+    padding-left: 10px;
+    color: white;
+    transform: scale(1.1,1);
+}
+
+.col-md-4 p {
+	margin-bottom: 10px;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+}
+
+.col-md-4 a { /*add a div class for both a's for margin bottom*/
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-bottom: 3px solid #1a77ff;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.col-md-4 a:hover {
+	text-decoration: none;
+	border-bottom: 3px solid white;
+}
+
+.col-md-4 ul {
+	list-style: none;
+	margin-left: -40px;
+}
+
+.col-md-12 img {
+	width: 100%;
+	margin: 60px auto;
+}
+
+.footer {
+	height: 150px;
+	background-color: black;
+}
+
+.footer ul {
+	margin-left: -50px;
+	margin-bottom: -10px;
+	list-style: none;
+}
+
+.footer li {
+	display: inline;
+	line-height: 150px;
+	vertical-align: middle;
+}
+
+.footer a {
+	margin-right: 40px;
+	color: white;
+	text-decoration: none:
+}
+
+.footer a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid white;
+	padding-bottom: 2px;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.footer p {
+	color: white;
+	font-family: 'Lato', sans-serif;
+    font-weight: 300;
+   	float: right;
+   	margin-bottom: -10px;
+}
