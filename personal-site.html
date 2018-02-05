@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal Site</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#image1 , #image2, #image3').click(function() {
+        console.log('here');
+        $(this).toggleClass('thumb');
+        $(this).toggleClass('large');
+        console.log('here2');
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <h1>My Personal Website</h1>
+  <h2 class="subtitle fancy">Secondary Heading</h2>
+  <div class="full">
+    <div class="fancy">Hi! My name is Mac. I grew up in Nederland, Colorado. My hobbies include...</div>
+      <ul class="left">
+        <li>Cooking</li>
+        <li>Exploring dungeons and killing dragons</li>
+        <li>Playing with my dogs</li>
+        <li>Training Pokemon</li>
+        <li>Listening to music</li>
+      </ul>
+    <div class="right photos">
+      <img class="left thumb" id="image1" src="https://vignette.wikia.nocookie.net/avatar/images/3/35/Naga.png" alt="Naga from The Legend of Korra">
+      <img class="thumb" id="image2" src="http://blackhorizonanime.tripod.com/San_riding_Moro.jpg" alt="San Riding Moro">
+      <img class="right thumb" id="image3" src="      http://dnd.wizards.com/sites/default/files/media/styles/hubpage_banner/public/images/large-background/DX_Xanathar_Homepage_Header_0.jpg" alt="A beholder studying its goldfish.">
+    </div>
+  </div>
+
+  <div class="half">
+    <nav class="left">
+      <a href="personal-site.html" class="btn left">Home</a>
+      <a href="page2.html" class="btn right">Page 2!</a>
+      <div class="middle">Sweet Naviagation Bar</div>
+    </nav>
+  </div>
+  <div class="right half">
+    Click the Pictures to change their size.
+  </div>
+</body>
+
+</html>
