@@ -1,0 +1,33 @@
+header,
+nav,
+section,
+aside,
+{
+  margin: 0 1.5% 24px 1.5%;
+}
+header{
+  font-size: 25px;
+  color: pink;
+}
+h1{
+  text-align: center;
+}
+nav{
+  text-align: center;
+}
+section {
+  float: left;
+  width: 40%;
+  font-size: 20px;
+  color: pink;
+}
+aside {
+  float: right;
+  width: 50%;
+}
+
+img {
+  display: block;
+  height: 450px;
+  width: 400px;
+}
