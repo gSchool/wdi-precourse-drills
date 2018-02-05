@@ -1,43 +1,72 @@
-
-
-img{
-  height: 44px;
-  width: 32px;
+#bella{
+  position: relative;
+  left: 550px;
+  width: 250px;
+  height: 320px;
 }
 
-#row1{
-  background: rgba(128, 128, 128, .25)
+#games{
+  position: relative;
+  left: 150px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
 }
 
-#row2{
-  background: rgba(192, 192, 192, .25)
+.Game-Pics{
+  position: relative;
+  left:200px;
+  width: 130px;
+  height: 90px;
 }
 
-section{
-  float: left;
-  margin: 0 1.5%;
-  width: 63%;
+.GTA-Cover{
+  position: relative;
+  left: 200px;
+  width: 100px;
 }
 
-aside{
+.Terraria-Cover{
+  position: relative;
+  left: 200px;
+
+}
+
+h1{
+  font-family: 'Nosifer', cursive;
+
+}
+
+h2{
+font-family: 'Press Start 2P', cursive;
+
+}
+
+#Email{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+
+}
+
+p{
+  font-family:'Shadows Into Light', cursive;
+  font-size: 25px;
+
+
+}
+
+body{
+  background-image: url("Images/Bricks2.jpeg");
+
+}
+
+#gif{
   float: right;
-  margin: 0 1.5%;
-  width: 30%;
 }
 
-
-#titles tr:nth-child(even) {
-  background: #CCC
-}
-
-
-#titles tr:nth-child(odd) {
-  background: #FFF
-}
-
-
-#small-text{
+nav{
+  font-family: 'Nosifer', cursive;
+  font-size: 15px;
   font-style: italic;
-  font-size: 14px;
-  margin-top: auto;
+  color: red;
+
 }
