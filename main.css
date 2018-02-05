@@ -1,0 +1,32 @@
+p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 40%;
+}
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 50%;
+}
+
+
+img {
+  display: block;
+  height: 32px;
+  width: 44px;
+}
+
+tr.one td {
+  color: black;
+  background-color: red;
+}
+
+tr.two td {
+  color: black;
+  background-color: yellow;
+}
