@@ -15,7 +15,7 @@ header {
     background-color: #16202e;
     border-bottom: solid 10px #b69f7a;
     height: 100px;
-    position:fixed;
+    position: fixed;
     top: 0px;
     width: 100%;
 }
@@ -67,12 +67,10 @@ header {
 
 .filler {
     height: 110px;
-    position: static;
 }
 
 #home {
     background-color: #ffffff;
-    position: static;
 }
 
 .home {
@@ -164,7 +162,6 @@ header {
 
 .contact-links {
     margin: auto;
-    position: static;
     text-align: center;
 }
 
