@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0.7);
+    border-bottom: none;
+}
+
+.navbar a {
+    color: grey;
+    font-family: Raleway, sans-serif;
+}
+
+.nav li:hover {
+  background-color: rgba(244,73,61,0.9);
+}
+
+.container {
+	max-width: 940px; 
+	padding: 0 10px;
+	margin: 0px auto;
+}
+
+.header {
+ 	position: relative;
+}
+
+.header-content {
+  	position: absolute;
+  	top: 200px;
+  	width: 100%;
+  	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+}
+
+.header h1 {
+  	font-size: 50px;
+  	font-weight: 350;
+  	text-shadow: 0px 5px 5px rgba(0,0,0,.5);
+  	color: white;
+  	text-align: center;
+  	margin-bottom: 60px;
+  	line-height: 130%;
+}
+
+.header a {
+  	font-size: 16px;
+  	padding: 20px 30px;
+  	color: white;
+  	background-color: #4386fc;
+  	text-decoration: none;
+  	font-weight: 300;
+}
+
+.header a:hover {
+	background-color: rgba(0,0,0,.7)
+}
+
+.center-link {
+  	text-align: center;
+}
+
+.content-1 {
+	margin-top: 60px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.content-1 h2 {
+	font-size: 48px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.content-1 p {
+	font-size: 21px;
+    padding: 0 30px;
+    font-weight: 300;
+    margin-bottom: 
+}
+
+.feature {
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/excursion/camp.png) center center no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+
+.content-2 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.content-2 img {
+	display: block;
+	margin: 0px auto;
+}
+
+.content-2 h2 {
+	font-size: 48px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.content-2 p {
+	font-size: 21px;
+    padding: 0 30px;
+    font-weight: 300;
+    margin-bottom: 
+}
+
+.content-2 a {
+  	font-size: 16px;
+  	padding: 20px 30px;
+  	color: white;
+  	background-color: #4386fc;
+  	text-decoration: none;
+  	font-weight: 300;
+}
+
+.content-2 a:hover {
+	background-color: rgba(0,0,0,.7)
+}
+
+.footer {
+	height: 100px;
+	width: 100%;
+	background-color: #eeeeee;
+}
+
+.footer p {
+	margin: auto auto;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 100px;
+	vertical-align: middle;
+}

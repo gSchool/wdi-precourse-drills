@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar a {
+    color: grey;
+}
+
+.nav li:hover {
+  background-color: rgb(244,73,61);
+  border-left: 2px solid white;
+}
+
+.nav ul {
+    background-color: rgba(244,73,61,0.9);
+    list-style: none;
+    position: absolute;
+    left: -9999px; 
+}
+.nav li ul a li {
+  color: white;
+}
+.nav li:hover ul {
+    box-sizing: border-box;
+    left: -2px; 
+    height: 280px;
+    width: 83px;
+}
+.nav li:hover li {
+  box-sizing: border-box;
+  height: 40px;
+  width: 83px;
+  text-align: center;
+  border-left: 2px solid white;
+}
+.nav li ul a:hover {
+    text-decoration: none;
+}
+
+#jfk {
+  background: url("https://www.immigrationdirect.com/blog/wp-content/uploads/2013/11/kennedyedit.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#work-hard {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Mountain_bike_in_downhill_race.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#dreams {
+  background: url("http://www.lastfrontierheli.com/news/wp-content/uploads/2012/02/Last_Frontier_Dave_Silver_A05.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#final {
+  background: url("https://images6.alphacoders.com/410/410958.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#jfk, #work-hard, #dreams, #final {
+  width: 100%;
+  height: 100vh;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.title {
+    width: 800px;
+    margin: 0px auto;
+}
+
+h1.title {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #FFF;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  transform: translateZ(0px);
+  margin-top: 50vh;
+}
+
+h2.title {
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #FFF;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  transform: translateZ(0px);
+  margin-top: 20px;
+}
+
+.text p {
+  width: 70%;
+  padding: 5%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0.7);
+    border-bottom: none;
+}
+
+.footer {
+    height: 100px;
+    background-color: black;
+}
+
+.footer h3 {
+    font-size: 18px;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.footer a:hover {
+    color: white;
+}

@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 940px; 
+  padding: 0 10px;
+}
+
+.navbar-header a:hover {
+  border-left: 2px solid white;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,0.7);
+  border-bottom: none;
+  border-radius: 0;
+  width: 100%;
+}
+
+.navbar a {
+  color: grey;
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+}
+
+.nav li:hover {
+  background-color: rgba(244,73,61,0.9);
+  border-left: 2px solid white;
+}
+
+.main {
+  height: 600px;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/intro.jpg) center center no-repeat;
+  background-size: cover;
+  margin-top: 4px;
+  font-family: 'Helvetica Neue Thin', 'HelveticaNeue-Thin', 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+}
+
+.container-main {
+  margin: 100px auto;
+}
+
+.main h1 {
+  font-size: 72px;
+}
+
+.main p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.main a {
+  font-size: 20px;
+  color: white;
+  padding: 8px 30px;
+  background: linear-gradient(red, rgba(238,68,95,0.9));
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.main a:hover {
+  box-shadow: 0px 10px 10px rgba(0,0,0,.7);
+}
+
+.content-1, .content-2, .content-3 {
+  font-family: 'Helvetica Neue Thin', 'HelveticaNeue-Thin', 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+}
+
+.content-1 p, .content-2 p, .content-3 p {
+  font-size: 24px;
+}
+
+.content-1 h2, .content-2 h2, .content-3 h2 {
+  font-size: 72px;
+  padding: 20px 0px;
+}
+
+.image-small {
+  	display: none;
+  }
+
+.content-1 .row {
+  margin-top: 40px;
+}
+
+hr {
+  width: 940px;
+  margin: 40px auto;
+}
+
+.conent-4 {
+  text-align: center;
+}
+
+.content-4 h3 {
+  font-size: 30px;
+  font-family: 'Helvetica Neue Thin', 'HelveticaNeue-Thin', 'helvetica neue', helvetica, arial, 'lucida grande', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content-4 img {
+  margin-bottom: 100px;
+}
+
+.content-4 img:hover {
+  box-shadow: 0px 10px 10px rgba(0,0,0,.7);
+  border-radius: 10px;
+}
+
+#images {
+  text-align: center;
+}
+
+.footer {
+  background-color: #f3f3f3;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.footer h3 {
+  font-size: 16px;
+  color: rgba(0,0,0,.7);
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer a {
+  color: grey;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 2px;
+}
+
+/* laptop/desktop: 1680-1920width x 1050-1200height = 21.5-30inch display, 1080p/4K TV */
+/* this includes any screen size larger than 1600px, remember to set max limits! */
+@media only screen and (max-width: 2560px) {
+
+}
+
+
+/* tablet-landscape: 1280-1440width x 720-1024height */
+/* laptop/desktop: 1280-1600width x 720-900height = 14-20inch display, 720p TV */
+@media only screen and (max-width: 1600px) {
+
+}
+
+
+/* tablet-portrait: 720-1024width x 1280-1440height */
+/* tablet-landscape: 800-1024width x 480-768height */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* When nav-toggle-button not displayed, the nav will float right for tablet-landscape and larger */
+@media only screen and (min-width: 768px) {
+
+  .header .collapse ul{
+    float: right;
+  }
+
+}
+
+/* tablet-portrait: 480-768width x 800-1366height */
+/* mobile-landscape: 598-768width x -360-432height */
+@media only screen and (max-width: 768px) {
+
+  .main {
+  	padding-left: 30px;
+  }
+
+  .main h1 {
+	font-size: 10vw;
+  }
+
+  .main p {
+	font-size: 4vw;
+  }
+
+  .main a {
+	font-size: 2.5vw;
+  }
+
+  .main a:hover {
+	box-shadow: 0px 5px 5px rgba(0,0,0,.7);
+  }
+
+  .col-xs-12 {
+  	width: 50%;
+  	padding: 0px 60px;
+  }
+
+  .content-1 p, .content-2 p, .content-3 p {
+    font-size: 20px;
+  }
+
+  .content-1 h2, .content-2 h2, .content-3 h2 {
+    font-size: 60px; 
+  }
+
+  .content-1 img, .content-2 img, .content-3 img {
+    height: 364px;
+    width: 188px;
+  }
+
+}
+
+@media only screen and (max-width: 620px) {
+	
+  .content-1 h2, .content-2 h2, .content-3 h2 {
+    font-size: 48px;
+    padding: 0px 0px;
+    margin-top: 0px;
+  }
+
+}
+
+
+/* mobile-portrait: 360-432width x 598-768height */
+/* mobile-landscape: 480width x 320-360height */
+/* tablet-portrait: 480width x 800height */
+@media only screen and (max-width: 480px) {
+
+  .main {
+    height: 500px;
+  }
+
+  .main h1 {
+	font-size: 13vw;
+  }
+
+  .main p {
+	font-size: 4.5vw;
+	margin-bottom: 20px;
+  }
+
+  .main a {
+	font-size: 3vw;
+  }
+
+  .content-1 p, .content-2 p, .content-3 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .content-1 h2, .content-2 h2, .content-3 h2 {
+    font-size: 48px;
+    padding: 0px 0px;
+    margin-top: 0px;
+  }
+
+  .content-1 img, .content-2 img, .content-3 img {
+    height: 273px;
+    width: 141px;
+  }
+
+  .main-content {
+  	text-align: center;
+  }
+
+  .col-xs-12 {
+  	width: 100%;
+  	padding: 0px 30px;
+  }
+
+  .content-1 h2, .content-2 h2, .content-3 h2 {
+  	margin-top: 0px;
+  	padding-top: 0px;
+  }
+
+  .image-large {
+  	display: none;
+  }
+
+  .image-small {
+  	display: block;
+  	margin: 0px auto;
+  }
+
+  .image-small img {
+  	height: 364px;
+  	width: 188px;
+  }
+
+}
+
+}
+
+/* mobile-portrait: 320width x 480-568height */
+@media only screen and (max-width: 320px) {
+
+  .main {
+    height: 400px;
+  }
+
+}

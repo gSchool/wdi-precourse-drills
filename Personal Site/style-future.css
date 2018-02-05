@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.navbar-header a:hover {
+  border-left: 2px solid white;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,0.7);
+  border-bottom: none;
+}
+
+.navbar a {
+  color: grey;
+}
+
+.nav li:hover {
+  background-color: rgb(244,73,61);
+  border-left: 2px solid white;
+}
+
+.nav ul {
+  background-color: rgba(244,73,61,0.9);
+  list-style: none;
+  position: absolute;
+  left: -9999px; 
+}
+.nav li ul a li {
+  color: white;
+}
+.nav li:hover ul {
+  box-sizing: border-box;
+  left: -2px; 
+  height: 280px;
+  width: 83px;
+}
+.nav li:hover li {
+  box-sizing: border-box;
+  height: 40px;
+  width: 83px;
+  text-align: center;
+  border-left: 2px solid white;
+}
+.nav li ul a:hover {
+  text-decoration: none;
+}
+
+body {
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.1) 100%), url("http://www.publicdomainpictures.net/pictures/10000/velka/snow-covered-mountains-11288014279zESc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 42px;
+  color: lightgrey;
+}
+
+h2 {
+  color: lightgrey;
+}
+
+#future p {
+  font-size: 20px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#future img {
+  display: block;
+  margin: 0px auto;
+}
+
+button {
+  margin-top: 22px;
+  background-color: coral;
+  color: darkblue;
+  font-size: 18px;
+  font-weight: bold;
+}
