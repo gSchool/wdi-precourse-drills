@@ -1,0 +1,63 @@
+.page-header {
+  color: silver;
+  text-align: center;
+  font-size: 80px;
+  font-style: oblique;
+
+}
+#leftpic, #middlepic, #rightpic {
+  height: 300px;
+  width: 300px;
+  padding: 100px 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+#leftpic {
+  padding-left: 200px;
+}
+#sub-header-1 {
+  font-size: 50px;
+  color: grey;
+  padding: 10px 30px;
+}
+.paragraphs {
+  text-align: center;
+  padding-left: 400px;
+  padding-right: 400px;
+  font-size: 30px;
+}
+#next-page {
+   margin-right: 0;
+   width: 100%;
+   float: right;
+   padding-top: 100px;
+   font-size: 20px;
+}
+iframe {
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  float: right;
+  word-wrap: normal;
+  animation-iteration-count: infinite;
+  padding: 0;
+
+}
+#second-page-header {
+  color: silver;
+  font-style: oblique;
+  font-size: 75px;
+}
+.second-paragraph {
+  font-size: 30px;
+  margin-left: 100px;
+  margin-right: 20px;
+  padding: 0;
+  
+}
+#boss {
+  text-align: center;
+}
