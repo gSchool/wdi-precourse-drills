@@ -1,0 +1,36 @@
+p, h1, h2, a, li {
+     font-family: sans-serif;
+     margin-left: 2px;
+     text-decoration: none;
+}
+ul {
+     list-style-type: none;
+}
+img {
+     height: 44px;
+     width: 32px;
+}
+
+#titles tr:nth-child(even) {
+     background-color: #fff;
+}
+#titles tr:nth-child(odd) {
+     background-color: #eee;
+}
+
+#content {
+     margin: 0 auto;
+     width: 85%;
+}
+section {
+     float: left;
+     margin: 0 20px;
+}
+
+aside {
+     float: right;
+     margin: 0 20px;
+     padding: 0 14px;
+     border-radius: 10px;
+     background-color: #f9f9f9;
+}
