@@ -1,0 +1,64 @@
+img {
+  height: 32px;
+  width: 42px;
+}
+dl.a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.b {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.c {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li.t {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+dt.ab {
+  background: url("arrow.png") 0 50% no-repeat;
+  list-style-type: none;
+  padding-left: 12px;
+}
+dt.ac {
+  background: url("arrow.png") 0 50% no-repeat;
+  list-style-type: none;
+  padding-left: 12px;
+}
+dt.ad {
+  background: url("arrow.png") 0 50% no-repeat;
+  list-style-type: none;
+  padding-left: 12px;
+}
+dt.ae {
+  background: url("arrow.png") 0 50% no-repeat;
+  list-style-type: none;
+  padding-left: 12px;
+}
+li.bb {
+  background: url("arrow.png") 0 50% no-repeat;
+  list-style-type: none;
+  padding-left: 12px;
+}
+li.bc {
+  background: url("arrow.png") 0 50% no-repeat;
+  list-style-type: none;
+  padding-left: 12px;
+}
+li.bd {
+  background: url("arrow.png") 0 50% no-repeat;
+  list-style-type: none;
+  padding-left: 12px;
+}
+li.be {
+  background: url("arrow.png") 0 50% no-repeat;
+  list-style-type: none;
+  padding-left: 12px;
+}
