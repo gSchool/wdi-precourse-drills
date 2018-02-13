@@ -2,3 +2,15 @@ img {
   height: 32px;
   width: 44px;
 }
+.black {
+  background-color: black;
+}
+.grey {
+  background-color: grey;
+}
+.column {
+  float: left;
+}
+.column2 {
+  float: right;
+}
