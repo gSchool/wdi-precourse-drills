@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>It's hangman time, y'all.</title>
+  </head>
+  <body>
+    <h1>I sure hope that no stick figures died because of you.</h1>
+    <script>
+      // Write your functions here
+      var pickWord = function () {
+        var words = ["derivative", "sopsilistic", "quixotic", "languid", "dexterity", "pedantic", "constabulary"];
+        return words[Math.floor(Math.random() * words.length)];
+      };
+
+      var setupAnswerArray = function (word) {
+        var answerArray = [];
+        for (var i = 0; i < word.length; i++) {
+          answerArray[i] = "_";
+        }
+        return answerArray;
+      };
+
+      var showPlayerProgress = function (answerArray) {
+        alert(answerArray.join(" "));
+      };
+
+      var getGuess = function () {
+        guesses--;
+        if (guesses === 0) {
+          alert("You never had the makings of a varsity athlete. The word was *" + word + "*, you ignoramus.");
+        } else {
+        return prompt("Guess a single letter, or click Cancel if you're scared. You'll have " + guesses + " more chances to get it right.");
+        }
+      };
+
+      var updateGameState = function (guess, word, answerArray) {
+        var appearances = 0;
+        for (var j = 0; j < word.length; j++) {
+          if (word[j] === guess) {
+            answerArray[j] = guess;
+            appearances++;
+          }
+        }
+
+        return appearances;
+      };
+
+      var showAnswerAndCongratulatePlayer = function (answerArray) {
+        showPlayerProgress(answerArray);
+        alert("How could you possibly have known that the answer was " + answerArray.join("") + "??? Good job, I guess.");
+      };
+
+      var word = pickWord();
+      var answerArray = setupAnswerArray(word);
+      var remainingLetters = word.length;
+      var guesses = 14;
+
+      while (remainingLetters > 0 && guesses > 0) {
+        showPlayerProgress(answerArray);
+        var guess = getGuess();
+        if (guess === null) {
+          break;
+        } else if (guess.length !== 1) {
+          alert("I SAID GUESS A SINGLE LETTER. Ahem. Sorry for yelling. Please enter a single letter. You will lose a guess to teach you a lesson about the value of reading comprehension.");
+        } else {
+          guess = guess.toLowerCase();
+          var correctGuesses = updateGameState(guess, word, answerArray);
+          remainingLetters -= correctGuesses;
+        }
+      }
+
+      showAnswerAndCongratulatePlayer(answerArray);
+    </script>
+  </body>
+</html>
