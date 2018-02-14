@@ -1,0 +1,111 @@
+.content {
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+#banner {
+  background-image: url("11423915_10205705897381250_6860130885072768197_o.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+}
+body {
+  background-image: url("http://www.powerpointhintergrund.com/uploads/white-wood-background-27.jpeg");
+  overflow: inherit;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.left {
+  float:left;
+  width: 20%;
+  position: sticky;
+}
+.right {
+  float:right;
+  width: 76.5%;
+  background-color: #D5D5D5;
+  border-radius: 10px;
+  -webkit-box-shadow: #666 0px 2px 6px;
+  -moz-box-shadow: #666 0px 2px 6px;
+  box-shadow: #666 0px 2px 6px;
+  position: relative;
+}
+#clear {
+  clear: both;
+  text-align: center;
+}
+img {
+  background-color: #9099A2;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: #666 0px 2px 6px;
+  -moz-box-shadow: #666 0px 2px 6px;
+  box-shadow: #666 0px 2px 6px;
+}
+p {
+  background-color: #6D7993;
+  border-radius: 10px;
+  -webkit-box-shadow: #666 0px 2px 6px;
+  -moz-box-shadow: #666 0px 2px 6px;
+  box-shadow: #666 0px 2px 6px;
+  margin-left:40px;
+  margin-right: 40px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  padding: 20px;
+  position: relative;
+}
+h1, h2, h3 {
+  margin: 0px;
+  padding: 10px;
+}
+footer {
+  margin: 20px;
+  padding:20px;
+}
+#cat {
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  background-color: #9099A2;
+  border-radius: 10px;
+  -webkit-box-shadow: #666 0px 2px 6px;
+  -moz-box-shadow: #666 0px 2px 6px;
+  box-shadow: #666 0px 2px 6px;
+}
+#catpics{
+  display: none;
+}
+#clearleft{
+  float:right;
+  clear:left;
+  width: 76.5%;
+  margin-top: 10px;
+  background-color: #D5D5D5;
+  border-radius: 10px;
+  -webkit-box-shadow: #666 0px 2px 6px;
+  -moz-box-shadow: #666 0px 2px 6px;
+  box-shadow: #666 0px 2px 6px;
+  position: relative;
+}
+#gif {
+  height: 330px;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
