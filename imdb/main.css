@@ -2,3 +2,13 @@ img {
   height: 32px;
   width: 44px;
 }
+p:nth-child(odd) {
+  color:darkorange;
+}
+
+li:nth-child(odd){
+  color: darkorange;
+}
+section {
+  float: left;
+}
