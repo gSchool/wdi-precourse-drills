@@ -1,0 +1,17 @@
+dt.even{
+  background: #C0C0C0;
+}
+dt.odd{
+  background: #F5F5F5;
+}
+
+.column {
+   float: left;
+   width: 50%;
+}
+
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
