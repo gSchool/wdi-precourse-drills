@@ -1,0 +1,92 @@
+body {
+  background-color:  #0a1f42;
+}
+
+h1{
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  color: #fa9f23;
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  color: white;
+  padding-left: 300px;
+  padding-right: 300px;
+  word-spacing: 2px;
+  line-height: 1.2;
+}
+
+a:link {
+  color:  #4fcb64;
+}
+
+a:visited {
+  color:  #72dff5;
+}
+
+a:hover {
+  color: #b4b4b6;
+}
+
+a:active {
+  color:   #4efe2b;
+}
+
+div {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
+
+img {
+  border: 2px solid #e8e8e9;
+  margin: auto;
+}
+
+div.picsOne {
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+div.picsTwo {
+  margin: auto;
+  padding-top:20px;
+  padding-bottom: 200px;
+}
+
+ul.nav {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   width: 10%;
+   background-color: #273e63;
+   height: 65%;
+   position: fixed;
+   overflow: auto;
+}
+
+li {
+    float: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+ul.contactInfo {
+  padding-top: 20px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+div.button {
+  text-align: center;
+  border-radius: 12px;
+  font-size: 24px;
+}
