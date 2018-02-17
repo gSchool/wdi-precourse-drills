@@ -1,0 +1,29 @@
+
+
+header,
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+section {
+  float: left;
+  width: 30%;
+}
+footer {
+  clear: both;
+  margin-bottom: 0;
+}
+
+
+ul {
+  list-style-type: circle;
+
+}
+
+
+tr.d0 td {
+	background-color: #c0c0c0; color: black;
+}
+tr.d1 td {
+	background-color: #909090; color: black;
