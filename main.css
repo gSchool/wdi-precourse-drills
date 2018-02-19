@@ -1,0 +1,10 @@
+.alt { background-color: lightgray;
+}
+
+.left{ float: left;
+  margin: 0 1.5%;
+  width: 55%;}
+
+.right{ float: right;
+    margin: 0 1.5%;
+    width: 30%;}
