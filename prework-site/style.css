@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Asap", sans-serif;
+  background-color: #99858B;
+  color: #33222B;
+}
+/* Both Pages Header */
+header {
+  background: url("img/header-bg.jpeg");
+  background-size: cover;
+  height: 295px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "Flamenco", cursive;
+}
+
+h3 {
+  padding-top: 1rem;
+  font-size: 3rem;
+  font-family: "Flamenco", cursive;
+  border-bottom: 2px solid #99858B;
+}
+/* Main Page */
+.about-me,
+.my-goals {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.about-me__section,
+.my-goals__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.4rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  background-color: #FFEFD4;
+  margin: 3rem;
+  width: 33%;
+  padding: 3rem;
+  border: 1.5px solid #33222B;
+}
+
+.about-me__ul,
+.my-goals__ul {
+  padding-top: 1.5rem;
+  list-style-type: none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #B46404;
+}
+
+a:hover {
+  color: #E68005;
+}
+
+.fa-chevron-circle-right,
+.fa-hand-spock {
+  padding-left: .5rem;
+}
+
+/* Both Pages Footer */
+footer {
+  background-color: #D3C2CC;
+  height: 120px;
+  font-size: 2rem;
+}
+
+.footer__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-github,
+.fa-twitter,
+.fa-linkedin-in {
+  padding-right: .5rem;
+}
+
+.footer__div a {
+  margin-top: 5rem;
+  padding-right: 2rem;
+}
+
+/* Goals Page */
+span {
+  display: block;
+  text-align: center;
+}
+
+.my-goals__h3 {
+  border-style: none;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.my-goals__img {
+  width: 9%;
+  position: absolute;
+  bottom: 107px;
+  left: 95px;
+}
+
+.my-goals__button {
+  font-family: "Asap", sans-serif;
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #B46404;
+  color: #FFFFFF;
+  border-radius: 3rem;
+}
+
+.my-goals__button:hover {
+  background-color: #E68005;
+}
+
+.my-goals__article {
+  padding-top: 2rem;
+}
+
+iframe {
+  padding: 15px 1px;
+  border: 3.3px solid #33222B;
+  border-radius: 2rem;
+}

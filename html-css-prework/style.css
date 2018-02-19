@@ -1,0 +1,26 @@
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 44px;
+  width: 32px;
+}
+
+.yellow-bg {
+  background-color: #ECCA00;
+}
+
+.orange-bg {
+  background-color: #BB4628;
+}
