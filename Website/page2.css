@@ -1,0 +1,69 @@
+.navbar ul {
+ margin: 0;
+ padding: 5px;
+ list-style-type: none;
+ text-align: center;
+ font-family: 'Satisfy'
+ }
+
+.navbar ul li {
+ display: inline;
+ }
+
+.navbar ul li a {
+ text-decoration: none;
+ padding: .2em 1em;
+ color: #000000;
+ }
+
+.navbar ul li a:hover {
+ color: #000000;
+ }
+body{
+  text-align:center;
+}
+h1 {
+  font-family:'Slabo';
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  
+
+
+}
+p:first-letter{
+               text-transform: uppercase;
+          }
+        p {
+        color: #000000;
+        font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+ letter-spacing:0.1em;
+ text-align:center;
+ margin: 40px auto;
+ text-transform: lowercase;
+ line-height: 145%;
+ font-size: 14pt;
+ font-variant: small-caps;
+        }
+.andy{
+ border: 5px solid black;
+}
+
+
+.container{
+    position: absolute;
+    left: 0;
+    Top: 0;
+    width: 100%;
+    height: 100%;
+}
+.photo{
+  height: 100%;
+  width: 100%;
+  background-image: url("yellow.jpg");
+  background-size: cover;
+  background-repeat:space;
+  background-position: center center;
+
+}

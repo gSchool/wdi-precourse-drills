@@ -1,0 +1,109 @@
+.navbar ul {
+ margin: 0;
+ padding: 5px;
+ list-style-type: none;
+ text-align: center;
+ font-family: 'Satisfy'
+ }
+
+.navbar ul li {
+ display: inline;
+ }
+
+.navbar ul li a {
+ text-decoration: none;
+ padding: .2em 1em;
+ color: #000000;
+ }
+
+.navbar ul li a:hover {
+ color: #000000;
+ }
+body{
+
+  text-align: center;
+
+}
+
+p{
+  
+  font-family: 'satisfy';
+
+}
+
+.hero{
+  height: 100%;
+  width: 100%;
+  background-image: url("gray.jpg");
+  background-size: cover;
+  background-repeat:space;
+  background-position: center center;
+}
+.maroon{
+  border: 10px solid #ffff66;
+  border-style: inset;
+}
+
+.button{
+  background-color: #ffff66;
+  padding: 1em 2em;
+  color: #000000;
+  border: 0;
+}
+
+.button:hover{
+  background: #333;
+}
+.modal{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-content{
+  background-color: #f4f4f4;
+  margin: 20%;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+}
+.closebtn{
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+.closebtn:hover,.closebtn:focus{
+  color:#000;
+  text-decoration: none;
+  cursor: pointer;
+}
+h1 {
+  font-family:'Satisfy';
+  color: #000000;
+  text-align: center;
+}
+h2 {
+  font-family: 'Satisfy';
+  color: #000000;
+  text-align: left;
+  text-decoration: underline;
+  font-size: 200%;
+
+}
+h3 {
+  font-family: 'Berkshire Swash';
+  color:#000000;
+  text-align:center;
+}
+
+P {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  font-weight: normal;
+}
