@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+  </head>
+  <body>
+    <p>Hangman</p>
+    <script>
+
+    //Setup variables and arrays
+    var answerArray = [];
+    var exit = 0;
+    var remainingLetters = 0;
+
+    //Setup game
+    var word = pickWord();
+    setupAnswerArray();
+
+
+    // The game loop
+    while (remainingLetters > 0 && exit == 0)
+    {
+      showPlayerProgress();
+      if (exit == 1) { break }
+      getGuess();
+
+    // The end of the game loop
+    }
+    if ( exit == 0 )
+      { showAnswerAndCongratulatePlayer(); }
+
+
+     function pickWord ()
+     {
+       // Create an array of words
+       var words = [
+       "javascript",
+       "monkey",
+       "amazing",
+       "pancake"
+       ];
+       // Pick a random word
+      word = words[Math.floor(Math.random() * words.length)];
+      return word;
+     }
+
+     function setupAnswerArray ( )
+     {
+       // Set up the answer array
+
+       for (var i = 0; i < word.length; i++) {
+       answerArray[i] = "_";
+       }
+       remainingLetters = word.length;
+     }
+
+     function showPlayerProgress ()
+     {
+     // Show the player their progress
+     alert(answerArray.join(" "));
+     }
+
+     function getGuess ()
+     {
+       // Get a guess from the player
+       var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+       if (guess === null) {
+       // Exit the game loop
+       exit = 1;
+       return;
+
+       } else if (guess.length !== 1) {
+       alert("Please enter a single letter.");
+       } else {
+         updateGameState( guess );
+       }
+     }
+
+     function updateGameState ( guess )
+     {
+       // Update the game state with the guess
+       for (var j = 0; j < word.length; j++) {
+       if (word[j] === guess) {
+       answerArray[j] = guess;
+       remainingLetters--;
+       }
+       }
+     }
+
+     function showAnswerAndCongratulatePlayer()
+     {
+     // Show the answer and congratulate the player
+     alert(answerArray.join(" "));
+     alert("Good job! The answer was " + word);
+     }
+     </script>
+  </body>
+</html>
