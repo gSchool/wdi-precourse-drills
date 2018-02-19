@@ -1,0 +1,25 @@
+.titles {}
+.names{}
+.keywords{}
+.companies{}
+.search{
+  
+}
+.additionalSearch{}
+.nameTable{}
+.movieTable{}
+.searchList{}
+.additionalSearchList{}
+.searchSideBar{
+  width: 646px;
+  margin-left: 20px;
+  margin-top: 15px;
+  float: right;
+}
+.mainBox{
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 15px;
+  float: left;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
