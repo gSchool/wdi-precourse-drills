@@ -1,0 +1,65 @@
+
+#top {
+  font-family:"courier new";
+  padding-left: 125px;
+  margin-bottom: 16px;
+  line-height: 120px;
+  color: white;
+  clear: left;
+  text-shadow: -2px -1px #666666;
+  background-color: rgba(0,0,0,0.6);
+  Background-size: 100px, 100px;
+
+
+ span {
+   line-height: 300px;
+ }
+}
+body {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://www.hiddenwires.co.uk/images/default-source/news/best-practice_dj-decks-are-specialist-products-built-to-take-serious-abuse.jpg?sfvrsn=0");
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+.btn-group button {
+  background: ivory;
+  color: black;
+  font-size: 14px;
+  padding: 13px 50px;
+  float: left;
+  border: 2px solid black;
+  letter-spacing: .2em;
+  border-radius: 8px;
+  margin: 13px;
+}
+
+.dopeThings {
+  background: ivory;
+  color: black;
+  font-size: 12px;
+  padding: 5px 30px;
+  clear: left;
+  border: 2px solid black;
+  letter-spacing: .1em;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+
+.about {
+  height: 75%;
+  width: 40%;
+  margin-top: 100px;
+  padding: 20px;
+  align: center;
+  display: block;
+  color: black;
+  background-color: rgba(255,255,255,0.6);
+  clear: left;
+  float-left: 20px;
+  border-radius: 4%;
+  max-height: 310px;
+  overflow: scroll;
+
+}
