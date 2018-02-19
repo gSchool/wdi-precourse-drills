@@ -38,6 +38,7 @@ var pickWord = function () {
     // Update answerArray and return a number showing how many
     // times the guess appears in the word so remainingLetters
     // can be updated
+    
     for (var j = 0; j < word.length; j++) {
         if (word[j] === guess) {
             answerArray[j] = guess
@@ -45,13 +46,13 @@ var pickWord = function () {
         }
     var currentState = alert(answerArray.join(" "))
     return currentState
+    }
   };
 
   var showAnswerAndCongratulatePlayer = function (answerArray) {
     // Use alert to show the answer and congratulate the player
     goodToGo = alert('Good job! The answer was ' + word)
     return goodToGo
-    // console.log(goodToGo)
   };
   
 var word = pickWord();
@@ -70,7 +71,7 @@ var remainingLetters = word.length;
             remainingLetters -= correctGuesses; 
         }
     
-  
+    } 
 
 showAnswerAndCongratulatePlayer(answerArray);
 
@@ -124,6 +125,8 @@ showAnswerAndCongratulatePlayer(answerArray);
 
 
 
+// var words = ['javascript','monkey','amazing','pancake','felalfel']
+// var word = words[Math.floor((Math.random()) * words.length)]
 
 
 // var answerArray = []
@@ -135,8 +138,8 @@ showAnswerAndCongratulatePlayer(answerArray);
 // // console.log(answerArray.length);
 
 // while (remainingLetters > 0) {
-    // alert(answerArray.join(' '))
-    // var guess = prompt('Guess a letter, or click Cancel to stop playing.')
+//     alert(answerArray.join(' '))
+//     var guess = prompt('Guess a letter, or click Cancel to stop playing.')
 //     //  guess == guess.toUpperCase {
 //     //     guess.toLowerCase()
 //     // console.log(typeof guess)
@@ -151,11 +154,11 @@ showAnswerAndCongratulatePlayer(answerArray);
 //     // } 
 //         else { 
 //         //update the game state with the guess
-        // for (var j = 0; j < word.length; j++) {
-        //     if (word[j] === guess) {
-        //         answerArray[j] = guess
-        //         remainingLetters--
-        //     }
+//         for (var j = 0; j < word.length; j++) {
+//             if (word[j] === guess) {
+//                 answerArray[j] = guess
+//                 remainingLetters--
+//             }
 //         }
 //     }    
 // }

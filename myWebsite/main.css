@@ -1,0 +1,123 @@
+
+#header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+    width: 100%;
+}
+
+.bg-primary {
+    background-color: #050505 !important;
+    width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ff9900;
+    width: 100%;
+}
+
+body{
+    background-image: url("images/woodBackground.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+
+.main {
+    text-align: center;
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    margin-top: 88.88px;
+    clear: both;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-bottom: 50px;
+    opacity: 0.96;
+    
+}
+
+#mainContainer {
+    border-radius: 150px;
+}
+
+h1 {
+    font-size: 69px;
+    padding: 50px;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+img {
+    border: 0px;
+    display: inline-block;
+}
+
+.imgLeft {
+    margin-right: -5px;
+}
+
+#csu {
+    padding-top: 70px;
+}
+
+#lark {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+button.btn.btn-primary {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 200%;
+    padding: 0px 30px;
+    border-bottom-right-radius: 50px;
+}
+
+/* Vision Page Styles */
+
+#outlook {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+
+.vision {
+    width: 500px;
+    margin: auto;
+    text-align: left
+}
+
+/* Contact page styles */
+
+#contact {
+    padding-left: 20px;
+    display: inline-table;
+}
+
+.main #contact {
+    padding-top: 50px;
+    margin: auto;
+    /* padding-bottom: 50px; */
+    
+}
+
+#contact p {
+    padding-left: 10px;
+    text-align: left
+}
+
+#contactImg {
+    /* padding-top: 40px; */
+}
