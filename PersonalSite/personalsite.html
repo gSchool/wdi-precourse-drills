@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/Users/kaitlin/Desktop/PersonalSite/personalsite.css">
+    <script src="jquery.min.js"></script>
+    <script src="application.js"></script>
+  </head>
+  <body>
+    <h1>Kaitlin Ramirez</h1>
+    <section>
+      <h2>About Me</h2>
+      <p> Hello! My name is Kaitlin. I was born in California but have lived in Colorado since I was six. I have two older brothers and an older sister. This family photo is from my brother's wedding in Alaska last summer. <p>
+      <p><id="family"><img src="family.jpg" width="300"><p>
+      <p><a href="personalsite2.html">Personal 2 </a><p>
+      <p>There is nothing in the world I love more than dogs. Monkey is a four and a half pound yorkie poo. Indio is actually my brothers dog but I'm constantly trying to claim her as my own. She is a great outdoors dog and even carries her own pack when we go backpacking!<p>
+      <p><img src="monkey.jpg" width="200"><img src="indio.jpg" width="150"><p>
+
+
+
+      <button onclick="myFunction()">Click here to hide extra dog pictures</button>
+      <div id="myDIV">
+        <img src="monkey2.png" width="150"><img src="indio2.png" width="150">
+      </div>
+
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
+
+
+
+  </body>
