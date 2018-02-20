@@ -1,0 +1,70 @@
+/* style sheet for main and sub */
+#one{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background-color: #68ba4c;
+  font-style: arial;
+}
+
+.alaska{
+  /* Picture */
+  display: inline-block;
+  width: 200px;
+}
+
+.intros{
+  margin: auto;
+    width: 90%;
+}
+#greeting{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 5%;
+}
+
+p{
+  font-size: 21px;
+}
+#brh{
+  text-align: center;
+}
+#burnAfterReading{
+  /* Picture */
+  display: inline;
+  margin-left: 40%;
+}
+.p2{
+  text-align: center;
+}
+#hobbies{
+    display:inline-block;
+    width: 30%;
+    height: 400px;
+    margin-left: 18%;
+    font-size: 20px;
+    text-indent: 10px;
+    border: 3px solid black;
+}
+#hob{
+  text-align: center;
+}
+#headInt{
+  text-align: center;
+}
+#interests{
+  float:right;
+  width: 30%;
+  height: 400px;
+  margin-right: 20%;
+  font-size: 20px;
+  text-indent: 10px;
+  border: 3px solid black;
+}
+
+#linkHead{
+  text-align: center;
+}
+#link1{
+  display: inline-block;
+  margin-left: 40%;
+}
