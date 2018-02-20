@@ -1,0 +1,35 @@
+body {
+  background-color: ivory;
+}
+main {
+  margin: 2in;
+  margin-top: .5in;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  color: darkcyan;
+  text-align: right;
+  float: center;
+
+}
+.numbers {
+  text-align: right;
+}
+.last {
+  text-align: left;
+}
+.pictures {
+  border: 5px;
+align-self: center;
+}
+.chicken {
+  border: 5px solid lightyellow;
+  margin: auto;
+}
+p {
+  font-family: 'Gentium Basic', serif;
+  color: dimgrey;
+  text-align: center;
+  float: center
+}
