@@ -1,0 +1,25 @@
+img {
+  width: 32px;
+  height: 44px;
+  margin:1%;
+}
+body{
+  margin:2%;
+}
+p{
+  margin:2%;
+}
+
+.column1{
+background-color: aqua;
+display:inline-block;
+margin: 1 1%;
+width: 50%;
+
+}
+.column2{
+  background-color: rgb(255, 0, 242);
+  display: inline-block
+  margin: 0 1%;
+  width: 30%;
+}
