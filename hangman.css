@@ -1,0 +1,44 @@
+body{
+  text-align: center;
+  font-family: "Lato";
+  margin: 0;
+}
+.header {
+  background: #232323;
+  margin: 0;
+}
+h1 {
+font-size: 60px;
+text-transform: uppercase;
+color: white;
+}
+
+p {
+  font-size: 3em;
+  padding: 0 10px;
+}
+.selected {
+  text-decoration: line-through;
+  color: lightgray;
+}
+button {
+  font-size: inherit;
+  border: 1px;
+  background: lightgray;
+  text-transform: uppercase;
+  height: 50px;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 1px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  outline: none;
+}
+button:hover {
+	color: white;
+	background: darkgray;
+}
+.winner {
+  background: green;
+}

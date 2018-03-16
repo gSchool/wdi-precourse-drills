@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="personalsite.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <meta charset="utf-8">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>John Savone - Personal Site</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#">About Me</a>
+      <a href="mygoals.html">My Goals</a>
+<div class="navright">
+  <table>
+      <tr>
+        <td>Choose a background color:</td>
+        <td><button id="buttonwhite" type="button" name="buttonwhite">White</button></td>
+        <td><button id="buttonblue" type="button" name="buttonblue">Blue</button></td>
+      </tr>
+  </table>
+ </div>
+    </nav>
+    <h1>JOHN SAVONE</h1>
+    <hr>
+<div class="aboutme">
+    <h3><i class="fas fa-user"></i>  ABOUT ME</h3>
+    <img id="profile" src="familyphoto.jpg" alt="John Savone Pic">
+    <p>Hello! My name is John. I was born in the Detroit area, and moved to Phoenix when I was 8. I went to the Univeristy of Arizona, and got my BSBA majoring in Management Information Systems. Since then, I've done things like opening a gelato shop, flipping houses, and I most recently worked for a local company called Infusionsoft. I've been happily married for over 10 years to my wife, Adrienne, and we have 2 wonderful children together.</p>
+</div>
+<div class="hobbies">
+    <h3><i class="fab fa-delicious"></i> FAVORITE HOBBIES</h3>
+<div class="cooking">
+    <h4><i class="fas fa-utensils"></i> COOKING</h4>
+    <ul>
+      <li>Neapolitan Pizza</li>
+      <li>Homemade Pasta</li>
+      <li>Sous Vide</li>
+      <li>Smoking Meats (ribs, pulled pork, brisket)</li>
+    </ul>
+</div>
+<div class="cocktails">
+    <h4><i class="fas fa-glass-martini"></i> MIXING COCKTAILS</h4>
+    <ul>
+      <li>Manhattan</li>
+      <li>Old Fashiond</li>
+      <li>Sazerac</li>
+      <li>Mules</li>
+    </ul>
+</div>
+</div>
+<script>
+    $(document).ready(function() {
+        $("#buttonblue").click(function() {
+            $("body").removeClass();
+            $("body").addClass("bgblue");
+        });
+            $("#buttonwhite").click(function() {
+                $("body").removeClass();
+                $("body").addClass("bgwhite");
+            });
+            });
+</script>
+  </body>
+</html>
