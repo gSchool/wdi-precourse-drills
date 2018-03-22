@@ -1,0 +1,28 @@
+h1 {
+  font-family: Georgia;
+  margin: 1.9%;
+}
+body{
+  font-family: Georgia;
+  background-color: #F0F0F0;
+}
+section {
+  font-family: Georgia;
+  text-align: center;
+  border: 5px solid gray;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+#show, #message {
+    font-family: Georgia;
+    padding: 10px;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    background-color: #F0F0F0;
+}
+
+#show {
+    padding: 10px;
+    display: none;
+}

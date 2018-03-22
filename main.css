@@ -1,22 +1,13 @@
-table {
-  border-collapse: collapse;
+header {
+  font-family: Georgia;
 }
-th,
-td {
-  border: 1px solid #cecfd5;
-  padding: 10px 15px;
+section{
+  font-family: Georgia;
 }
-tbody tr:nth-child(odd) {
-  background: #f0f0f2
+footer{
+  font-family: Georgia;
 }
-tbody tr:nth-child(even) {
-  background: #d3d3d3
-}
-section {
-  float: left;
-  width: 50%;
-}
-aside {
-  float: right;
-  width: 50%;
+body{
+  font-family: Georgia;
+  background-color: #F0F0F0;
 }
