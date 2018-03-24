@@ -1,0 +1,19 @@
+.column-one {
+  float: left;
+}
+.column-two {
+  float: right;
+}
+
+.movies tr:nth-child(even) {
+  background-color: darkgrey;
+}
+.movies tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+.actors tr:nth-child(even) {
+  background-color: darkgrey;
+}
+.actors tr:nth-child(odd) {
+  background-color: lightgrey;
+}
