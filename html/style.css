@@ -1,0 +1,40 @@
+.pageContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.header{
+  width: 100%;
+  text-align: center;
+}
+.childItem {
+  width: 40%;
+  margin-left: 5%;
+}
+/* getting the items in the order needed. This was a pain! */
+.titles {
+  order: 0;
+}
+.names {
+  order: 2;
+}
+.keywords {
+  order: 1;
+}
+.companies {
+  order: 3;
+}
+img {
+  padding-right: 10px;
+}
+
+.gridColor {
+  margin: 0;
+  background-color: #B7FFCA;
+}
+
+P:nth-child(3) {
+  background-color: #5C7F65;
+}

@@ -1,0 +1,38 @@
+.mainPage {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.mainContent {
+  text-align: center;
+}
+
+a:link {
+    background-color: transparent;
+    text-decoration: none;
+    color: #222621;
+}
+
+.mainNav {
+    width: 100%;
+    text-align: left;
+    background-color: #0CA2E8;
+    border-bottom: 5px solid #222621;
+    min-height: 30px;
+}
+
+.mainNav li {
+    display: inline-block;
+    padding: 0.5% 4% 0.5% 4%;
+}
+
+.navLink li:hover {
+    color: #f2f2f2;
+    background-color: black;
+}
+
+#currentPage {
+    text-decoration: underline;
+}
+img {
+  visibility: hidden;
+}
