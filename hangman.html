@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="description" content="Javascript Hangman Game">
+    <meta name="keywords" content="Javascript, Hangman, Game">
+    <meta name="author" content="Michael Coons">
+    <meta charset="utf-8">
+    <title>Hangman</title>
+  </head>
+
+  <body>
+
+    <script>
+
+      var words = [ "conversation",   "development",   "deteriorate",   "extraterrestrial",
+                    "representative", "electronics",   "photography",   "disposition",
+                    "destruction",    "implication",   "contradiction", "acquisition",
+                    "incongruous",    "legislation",   "application",   "concentration",
+                    "grandfather",    "temperature",   "demonstrate",   "strikebreaker",
+                    "jurisdiction",   "understanding", "interference",  "appointment",
+                    "identification", "preoccupation", "partnership",   "replacement",
+                    "conservative",   "observation",   "reproduction",  "circulation",
+                    "comprehensive",  "prescription",  "shareholder",   "experienced",
+                    "spokesperson",   "manufacturer",  "uncertainty",   "acquaintance",
+                    "countryside",    "possibility",   "personality",   "intervention",
+                    "continental",    "consideration", "preparation",   "supplementary"];
+
+      var validGuess = ["a","b","c","d","e","f","g","h","i","j","k","l","m",
+                        "n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+      var playerQuit      = false; // Did the player quit?
+      var alreadyGuessed  = [];    // Tracks the letters already guessed
+      var pastWords       = [];    // Tracks the previous words so there is no duplication
+      var failedGuesses   = 0;     // The number of incorrect guesses
+      var maxGuesses      = 6;     // Maximum allowed incorrect guesses
+      var continuePlaying = true;  // Main loop control
+      var word;                    // Current word to guess
+      var answerArray;             // Current guessed answer
+      var remainingLetters;        // Unguessed letters remaining
+
+      /************************************************************************/
+
+      function pickWord()
+      { // Return a random word without repeating any during this game
+        if (words.length === pastWords.length)
+        {
+          pastWords.length = 0;
+        }
+
+        var rNum = Math.floor(Math.random() * words.length);
+
+        while (pastWords.indexOf(rNum) >= 0)
+        {
+          rNum = Math.floor(Math.random() * words.length);
+        }
+
+        pastWords.push(rNum);
+
+        return words[rNum];
+      }
+
+      /************************************************************************/
+
+      function setupAnswerArray(word)
+      { // Return the answer array
+        var tempArray = [];
+
+        for (var i = 0; i < word.length; i++)
+        {
+          tempArray[i] = "_";
+        }
+
+        return tempArray;
+      }
+
+      /************************************************************************/
+
+      function getGuess()
+      {// Use prompt to show progress and get a guess
+        return prompt("HANGMAN!!"+
+                      "\n\nCurrent progress:    " + answerArray.join(" ") +
+                      "\n\nPast guesses:    " + alreadyGuessed +
+                      "\n\nIncorrect guesses remaining:    " + (maxGuesses - failedGuesses) +
+                      "\n\n\nGuess a letter, or click \"Cancel\" to give up.");
+      }
+
+      /************************************************************************/
+
+      function updateGameState(guess, word, answerArray)
+      { // Update answerArray and return a number showing how many times the
+        // guess appears in the word so remainingLetters can be updated
+        var correctLetters = 0;
+
+        alreadyGuessed.push(guess);
+
+        for (var j = 0; j < word.length; j++)
+        {
+          if (word[j] === guess)
+          {
+            answerArray[j] = guess;
+            correctLetters++;
+          }
+        }
+
+        if (correctLetters === 0)
+        {
+          failedGuesses++;
+        }
+
+        return correctLetters;
+      }
+
+      /************************************************************************/
+
+      function showAnswerAndCongratulatePlayer(answerArray)
+      { // Use confirm to show the answer and ask to continue play
+        if (playerQuit)
+        {
+          continuePlaying = confirm("I am sorry that you gave up!" +
+                                    "\nThe answer was \"" + word + "\"." +
+                                    "\n\nWould you like to play again?");
+        }
+        else if (failedGuesses > maxGuesses)
+        {
+          continuePlaying = confirm("You guessed too many incorrect letters!" +
+                                    "\nThe answer was \"" + word +"\"." +
+                                    "\n\nWould you like to play again?");
+        }
+        else
+        {
+          continuePlaying = confirm("Good job! You guessed \"" + word + "\" correctly." +
+                                    "\n\nWould you like to play again?");
+        }
+      }
+
+      /************************************************************************/
+
+      while (continuePlaying)
+      { // Loop until the player quits the game
+        word = pickWord();
+        answerArray = setupAnswerArray(word);
+        remainingLetters = word.length;
+        alreadyGuessed.length = 0;
+        failedGuesses = 0;
+
+        while (remainingLetters > 0 && failedGuesses <= maxGuesses)
+        { // Loop until the word is guessed or maxGuesses is reached
+          var guess = getGuess();
+
+          if (guess === null)
+          {
+            playerQuit = true;
+            break;
+          }
+          else if (guess.length !== 1)
+          {
+            alert("Please enter a single letter (a-z).");
+          }
+          else if (alreadyGuessed.indexOf(guess.toLowerCase())>=0)
+          {
+            alert("You already guessed that letter!");
+          }
+          else if (validGuess.indexOf(guess.toLowerCase()) === -1)
+          {
+            alert("Please enter a letter from a-z.");
+          }
+          else
+          {
+            remainingLetters -= updateGameState(guess.toLowerCase(), word, answerArray);
+          }
+        } // end while
+
+        showAnswerAndCongratulatePlayer(answerArray);
+      } // end while
+
+    </script>
+
+  </body>
+
+</html>
