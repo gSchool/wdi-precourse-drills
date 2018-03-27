@@ -1,0 +1,17 @@
+.movieList tr:nth-child(even) {background-color: #f2f2ff;}
+.namesList tr:nth-child(even) {background-color: #f2fff2;}
+
+.column1 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+
+.column2 {
+  float: right;
+  width: 45%;
+  padding: 10px;
+}
+
+table {width: 100%;
+border: 1px solid black;}
