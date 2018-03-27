@@ -1,3 +1,5 @@
+/* Styles go here */
+
 img {
   height: 44px;
   width: 32px;
@@ -5,4 +7,32 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.movies .lightBackground {
+  background: #eeeeee;
+}
+
+.movies .darkBackground {
+  background: #dddddd;
+}
+
+#left-column {
+  float: left;
+  width: 48%;
+}
+
+#left-column > div {
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+
+#right-column {
+  float: right;
+  width: 48%;
+}
+
+#right-column > div{
+  padding: 10px;
+  border: 1px solid #dddddd;
 }
