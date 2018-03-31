@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding-left: 50px;
+}
+
+td {
+  padding-left: 10px;
+  padding-right: 5px;
+}
