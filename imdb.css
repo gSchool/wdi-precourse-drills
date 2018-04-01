@@ -4,7 +4,27 @@ body {
   padding-left: 50px;
 }
 
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 60%;
+}
+
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
 td {
   padding-left: 10px;
   padding-right: 5px;
+}
+
+.oddRow {
+  background-color: rgb(229, 229, 229);
+}
+
+.evenRow {
+  background-color: rgb(209, 197, 197);
 }
