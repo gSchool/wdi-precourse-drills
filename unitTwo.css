@@ -1,0 +1,52 @@
+h1 {
+  color: black;
+  margin-left: 30px;
+}
+img {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 32px;
+  width: 44px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+div {
+  margin-left: -38px;
+}
+
+.subHeadings {
+  margin-left: 30px;
+}
+
+#noBullets {
+  list-style-type: none;
+}
+
+#hackersItalics {
+  font-style: italic;
+  margin-left: 48px;
+}
+
+#hackersDash {
+  margin-left: 48px;
+}
+
+#hackersDash, #hackersItalics {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+#keywordsStyle {
+  margin-left: 0px;
+}
+
+#circleBullets {
+  list-style-type: circle;
+}
+
+#defaultBullets {
+  margin-left: 40px;
+}
