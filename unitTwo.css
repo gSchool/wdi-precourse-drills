@@ -50,3 +50,12 @@ div {
 #defaultBullets {
   margin-left: 40px;
 }
+
+#columnOne {
+  margin-left: 2px;
+}
+
+#columnOne, #columnTwo {
+  float: left;
+  width: 50%;
+}
