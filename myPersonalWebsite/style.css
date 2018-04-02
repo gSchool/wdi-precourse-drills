@@ -1,0 +1,270 @@
+
+html
+
+h1 { font-size: 4.0rem;
+  font-family: 'Bungee Inline', cursive;
+  color: #e3e3e3;
+  text-decoration:  none;
+}
+#gifs{
+  margin-top: 257px;
+}
+p  {
+  font-size:30px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    color: #e3e3e3;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+}
+.creepy {
+ font-family: 'Creepster', cursive;
+ color: rgb(214, 59, 42);
+ font-size: 30px;
+}
+.creepy1 {
+ font-family: 'Creepster', cursive;
+ font-size: 30px;
+ background: linear-gradient(5deg,#f2c92b,#d63b2a);
+ background-size: 400% 400%;
+ color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ -webkit-animation: AnimationName 1s ease infinite;
+ -moz-animation: AnimationName 1s ease infinite;
+ animation: AnimationName 1s ease infinite;
+}
+
+.container {
+    position: relative;
+}
+.center {
+    position: absolute;
+    left: 33%;
+    width: 33%;
+}
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+    /* margin: 0;
+    font-family: Arial;
+    font-size: 17px; */
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+}
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+#whereBody{
+   background-image: url('/Users/tymondragon/jsAccelerated/myPersonalWebsite/Images/tools.jpg');
+   height: 500px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#homeBody{
+   background-image: url('/Users/tymondragon/jsAccelerated/myPersonalWebsite/Images/tools-vintage-jewelery.jpg');
+   height: 400px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.margin-top{
+  margin-top: 100px;
+}
+.wrapper{
+  width: 90%;
+  margin: auto;
+}
+.wrapper:after{
+  content:" ";
+  display: table;
+  clear: both;
+}
+.row{
+  height: 100px;
+}
+.one-fourth{
+  width: 25%;
+}
+.one-half{
+  width: 45%;
+}
+.one-third{
+  width:28%;
+}
+.two-thirds{
+  width:66%;
+}
+.one-fourth,
+.one-half,
+.one-third,
+.two-thirds{
+  /* float: left; */
+  padding: 20px;
+  box-sizing: border-box;
+}
+.fLeft{float: left;}
+.fRight{float: right;}
+  /* border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px; */
+.frame1{
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 247, 216, 0.59);
+  border: solid;
+  border-color: #988d8e;
+  border-radius: 50%;
+  border-width: thin;
+  padding: 5px;
+  /* border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px; */
+}
+.frame2{
+  width: 1000px;
+  height: auto;
+  background-color: rgba(255, 247, 216, 0.75);
+  border: solid;
+  border-width: thin;
+  border-color: #988d8e96;
+  margin-top: 40px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.frame3{
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 247, 216, 0.75);
+  border: solid;
+  border-width: thin;
+  border-color: #988d8e96;
+  margin-top: 40px;
+  padding: 5px;
+}
+.pictureFrame {
+  background-color: rgba(255, 247, 216, 0.59);
+  border: solid;
+  border-width: thin;
+  border-color: #988d8e96;
+  margin-top: 40px;
+  padding: 5px;
+}
+
+
+#ImCool {
+  border-radius: 50%;
+}
+#TyandKatie{
+  margin-left: 120px;
+  margin-top: 90px;
+}
+.margin-top {
+  margin-top: 300px;
+}
+#zombie{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  position: fixed;
+  width: 1000px;
+}
+#myVideo2 {
+    /* bottom: 0; */
+    min-width: 75%;
+    min-height: 75%;
+}
+.grid-container {
+  /* display: grid; */
+  justify-content: center;
+  grid-gap: 10px;
+  padding: 50px;
+}
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.bottomContent {
+    margin: 0 auto;
+    display: table;
+    bottom: 0;
+    width: 25%;
+    padding: 20px;
+    background-color: rgb(255, 247, 216);
+    position: sticky;
+    font-family: 'Creepster', cursive;
+    font-size: 30px;
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
