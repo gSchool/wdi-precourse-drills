@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="0fHf50zMVFRVkc0j20zpPsouGEB5xDm/wokMNDOi2HN5bper3z7bQwITdOk4DS8AA1xaKzeiw5xc429fjfrTgA==" />
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"06153d497a","applicationID":"24744285","transactionName":"JllaQUBXDVxcEU1SXw1ZRkFBFxReUBcRHlMKWEBQXEw+VlAPB0IfFl5bQg==","queueTime":0,"applicationTime":222,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUFWVJaCRACUFZWAwMPUw=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta content='' name='description'>
+<meta content='' name='author'>
+<title>Learn</title>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-6ed92de2b8fe8053b4d9a02f82db7098794af8b649320fc99c79e18c6090f0d3.ico" />
+<script src='//use.typekit.net/fta2tko.js'></script>
+<script>
+  try { Typekit.load({ async: false }); } catch(e) {}
+</script>
+<script type='text/javascript'>
+wootric_survey_immediately=false; // Shows survey immediately for testing purposes.  TODO: Comment out for production.
+window.wootricSettings = {
+email:"coryrpease@gmail.com",
+created_at: "1520093306",
+account_token: "NPS-6fc0c867", // This is your unique account token.
+properties:{
+role: "student",
+status: "active",
+galvanize_id: "null",
+cohort_label: "Learn to Code Learning Series 2017",
+}
+}
+</script>
+<script src='https://disutgh7q0ncc.cloudfront.net/beacon.js' type='text/javascript'></script>
+<script type='text/javascript'>
+window.wootric('run');
+</script>
+
+<script src="/assets/application-6eef7fad5e1b92505e4f69ebfaa49d6a8e2ed74f2d23ecf467f2a901d9b08b68.js"></script>
+
+<script src="/mathjax/MathJax.js?config=TeX-AMS_HTML-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" media="all" href="/assets/application-dfbc7a3c4d488d68b27ff92f33c68d64c64b5361e625fa10d0a3a555b13f58a4.css" />
+</head>
+<body class='learning-path' role='document'>
+<nav class="navigation-bar" id="headspace-nav">
+  <div class="toprow">
+    <a class="brand" href=/></a>
+
+      <div class="item">
+        <div class="dropdown-wrapper">
+          <span class="label">
+            <div class="cohortlabel">
+              <span class="label">Cohort:</span>
+              <span class="value" title="Pre-Course Work - Web Development">Pre-Course Work - Web Development</span>
+            </div>
+            <svg class="icon icon-#ic_arrow_drop_down_24px"><use xlink:href="/assets/svg/svg-sprite-navigation-symbol-61a132237c2ddb90752efa5c84d59a2065a2a36e7de0cfa212432336fec63a1a.svg#ic_arrow_drop_down_24px"></use></svg>
+          </span>
+          <ul class="dropdown-list">
+              <li class="item"><a href="/cohorts/328/dashboard">Learn to Code Learning Series 2017</a></li>
+              <li class="item"><a href="/cohorts/150/dashboard">Pre-Course Work - Web Development</a></li>
+          </ul>
+        </div>
+      </div>
+
+  <div class="item">
+    <div class="dropdown-wrapper">
+    <span class="label">
+      <div class="userlabel">
+        <img class="avatar" src="https://www.gravatar.com/avatar/9934702fac8a21dfad5a19825a1d42a3"/>
+        <div class="text">Cory Pease</div>
+      </div>
+      <svg class="icon icon-#ic_arrow_drop_down_24px"><use xlink:href="/assets/svg/svg-sprite-navigation-symbol-61a132237c2ddb90752efa5c84d59a2065a2a36e7de0cfa212432336fec63a1a.svg#ic_arrow_drop_down_24px"></use></svg>
+    </span>
+      <ul class="dropdown-list">
+        <li class="item"><a href="/users/5274">My Account</a></li>
+        <li class="item"><a class="help" href="https://support.galvanize.com/hc/en-us/sections/207387247-Galvanize-Learn">Help</a></li>
+        <li class="item"><a href="/gauth/sign_out">Sign out</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div class="row">
+      <ul class="list">
+
+          <li class="item ">
+            <a class="dropdown-toggle" href="/cohorts/150/units">Units</a>
+          </li>
+
+
+        <li class="item">
+        </li>
+
+
+
+          <li class="item ">
+            <a class="dropdown-toggle" href="/cohorts/150/users/5274/challenges">Activity</a>
+          </li>
+
+          <li class="item ">
+            <a class="dropdown-toggle" href="/cohorts/150">Classmates</a>
+          </li>
+      </ul>
+    </div>
+
+    <script>
+      $('ul.application-links li.-is-dropdown').hover(function () {
+        $(this).find('.dropdown-menu').stop(true, true).fadeIn('fast');
+      }, function () {
+        $(this).find('.dropdown-menu').stop(true, true).fadeOut('fast');
+      });
+    </script>
+</nav>
+
+
+<div class='' role='main'>
+
+
+
+<div class='lesson-layout closed-sidebar'>
+<div class='left-container'>
+<div class='left-nav-container'>
+<div class='unit-sidebar'>
+<div class='unit-nav'>
+<a title="Go to previous Unit" class="unit-arrow -prev" href="/cohorts/150/units/2027"><div>
+<div data-react-class="SvgRenderer" data-react-props="{&quot;url&quot;:&quot;/assets/svg/svg-sprite-navigation-symbol.svg#ic_arrow_back_24px&quot;}"></div>
+</div>
+</a><a title="Go to next Unit" class="unit-arrow -next" href="/cohorts/150/units/2029"><div>
+<span>
+NEXT:
+UNIT 3
+</span>
+<div data-react-class="SvgRenderer" data-react-props="{&quot;url&quot;:&quot;/assets/svg/svg-sprite-navigation-symbol.svg#ic_arrow_forward_24px&quot;}"></div>
+</div>
+</a></div>
+<div class='unit-info'>
+<div class='unitlabel'>
+UNIT 2
+</div>
+<div class='unittitle'>
+Web Programming Fundamentals
+</div>
+</div>
+<div class='unit-content'>
+<a href="/cohorts/150/units/2028"><div class='itemrow '>
+<div class='iconcel'>
+<div data-react-class="SvgRenderer" data-react-props="{&quot;url&quot;:&quot;/assets/svg/svg-sprite-content-symbol.svg#ic_flag_24px&quot;}"></div>
+</div>
+<div class='lessoncel'>
+<div class='lessontitle'>
+Unit Overview
+</div>
+</div>
+</div>
+</a><a title="HTML" href="/cohorts/150/units/2028/content_files/31574"><div class='itemrow -is-active'>
+<div class='iconcel'>
+<div data-react-class="SvgRenderer" data-react-props="{&quot;url&quot;:&quot;/assets/svg/svg-sprite-places-symbol.svg#ic_fitness_center_24px&quot;}"></div>
+</div>
+<div class='lessoncel'>
+<div class='lessonlabel'>
+EXERCISE 01
+</div>
+<div class='lessontitle'>
+HTML
+</div>
+</div>
+</div>
+</a><a title="CSS" href="/cohorts/150/units/2028/content_files/31563"><div class='itemrow '>
+<div class='iconcel'>
+<div data-react-class="SvgRenderer" data-react-props="{&quot;url&quot;:&quot;/assets/svg/svg-sprite-places-symbol.svg#ic_fitness_center_24px&quot;}"></div>
+</div>
+<div class='lessoncel'>
+<div class='lessonlabel'>
+EXERCISE 02
+</div>
+<div class='lessontitle'>
+CSS
+</div>
+</div>
+</div>
+</a><a title="Algebra Basics" href="/cohorts/150/units/2028/content_files/30806"><div class='itemrow '>
+<div class='iconcel'>
+<div data-react-class="SvgRenderer" data-react-props="{&quot;url&quot;:&quot;/assets/svg/svg-sprite-action-symbol.svg#ic_description_24px&quot;}"></div>
+</div>
+<div class='lessoncel'>
+<div class='lessonlabel'>
+LESSON 01
+</div>
+<div class='lessontitle'>
+Algebra Basics
+</div>
+</div>
+</div>
+</a><a title="JavaScript" href="/cohorts/150/units/2028/content_files/30784"><div class='itemrow '>
+<div class='iconcel'>
+<div data-react-class="SvgRenderer" data-react-props="{&quot;url&quot;:&quot;/assets/svg/svg-sprite-places-symbol.svg#ic_fitness_center_24px&quot;}"></div>
+</div>
+<div class='lessoncel'>
+<div class='lessonlabel'>
+EXERCISE 03
+</div>
+<div class='lessontitle'>
+JavaScript
+</div>
+</div>
+</div>
+</a><a title="jQuery" href="/cohorts/150/units/2028/content_files/31575"><div class='itemrow '>
+<div class='iconcel'>
+<div data-react-class="SvgRenderer" data-react-props="{&quot;url&quot;:&quot;/assets/svg/svg-sprite-action-symbol.svg#ic_description_24px&quot;}"></div>
+</div>
+<div class='lessoncel'>
+<div class='lessonlabel'>
+LESSON 02
+</div>
+<div class='lessontitle'>
+jQuery
+</div>
+</div>
+</div>
+</a><a title="Personal Site" href="/cohorts/150/units/2028/content_files/31576"><div class='itemrow '>
+<div class='iconcel'>
+<div data-react-class="SvgRenderer" data-react-props="{&quot;url&quot;:&quot;/assets/svg/svg-sprite-places-symbol.svg#ic_fitness_center_24px&quot;}"></div>
+</div>
+<div class='lessoncel'>
+<div class='lessonlabel'>
+EXERCISE 04
+</div>
+<div class='lessontitle'>
+Personal Site
+</div>
+</div>
+</div>
+</a></div>
+</div>
+</div>
+
+<div class='sidebar-toggle'>
+<hr>
+<div>
+<svg class='svg svg-24px' id='toggle-sidebar'>
+<use xlink:href='/assets/svg/svg-sprite-image-symbol.svg#ic_dehaze_24px'></use>
+</svg>
+<span>
+HIDE SIDEBAR
+</span>
+</div>
+</div>
+</div>
+<div class='body-container'>
+<div class='mdown-container'>
+<div data-react-class="ChallengeRenderer" data-react-props="{&quot;challenge&quot;:{&quot;id&quot;:2305,&quot;submitted_challenge_answer_presenters&quot;:[],&quot;answered&quot;:false,&quot;challenge_type&quot;:&quot;project&quot;,&quot;title&quot;:&quot;HTML&quot;,&quot;decimal&quot;:null,&quot;question&quot;:&quot;\u003ch3 id=\&quot;enter-the-link-to-your-pr\&quot;\u003eEnter the link to your PR\u003c/h3\u003e\n\n\u003cp\u003eCopy the URL to your Pull Request and paste it below\u003c/p\u003e\n&quot;,&quot;language&quot;:null,&quot;placeholder&quot;:&quot;https://github.com/gSchool/wdi-precourse-drills/pull/22&quot;,&quot;options&quot;:null,&quot;number_of_hints&quot;:0,&quot;can_check_answer&quot;:true,&quot;can_view_status&quot;:true,&quot;can_view_explanation&quot;:true,&quot;standards&quot;:[]},&quot;submittedChallengeAnswersUrl&quot;:&quot;/api/v1/content_files/31574/submitted_challenge_answers&quot;,&quot;unitFileType&quot;:&quot;Exercise&quot;}"></div>
+<div class='unit-show-container'>
+<div class='content-management clearfix'>
+
+<div data-react-class="GitHubDropdown" data-react-props="{&quot;resyncUrl&quot;:null,&quot;githubUrl&quot;:null,&quot;flashContainerId&quot;:&quot;flash-message&quot;}" class="pull-right"></div>
+</div>
+<div class='units-page-header'>
+<div class='course-label'>
+EXERCISE 01
+</div>
+<div class='course-title'>
+<div id='flash-message'></div>
+<div class='file-title-wrapper'>
+<h1>
+HTML
+</h1>
+</div>
+</div>
+</div>
+<div class='description'>
+<div class='content-file-container'>
+<div class='tab-pane active markdown-text md-body' id='tab-content'>
+<h1 id="html">HTML</h1>
+
+<p><strong>Duration:</strong> About 7 hours</p>
+
+<p>Hyper Text Markup Language, or <strong>HTML</strong>, is a language for describing the structure and content of a web page with syntax like <code>&lt;p&gt;Hello world&lt;/p&gt;</code>. HTML is <em>the</em> essential language for web development.</p>
+
+<p>In this chapter, your objective is to demonstrate competency with HTML. To complete this objective, please follow along with the tutorial found below and complete the assessment at the end of this chapter. If you&#39;re already familiar with HTML, you may be able to complete the assessment without reading the tutorial. Though, you may also learn a trick or two from it.</p>
+
+<p>As you read through the tutorial, type out every code sample by hand that you come across. Then try to run the code in a web browser like Google Chrome. Only copy-and-paste code as a last resort if you can&#39;t get it to work correctly.</p>
+
+<h2 id="objectives">Objectives</h2>
+
+<ol>
+<li><a href="#markup">Use HTML to create a web-page</a></li>
+<li><a href="#hyperlinks">Use hyperlinks to reference HTML documents</a></li>
+<li><a href="#rich-media">Use rich media</a></li>
+<li><a href="#Push-to-Github">Push your work to Github</a></li>
+</ol>
+
+<h3 id="markup">Markup</h3>
+
+<p>The structure of a web-page&#39;s content is a reflection of its HTML. If we want content to be presented as a list, we would use the <code>&lt;li&gt;</code> tag; if we want content to be presented in a table, we would then use the <code>&lt;table&gt;</code> tag. In other words, we can structure content how we want; we need, however, to use the correct tags.</p>
+
+<p>To improve your familiarity with HTML, please read the following:</p>
+
+<ol>
+<li><a href="http://learn.shayhowe.com/html-css/building-your-first-web-page/" class="external-link" target="_blank">Lesson 1: Building Your First Web Page</a></li>
+<li><a href="http://learn.shayhowe.com/html-css/creating-lists/" class="external-link" target="_blank">Lesson 8: Creating Lists</a></li>
+<li><a href="http://learn.shayhowe.com/html-css/organizing-data-with-tables/" class="external-link" target="_blank">Lesson 11: Organizing Data with Tables</a></li>
+</ol>
+
+<p>When you&#39;re done reading through these lessons, you&#39;ll apply what you&#39;ve learned to create the following HTML. (This is the HTML you would receive from IMDB if you searched for &quot;Hackers&quot;.)</p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-images/gSchool/fs-precourse/learn/html-images/imdb_hackers_html.png" alt="Result Page for &quot;Hackers&quot; on IMDB"></p>
+
+<p>Based off of this image, create a new html file that displays something similar to the above image.</p>
+
+<h3 id="hyperlinks">Hyperlinks</h3>
+
+<p>A hyperlink, which is created with an <code>&lt;a&gt;</code> tag, enables developers to link a web-page to another (or the same) web-page.</p>
+
+<p>To learn how to use hyperlinks, please read <a href="http://learn.shayhowe.com/html-css/getting-to-know-html/#creating-hyperlinks" class="external-link" target="_blank">Creating Hyperlinks</a>.</p>
+
+<p>After you&#39;re done reading, we&#39;ll apply this new knowledge to the result&#39;s page we created. Please follow these instructions:</p>
+
+<ol>
+<li><p>You will not create a separate page of HTML for each movie title on the result&#39;s page. We want, however, you to gain practice with hyperlinks. Please write the code to make each movie title a hyperlink. When the link is clicked, a new tab should open. Using a <a href="http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/" class="external-link" target="_blank">relative</a> link, have the tab open to this README.md.</p></li>
+<li><p>You will also not create a separate page of HTML for each actor or actress. To this extent, turn every actor and actress on your result&#39;s page into a hyperlink. Have each link be an absolute path the actor or actress&#39; page on IMDB.</p></li>
+</ol>
+
+<h3 id="rich-media">Rich Media</h3>
+
+<p>HTML has the amazing ability to support different types of rich media:</p>
+
+<ul>
+<li><code>&lt;img&gt;</code>: image</li>
+<li><code>&lt;svg&gt;</code>: vector image</li>
+<li><code>&lt;embed&gt;</code>: embedded video</li>
+<li><code>&lt;video&gt;</code>: native video</li>
+<li><code>&lt;canvas&gt;</code>: graphics</li>
+<li>and more...</li>
+</ul>
+
+<p>Let&#39;s get some practice using rich media with <a href="http://learn.shayhowe.com/html-css/adding-media/" class="external-link" target="_blank">Lesson 9: Adding Media</a>. After you&#39;re done with this lesson, include the <code>&lt;img&gt;</code> tag into our result&#39;s page. Here&#39;s the instructions you should follow:</p>
+
+<ol>
+<li><p>Replace each of the image placeholders (<code>[img placeholder]</code>) with an<code>&lt;img&gt;</code> tag. You&#39;ll be provided <a href="https://learn.galvanize.com/content/gSchool/fs-precourse/learn/html-images">images</a> for each of the titles.</p></li>
+<li><p>Set the height and width of each image to <strong>32 x 44 pixels</strong>.</p></li>
+</ol>
+
+<h3 id="push-to-github">Push to Github</h3>
+
+<p>When you&#39;re finished, we&#39;d like to take a look at your work. Please use the following steps to submit your website.</p>
+
+<ol>
+<li><p>Go to <a href="https://github.com/gSchool/wdi-precourse-drills">https://github.com/gSchool/wdi-precourse-drills</a> and click <code>Fork</code>.</p>
+
+<ul>
+<li>You may need to click your username to create the <code>Fork</code> on your account.</li>
+<li><code>Forking</code> is a github concept that allows you to make an exact copy of a repository on your own account.</li>
+</ul></li>
+<li><p>On your fork, make sure your name is in the top left of the page and click the <strong>Upload Files</strong> button</p></li>
+<li><p>Drag and drop the folder you&#39;d like to upload.</p></li>
+<li><p>Type a short commit message. (e.g. added imdb website)</p></li>
+<li><p>Click the <strong>Commit changes</strong> button.</p>
+
+<ul>
+<li>This will upload your files to your copy of the repo on github</li>
+</ul></li>
+<li><p>After uploading, click <strong>New pull request</strong> (Make sure your name is in the top left of the page.)</p></li>
+<li><p>On the pull request page, click <strong>Create pull request</strong> and then after the page loads, click  <strong>Create pull request</strong> again</p>
+
+<ul>
+<li>This will allow the galvanize instructors to see your uploaded files</li>
+</ul></li>
+</ol>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-images/gSchool/fs-precourse/learn/images/github_upload.gif" alt=""></p>
+
+<h2 id="conclusion">Conclusion</h2>
+<div id="challenge-2305"></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  $(document).on("ready", function () {
+    waitAndAddLinks();
+    function addLinks() {
+      $('.content-file-container')
+        .find('.external-link')
+        .each((i, element) => {
+          $(element).append(`
+            <svg class="svg">
+              <use xlink:href="/assets/svg/svg-sprite-action-symbol.svg#ic_launch_24px" />
+            </svg>
+          `);
+        });
+    }
+  
+    function waitAndAddLinks() {
+      if (!$(".content-file-container").size()) {
+        window.requestAnimationFrame(waitAndAddLinks);
+      } else {
+        addLinks();
+      }
+    }
+  });
+</script>
+
+
+</div>
+<div class='content-arrow-container'>
+<hr>
+<div class='content-arrows'>
+<a class="unit-arrow -prev" href="/cohorts/150/units/2028"><div>
+<svg class='svg svg-24px'>
+<use xlink:href='/assets/svg/svg-sprite-navigation-symbol.svg#ic_arrow_back_24px'></use>
+</svg>
+<span>
+Unit 2 Overview
+</span>
+</div>
+</a><a class="unit-arrow -next" href="/cohorts/150/units/2028/content_files/31563"><div>
+NEXT: &nbsp;
+<span>
+CSS
+</span>
+<svg class='svg svg-24px'>
+<use xlink:href='/assets/svg/svg-sprite-navigation-symbol.svg#ic_arrow_forward_24px'></use>
+</svg>
+</div>
+</a></div>
+</div>
+</div>
+</div>
+
+</div>
+<script src='https://www.google.com/jsapi' type='text/javascript'></script>
+<script>
+  window.intercomSettings = {
+    app_id: "tffxlsz2",
+    cohort_id:  "150",
+    cohort_label:  "17-01-PC-OL-WD",
+    cohort_name:  "Pre-Course Work - Web Development",
+    created_at: "2018-03-03 09:08:26 -0700",
+    name: "Cory Pease",
+    email: "coryrpease@gmail.com",
+    user_role: "student",
+    user_id:  "5274",
+  };
+</script>
+<script>
+    ( function() {
+      var w = window;
+      var ic = w.Intercom;
+  
+      if(typeof ic==="function") {
+        ic('reattach_activator');
+        ic('update', intercomSettings);
+      } else {
+          var d=document;
+          var i=function(){i.c(arguments)};
+          i.q=[];
+          i.c=function(args){i.q.push(args)};
+          w.Intercom=i;
+          function l(){var s=d.createElement('script');
+          s.type='text/javascript';
+          s.async=true;
+          s.src='https://widget.intercom.io/widget/APP_ID';
+          var x=d.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s,x);
+        } if (w.attachEvent) {
+          w.attachEvent('onload',l);
+        } else  {
+          w.addEventListener('load',l,false);
+        }
+      }
+    }
+    )()
+</script>
+<style>
+   #intercom-container .intercom-launcher-frame {
+      bottom: 60px !important;
+    }
+</style>
+
+
+</body>
+</html>
