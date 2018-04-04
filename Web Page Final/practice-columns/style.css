@@ -1,0 +1,65 @@
+
+/*
+	STYLE.CSS:
+	One stylesheet to rule them all.
+
+	selector { property:value }
+
+*/
+
+
+
+/* -------- Structure -------- */
+
+}
+header {
+  background-color: #000;
+  height: 100px;
+  font-family:'Gloria Hallelujah', cursive, serif;
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.wrapper:after{
+  content:" ";
+  display:table;
+  clear:both;
+}
+
+.row{
+  height:80px;
+  border:1px dashed;
+}
+
+.one-half{
+  width:45%;
+  border:5px solid orange;
+}
+.one-third{
+  width:28%;
+}
+.two-thirds{
+  width:61%;
+}
+.one-fourth{
+  width:20%;
+}
+
+.one-half,
+.one-fourth,
+.one-third,
+.two-thirds{
+  float:left;
+  background-color:orange;
+  color:white;
+  margin-left: 5%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.row:after{
+  content:" ";
+  display:table;
+  clear:both;
+}
