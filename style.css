@@ -1,0 +1,24 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+}
+
+tr:nth-of-type(odd) {
+  color: green;
+}
+
+tr:nth-of-type(even) {
+  color: red;
+}
+
+.columnOne {
+  display: grid;
+  grid-column: 1;
+}
+.columnTwo {
+  display: grid;
+  grid-column: 2;
+  background-color: pink;
+}
