@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Why Coding? | Benjamin Broad </title>
+  <meta charset="utf-8">
+  <link href="./style.css" rel="stylesheet type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Sofia|Barrio|Satisfy" rel="stylesheet">
+  <script src="./main.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+  <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#gif1").fadeToggle();
+        $("#gif2").fadeToggle(1500);
+        $("#gif3").fadeToggle(3000);
+    });
+});
+</script>
+
+</head>
+
+<body id="body">
+  <ul class="nav">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a class="active" href="./why-coding.html">Why Coding?</a></li>
+  </ul>
+
+  <br>
+  <br>
+
+  <img id="enso" src="./enso.gif" />
+  <br>
+  <p id="why-coding">I obtained a B.A. of Psychology from CU Boulder in 2014 and then went
+    into management in the medical cannabis industry.  I learned a lot about
+    cannabis as alternative medicine and had many opportunities to grow
+    as an individual and help others who had exhausted all other options.
+    However, I ultimately sought out web development hoping to find more of
+    a challenge and build a career with more long-term stability and room for
+    growth.  I am passionate about all things tech related, so making the jump into web development is, I hope, the first step on a long journey of education, exploration, and self-discovery.</p>
+
+  <br>
+  <br>
+
+<button id="gif_button">How do I feel about this new career?</button>
+<img id="gif1" class="shake-hard" style="display:none;" src="./sunny.gif">
+<img id="gif2" class="shake-hard" style="display:none;" src="./minions.gif">
+<img id="gif3" class="shake-hard" style="display:none;" src="./ohyeah.gif">
+
+  <br>
+  <br>
+
+  <iframe id="spotify" src="https://open.spotify.com/embed/user/industr1a/playlist/6BD2tECUNpzds6s8PUSMYe"
+  width="500px" height="100px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</body>
+
+</html>
