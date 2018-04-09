@@ -2,3 +2,35 @@ img {
   height: 32px;
   width: 44px;
 }
+
+.col-left {
+  float:left;
+  margin-right: 1.5%;
+  width: 60%;
+}
+
+.col-right {
+  float: right;
+  width: 30%;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+.table-movies {
+  border-collapse: collapse;
+}
+
+.table-movies tr:nth-child(odd) {
+  background-color: #e8e8e8;
+}
