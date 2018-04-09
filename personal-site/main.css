@@ -2,33 +2,39 @@ article {
   position: relative;
 }
 
-.balance-position {
-  bottom: 5px;
-  left: 1%;
+.balance-position-hobbies {
+  top: 60px;
+  right: 10%;
   position: absolute;
 }
 
-.balance-position-right {
-  top: 62px;
-  right: 27%;
+.balance-position-left {
+  bottom: 10px;
+  left: 3%;
+  position: absolute;
+}
+
+.balance-position-aboutme {
+  bottom: 40px;
+  right: 10%;
   position: absolute;
 }
 
 .balance-text {
   color: #AAA;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .col-left {
   float: left;
   margin: 1%;
-  width: 48%;
+  width: 45%;
 }
 
 .col-right {
   float: right;
   margin: 1%;
-  width: 48%;
+  width: 45%;
 }
 
 .contact {
@@ -67,11 +73,20 @@ article {
 .hd {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJFBMVEXT09Pp6enR0dHr6+vu7u7V1dXy8vL29vbOzs7m5ubt7e39/f07I/TPAAABtklEQVR4nO3d24qDMBRA0STe7f//79grDHTotBLsPtnrxSf1bKKCIJhOp+lsvOof1u6X/Lnuhf7fxg9MaZxL2pTNbfNU2uHPg77t/RPNOY2P3YbNnpD6hhee7JCW1Jf05V07DCXlc2Fc29pZCHcvDHwfWohnIZ+FfBbyNVK4hi/sLCSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CPgv5LOSzkM9CvnYK47oU5qOnqMlCvnth8CeNhWgW8lnIZyGfhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIZyGfhXwW8jVS2MRXXxZyWchnIZ+FfBbyWchnIZ+FfBbyWchnIZ+FfBbyWchnIZ+FfBbyWchnId+t8Nv/erjDpXAN/8XQevQUNTVSGP9fQRaiWchnIZ+FfBbyWchnIZ+FfBbyWchnIZ+FfBbyWchnIZ+FfO0UxnUrjLuE7azh0WNU1MhVOlpIZiGfhXwW8lnIZyGfhXwW8lnIZyGfhXwW8lnIZyGfhXzNFB49RkXNrGH8wqPHqMhCPgv5LOSzkM9CPgv52imM+/o0pLIVHj1FVWVY0jiXuNdpGeacpm7JgS39D68jE77qcnP5AAAAAElFTkSuQmCC);
   background-size: cover;
+  padding: 100px 0;
 }
 
 .hd h1 {
   margin: 0;
-  padding: 100px 0;
+  padding: 0;
+}
+
+.something {
+  text-align: center;
+}
+
+.head-line {
+  text-align: center;
 }
 
 .img1 {
@@ -117,8 +132,9 @@ article {
 }
 
 #balance-gallery {
-  grid-column: 1/3;
+  grid-column: 1/4;
   grid-row: 11;
+  padding: 10%
 }
 
 .menu_title {
@@ -159,12 +175,12 @@ footer {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   padding: 3%;
   text-align: center;
 }
 
-h1, h2, h3, h5, h6 {
+h1, h2, h5 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
@@ -179,8 +195,24 @@ nav {
   text-align: center;
 }
 
-p {
-  font-family: Lato, sans-serif;
+p, #eat-text {
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
+  font-weight: 400;
+  padding-left: 0%;
+}
+
+h4 {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hobbies-list {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 1%;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
   font-weight: 400;
 }
