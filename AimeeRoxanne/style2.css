@@ -1,0 +1,91 @@
+body{
+  background-color:#E20B32;
+  color: white;
+}
+
+#wrapper{
+  margin:30px;
+}
+
+.logo{
+  float:left;
+}
+
+.nav{
+  float:right;
+  color: white;
+}
+
+.logo a{
+  color: white;
+  text-decoration:none;
+  font-family: 'Affogato-Black';
+  text-transform: uppercase;
+}
+
+.nav a{
+  color: white;
+  text-decoration:none;
+  font-family: 'Affogato-Medium';
+}
+
+#content{
+  clear:both;
+  padding-top:75px;
+}
+
+h1{
+  font-family: 'Affogato-Black';
+}
+
+p{
+  font-family: 'Affogato-Regular';
+}
+
+p a{
+  font-family: 'Affogato-Regular';
+  color: white;
+}
+
+ol{
+  font-family: 'Affogato-Regular';
+}
+
+.gif{
+  width: 100%;
+  margin-top:40px;
+}
+
+@font-face {
+    font-family: 'Affogato-Black';
+    src: url('affogato/Affogato-Black.eot');
+    src: url('affogato/Affogato-Black.eot?#iefix') format('embedded-opentype'),
+    	 url('affogato/Affogato-Black.woff') format('woff'),
+         url('affogato/Affogato-Black.woff2') format('woff2'),
+         url('affogato/Affogato-Black.ttf')  format('truetype'),
+         url('affogato/Affogato-Black.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Affogato-Medium';
+    src: url('affogato/Affogato-Medium.eot');
+    src: url('affogato/Affogato-Medium.eot?#iefix') format('embedded-opentype'),
+    	 url('affogato/Affogato-Medium.woff') format('woff'),
+         url('affogato/Affogato-Medium.woff2') format('woff2'),
+         url('affogato/Affogato-Medium.ttf')  format('truetype'),
+         url('affogato/Affogato-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Affogato-Regular';
+    src: url('affogato/Affogato-Regular.eot');
+    src: url('affogato/Affogato-Regular.eot?#iefix') format('embedded-opentype'),
+    	 url('affogato/Affogato-Regular.woff') format('woff'),
+         url('affogato/Affogato-Regular.woff2') format('woff2'),
+         url('affogato/Affogato-Regular.ttf')  format('truetype'),
+         url('affogato/Affogato-Regular.svg') format('svg');
+}
