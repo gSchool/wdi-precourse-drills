@@ -1,12 +1,42 @@
+/*p{
+color: orange;
+}*/
+
+img {
+	height: 32px;
+	width: 44px;
+	}	
+	
+section {
+	float: left;
+	margin: 0 1.5%;
+	width: 40%;
+	}
+	
+/*.right {
+	float: right;
+	} */
+	
 .fifteen {
 	font-size: 13px;
 	}
-	
+.grey tr:nth-child(even){
+	background: grey;
+	color: white;
+	}
+
+.lighterGrey tr:nth-child(odd){
+background: LightGray;
+}
+
 .companies {
 	margin: 0;
 	{
+
+/*.movies {
+	background-: rgb(230,230.230);
+	}
 	
-img {
-	height: 32
-	width: 44
+table.movies:nth-child(odd) {
+	background-color: #e6e6e6;
 	}
