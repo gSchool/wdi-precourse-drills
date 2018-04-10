@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <script type="text/javascript">
+  //Create an array of words.
+var words = [
+  "motorcycle",
+  "tortise",
+  "climb",
+  "phone",
+  "tacos"
+];
+//Pick a random word.
+var word = words[Math.floor(Math.random() *words.length)];
+//Set an answer array.
+var answerArray = [];
+for (var i = 0; i < word.length; i++) {
+  answerArray[i]= "_";
+}
+var remainingLetters = word.length;
+
+//The game loop.
+while (remainingLetters > 0) {
+//Show Progress.
+  alert(answerArray.join(" "));
+
+var guess = prompt("Guess a letter, or click to stop playing.");
+guess
+if (guess === null) {
+  break;
+} else if (guess.length !== 1){
+  alert("Please enter a single letter");
+}
+else {
+  for (var j = 0; j <word.length; j++) {
+    if (word[j] === guess){
+      answerArray [j] = guess;
+      remainingLetters--;
+    }
+  }
+}
+}
+alert(answerArray.join(" "));
+alert("Good Job! The answer was " + word);
+  </script>
+
+  </body>
+</html>
