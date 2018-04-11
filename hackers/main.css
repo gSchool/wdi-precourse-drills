@@ -1,4 +1,112 @@
-img {
+/*
+Page Layout
+*/
+header {
+  border: solid 1px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/* section {
+  float: left;
+  margin: .5% 1.5%;
+  width: 44%;
+  border: solid 1px;
+  padding: .5%;
+} */
+
+.mainInfo {
+  float: left;
+  margin: .5% 1.5%;
+  width: 60%;
+  border solid 1px;
+  padding: .5%;
+}
+
+.otherInfo {
+  float: right;
+  margin: .5% 1.5%;
+  width: 30%;
+  border solid 1px;
+  padding: .5%;
+}
+
+footer {
+  text-align: center;
+  padding: .5% .5%;
+  border: solid 1px;
+  margin: .5% 1.5%;
+}
+
+/*
+Tables
+*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 15px;
+}
+
+td:nth-child(1) {
+  width: 32px;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.movies tr:nth-of-type(even),
+.people tr:nth-of-type(even) {
+  background-color: #FBFBFB;
+}
+
+.movies tr:nth-of-type(odd),
+.people tr:nth-of-type(odd) {
+  background-color: #F6F6F6;
+}
+
+.people img,
+.movies img {
   height: 44px;
   width: 32px;
+}
+
+/*
+Font
+*/
+
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  color: #A58500;
+  font-family: arial;
+}
+
+/*
+otherInfo
+*/
+
+.catSearch, .addSearch {
+  background-color: #EAEAEA;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 5px;
+  padding-left: 15px;
 }
