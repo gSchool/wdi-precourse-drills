@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<!-- Decided to do everything in one document -->
+      <style>
+/* Progress bar styles. Progress bar was copied from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_progressbar_label_js
+I didn't need a progress bar and the game probably is better without it but I wanted to play around with it a bit.*/
+        /* #myProgress {
+          width: 100%;
+          background-color: #ddd;
+        }
+
+        #myBar {
+          width: 0%;
+          height: 30px;
+          background-color: #4CAF50;
+          text-align: center;
+          line-height: 30px;
+          color: white;
+        } */
+/* My body styles */
+        body{
+          text-align: center;
+          padding-left: 25%;
+          padding-right: 25%;
+
+        }
+      </style>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+
+
+  </head>
+  <body>
+<!-- This div is displayed when the page is first loaded -->
+    <div id="preGame">
+      <h1>Hangman Time</h1>
+      <button type="button" name="button" onclick="gameStart()">Play Hangman vs Computer</button>
+    </div>
+<!-- This div will display once the 'Play Hangman vs Computer' button is clicked -->
+    <div id="gamePlay" style="display: none;">
+      <button type="button" name="button" onclick="newGame()">Click here to start over.</button>
+      <h1>Game Time!</h1>
+      <h2 id="guessesRemaining">You can only guess wrong 6 times!</h2>
+      <h1 id="wrongGuesses"></h1>
+      <img src="hangmanImages/hangman1.jpg" alt="Hangman Images" id="hangmanImages" width="50%"height="50%">
+      <h1 id="word"></h1>
+      <form id="form">
+        <input type="text" name="letterGuess" placeholder="Guess a Letter!" maxlength="1" id="letterGuess" required>
+        <input type="submit" name="" value="Guess">
+      </form>
+      <!-- <div id="myProgress">
+        <div id="myBar">0%</div>
+      </div> -->
+
+
+    </div>
+<!-- My javascript -->
+    <script type="text/javascript">
+// How I should be using document.get... stuff.
+    var form = document.getElementById('form')
+// Array of references to show different images as you progress through the game.
+    var images = [
+      "hangmanImages/hangman1.jpg",
+      "hangmanImages/hangman2.jpg",
+      "hangmanImages/hangman3.jpg",
+      "hangmanImages/hangman4.jpg",
+      "hangmanImages/hangman5.jpg",
+      "hangmanImages/hangman6.jpg",
+      "hangmanImages/hangman7.jpg"
+    ]
+    var guessCount = 0
+
+// Array for keeping track of wrong guesses.
+    var wrongArray = [];
+// Function that houses an array of words and randomly picks one of them.
+    function pickWord(){
+      var words = [
+        "javascript",
+        "monkey",
+        "amazing",
+        "pancake"
+      ];
+      return words[Math.floor(Math.random() * words.length)];
+    };
+      var word = pickWord();
+
+      var winCheck = word.length;
+
+// This function will create an array the only has '_' but the size will match the hangman word which is helpful.
+      function setupAnswerArray(word){
+        var answerArray = [];
+        for(var i = 0; i < word.length; i++){
+          answerArray[i] = "_";
+        }
+        return answerArray;
+      };
+      var answerArray = setupAnswerArray(word);
+
+// This function will run when the 'Guess' button is clicked and validate the entered guess. Should add additional
+// validation such as an alert letting them know a letter has been guessed.
+      var updateGameState = function(guess, word, answerArray){
+        var total = 0;
+        var count = 0;
+        for (var j = 0; j < word.length; j++){
+          if(answerArray[j] ===  guess || wrongArray[j] === guess){
+            alert("You've already guessed that! Try again")
+            total++;
+            break;
+          }else if(word[j] ===  guess){
+            answerArray[j] = guess;
+            total++;
+            winCheck--;
+          }else if(word[j] !== guess){
+            count++;
+          }
+        }
+        if(count === word.length){
+          wrongArray.push(guess)
+        }
+
+        return total;
+      };
+
+//      console.log(remainingLetters)
+
+// My event listener for "Guess" clicks
+      form.addEventListener("submit", guessLetter);
+
+// This function basically houses the game. It's a bit messy. But after the click a few things needed to be updated.
+      function guessLetter(event){
+        event.preventDefault();
+        console.log(event.target[0].value)
+        var guess = event.target[0].value;
+        var correctGuesses = updateGameState(guess, word, answerArray);
+
+// Should make a separate function for this.
+        if(correctGuesses === 0){
+          guessCount++;
+          document.getElementById("hangmanImages").src = images[guessCount];
+        }
+// This is my progress tracker.
+      var remaining = 6 - guessCount;
+          if(winCheck === 0){
+            message = "You won!!"
+            document.getElementById("form").style.display = "none";
+            document.getElementById("hangmanImages").src = "hangmanImages/hangmanWin.jpg";
+          }else if(remaining === 0){
+            var message = "Looks like you lost! Sad.."
+            document.getElementById("form").style.display = "none";
+            document.getElementById("hangmanImages").src = "hangmanImages/hangman8.jpg";
+          }else if(remaining === 1){
+            var message = "" + remaining + " wrong guess remaining!"
+          }else{
+            var message = "" + remaining + " wrong guesses remaining!"
+          }
+
+          document.getElementById("guessesRemaining").innerHTML = message;
+
+//        console.log(remainingLetters)
+//        console.log(answerArray
+
+//This was nice. I was able to use the same function for both of these displays.
+        document.getElementById("word").innerHTML = displayArray(answerArray);
+        document.getElementById("wrongGuesses").innerHTML = "So far, you've guessed: " + displayArray(wrongArray);
+//        move(answerArray, word)
+        document.getElementById("letterGuess").value="";
+      }
+
+
+
+// This function allows let me changed the answerArray into a string of UpperCase letters or '_'. Looks much nicer.
+      function displayArray(arr){
+        var text = "";
+        arr.forEach(function(letter){
+          if(letter == '_'){
+            text += "_ "
+          }else{
+            text += letter.toUpperCase();
+        }});
+  //      console.log(text)
+//        console.log(word)
+        // for(var i = 0; i < answerArray.length; i++){
+        //   if(arr[i] == '_'){
+        //     text += "_ "
+        //   }else{
+        //     text += arr[i].toUpperCase();
+        //   }
+        // }
+        return text;
+      }
+
+// Most of this function was copy and pasted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_progressbar_label_js
+// I dont exactly know how it works but I had to tear it apart a bit to get it working for this game.
+      // function move(answerArray, word) {
+      //   var remainingLetters = 0;
+      //   for(var i = 0; i < answerArray.length; i++){
+      //     if(answerArray[i] === word[i]){
+      //       remainingLetters++;
+      //     }
+      //   }
+      //   var elem = document.getElementById("myBar");
+      //   var width = 0;
+      //   var id = setInterval(frame, 10);
+      //   function frame() {
+      //     if (width >= 100 * (remainingLetters/word.length)) {
+      //       clearInterval(id);
+      //     } else {
+      //       width++;
+      //       elem.style.width = width + '%';
+      //       elem.innerHTML = width * 1  + '%';
+      //     }
+      //   }
+      // }
+// Function that refreshes the page so the player can play a new game.
+      function newGame(){
+        location.reload();
+      }
+// Function that turns my gamePlay div on.
+      function gameStart(){
+        document.getElementById("preGame").style.display = "none";
+        document.getElementById("gamePlay").style.display = "block";
+        document.body.style.backgroundColor = "lightblue"
+        document.getElementById("word").innerHTML = displayArray(answerArray);
+        //document.getElementById("wrongGuesses").innerHTML = word;
+
+      }
+
+// To do list. Make a function that displays a 'gameWon' div or 'gameLost' div. Maybe in the future.
+      // function gameOver(remainingLetters){
+      //   if(remainingLetters === 0){
+      //
+      //   }else{
+      //
+      //   }
+      // }
+    </script>
+
+  </body>
+</html>
