@@ -1,0 +1,176 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman!</title>
+</head>
+<body>
+	<font size="200"><center><h1>You hung da man... mang!</h1></center></font>-->
+
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title class="title">My Portfolio Project</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+
+		<div class="row">
+
+			<ul class="main-nav">
+				<li class="active"><a href="index.html" title="Return to the main page.">Home</a></li>
+				<li><a href="about.html" title="Click here to learn more about me.">About</a></li>
+				<li><a href="contact.html" title="Email me.">Contact</a></li>
+				<li><a href="https://www.galvanize.com/austin" title="This is where I plan on attending school.">School</a></li>
+        <li><a href="hangman.html" title="current page.">Hangman</a></li>
+			</ul>
+
+
+    </div>
+</header>
+
+	<div class="hangman">
+  <h1>Hangman!</h1>
+  <note>dare to play...</note>
+  <br>
+  <a href="hangman.html" title="click here to play again."><p><button class="btn btn-block btn-primary">Try again!</button></p></a>
+ </div>
+
+<!--I learned how to code this game from the book JavaScript for Kids. I worked it out step by step and got the game working well, however there was a bug in the code (at least in my copy of JS for Kids). The bug would still give you the final word and congratulate the player as if he/she guessed the proper word even if the player hit cancel at the very beginning of the game.  Through a process of trial and error I was able to fix this bug by using another condional at the end of the game loop.-->
+
+
+
+	<script>
+/*
+//This is the words that will be picked randomly.
+var words = [
+"fluorescent",
+"transandental",
+"samsara",
+"scandinavia",
+"facetious"
+];
+
+//this will creat the random word
+var word = words[Math.floor(Math.random() * words.length)];
+
+//for loop to set up answer array.
+var answerArray =[];
+for(var i = 0; i < word.length; i++) {
+	answerArray[i] = " _ ";
+}
+
+//this will keep track of how many letters are left to be guessed
+var remainingLetters = word.length;
+
+//the game loop is a while loop
+while(remainingLetters > 0) {
+	//shows the player their progress
+	alert(answerArray.join("")); //joins each index into a single string
+
+	//get a guess from the player (notice* still in the while loop!!!)
+
+	var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+	if(guess === null) {
+		//This will exit the game loop
+	  break;
+	} else if(guess.length !== 1) {
+		alert("You know the rules, please enter a single letter.");
+	} else {
+		//update the game state with the guess/a nested for loop.
+		for(var j = 0; j < word.length; j++) {
+			if(word[j] === guess) {
+				answerArray[j] = guess;
+				remainingLetters--;
+			}
+		}
+	}
+	//the end of the game loop
+}
+
+
+//I had to put another if... else statement here so that the chosen word would not be revealed to the player and it would properly exit the game if the player hit cancel at any time.
+if(guess === null) {
+  alert("Bye bye!")
+} else {
+//alert(answerArray.join(" ")); //don't need this line.
+alert(`Good job! The answer was ${word}`);
+}
+*/
+//I added my own words...
+function pickWord() {
+	var words = [
+	"fluorescent",
+	"transandental",
+	"samsara",
+	"scandinavia",
+	"facetious"
+  ];
+
+	return words[Math.floor(Math.random() * words.length)];
+	}
+
+	//answer array function
+	function setupAnswerArray(word) {
+		var answerArray = [];
+		for(var i = 0; i < word.length; i++) {
+			answerArray[i] = "_";
+		}
+		return answerArray;
+	}
+
+//writing showPlayerProgress function
+function showPlayerProgress(answerArray) {
+  return alert(answerArray.join(" "));
+}
+
+//getGuess function here
+function getGuess() {
+	return prompt("Guess a letter, or click Cancel to stop playing");
+}
+
+//update game function
+function updateGameState(guess, word, answerArray) {
+	var remainingLetters = 0;
+	for(var j = 0; j < word.length; j++) {
+		if(word[j] === guess) {
+			answerArray[j] = guess;
+			remainingLetters++;
+		}
+	}
+  return remainingLetters;//not sure if I should return anything here?
+}
+
+//show and congratulate the player function
+function showAnswerAndCongratulatePlayer(answerArray) {
+	showPlayerProgress(answerArray);
+	alert(`Good job! The answer was ${word}`);
+}
+
+var word = pickWord();
+var answerArray = setupAnswerArray(word); var remainingLetters = word.length;
+while (remainingLetters > 0) { showPlayerProgress(answerArray); var guess = getGuess();
+if (guess === null) {
+	alert("See ya, wouldn't wanna be ya!");
+break;
+} else if (guess.length !== 1) {
+alert("Please enter a single letter.");
+} else {
+var correctGuesses = updateGameState(guess, word, answerArray);
+  remainingLetters -= correctGuesses; }
+}
+if(guess === null) {
+	alert("Cheers!")
+} else {
+showAnswerAndCongratulatePlayer(answerArray);
+}
+
+
+
+
+
+	</script>
+	</body>
+	</html>
