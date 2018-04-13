@@ -1,0 +1,143 @@
+body {
+  font-family: 'Source-sans-pro', sans-serif;
+  font-size: 20px;
+  width: 1200px;
+  margin: 0px auto;
+  height: px;
+  background-color: ;
+};
+
+
+
+h1 {
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 24pt;
+};
+
+.full-width {
+  width: 1380px;
+  margin: 0 auto;
+
+}
+
+.half-width {
+  width: 600px;
+  float: left;
+}
+
+header {
+  height: 500px;
+  background: url('/Users/robin/Desktop/PersonalSite/img/blood-orange.jpg');
+  background: cover;
+  background-repeat: no-repeat;
+  border-bottom: 20px solid #7d8076;
+}
+
+header h1 {
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 72px;
+  color: #293549;
+  padding-top: 70px;
+  text-align: center;
+  line-height: 120%;
+  padding-right: 280px;
+}
+
+header h1 span {
+  font-size: 100px;
+  text-align: center;
+  color: #bf3f1c;
+}
+
+nav {
+  float: right;
+  padding: 20px 20px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-family: 'Source-sans-pro', sans-serif;
+  text-decoration: none;
+  font-size: 22px;
+  color: #7d8076;
+  padding-left: 60px;
+}
+#personal {
+  background: #bf3f1c;
+  height: 200px;
+  padding: 10px 0px 10px 0px;
+}
+
+#personal-header {
+  height: 400px;
+  background: url('/Users/robin/Desktop/PersonalSite/img/markv.jpg');
+  background-repeat: repeat-x;
+  border-bottom: 20px solid #7d8076;
+}
+
+#personal h2 {
+  color: #63bcca;
+  text-align: center;
+  font-size: 32px;
+}
+#personal p {
+  font-family: 'Vollkorn', sans-serif;
+  padding: 0px 10px 0px 40px;
+  line-height: 100%;
+  color: #293549;
+}
+main {
+  margin: 0 auto;
+  font-family: 'Vollkorn', sans-serif;
+  padding: ;
+}
+
+#div1 {
+
+  height: 100px;
+  margin: 0 auto;
+
+}
+
+#second-header {
+  text-align: center;
+  font-family: 'Vollkorn', sans-serif;
+  color: #7d8076;
+}
+
+#a {
+  text-decoration: none;
+  color: #bf3f1c;
+}
+
+#p {
+  text-align: center;
+  padding: 20px 30px 20px 30px;
+  font-family: 'Source-sans-pro', sans-serif;
+  font-size: 30px;
+  line-height: 150%;
+  word-spacing: 5px;
+}
+
+
+footer {
+  background: ;
+  clear: both;
+  border-top: 20px solid #7d8076;
+  border-bottom: 20px solid #7d8076;
+  height: 500px;
+}
+#gif {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+footer h3 {
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 48px;
+  text-align: center;
+  color: #7d8076;
+}

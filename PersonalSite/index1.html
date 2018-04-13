@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Statz Page 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Vollkorn" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <style>
+  h1 {
+    font-family: 'Vollkorn', sans-serif;
+    color: #293549;
+  }
+  p {
+    color: #293549;
+    font-family: 'Vollkorn', sans-serif;
+    position: relative;
+    width: 400px;
+    height: 90px;
+  }
+  div {
+    font-family: 'Vollkorn', sans-serif;
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    font-size: 36px;
+    text-align: center;
+    color: #63bcca;
+    background: #bf3f1c;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    display: none;
+
+  }
+  
+  }
+  span {
+    display: none;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<h1>This is my second page.</h1>
+<p>
+  Now I need to slap a Ja-Queery button on this beast. But... I don't know how to do that yet...(<a href="#">click!</a>)
+  <div><span>So sad :(</span></div>
+</p>
+
+<script>
+$( "a" ).click(function() {
+  $( "div" ).fadeIn( 3000, function() {
+    $( "span" ).fadeIn( 100 );
+  });
+  return false;
+});
+</script>
+
+</body>
+</html
