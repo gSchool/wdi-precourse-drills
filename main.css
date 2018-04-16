@@ -1,0 +1,74 @@
+
+/* Ben Austin--new styles */
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+ul,ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+th {
+  text-align: left;
+}
+.italics {
+  font-style: italic;
+}
+
+.discs {
+  list-style-type: disc;
+  margin-left: 40px;
+  padding: ;
+}
+#circles {
+  list-style-type: circle;
+  margin-left: 40px;
+  padding: ;
+}
+.actors {
+  padding: 5px;
+  padding-bottom: 0;
+}
+tr:nth-child(even) {
+  background-color: #ffe6ff;
+}
+
+/*
+==============================================================================
+                             Clearfix
+==============================================================================
+ */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+/*
+==============================================================================
+*/
