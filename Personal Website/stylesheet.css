@@ -1,0 +1,126 @@
+body {
+  background-image: url('../Personal Website/circlesbg.png');
+}
+
+h2 {
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #B22222;
+}
+
+h3 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #B22222;
+}
+#title {
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 60px;
+  color: #B22222;
+}
+
+p {
+  padding-bottom: 30px;
+  font-family: Tahoma, Geneva, sans-serif;
+  line-height: 1.6;
+}
+
+.line {
+ display: block;
+ height: 30px;
+ margin-top: -31px;
+ border-style: solid;
+ border-color: #8c8b8b;
+ border-width: 0 0 3px 0;
+ border-radius: 20px;
+ width: 78%;
+}
+
+div.pictures {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+#photo {
+  height: 30%;
+  width: 30%;
+  padding-right: 15px;
+  padding-left: 20px;
+  border-radius: 10%;
+}
+
+#photomid {
+  height: 321px;
+  width: 360px;
+  padding-right: 15px;
+  border-radius: 10%;
+}
+
+#photolast {
+  height: 321px;
+  width: 560px;
+  border-radius: 10%;
+}
+
+.line2 {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 3px 0 0 0;
+  border-radius: 20px;
+  width: 78%;
+}
+#schedule {
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #B22222;
+  border-style: dashed;
+  border-radius: 20px;
+}
+
+table {
+  border-collaspe: collapse;
+  text-align: center;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+td.date {
+  background-color:	#00FF00;
+}
+
+div.schedule {
+  padding-bottom: 40px;
+}
+
+div.list {
+  list-style-type: none;
+}
+
+#brad {
+  width: 300px;
+  border: 3px solid #FF7F50;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 20px;
+  cursor: pointer;
+}
