@@ -1,0 +1,8 @@
+#titles {
+  tr:nth-child(even) {background: gray}
+  tr:nth-child(odd) {background: white}
+}
+section {
+  float: left;
+  width: 50%;
+}
