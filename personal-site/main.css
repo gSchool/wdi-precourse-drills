@@ -244,3 +244,12 @@ h4 {
 .imgB_page_01{
   padding-left: 20%;
 }
+
+.expandable {
+  transition: all 0.5s ease-in;
+  cursor: zoom-in;
+}
+
+.grow {
+  transform: scale(1.8);
+}
