@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.column {
+  width: 50%;
+}
+.column-one {
+  float: left;
+}
+.column-two {
+  float: right;
+}
