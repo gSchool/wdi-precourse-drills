@@ -1,0 +1,12 @@
+#titles {
+  background: blue
+}
+.names {
+  background: green
+}
+.column {
+  float: left
+}
+.column2 {
+  float: right
+}
