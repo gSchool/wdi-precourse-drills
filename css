@@ -1,0 +1,16 @@
+/* Using Id's to alternte colors*/
+#rowEven {
+  text-decoration-color: : green;
+}
+#rowOdd{
+  text-decoration-color: orange;
+}
+/* Using the Float tool to make 2 columns*/
+#listLeft{
+  float: left;
+  width: 45%;
+}
+#listRight{
+  float: right;
+  width: 45%;
+}
