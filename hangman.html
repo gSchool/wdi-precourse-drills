@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman</title>
+</head>
+
+<body>
+<h1>HANGMAN</h1>
+
+<script>
+var pickWord = function () {
+  //Return a random word
+  var words = [
+    "dufus",
+    "hinterlands",
+    "exculpate",
+    "scintillate",
+    "cudgel",
+    "meretricious",
+    "protean",
+    "insouciant",
+    "rodomontade",
+    "mugwump",
+    "monoglot",
+    "phillipic",
+    "pogrom",
+    "diaspora"
+  ];
+  return words[Math.floor(Math.random() * words.length)];
+};
+
+var setupAnswerArray = function (word) {
+  //Return the answer array
+  var answerArray = [];
+  for (var i = 0; i < word.length; i++) {
+    answerArray[i] = "_";
+  }
+  return answerArray;
+};
+
+var showPlayerProgress = function (answerArray) {
+  //Use alert to show the player their progress
+  alert(answerArray.join(" "));
+};
+
+var getGuess = function () {
+  //use prompt to get a guess
+  return prompt("Guess a letter or click Cancel to stop playing.");
+};
+
+var updateGameState = function (guesses, guess, word, answerArray, remainingLetters) {
+  //Update answerArray and return a number showing how many
+  //times the guess appears in the word so remainingLetters
+  //can be updated
+  guesses--;
+  guess = guess.toLowerCase();
+  for (var j = 0; j < word.length; j++) {
+    if (word[j] === guess && answerArray[j] === "_") {
+      answerArray[j] = guess;
+      remainingLetters--;
+    } else if (word[j] === guess && answerArray[j] !== "_") {
+        alert("Yo, you've already guessed that homie.");
+        j = word.length;
+      }
+  }
+  return remainingLetters;
+};
+
+var showAnswerAndCongratulatePlayer = function (answerArray, remainingLetters, word, guess) {
+  //Use alert to show the answer and congratulate the player
+  if (remainingLetters === 0) {
+    alert(anwerArray.join(" "));
+    alert("You got it! The answer was " + "\"" + word + "\"" + ".");
+  } else if (guess === null) {
+    alert("Scram ya loser!");
+  } else {
+    alert("Sorry pal:  too many guesses. You didn't do a good job. The word was: " + "\"" + word + "\"" + ".");
+  }
+
+};
+
+var word = pickWord();
+var answerArray = setupAnswerArray(word);
+var remainingLetters = word.length;
+var guesses = 3;
+
+
+while (remainingLetters > 0 && guesses > 0) {
+  showPlayerProgress(answerArray);
+  var guess = getGuess();
+  if (guess === null) {
+    break;
+  } else if (guess.length !== 1) {
+    alert("Please enter a single letter.");
+  } else {
+    updateGameState(guesses, guess, word, answerArray, remainingLetters);
+  }
+}
+
+showAnswerAndCongratulatePlayer(answerArray, remainingLetters, word, guess, remainingLetters);
+
+
+</script>
+</body>
+</html>
