@@ -1,0 +1,20 @@
+body{
+  width:100vw;
+  height:100vw;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  }
+}
+tr:nth-of-type(even){
+  background-color: Grey;
+}
+.column1{
+  display: grid;
+  grid-column: 1;
+
+}
+.Nicolascage{
+  display: grid;
+  grid-column: 2;
+
+}
