@@ -1,0 +1,29 @@
+body{
+  font-family: Fantasy;
+  font-size: 25px;
+  text-align: center;
+  background-color: grey;
+}
+.Personal{
+  border: 3px solid black;
+}
+img{
+  width: 500px;
+  height: 500px;
+}
+.Destiny{
+  margin: auto;
+}
+.Excitment{
+  margin: auto;
+}
+.Goals{
+  border: 3px solid black;
+}
+h1{
+  text-decoration: underline;
+  font-style: italic;
+}
+.hidden{
+  display: none;
+}

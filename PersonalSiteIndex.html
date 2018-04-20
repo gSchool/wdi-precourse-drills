@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="./PersonalSite.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>Whatchu Talkin Bout Willis?</title>
+</head>
+
+<body>
+  <div class="Page1">
+    <h1>Whatchu Talkin Bout Willis?</h1>
+    <table class="Personal">
+      <tr>
+        <td>Hey There! Thanks for stopping by my page and checking it out!</td>
+      </tr>
+      <tr>
+        <td>My name is Will Kirkhope, also known as "Willis". I am 24 years old and live in Denver Colorado!</td>
+      </tr>
+      <tr>
+        <td>Bit of an adrenaline junkie,but it's so hard not to be when Colorado is your playground! I've spent most of my life enjoying many different extreme sports, and spending as much time outside as possible!</td>
+      </tr>
+      <tr>
+        <td> I currently work as a Personal Trainer and Sports Recovery Specialist holding many certifications in that feild. I enjoy photography, mechanical work, riding my motorcylce, and training my reflexes on Xbox Live! Although extreme sports have taken
+          a bit of a back seat for me, I'm always down to jump on a skateboard or go ski down some chutes!</td>
+      </tr>
+    </table>
+    <table class="Destiny">
+      <tr>
+        <td><img src="https://media1.giphy.com/media/j5yULWXLUBPFe/giphy.gif" alt="Skateborading"></td>
+        <td><img src="https://media0.giphy.com/media/3o7qEccSvsVHNT17Xi/giphy.gif" alt="Destiny"></td>
+      </tr>
+    </table>
+    <button type="button" class="button">Click It!!!</button>
+  </div>
+  <div class="Page2 hidden">
+    <h1>Goals!</h1>
+    <table class="Goals">
+      <tr>
+        <td>I am very eagar and excited to get started at Galvanize! I cant wait to learn and master Web Development Technologies!</td>
+      </tr>
+      <tr>
+        <td>I enrolled in Galvanize with the intent of making a career change and stepping into a feild that I know I will enjoy and be challenged by!</td>
+      </tr>
+      <tr>
+        <td>I'm excited to start a new and challenging career that will enable me to pursue my goals and hobbies! I feel that this career path will lead me towards where I want to be in life! And provide me with the tools and fundamentals needed to get there!</td>
+      </tr>
+    </table>
+    <a href="https://media2.giphy.com/media/lgcUUCXgC8mEo/giphy.gif">My Instagram</a>
+    <table class="Excitment">
+      <tr>
+        <td><img src="https://media1.giphy.com/media/8nmvR3jAxnl2o/giphy.gif" alt="Excitment"></td>
+        <td><img src="https://media2.giphy.com/media/rmi45iyhIPuRG/giphy.gif" alt="YES!"></td>
+      </tr>
+    </table>
+    <button type="button" class="butt">Shit go back!!!</button>
+  </div>
+
+  <script type="text/javascript">
+    $(".button").click(function() {
+      $(".Page1").addClass("hidden")
+      $(".Page2").removeClass("hidden")
+    })
+    $(".butt").click(function(){
+      $(".Page1").removeClass("hidden")
+      $(".Page2").addClass("hidden")
+    })
+  </script>
+</body>
+
+</html>
