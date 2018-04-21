@@ -3,3 +3,17 @@ img{
 	height:32px;
 	width:44px;
 }
+p.first {
+	background: #F8E06C
+}
+p.second {
+	background: #FCC868
+}
+section {
+	float: left;
+	width: 45%;
+}
+aside {
+	float:right;
+	width: 45%;
+}
