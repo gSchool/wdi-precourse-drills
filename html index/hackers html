@@ -15,26 +15,26 @@
             aka "The Hackers"</a></li>
           </ul>
 
-  <h2>Names</h2>
+  <h1>Names</h1>
   <ul>
   <li><a img src="html-images/amyacker.jpg" alt="image of amy acker" h="32px" w="44px"></a> <a href="https://www.imdb.com/name/nm0009918">Amy Acker(Actress,Angel(1999))</a></li>
   <li><a img src="html-images/drewvan.jpg" alt="image of drew van acker" h="32px" w="44px"></a> <a href="https://www.imdb.com/name/nm3216408">Drew van Acker(Actor,Pretty Little Liars(2010))</a></li>
   <li><a img src="html-images/buddyhackett.jpg" alt="image of buddy hackett" h="32px" w="44px" ></a><a href="https://www.imdb.com/name/nm0004983">Buddy Hackett(Actor,The Little Mermaid(1989))</a></li>
   <li><a img src="html-images/emilywickersham.jpg" alt="image of emily wickersham" h="32px" w="44px"></a><a href="https://www.imdb.com/name/nm2278978">Emily Wickersham(Actress,I am Number Four(2011))</a></li>
 </ul>
-  <h3>Keywords</h3>
+  <h1>Keywords</h1>
 
     <li>hacker(180 titles)</li>
 
 
-  <h4>Companies</h4>
+  <h1>Companies</h1>
   <ul>
     <li>Douglas,Gorman,Rothhacker& Wilhelm</li>
     <li>Crackerjack Management</li>
     <li>Bleeker Street Media</li>
     <li>Bleeker Street Entertainment</li>
   </ul>
-  <h5>Category Search</h5>
+  <h1>Category Search</h1>
     <ul>
       <li>All</li>
       <li>Name</li>
@@ -53,7 +53,7 @@
       <li>Biographies</li>
       <li>Quotes</li>
     </ul>
-  <h6>Additionial Search Options</h6>
+  <h1>Additionial Search Options</h1>
     <ul>
       <li>Advanced Searches</li>
       <li>Advanced Title Searches</li>
