@@ -1,0 +1,197 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: rgb(230, 247, 255);
+	font-family: "Helvetica";
+	
+}
+ol, ul {
+	list-style: none;
+	color: rgb(0, 153, 153);
+	
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+
+	text-align: center;
+	position: static;
+	vertical-align: middle;
+    clear: left;
+}
+
+h1 {
+	font-size: 45px;
+	}
+
+p {
+	color: rgb(0, 77, 77);
+	
+	}
+	
+h3 {
+	color: rgb(0, 153, 153);
+	text-align: center;
+	font-size: 45px;
+	padding-top: 50pt;
+
+	}
+
+table, th, td {
+	border: 1px solid black;
+	clear: left;
+	}
+	
+	/*
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	clear: both;
+	}*/
+.container {
+	position:relative;
+	text-align:center;
+	color:white;
+	width: 100%;
+	}
+	
+	/*Centering glacier pic on front*/
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+
+.sideBySide {
+	display: inline-block;
+	text-align: center;
+	}
+
+#width {
+	width: 100%;
+	}
+	
+.Natalie {
+	font-size: 30px;
+	padding-left: 50pt;
+	color: rgb(0, 153, 153);
+	}
+	
+.left {
+	float: left;
+	font-size: 18px;
+	width: 35%;
+	padding-left: 50pt;
+	padding-bottom: 50pt;
+	
+	}
+
+.right {
+	float: right;
+	width: 60%
+	
+	}
+
+.clear {
+	clear: both;
+	}
+
+.morePadding {
+	padding-top: 75pt;
+	}
+
+.char {
+	color: rgb(0, 153, 153);
+	text-align: center;
+	font-size: 45px;
+	padding-top: 50pt;
+
+	}
+.links {
+		float: left;
+	font-size: 18px;
+	width: 35%;
+	padding-left: 50pt;
+	padding-bottom: 50pt;
+
+}
+
+.hundred {
+	width: 300px;
+	}
+
+.where {
+	padding-top: 15pt;
+	padding-bottom: 15pt;
+}
+
+.two {
+  font-size: 20px;
+  color: rgb(0, 153, 153);
+  float: left;
+  }
+
+.career {
+  font-size: 20px;
+  color: rgb(0, 153, 153);
+  
+  padding-top: 5pt;
+  text-align: left;
+  }
+  
+.paragraph {
+	padding-top: 5pt;
+	text-align:left;
+	}
+	
+.black {
+	color: black;
+	}
+
+.hobbies {
+	color: indigo;
+	}
+	
+.orange {
+	color: orange;
+	}
