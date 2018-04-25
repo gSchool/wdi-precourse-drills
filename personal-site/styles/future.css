@@ -1,0 +1,56 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  color: #005BAC
+}
+
+h2 {
+  color: #B000A8
+}
+
+.main-nav {
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    color: white;
+    min-width: 125px;
+    width: 10%;
+}
+
+.main-content p {
+  border-left: 2px solid black;
+  margin-bottom: 40px;
+  padding-left: 15px;
+}
+
+.square {
+  position: fixed;
+  top: 80px;
+  left: 10px;
+  height: 100px;
+  width: 100px;
+  border: 5px solid black;
+  background-color: white;
+}
+
+.square-home {
+  margin-right: 20px;
+  border: 5px solid black;
+  height: 125px;
+  width: 125px;
+}
+
+.square-home > p {
+  padding: 0;
+}
+
+.footer > div > ul > li {
+  border-color: black;
+}
