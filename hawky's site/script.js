@@ -1,6 +1,6 @@
 
 
-document.getElementById("list").slideUp(3000).slideDown(2000);
+
 
 jQuery(document).ready(function() {
 
