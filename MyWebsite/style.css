@@ -1,0 +1,45 @@
+#name {
+	position: text-align: center;
+	color: orange;
+	margin-top: 1%;
+	margin-left: 40%;
+	font-size: 150%;
+}
+
+body {
+	color: white;
+	margin: 0;
+	background-color: brown;
+	
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: orange;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: brown;
+    color: orange;
+
+p {
+	position: absolute;
+	color:white;
+	margin-left: 5%;
+	margin-right: 5%;
+	top: 34%;
+	z-index: -1;
+	font-size: 120%;
+
+}
