@@ -1,0 +1,15 @@
+img {
+    float: left;
+}
+.blue {
+    background-color: rgb(114, 114, 145)
+}
+.red {
+    background-color: antiquewhite
+}
+section {
+    float: left;
+}
+aside {
+    float: right;
+}
