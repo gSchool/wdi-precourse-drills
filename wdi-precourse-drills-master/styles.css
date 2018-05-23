@@ -1,0 +1,45 @@
+img {
+  height: 32px;
+  width: 44px
+}
+
+.hackers {
+  background-color: red;
+}
+
+.ad {
+  background-color: orange;
+}
+
+.hackerstv {
+  background-color: yellow;
+}
+
+.hackersgame {
+  background-color: green;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+  }
+
+.row:after {
+  clear: both;
+  *zoom: 1;
+}
+
+.column1 {
+  background-color: floralwhite;
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+}
+
+.column2 {
+  background-color: grey;
+  float: right;
+  maring: 0 1.5%;
+  width: 30%;
+}
