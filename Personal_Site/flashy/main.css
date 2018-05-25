@@ -1,0 +1,96 @@
+body {
+  background-color: maroon;
+  display: flex;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.whole {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.header, .names {
+  color: white;
+  font-family: 'Kalam', cursive;
+  font-size: 30px;
+}
+
+div .top {
+  display: flex;
+  justify-content: center;
+}
+
+div .lcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div .main {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div .mainTop {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+div .leftMaintop {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div .rightMaintop {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div .botMain {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+div .rcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.picture {
+  display: none;
+}
+
+.mainPic {
+  border-color: orange;
+  border-style: solid;
+}
+
+div img {
+  height: 300px;
+  width: 300px;
+}
+
+.names {
+  border-color: black;
+  border-style: double;
+  margin: auto;
+  padding-left: 3px;
+  padding-right: 3px;
+}

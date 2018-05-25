@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <title>Salutations</title>
+</head>
+
+<body>
+  <div class="whole">
+    <div class="header">
+      <h1>~Cory Pease & The Squad~</h1>
+    </div>
+    <div class="top">
+      <div class="lcont">
+        <img class="picture Tracy" src="Pictures/mama.jpg" alt="P1">
+        <img class="picture Taylor" src="Pictures/Taylor.jpg" alt="P2">
+      </div>
+      <div class="main">
+        <div class="mainTop">
+          <div class="leftMaintop">
+            <p class="Tracy names" >Tracy</p>
+            <p class="Taylor names" >Taylor</p>
+            <p class="Cole names" >Cole</p>
+          </div>
+          <div class="middleMaintop">
+            <img class="mainPic Cory" src="Pictures/Cory.jpg" alt="self">
+          </div>
+          <div class="rightMaintop">
+            <p class="Athena names" >Athena</p>
+            <p class="Camon names" >Camon</p>
+            <p class="Dawnielle names" >Dawnielle</p>
+          </div>
+        </div>
+        <div class="botMain">
+          <img class="picture Cole" src="Pictures/Cole.jpg" alt="P5">
+          <img class="picture Dawnielle" src="Pictures/Dawnielle.jpg" alt="P6">
+        </div>
+      </div>
+      <div class="rcont">
+        <img class="picture Athena" src="Pictures/Athena.jpg" alt="P3">
+        <img class="picture Camon" src="Pictures/Camon.jpg" alt="P4">
+      </div>
+    </div>
+  </div>
+</body>
+<!-- <iframe src="https://giphy.com/embed/13XW2MJE0XCoM0" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/13XW2MJE0XCoM0">via GIPHY</a></p> -->
+<script type="text/javascript">
+  $(".mainPic").click(function() {
+    $(".picture").toggle(1000);
+  });
+  $(".Tracy").click(function() {
+    $(".Cory, .Athena, .Taylor, .Camon, .Cole, .Dawnielle").toggle(1000);
+  })
+  $(".Athena").click(function() {
+    $(".Tracy, .Cory, .Taylor, .Camon, .Cole, .Dawnielle").toggle(1000);
+  })
+  $(".Taylor").click(function() {
+    $(".Tracy, .Cory, .Athena, .Camon, .Cole, .Dawnielle").toggle(1000);
+  })
+  $(".Camon").click(function() {
+    $(".Tracy, .Cory, .Athena, .Taylor, .Cole, .Dawnielle").toggle(1000);
+  })
+  $(".Cole").click(function() {
+    $(".Tracy, .Cory, .Athena, .Taylor, .Camon, .Dawnielle").toggle(1000);
+  })
+  $(".Dawnielle").click(function() {
+    $(".Tracy, .Cory, .Athena, .Taylor, .Camon, .Cole").toggle(1000);
+  })
+</script>
+
+</html>
