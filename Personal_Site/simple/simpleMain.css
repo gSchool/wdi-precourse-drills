@@ -1,0 +1,31 @@
+.container {
+  align-items: center;
+  background-color: #003d5d;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  text-shadow: 2px 2px #8c3d5d;
+}
+
+.containerGP {
+  background: maroon;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+img {
+  max-height: 300px;
+  max-width: 500px;
+}
+
+h2 {
+  color: #f23d5d;
+}

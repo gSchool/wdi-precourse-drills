@@ -1,0 +1,20 @@
+img{
+  height: 32px;
+  width: 44px;
+}
+.Movies tr:nth-child(even) {
+  background-color: red;
+}
+table{
+  margin: 10px;
+}
+.tables{
+  float: left;
+}
+.lists{
+  float: right;
+}
+section{
+  width: 30%;
+  margin: 10%
+}
