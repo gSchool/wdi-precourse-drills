@@ -14,17 +14,13 @@
   text-shadow: 2px 2px #8c3d5d;
 }
 
-<<<<<<< HEAD
 .containerGP {
+  background: maroon;
   display: flex;
   justify-content: center;
   margin: 50px;
-  background: maroon;
-
 }
 
-=======
->>>>>>> 8efd80afb1d07ad97e01a1327a5b5fe5589958fb
 img {
   max-height: 300px;
   max-width: 500px;
