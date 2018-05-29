@@ -7,9 +7,16 @@ a {
 a:link, a:visited {
   color: black;
 }
-img.image {
-  max-height: 32px;
-  max-width: 44px;
+tbody tr:nth-child(even) {
+  background: #CCC;
+}
+div.col1 {
+  float: left;
+  margin: 50px;
+}
+div.col2 {
+  float: right;
+  margin: 50px;
 }
 div.keywords ul {
   list-style-type: none;
