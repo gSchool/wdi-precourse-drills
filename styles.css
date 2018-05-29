@@ -1,0 +1,19 @@
+a {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+}
+a:link, a:visited {
+  color: black;
+}
+img.image {
+  max-height: 32px;
+  max-width: 44px;
+}
+div.keywords ul {
+  list-style-type: none;
+}
+div.companies ul {
+  list-style-type: none;
+}
