@@ -1,3 +1,43 @@
-img {
-    float: left;
+* {
+    box-sizing: border-box;
 }
+
+.buttons, .small {
+    font-size: 10px
+}
+input, button {
+    width: 130px;
+    background-color: rgb(191, 245, 227);
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+html {
+    height: 100%;
+    background: url(https://www.maxpixel.net/static/photo/2x/Fog-Peak-Blue-Mist-White-Mountain-Winter-Snow-1793806.jpg) center center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+h3 {
+    color: rgb(45, 65, 58);
+}
+
+#denMap {
+    height: 300px;
+}
+.list {
+    padding: 5px;
+    margin: 2px;
+    max-width: 400px;
+    border: thin solid white;
+    border-radius: 10px;
+}
+.narrow {
+    max-width: 400px;
+}
+
+.snow {
+    float: right;
+    
+}
+
