@@ -1,0 +1,11 @@
+
+img {
+  height: 32px;
+  width: 44px;
+}
+
+.left {
+  
+  float: left;
+  width:50%;
+}

@@ -1,0 +1,44 @@
+body{
+  padding-top: 50px;
+  position: relative;
+}
+
+.nav.navbar-nav{
+  float:right;
+}
+
+#top-menu{
+  padding-right: 20%;
+}
+
+.col-sm-6 img{
+  width: 80%;
+  border-radius: 20px;
+}
+
+.jumbotron:nth-child(even){
+  background-color: white;
+  margin-bottom: 0;
+}
+.jumbotron:nth-child(odd){
+  margin-bottom: 0;
+}
+
+/* unable to select .jumbotron  directly */
+
+
+.jumbotron h1{
+  margin: 0;
+}
+
+.jumbotron p{
+  margin-top: 15px;
+}
+
+
+#AboutMe{
+  margin-top: 12px;
+  width: auto;
+  font-size: 1em;
+  font-weight: lighter;
+}
