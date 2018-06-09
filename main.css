@@ -1,0 +1,18 @@
+.container {
+    width: 75%;
+    margin-left: 100px;
+}
+ a:link {
+     color: red;
+   }
+ a:link.movie2  {
+     color: teal;
+}
+
+.info {
+    float: left;
+}
+
+.search {
+    float: right;
+}
