@@ -1,0 +1,9 @@
+
+.first-column {
+  float: left;
+  padding-right: 10%;
+};
+
+.second-column {
+  float: right;
+}
