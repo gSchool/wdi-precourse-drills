@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  </head>
+  <body>
+    <h1>Hangman!</h1>
+    <script>
+      // var name = prompt("What's your name?");
+      // console.log("Hello " + name);
+
+      // Write your functions here
+      var pickWord = function () {
+        // Return a random word
+        var words = [
+          "PINEAPPLE",
+          "JACKHAMMER",
+          "ALPHAMALE"
+        ];
+        return words[Math.floor(Math.random() * words.length)];
+      };
+      var setupAnswerArray = function (word) {
+        // Return the answer array
+        var answerArray = [];
+
+        for (var i = 0; i < word.length; i++) {
+          answerArray[i] = "_";
+        }
+        return answerArray;
+      };
+      var showPlayerProgress = function (answerArray, updateMessage, bodyParts, bodyPartsLeft, remainingLetters) {
+        // Use alert to show the player their progress
+        alert(updateMessage + "Alright your Hangman has " + bodyParts + " body part(s) so far, " + (bodyPartsLeft - bodyParts) + " more and ya ded. Time to guess a letter!: \n\n" + answerArray.join(" ") + "\n\nIncorrect Guesses: " + incorrectGuesses.join(", "));
+      };
+      var getGuess = function () {
+        // Use prompt to get a guess
+        var guess = prompt("Guess a letter!");
+        return guess;
+      };
+      var updateGameState = function (guess, word, answerArray) {
+        // Update answerArray and return a number showing how many
+        // times the guess appears in the word so remainingLetters
+        // can be updated
+        var correctGuess = false;
+        var numberOfCorrectLetters = 0;
+        var duplicateGuess = false;
+
+        for (var j = 0; j < word.length; j++) {
+          if (guess === answerArray[j]) {
+            duplicateGuess = true;
+            break
+          }
+          else if (guess === word[j]) {
+            answerArray[j] = guess;
+            correctGuess = true;
+            numberOfCorrectLetters += 1;
+          }
+          else {
+            for (var i = -1; i < incorrectGuesses.length; i++) {
+              if (guess === incorrectGuesses[i]) {
+                duplicateGuess = true;
+              }
+            }
+          }
+        }
+        var gameStateInfo = [correctGuess, numberOfCorrectLetters, duplicateGuess];
+        return gameStateInfo;
+      };
+      var showAnswerAndCongratulatePlayer = function (word, endGameMessage) {
+        // Use alert to show the answer and congratulate the player
+        alert(endGameMessage + " Thanks for playing! Your word was: " + word);
+      };
+
+      var word = pickWord();
+      var answerArray = setupAnswerArray(word);
+      var remainingLetters = word.length;
+      var bodyParts = 0;
+      var bodyPartsLeft = 5;
+      var endGameMessage = "";
+      var updateMessage = "";
+      var incorrectGuesses = [];
+
+      while (remainingLetters > 0 && bodyParts < 5) {
+        showPlayerProgress(answerArray, updateMessage, bodyParts, bodyPartsLeft, remainingLetters);
+        var guess = getGuess();
+        if (guess === null) {
+          break;
+        }
+        else if (guess.length !== 1) {
+          alert("Please enter a single letter.");
+        }
+        else {
+          var gameStateInfo = updateGameState(guess.toUpperCase(), word, answerArray);
+          if (gameStateInfo[2]) {
+            updateMessage = "You already guessed that letter! ";
+          }
+          else if (gameStateInfo[0]) {
+            remainingLetters -= gameStateInfo[1];
+            updateMessage = "Nice you got that letter! ";
+          }
+          else {
+            bodyParts += 1;
+            incorrectGuesses.push(guess.toUpperCase());
+            updateMessage = "Whoops not that letter! ";
+          }
+        }
+      }
+      if (remainingLetters > 0) {
+        endGameMessage = "Sorry you lose.";
+      }
+      else {
+        endGameMessage = "You win!";
+      }
+      showAnswerAndCongratulatePlayer(word, endGameMessage);
+    </script>
+  </body>
