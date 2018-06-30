@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <h1>Hangman</h1>
+
+  <script type="text/javascript">
+  var words = ['javascript', 'monkey', 'amazing','wonderful'];
+  var answerArray = [];
+  var remainingLetters;
+
+  (function() {
+    word = words[Math.floor(Math.random() * words.length)];
+    remainingLetters = word.length;
+    return  answerArray = buildArr(word);
+  }(window));
+
+  function buildArr(string) {
+    for(var i=0; i<string.length;i++) {
+      answerArray.push('_')
+    }
+    return answerArray;
+  }
+
+      while (remainingLetters > 0) {
+        alert(answerArray.join(" "));
+        var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+        if (guess === null) {
+          break;
+        } else if (guess.length !== 1) {
+          alert("Please enter a single letter.");
+        } else {
+          for (var j = 0; j < word.length; j++) {
+            if (word[j] === guess) {
+              answerArray[j] = guess;
+              remainingLetters--;
+            }
+          }
+        }
+      }
+
+  </script>
+  </body>
+</html>

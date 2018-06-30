@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+li {
+  padding-left: 1em;
+  list-style: none;
+  color: black;
+}
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.intro {
+  position: absolute;
+  top: 2em;
+  left: 3em;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+}
+#page {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: "side nav"
+                       "side  main"
+                       "foot  foot";
+  grid-template-rows: 70px 1fr .5fr;
+  grid-template-columns: .4fr 1fr;
+}
+
+#page > nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right:4em;
+}
+#page > nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+#page > .side {
+  grid-area: side;
+  background-image: url(./images/doganimation.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#page > main {
+  grid-area: main;
+  padding: 7em 6em 3em 3em;
+}
+
+#page > footer {
+  grid-area: foot;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer > div {
+  align-self: center;
+  font-size: 3em;
+  text-align: center;
+  color: red;
+}
