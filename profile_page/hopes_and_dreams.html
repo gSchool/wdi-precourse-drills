@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+      <link rel='stylesheet' href='profile_page_style.css'>
+      <title>Amanda Wray: Hopes and Dreams</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $(".gifs").hide();
+        $("#click-me").click(function(){
+          $(".gifs").toggle(1000);
+          });
+        });
+      </script>
+    </head>
+    <body>
+      <header>
+        <h3>Hopes and Dreams</h3>
+      </header>
+      <div id="nav-bar">
+        <nav>
+          <button><a href="profile_page_index.html">Back to home</a></button>
+          <button id="click-me">Click to see the gifs I chose for how I am feeling</button>
+        </nav>
+      </div>
+      <main>
+        <section>
+          <h4>Why Galvanize</h4>
+          <p>I finally decided to go to Galvanize because after trying to self teach for years there were still a LOT of things I didn't understand.<br>
+            I am really excited to start this path that I have moved on and off of for so long. The thing that drove me to this line of work is my<br>
+            passion for puzzles. Coding is like having a big puzzle that has differnt pieces that all fit in the same space and figuring out which<br>
+            pieces work best for each new situation is so much fun, even if there is a lot of banging your head off a keyboard involved.</p>
+          <h4>After Galvanize?</h4>
+          <p>I haven't really given much thought to where I want to go after the program is finished. There are some social media outlets that might<br>
+            be fun like Twitter or Pinterest. I was also looking at ways I might give back to the medical community that I was a part of for much of<br>
+            my young adult life. I think before I really decide I would like to flex my coding muscles and see what I enjoy most, I guess we will see.</p>
+        </section>
+          <img class="gifs" src="https://media.giphy.com/media/N5byr13yA8gIo/giphy.gif"></img>
+          <img class="gifs" src="https://media.giphy.com/media/co3W8wbcdNu8g/giphy.gif"></img>
+          <img class="gifs" src="https://media.giphy.com/media/IoP0PvbbSWGAM/giphy.gif"></img>
+      </main>
+    </body>
+</html>

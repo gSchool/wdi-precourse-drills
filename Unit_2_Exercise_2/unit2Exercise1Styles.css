@@ -1,0 +1,22 @@
+img{
+  height: 32px;
+  width: 44px;
+}
+.names-list{
+   list-style-type: none;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
