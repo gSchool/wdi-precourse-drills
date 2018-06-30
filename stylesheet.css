@@ -1,0 +1,13 @@
+tr:nth-of-type(even) {
+  background-color: grey
+}
+
+.leftLayout {
+  float: left;
+  width: 50%;
+}
+
+.rightLayout {
+  float: right;
+  width: 50%;
+}
