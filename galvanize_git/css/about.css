@@ -1,0 +1,39 @@
+.nav {
+    background-image: url(../images/sugar.jpg);
+    background-size: 100%;
+    background-position: 80% 850%;
+    background-attachment: fixed;
+}
+
+.aboutme{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+}
+
+.title{
+    width: 100%;
+    font-weight: bold;
+    font-size: 53px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.context{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutmeimg{
+    order: 1;
+    width: 38%;
+    height: 100%;
+}
+
+.blurb{
+    order: 2;
+    width: 62%;
+    font-size: 18px;
+    padding-left: 20px;
+    background-color: none; 
+}
