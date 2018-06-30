@@ -1,0 +1,72 @@
+#bella{
+  position: relative;
+  left: 550px;
+  width: 250px;
+  height: 320px;
+}
+
+#games{
+  position: relative;
+  left: 150px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+}
+
+.Game-Pics{
+  position: relative;
+  left:200px;
+  width: 130px;
+  height: 90px;
+}
+
+.GTA-Cover{
+  position: relative;
+  left: 200px;
+  width: 100px;
+}
+
+.Terraria-Cover{
+  position: relative;
+  left: 200px;
+
+}
+
+h1{
+  font-family: 'Nosifer', cursive;
+
+}
+
+h2{
+font-family: 'Press Start 2P', cursive;
+
+}
+
+#Email{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+
+}
+
+p{
+  font-family:'Shadows Into Light', cursive;
+  font-size: 25px;
+
+
+}
+
+body{
+  background-image: url("Images/Bricks2.jpeg");
+
+}
+
+#gif{
+  float: right;
+}
+
+nav{
+  font-family: 'Nosifer', cursive;
+  font-size: 15px;
+  font-style: italic;
+  color: red;
+
+}
