@@ -1,0 +1,26 @@
+body {
+  background-color: lightgrey;
+  margin: 5px 300px 5px 300px
+}
+p {
+  font-size: 140%;
+  color: grey;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  line-height: 30px;
+}
+
+h1 {
+  font-size: 380%;
+  color: grey;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+h2 {
+  font-size: 280%;
+  color: grey;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+a {
+  color: red;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 200%;
+}
