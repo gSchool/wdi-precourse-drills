@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(even) {
+    background-color: #cccccc;
+}
+
+td {
+    padding: 2px 5px;
+}
+
+td.image {
+    padding: 0;
+    width: 32px;
+}
+
+td.image img {
+    display: block;
+    height: 44px;
+    width: 100%;
+}
+
+section {
+    float: left;
+    padding: 10px;
+}
