@@ -1,0 +1,25 @@
+header {
+  font-size: 40px;
+  font-weight: bold;
+}
+ul.empty  {
+  list-style-type: none
+}
+img {
+  height: 32px;
+  width: 44px;
+}
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+section {
+  float: left;
+  margin: 0 2.5%;
+  width: 45%;
+}
+aside {
+  float: right;
+  margin: 0  2.5%;
+  width: 45%;
+
+}
