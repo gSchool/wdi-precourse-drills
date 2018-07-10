@@ -1,0 +1,80 @@
+
+
+#container {
+  background-color: tan;
+  width:100%;
+  height:auto;
+  padding:20px;
+}
+#intro {
+  margin: 10px;
+}
+#content {
+  margin: 10px;
+  width: 900px;
+  height: 1000px;
+  border: 3px solid teal;
+  padding: 25px;
+  background-color: white;
+  size:85%
+}
+
+h1 {
+  color : grey;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  color : coral;
+}
+
+.quoted {
+  color: coral;
+  font-style: italic;
+  line-height:1.2em;
+  text-indent: 25px;
+  font-size: 1.3em;
+}
+
+p {
+    line-height:1.2em;
+    text-indent: 25px;
+}
+
+#column {
+  font-size: 1em;
+  font-weight: normal;
+  vertical-align: text-top;
+  padding:25px;
+  list-style-type: none;
+  width: 700px;
+}
+.btn {
+  border-radius: 5px;
+  background-color: white;
+  border-color: grey;
+  margin: 25px;
+  padding: 10px;
+  color: coral;
+  font-size: 1.1em;
+}
+.btn:hover {
+  border-radius: 5px;
+  background-color: grey;
+  border-color: grey;
+  margin: 25px;
+  padding: 10px;
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.1em;
+}
+
+
+
+.dialoge {
+  display: none;
+  list-style-type: none;
+}
