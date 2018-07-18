@@ -2,4 +2,51 @@ img {
   height: 32px;
   width: 44px;
   float: left;
+  margin-right: 10px;
+}
+
+
+/* left column */
+.leftColumn {
+  width: 45%;
+  float: left;
+}
+/* right column */
+.rightColumn {
+  width: 45%;
+  float: right;
+}
+
+
+/* groupGrey */
+
+.groupGrey:before,
+.groupGrey:after {
+  content: "";
+  display:table;
+}
+
+.groupGrey:after {
+  clear: both;
+}
+
+.groupGrey {
+  background-color: gray;
+}
+
+
+/*groupWhite*/
+
+.groupBlue:before,
+.groupBlue:after {
+  content: "";
+  display:table;
+}
+
+.groupBlue:after {
+  clear: both;
+}
+
+.groupBlue {
+  background-color: blue;
 }
