@@ -1,0 +1,97 @@
+/*apply alternating colors to the movie titles
+Used the nth child selector for the table and selected for
+even table elements. https://www.w3schools.com/CSSref/sel_nth-child.asp*/
+
+tr:nth-child(even){
+  background-color: #f0f0ee;
+  color: #666;
+}
+tr:nth-child(odd) {
+  background-color: rgb(251,251,251);
+  color: #666;
+}
+
+td:nth-child(odd) {
+  width:50px;
+}
+/* Made links different color for practice/fun */
+a:link {
+  color: blue;
+}
+a:visited {
+  color: blue;
+}
+a:hover {
+  color: purple;
+}
+
+/* Added the same background and font family found on the IMDb website
+Used Inspect to ascertain exactly what they are.*/
+body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  background-color: rgb(255,255,255);
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h2 {
+  color: #A58500;
+}
+
+/*Create two (floating) columns for the results page.
+Column 1: titles, names, keywords, Companies
+Column 2: category search, additional search options*/
+.column1 {
+  float: left;
+  background-color: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 7px;
+  border-radius: 12px;
+  padding: 10px 12px;
+  width: 60%;
+}
+
+table {
+  width: 100%;
+  border: 4px solid #f0f0ee;
+  border-radius: 12px;
+}
+
+.titles,
+.names {
+  border-spacing: 2px;
+  padding: 4px 6px 6px 6px;
+  display: block;
+}
+
+.keywords,
+.companies {
+  padding: 4px 6px 6px 6px;
+}
+
+
+/*COLUMN 2 STYLING*/
+.column2 {
+  float: right;
+  width: 30%;
+}
+
+.categorySearch {
+  background-color: #F5F5F4;
+  border: 1px solid #F6F6F5;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 7px;
+  word-wrap: break-word;
+  box-shadow: rgba(0,0,0,0.4);
+}
+
+.additionalSearch {
+  background-color: #F5F5F4;
+  border: 1px solid #F6F6F5;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
