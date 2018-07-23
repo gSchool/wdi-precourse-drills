@@ -1,0 +1,11 @@
+img {
+  height: 44px;
+  width: 32px;
+}
+
+td {
+  vertical-align: middle;
+}
+.title {
+  display: block;
+}

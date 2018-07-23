@@ -1,0 +1,33 @@
+img {
+  height: 44px;
+  width: 32px;
+}
+
+td {
+  vertical-align: middle;
+}
+.title {
+  display: block;
+}
+
+.moviesTitles tr:first-child {
+  background-color: red;
+}
+
+.moviesTitles tr:nth-child(2) {
+  background-color: lightblue;
+}
+
+.moviesTitles tr:nth-last-child(3n + 2){
+  background-color: lightgreen;
+}
+
+.moviesTitles tr:last-child {
+  background-color: gray;
+}
+
+
+.sectionOne, .sectionTwo {
+  float: left;
+  margin: 0 5%;
+}
