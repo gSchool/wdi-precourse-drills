@@ -1,0 +1,16 @@
+.img {
+  height: 32px;
+  width: 44px;
+}
+
+.col-1 {
+  float: left;
+}
+
+.col-2 {
+  float: right;
+}
+
+.row {
+  background-color: fffeee; 
+}

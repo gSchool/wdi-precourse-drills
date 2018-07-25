@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Homepage">
+  <meta name="author" content="Sean Tayler">
+
+  <title>Sean Tayler Homepage</title>
+
+  <!-- Bootstrap -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles -->
+  <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<!---------------------------------------------------------------------------------------------------------------------------------->
+
+<body id="page-top">
+
+<!-- About -->
+<section class="bg-light" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Future Sean</h2>
+        <h3 class="text-muted"><a href="../index.html">HOME</a><br><a href="nowsean.html">Present Sean</a></h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle center" src="../img/oldcoder.jpg" alt="" style="max-height: 360px; justify-content: center;">
+        </div>
+      </div>
+      <div class="col-sm-4" style="margin: 2% 15%;">
+        <div class="team-member">
+          <h4>Future Bio</h4>
+          <p class="text-muted">Yes, this is what I will look like at age 65 when I am still programming. My future goals include gradating from bootcamp, landing my first web development job, working my way up to becoming a senior developer, and then maybe working remotely as I live in a cabin by a Lake :) My greatest passion is teaching. So I hope one day I can become a teacher at a bootcamp or just create my own content to help others learn web development.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button type="button" name="button" class="btn-primary center" id="toggle">Gif or Not?</button>
+    </div>
+    <div id="gif">
+      <div style="width:100%;height:0;padding-bottom:40%;margin-top:20px;margin-left:10%;position:relative;">
+        <iframe src="https://giphy.com/embed/de5bARu0SsXiU" width="80%" height="80%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+      <p class="text-center" style="margin-top:0px;">Gotta study now so this doesn't become me!</p>
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+<script>
+$("#toggle").click(function(){
+    $("#gif").toggle();
+  });
+</script>
+
+</body>
+</html>
