@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman</title>
+
+  <body>
+    <h1>Hangman</h1>
+
+    <script>
+
+      // Choose random word
+      let pickWord = function() {
+        let words = ["apple", "orange", "grape", "banana"];
+        return words[Math.floor(Math.random() * words.length)];
+      };
+
+      // Create answer array
+      let setupAnswerArray = function (word) {
+        let answerArray = [];
+        for (let i = 0; i < word.length; i++) {
+          answerArray[i] = "_";
+      }
+      return answerArray;
+      };
+
+      // Show Player Progress
+      let showPlayerProgress = function (answerArray) {
+        alert(answerArray.join(" "));
+      };
+
+      // Get a Guess
+      let getGuess = function () {
+        return prompt("Guess a letter. Click Cancel to stop playing.");
+      };
+
+      // Update Game
+      let updateGameState = function (guess, word, answerArray) {
+        let appearances = 0;
+        for (let i = 0; i < word.length; i++) {
+          if (word[i] === guess) {
+            answerArray[i] = guess;
+            appearances++;
+          }
+        }
+        return appearances;
+      };
+
+      // Show Answer and Congratulate
+      let showAnswerAndCongratulatePlayer = function (answerArray) {
+        showPlayerProgress(answerArray);
+        alert("Good job! The answer was " + answerArray.join(""));
+      };
+      let word = pickWord();
+      let answerArray = setupAnswerArray(word);
+      let remainingLetters = word.length;
+      while (remainingLetters > 0) { showPlayerProgress(answerArray); let guess = getGuess();
+        if (guess === null) {
+          break;
+        } else if (guess.length !== 1) {
+          alert("Please enter a single letter.");
+        } else {
+          let correctGuesses = updateGameState(guess, word, answerArray);
+          remainingLetters -= correctGuesses;
+          }
+        }
+        showAnswerAndCongratulatePlayer(answerArray);
+    </script>
+
+  </body>
+  </html>
