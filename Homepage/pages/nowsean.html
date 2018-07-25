@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Homepage">
+  <meta name="author" content="Sean Tayler">
+
+  <title>Sean Tayler Homepage</title>
+
+  <!-- Bootstrap -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles -->
+  <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<!---------------------------------------------------------------------------------------------------------------------------------->
+
+<body id="page-top">
+
+<!-- About -->
+<section class="bg-light" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Present Sean</h2>
+        <h3 class="text-muted"><a href="../index.html">HOME</a><br><a href="thensean.html">Future Sean</a></h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle center" src="../img/sean.jpg" alt="" style="max-height: 360px; justify-content: center;">
+        </div>
+      </div>
+      <div class="col-sm-4" style="margin: 2% 15%;">
+        <div class="team-member">
+          <h4>Personal Bio</h4>
+          <p class="text-muted">I was born and raised in Arizona. When I am not coding, I love being active and outside. I have been playing basketball since I was a child. I don't own a TV or play video games because I don't have time, but I watch Netflix when I need to relax. Oh and I also have the best girlfriend and dog in the world.</p>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <h4>Professional Bio</h4>
+            <p class="text-muted">I have a bachelors and two masters degrees in my previous field. However, I knew it was time for a career change. For the past four months I have been studying and practicing full-time to become a web developer. This includes taking courses, reading books/articles/blogs, and programming things from smaller projects to websites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button type="button" name="button" class="btn-primary center" id="toggle">Gif or Not?</button>
+    </div>
+    <div id="gif">
+      <iframe src="https://giphy.com/embed/rmi45iyhIPuRG" width="356" height="480" frameBorder="0" class="giphy-embed center" allowFullScreen></iframe><p class="text-center">Excited about Bootcamp!</p>
+    </div>
+
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+<script>
+$("#toggle").click(function(){
+    $("#gif").toggle();
+  });
+</script>
+
+</body>
+
+</html>
