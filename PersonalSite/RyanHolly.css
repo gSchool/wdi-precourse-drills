@@ -1,0 +1,159 @@
+/*Global*/
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  color: #223240;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 60px;
+  color: white;
+  margin: 5px 0 0 0;
+  display: block;
+  margin: 13vh 0px 4vh 75px;
+}
+
+h3 {
+  font-size: 18.5px;
+  color: #223240;
+  margin: 10px 0px 10px 0px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: white;
+  line-height: 1.7;
+}
+
+/* FIRST PAGE */
+
+/*header*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 200px;
+  overflow: hidden;
+  position: fixed;
+  width: 95%;
+  top: 0;
+  background-color: #223240;
+}
+
+li a {
+  display: block;
+  float: right;
+  text-align: center;
+  padding: 2vh;
+  line-height: 5vh;
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #325382;
+}
+
+/* Title Section */
+
+.first {
+  background-image: url('mountains2.jpg');
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+}
+
+.center {
+  color: #223240;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#introText {
+  margin: 0px 0px 0px 0px;
+}
+
+/* About Me Section */
+
+.aboutme {
+  background-color: #325382;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: table;
+  vertical-align: middle;
+  border-top: 10px solid white;
+}
+
+#jump1 {
+  line-height: 0.1;
+  margin: 0px;
+}
+
+#intro, #future {
+  margin-right: 75px;
+  padding-top: 10vh;
+}
+
+/*picture of me*/
+
+#me {
+  height: 400px;
+  float: left;
+  margin: 0px 75px 30px 75px;
+  border: 10px solid white;
+  border-radius: 75px;
+}
+
+/* Project section */
+
+.projects {
+  background-color: #5B6F59;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: table;
+  vertical-align: middle;
+  border-top: 10px solid white;
+}
+
+/* PAGE TWO */
+
+/* Future Section */
+
+.future {
+  background-color: #325382;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: table;
+  vertical-align: middle;
+}
+
+.tbd {
+  background-color: #5B6F59;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: table;
+  vertical-align: middle;
+  border-top: 10px solid white;
+}
+
+iframe {
+  float: left;
+  margin: 0px 50px 125px 50px;
+  border: 10px solid white;
+}
