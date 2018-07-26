@@ -2,3 +2,25 @@ body {
   line-height: 1;
   background-color: darkgrey;
 }
+
+.containter {
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 5em;
+}
+
+.movie-a {
+  background-color: blueviolet;
+}
+
+.movie-b {
+  background-color: darkslateblue;
+}
+
+main {
+  float: left;
+}
+
+aside {
+  float: right;
+}
