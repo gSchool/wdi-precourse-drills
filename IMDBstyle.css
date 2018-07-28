@@ -1,0 +1,14 @@
+img {
+  height: 44px;
+  width: 32px;
+}
+.hollowbulletlist {
+  list-style-type: circle;
+}
+.subtext {
+  font-size: 12px;
+}
+.unstyledlist{
+  list-style-type: none;
+  padding-left: 0px;
+}
