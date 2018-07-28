@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Hangman!</h1>
+    <p>Matthew Cahn</p>
+    <script>    
+
+    function pickWord() {
+        var word = prompt("Enter Word")
+        return word
+    }
+
+    function setupAnswerArray() {
+        var answerArray = [];
+        for (var i = 0; i < word.length; i++) {
+            answerArray[i] = "_";
+        }
+        return answerArray
+    }
+    // showPlayerProgress
+    function showPlayerProgress() {
+        alert(answerArray.join(" "));
+    }
+
+    // getGuess
+    function getGuess() {
+        var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+        if (guess === null) {
+            // Exit the game loop
+            alert("Please enter a single letter.");
+        } else if (guess.length !== 1) {
+            alert("Please enter a single letter.");
+        } else {
+            // Update the game state with the guess
+            updateGameState(guess)
+        }
+    }
+    
+    // updateGameState
+    function updateGameState(guess) {
+        for (var j = 0; j < word.length; j++) {
+            if (word[j] === guess) {
+                answerArray[j] = guess;
+                remainingLetters--;
+            }
+        }
+    }
+    // showAnswerAndCongratulatePlayer
+    function showAnswerAndCongratulatePlayer() {
+        alert(answerArray.join(" "));
+        alert("Good job! The answer was " + word);
+    }
+
+    word = pickWord();
+    answerArray = setupAnswerArray();
+    var remainingLetters = word.length;
+    while (remainingLetters > 0) {
+        showPlayerProgress();
+        getGuess();   
+    };
+
+    showAnswerAndCongratulatePlayer();
+
+
+
+   </script>
+   </body>
+</html>
