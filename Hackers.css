@@ -2,4 +2,42 @@ img {
     height: 32px;
     width: 44px;
   }
-  
+.col1 {
+  background: #709b54;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  display: block;
+  font: 14px/24px "Times New Roman", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+  margin: 0 1.5% 15px 1.5%;
+}
+
+.col2 {
+background: #8b9142;
+border-radius: 20px;
+color: rgb(255, 255, 255);
+display: block;
+font: 14px/24px "Times New Roman", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+padding: 24px 15px;
+text-align: center;
+margin: 0 1.5% 15px 1.5%;
+}
+tr:nth-child(even) {
+  background: #8b9142;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  display: block;
+  text-align: center;
+  }
+
+.col1 {
+  float: left;
+  width: 40%;
+}
+.col2 {
+  float: right; 
+  width:40%;
+
+}
+
