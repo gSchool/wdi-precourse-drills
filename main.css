@@ -1,0 +1,14 @@
+img {
+  height: 32px;
+  width: 44px;
+}
+
+#movies tr:nth-child(even) {
+  background: #f0f0f2;
+}
+
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 40%;
+}
