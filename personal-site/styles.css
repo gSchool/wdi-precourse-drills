@@ -1,0 +1,9 @@
+	img {
+height: 44px;
+width: 32px;
+}
+
+ul.companies{
+  list-style-type: none;
+  margin: 0; padding: 0;
+}
