@@ -1,0 +1,176 @@
+<!--
+THIS IS THE HANGMAN GAME WITH NO FUNCTIONS
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman!</title>
+</head>
+
+<body>
+  <h1>AJ's Hangman Game!</h1>
+  <h3>Thanks for playing!</h3>
+  <script>
+  //array of words
+    var words = [
+      "burgers",
+      "pizza",
+      "tacos",
+      "pasta",
+      "burritos"
+    ];
+  //picks random word
+    var word = words[Math.floor(Math.random() * words.length)];
+  //setup the answer array
+    var answerArray = [];
+    for (var i = 0; i < word.length; i++) {
+      answerArray[i] = "_";
+    }
+
+    var remainingLetters = word.length;
+    var guessedLetter = [];
+    var count = 0;
+  //the game loop
+    while (remainingLetters > 0) {
+  //show the player there progress
+      alert("Guess what type of food. " + '\n' +
+      "Current guess count " + count + "." + '\n' + answerArray.join(" "));
+  //get a guess from the player
+      var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+      if (guess === null) {
+  //exit the game loop
+        alert("Dont leave!");
+        alert("Just kidding, thanks for playing.")
+        break;
+      } else if (count === 6) {
+        alert("Game Over! " + '\n' + answerArray.join(" "));
+        break;
+      } else if (guessedLetter.indexOf(guess.toLowerCase()) > -1) {
+        alert("Pick a new letter");
+      }
+        else if (guess.length !== 1) {
+        alert("Please enter a single letter.");
+  //incremintes count if wrong letter
+      } else if (word.indexOf(guess.toLowerCase()) === -1) {
+        count++;
+        guessedLetter.push(guess.toLowerCase());
+      } else {
+  //update the game state with the guess
+        for (var k = 0; k < word.length; k++) {
+          if (word[k] === guess.toLowerCase()) {
+            answerArray[k] = guess.toLowerCase();
+            guessedLetter.push(guess.toLowerCase());
+            remainingLetters--;
+          }
+        }
+      }
+
+  //the end of the game loop
+    }
+  //show the answer and congradulate the player
+  if (remainingLetters === 0) {
+    alert("You Win!" + '\n' + "The word was " + word.toUpperCase() + "!");
+    alert("I'll be back. Going to grab some " + word + " now.");
+  }
+  </script>
+
+</body>
+</html>
+-->
+
+
+
+
+
+
+<!--Hangman game with functions-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hangman Game!</title>
+</head>
+
+<body>
+
+  <script>
+    //This function picks a random word from the "words" array
+    var pickWord = function () {
+      var words = [
+        "lion",
+        "elephant",
+        "tiger",
+        "giraffe",
+        "monkey"
+        ];
+
+      var word = words[Math.floor(Math.random() * words.length)];
+      return word;
+    }
+    //This function sets up the answerArray
+    var setupAnswerArray = function (word) {
+      var answerArray = [];
+      for (var i = 0; i < word.length; i++) {
+        answerArray.push("_");
+      }
+      return answerArray;
+    }
+    //Function shows player progress and how many guesses they have left
+    var showPlayerProgress = function (answerArray) {
+      alert("What animal am I thinking of?" + '\n' + answerArray.join(" ") + '\n' +
+      "You have " + count + " wrong guesses left.");
+    }
+    //Function prompts the user to input a guess
+    var getGuess = function () {
+      var guess = prompt("Guess a letter, or click cancel to stop playing.");
+    return guess;
+    }
+    //Function updates the answer array when user inputs a correct guess
+    var updateGameState = function (guess, word, answerArray) {
+      var count = 0;
+      for (var i = 0; i < word.length; i++) {
+        if (word[i] === guess) {
+          answerArray[i] = guess.toLowerCase();
+          count++
+        }
+      }
+      return count;
+    }
+    //Congradulates the user when finished
+    var showAnswerAndCongradulatePlayer = function (word) {
+      alert("The answer was " + word + "!");
+    }
+
+var word = pickWord();
+var answerArray = setupAnswerArray(word);
+var remainingLetters = word.length;
+var usedLetters = [];
+var count = 6;
+
+while (remainingLetters > 0) {
+  showPlayerProgress(answerArray);
+  var guess = getGuess();
+
+  if (guess === null) {
+    break;
+  } else if (count === 1) {
+    alert("Game Over!");
+    break;
+  } else if (guess.length !== 1) {
+    alert("Please enter a single letter.");
+  } else if (usedLetters.indexOf(guess.toLowerCase()) > -1) {
+    alert("Pick a new letter.");
+  } else if (word.indexOf(guess.toLowerCase()) === -1) {
+    count--;
+    usedLetters.push(guess.toLowerCase());
+  } else {
+    var correctGuesses = updateGameState(guess.toLowerCase(), word, answerArray);
+    remainingLetters -= correctGuesses;
+    usedLetters.push(guess.toLowerCase());
+  }
+}
+showAnswerAndCongradulatePlayer(word);
+  </script>
+
+</body>
+
+</html>
