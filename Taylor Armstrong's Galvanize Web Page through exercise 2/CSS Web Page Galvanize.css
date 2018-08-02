@@ -1,0 +1,36 @@
+img {
+  height: 44px;
+  width: 32px;
+}
+#frontline {list-style-type: none;
+}
+#frontline:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -20px;
+}
+
+#Hackers1995{
+  background: red
+}
+
+#AD{
+  background: green
+}
+
+#TV{
+  background: pink
+}
+#Game{
+  background: yellow
+}
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 50%;
+}
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 40%;
+}
