@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<!--
+On the first page, describe who you are and where you come from. Tell us about yourself, your hobbies, hometown, family, friends, etc.
+Capture our attention with typographic properties like font, line-height, and text-align.
+Arrange your content with layout properties like display, position, left, top, float, and clear.
+Size your content with dimensional properties like height, width, padding, border, and margin.
+Spice up to your content with coloration properties like color, background-color, and background-image.
+And so on.
+
+Custom css
+Jquery - button
+-->
+<head>
+  <title>Personal Site</title>
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(()=>{
+      $("#color-button").click(function(){
+        $("body").css("background-color","#9b59b6");
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="logo">
+    <h2>Grant Fogle</h2>
+    <p>Skier. Fisherman. Dude.</p>
+  </div>
+  <div class="page-content">
+    <h1>About Me</h1>
+    <div class="header">
+      <img src="Images/FlyFishing.png" height="200" width="200">
+      <p> I'm from Parker, Colorado. I have a family and friend. I was born in Georgia to a military family, I like to crack jokes and party like a rockstar. </p>
+      <p>I also have, as my girlfriend likes to say, way too many hobbies including fly fishing, skiing, mountain biking, camping (they all sort of run together), bjj, traveling, reading, and a recent interest in houseplants of which I own 9.</p>
+      <button id="color-button">Click if you think purple is better than blue!</button>
+    </div>
+  </div>
+  <div class="side-bar">
+    <ul>
+      <li><a href="personal.html">About</a></li>
+      <li><a href="career.html">Portfolio</a></li>
+      <li><a href="https://www.instagram.com/g_fogle/">Recent Adventures</a></li>
+      <li><a href="mailto:grantjfogle@gmail.com">Contact</a></li>
+    </ul>
+  </div>
+</body>
+</html>
