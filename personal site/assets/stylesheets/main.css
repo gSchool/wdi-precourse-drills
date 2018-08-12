@@ -1,0 +1,152 @@
+/*
+  ===================================
+  Clearfix
+  ===================================
+*/
+
+.group:before,
+.group:after {
+  content:"";
+  display: table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  clear:both;
+}
+
+section {
+  float: left;
+  margin-left: 15%;
+  margin-right: 0;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  width: 35%;
+}
+
+aside {
+  float: right;
+  width: 35%;
+  margin-left: 0;
+  margin-right: 13%;
+  margin-top: 75px;
+  margin-bottom: 75px;
+
+}
+
+body {
+  background-color: #F5F8FF;
+}
+
+h3 {
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  font-size: 32px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h5 {
+  font-family: serif;
+  text-transform: uppercase;
+  text-align:center;
+  letter-spacing: 3px
+  }
+
+p {
+  display: block;
+  text-align: center;
+  font: "Work Sans", sans-serif;
+  letter-spacing: .75px;
+
+}
+
+img{
+  width: 384px;
+  height: 480px;
+}
+img {
+  float: right;
+
+}
+/*
+==========
+footer
+=========
+*/
+
+footer {
+  clear: both;
+}
+
+/*
+======
+button
+=====
+*/
+
+.career-button {
+  display: inline-block;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  font: lighter 10px Montserrat, sans-serif;
+  padding: 14px 24px;
+  margin: 10px 0 10px 35%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 0;
+  text-decoration: none;
+}
+
+/*
+===========
+NAVIGATION
+===========
+*/
+
+.nav ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+
+
+}
+
+.nav li {
+  display: inline-block;
+  margin:0 10px;
+  vertical-align: top;
+  text-decoration: none;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+
+/*
+============
+gifs
+===========
+*/
+
+.gif {
+  width: 320px;
+  height: 154px;
+  margin: 20px auto;
+}
+
+.copy {
+  display: inline-block;
+  text-align: center;
+  font: sans-serif;
+  letter-spacing: .75px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+header {
+  padding-top: 40px;
+}
