@@ -1,0 +1,64 @@
+
+ol {
+  list-style-type: disc;
+}
+ul {
+  list-style-type: circle;
+}
+img{
+  height: 44px;
+  width: 32px;
+}
+.hackers1995 {
+  background: hsla(0, 0%, 75%, .5);
+}
+.Hackers2001 {
+  background: hsl(0, 0%, 75%, .5)
+}
+
+/*
+  ===================================
+  Clearfix
+  ===================================
+*/
+
+.group:before,
+.group: after {
+  content:""
+  display: table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  clear:both;
+  *zoom: 1;
+}
+
+/*
+  ===================================
+  Primary header
+  ===================================
+*/
+
+.logo {
+  float: left
+}
+
+section {
+  float:left;
+}
+
+aside {
+  float:right;
+}
+
+/*
+  ==================================
+  Primery footer
+  ==================================
+*/
+
+.primary-footer small {
+  float:left;
+}
