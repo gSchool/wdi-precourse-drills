@@ -1,0 +1,9 @@
+tr:nth-child(odd) {
+  color: #006600;
+}
+
+section {
+  float:left;
+  margin:0 1.5%;
+  width: 40%
+}
