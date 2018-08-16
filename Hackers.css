@@ -1,0 +1,26 @@
+    	ol {
+    		list-style-type: disc;
+    	}
+    	ul {
+    		list-style-type: circle;
+    	}
+        .group {
+          clear: both;
+          *zoom: 1;
+        }
+        section {
+          float: left;
+          margin: 0 1.5%;
+          width: 63%;
+        }
+        aside {
+          float: right;
+          margin: 0 1.5%;
+          width: 30%;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .blue {
+            background-color: blue;
+        }
