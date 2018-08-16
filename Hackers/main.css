@@ -1,0 +1,19 @@
+.results tr:nth-child(even) {
+  background-color:#3498db;
+}
+
+.results tr:nth-child(odd) {
+  background-color:#e67e22;
+}
+
+.main-info {
+  float: left;
+  margin: 0 1.5%;
+  width: 47%;
+}
+
+.search {
+  float: left;
+  margin: 0 1.5%;
+  width: 47%;
+}
