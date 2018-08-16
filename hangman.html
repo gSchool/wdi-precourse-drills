@@ -1,0 +1,64 @@
+<script>
+
+  /*
+  FUNCTIONS
+  */
+  var pickword = function () {
+    var randomWords = ["monkey", "pancakes", "elephants", "dogs"];
+    return randomWords[Math.floor(Math.random()*randomWords.length)];
+  }
+
+  var word = pickword();
+
+  var setupAnswerArray = function (word) {
+    answerArray = [];
+    for (var i = 0; i < word.length; i++) {
+      answerArray[i] = ("_");
+    }
+    return answerArray;
+  }
+
+  var answerArray = setupAnswerArray(word);
+
+  var showPlayerProgress = function(answerArray){
+    alert(answerArray.join(" "));
+  }
+
+  var getGuess = function () {
+     return guess = prompt("Guess a letter, or click cancel to stop playing.");
+  }
+
+  var updateGameState = function(guess, word, answerArray){
+    for (var j = 0; j < word.length; j++){
+        if (word[j] === guess) {
+          answerArray[j] = guess;
+          remainingLetters--;
+        }
+    }
+  }
+
+var word = pickword();
+var answerArray = setupAnswerArray(word);
+var remainingLetters = word.length;
+
+function showAnswerAndCongratulatePlayer() {
+  alert(answerArray.join(" "));
+  alert("Good job the answer was " + word);
+}
+
+//Game Loop
+while (remainingLetters > 0) {
+  showPlayerProgress(answerArray);
+  var guess = getGuess();
+  if (guess === null) {
+    break;
+  } else if (guess.length !== 1) {
+    alert("Please enter a single letter.");
+  } else {
+    var correctGuesses = updateGameState(guess, word, answerArray);
+    }
+  }
+
+  showAnswerAndCongratulatePlayer(answerArray);
+
+</script>
