@@ -1,0 +1,19 @@
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
