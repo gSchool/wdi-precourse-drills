@@ -1,0 +1,19 @@
+#a {
+    background: lightgray;
+}
+.colone, .coltwo {
+    margin: 0 1.5% 24px 1.5%;
+}
+.colone {
+    float: left;
+    margin: 0 1.5%;
+    width: 20%;
+}
+.coltwo{
+    float: right;
+    margin: 0 1.5%;
+    width: 50%;
+}
+#title {
+    width:100%
+}
