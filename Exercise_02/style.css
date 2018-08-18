@@ -1,0 +1,25 @@
+body {
+    background-color: silver;
+}
+
+.tableText {
+    color: darkorange;
+    text-decoration-color: darkorange;   
+}
+
+.info {
+    color: firebrick;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
