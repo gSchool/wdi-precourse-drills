@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page 1 | Personal Site</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+
+<body class="white">
+  <div class="bg">
+  <div class="row">
+  <nav>
+  <div class="nav-wrapper navbar z-depth-2">
+    <a href="index.html" class="brand-logo overflow"> <i class="material-icons">looks_one</i>Jimmy Liang</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="waves-effect waves-light btn primaryGoal" href="index.html">Page 1</a></li>
+      <li><a class="waves-effect waves-light btn secondaryGoal z-depth-0" href="page.html">Page 2</a></li>
+    </ul>
+  </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li class="navy white-text sidenavtitle">Jimmy Liang</li>
+    <li><a href="index.html">Page 1</a></li>
+    <li><a href="page.html">Page 2</a></li>
+  </ul>
+
+  <br>
+  <center><img id="rick" src="https://media.giphy.com/media/Q22kcRdASuBvW/giphy.gif" width="500px" height="300px"></center>
+  <br>
+  <center><p>What'sup everybody. My name is Jimmy. I'm from St. Louis, MO. I'm pretty chill. I'm 22 years young. Only child. I like cooking, camping, hiking, racquetball, skeet shooting, expos, stand-up comedy shows, Rick and Morty, sitting in cafes, Mexican food, seafood, Kanye West, traveling, backpacking, porterhouse steaks, Apple products, and Google software.</p></center>
+
+  <br>
+  <center><button class="sometimes waves-effect waves-light btn primaryGoal">HOW I SOMETIMES FEEL ABOUT CODING</button></center>
+  <br>
+  <center><button class="mostly waves-effect waves-light btn primaryGoal">HOW I MOSTLY FEEL ABOUT CODING</button></center>
+
+  <br><br><br>
+
+  <script>
+
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.sometimes').on({
+          'click': function(){
+              $('#rick').attr('src','https://media.giphy.com/media/Q22kcRdASuBvW/giphy.gif');
+          }
+      });
+      $('.mostly').on({
+          'click': function(){
+              $('#rick').attr('src','https://media.giphy.com/media/i2dE5VvBNxBw4/giphy.gif');
+          }
+      });
+    });
+
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+

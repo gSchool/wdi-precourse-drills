@@ -1,0 +1,152 @@
+body{
+  caret-color: black;
+}
+
+p{
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+input {
+  text-align: center;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button:hover {
+  border: 1px solid #0091ea;
+  color: #0091ea;
+  border-radius: 5px;
+}
+
+.carousel{
+  width: 100%;
+}
+
+.carousel .carousel-item {
+width:500px !important;
+height: 100%;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.navy {
+  background-color: #2F3C5F;
+}
+
+.blue {
+  background-color: #3B8DE1;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
+
+.brand-logo {
+  margin-left: 2%;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;  
+  color: black;
+}
+
+::-moz-placeholder {
+  text-align: center;  
+}
+
+:-ms-input-placeholder {  
+  text-align: center; 
+}
+
+.navbar {
+  background-color: #2F3C5F;
+}
+
+#map {
+  height: 300px;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.primaryGoal {
+  background-color: #3B8DE1;
+}
+
+.secondaryGoal {
+  background-color: transparent;
+}
+
+.tertiaryGoal {
+  background-color: #3B8DE1;
+}
+
+.primaryGoal:hover {
+  color: #3B8DE1;
+  background-color: white;
+}
+
+.secondaryGoal:hover {
+  color: #2F3C5F;
+  background-color: white;
+}
+
+.tertiaryGoal:hover {
+  color: #3B8DE1;
+  background-color: white;
+}
+
+
+.primaryGoal:focus {
+  background-color: #3B8DE1;
+  color: white;
+}
+
+.secondaryGoal:focus {
+  background-color: transparent;
+  color: white;
+}
+
+.tertiaryGoal:focus {
+  background-color: #3B8DE1;
+  color: white;
+}
+
+
+@media only screen and (max-width: 300px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .overflow {
+    visibility: hidden;
+  }
+}
