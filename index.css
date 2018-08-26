@@ -1,0 +1,117 @@
+th {
+  padding: 5px 100px;
+  border: 1px solid #cecfd5;
+  background-color: #4863A0;
+}
+
+body {
+  height: 100%;
+  background-color:#98AFC7;
+}
+
+p {
+  height: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.left {
+    display: block;
+    margin-left: 0px;
+    margin-right: auto;
+    width: 50%;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Taylor1.jpg');
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.hero-text-button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.floatLeft {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+#Taylor1 {
+  background-color: green;
+  display: flex;
+  opacity: 0.2;
+}
+
+#Boomer1 {
+  background-color: blue;
+  display: flex;
+
+}
+
+#Boomer2 {
+  background-color: yellow;
+  display: flex;
+}
+
+#contact {
+  horizontal-align:baseline;
+  padding: 5px 20px;
+  border: 1px solid #cecfd5;
+}
+
+#burgundy {
+  color:#8C001A;
+}
+
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 50%;
+}
+
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 40%;
+}
+
+.div {
+    /* button size etc properties */
+}
+
+.expanded {background: url(img/x.gif) no-repeat left top;}
+.collapsed {background: url(img/y.gif) no-repeat left top;}
