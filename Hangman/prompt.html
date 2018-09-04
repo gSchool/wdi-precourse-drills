@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+  </head>
+  <body>
+
+  </body>
+  <script>
+    //make some array of possible words to guess
+    var wordBank = ["javascript", "monkey", "amazing", "pancake"];
+
+    //pick random word from word bank
+    var pickWord = function(){
+      return wordBank[Math.floor(Math.random() * wordBank.length)];
+    };
+
+    //make a "blank" array of underscores same length as word
+    var makeAnswerArr = function(word){
+      var answerArr = [];
+      for(var i = 0; i < word.length; i++){
+        answerArr[i] = "_"
+      }
+      return answerArr;
+    };
+
+    //make a message box to show player which letters have been filled
+    var showProgress = function(answerArr){
+      return alert(answerArr.join(" "));//show player which letters have been correctly guessed
+    };
+
+    //prompt the user to guess a letter
+    var getGuess = function(){
+      return prompt("Guess a letter or pick 'Cancel' to stop playing.");
+    };
+
+    //check if the letter is in the word, fill in "blank" array if it is
+    var updateGameState = function(guess, word, answerArr){
+      var count= 0;
+      for(var i = 0; i < word.length; i++){
+        if(word[i] == guess){
+          answerArr[i] = guess;
+          count++;//track how many letters were filled
+        }
+      }
+      return count;
+    };
+
+    //congratulate the player, tell them the word
+    var showAnswerCongrats = function(answerArr){
+      alert(answerArr.join(" "));//show guessed word one last time
+      alert("Good job! The answer was " + "'" + word + "'");
+    };
+
+    var word = pickWord();
+
+    //make some variable to track how many letter slots need to be filled (guessed)
+    var remainingLetters = word.length;
+    var answerArr = makeAnswerArr(word);
+
+    //while there are letters to be guessed
+    while(remainingLetters > 0){
+      showProgress(answerArr);
+      var guess = getGuess();
+
+      //exit loop if player selects "cancel" instead of guessing
+      if(guess == null){
+        break;
+      }
+
+      //check that only one letter was guessed
+      else if(guess.length !== 1){
+        alert("Please enter a single letter."); //make sure guess is one letter
+      }
+
+      //check if the letter matches, fill in blanks
+      else{
+        var correctGuesses = updateGameState(guess, word, answerArr);
+        remainingLetters -= correctGuesses;//subtract however many letters were filled
+        }
+      }
+
+    //once remaining letters = 0, show congratulation
+    showAnswerCongrats(answerArr);
+
+  </script>
+</html>
