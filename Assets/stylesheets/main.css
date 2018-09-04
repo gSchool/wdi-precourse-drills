@@ -1,0 +1,20 @@
+#movieTitles li:nth-of-type(odd){
+  background-color: rgba(255,0,0, 0.5);
+}
+#col1{
+  float: left;
+  margin: 0 1.5%;
+  padding-left: 1%;
+  width: 45%;
+  background-image: linear-gradient(#edf3ff, #e3eaf7);
+}
+#col2{
+  float: left;
+  margin: 0 1.5%;
+  padding-left: 1%;
+  width: 25%;
+  background-image: linear-gradient(#edf3ff, #e3eaf7);
+}
+.noBullets{
+  list-style-type: none;
+}
