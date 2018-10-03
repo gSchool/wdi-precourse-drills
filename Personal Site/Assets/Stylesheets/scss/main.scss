@@ -1,32 +1,44 @@
-$background-color: rgba(204, 214, 227, 0.9);
+$text-background-color: rgba(218, 230, 232, 1); //colors background of text boxes
+$drawer-text-background-color: rgba(225,233,234, 1);
+
+$background-color: rgba(44, 54, 57, 1); //backgurond and text color
+
+$border-color: rgba(118, 116, 107, 1);
+
+$highlight-color: rgba(121, 209, 168, 1);
 
 /*GENERAL*/
+
 body{
-  background-color: rgba(44, 54, 67, 1);
+  background-color: $background-color;
 //  border-left: 5px solid rgba(24, 34, 47, 1);
   //border-right: 5px solid rgba(24, 34, 47, 1);
   //border-top: 2px double rgba(24, 34, 47, 1);
   margin-top: 0px;
   font-family: "courier new";
   font-size: 10pt;
+
   }
   .mainContent{
-    background-color: $background-color;
-    border-left: 2px solid rgba(24, 34, 47, 1);
-    border-right: 2px solid rgba(24, 34, 47, 1);
+    background-color: $text-background-color;
+    border-left: 2px solid $border-color;
+    border-right: 2px solid $border-color;
     position: relative;
     width: 90%;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -88px;
-    height: 1300px;
-    color: rgba(24, 34, 47, 1);
+    margin-top: -95px;
+    min-height: 600px;
+    height: auto !important;
+    height: 1000px;
+    color: $background-color;
+    padding-bottom: 10px;
     }
   .contentDrawer{
-    background-color: rgba(224,234, 247, 0.9);
+    background-color: $drawer-text-background-color;
     /* border-top: 1px solid rgba(14, 24, 37, 0.5); */
-    border-bottom: 1px solid rgba(14, 24, 37, 0.5);
+    border-bottom: 1px solid $border-color;
     width: 100%;
     max-width: 1000px;
     margin-left: auto;
@@ -61,20 +73,28 @@ h1{
 // }
 //
 //
-// #navBar li:hover:not(.active) {
-//     background-color: rgba(84, 94, 107, 1);
-// }
-.active {
-    background-color: rgba(14, 24, 37, 1);
+#navBar li:hover:not(.active) {
+    background-color: $highlight-color;
+}
+#navactive a{
+  //color: $highlight-color;
+    background-color: $drawer-text-background-color;
+    opacity:1;
+    //border: 1px solid $border-color;
+    // border-top: 3px double $border-color;
+    // border-bottom: 3px double $border-color;
 }
 #navBar a{
-  color: rgba(214, 224, 237, 1);
+  color: $text-background-color;
   text-decoration: none;
 }
 .navbar-default{
-  bottom: 50px;
+  bottom: 55px;
   opacity: .8;
-  background-color: $background-color;
+  background-color: $text-background-color;
+  border-radius: 0px;
+
+
 }
 
 #headerBG{
@@ -98,6 +118,7 @@ h1{
 /*ABOUT ME*/
 #aboutMe .contentDrawer{
   min-height: 300px;
+  color: $background-color;
 }
 #aboutMe h2{
     text-align:right;
@@ -106,8 +127,9 @@ h1{
     margin-bottom: 0px;
     top: 10px;
     font-size: 140%;
-    border-bottom: 3px double rgba(14, 24, 37, 0.5);
+    border-bottom: 3px double $border-color;
   }
+
 #aboutMe p{
   margin-top: 5px;
   margin-bottom: 7px;
@@ -115,7 +137,8 @@ h1{
   padding-right: 5px;
   padding-top: 5px;
   text-align: justify;
-  position: relative;
+  color: $border-color
+//  position: relative;
 }
 #imgMe{
   float:left;
@@ -125,15 +148,21 @@ h1{
   margin: 8px;
   margin-right: 8px;
   margin-top: 15px;
-  border-top: 3px double rgba(14, 24, 37, 1);
-  border-bottom: 3px double rgba(14, 24, 37, 1);
-  border-left: 1px solid rgba(14, 24, 37, .75);
-  border-right: 1px solid rgba(14, 24, 37, .75);
+  border-top: 3px double $border-color;
+  border-bottom: 3px double $border-color;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
   overflow: hidden;
   object-fit: contain;
 }
 #imgMe img{
   max-height: 300px
+}
+
+#bioDrawer{
+  overflow:scroll;
+  width: 75%;
+  display: inline;
 }
 
 #hikingDrawer, #aqDrawer{
@@ -142,10 +171,11 @@ h1{
 .hikingPhoto{
   margin-top: 50px;
   margin-left:3px;
-  border-top: 3px double rgba(14, 24, 37, 1);
-  border-bottom: 3px double rgba(14, 24, 37, 1);
-  border-left: 1px solid rgba(14, 24, 37, .75);
-  border-right: 1px solid rgba(14, 24, 37, .75);
+  border-top: 3px double $border-color;
+  border-bottom: 3px double $border-color;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  width: 99%;
 }
 h6{
   font-weight: normal;
@@ -154,34 +184,17 @@ h6{
   display: inline;
   position: relative;
 }
-#ellinorDesc{
-  float: left;
-  margin-left: 10px;
-  margin-top: 2px;
-}
-#knobDesc{
-  display:block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  top: -25px;
-}
-#lakeDesc{
-  float: right;
-  margin-right: 10px;
-  margin-top: 2px;
-}
+
 
 #aqDrawer{
   height: 200px;
 }
 .aqPhoto{
   width:100%;
-  border-top: 3px double rgba(14, 24, 37, 1);
-  border-bottom: 3px double rgba(14, 24, 37, 1);
-  border-left: 1px solid rgba(14, 24, 37, .75);
-  border-right: 1px solid rgba(14, 24, 37, .75);
+  border-top: 3px double $border-color;
+  border-bottom: 3px double $border-color;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
   display: none;
 }
 h3{
@@ -203,6 +216,13 @@ h4{
   padding-right: 5px;
   margin-top: 0px;
   margin-bottom: 0px;
-  border-bottom: 1px solid rgba(14, 24, 37, 0.5);
+  border-bottom: 1px solid $border-color;
+}
+#highRow{
+  position:relative;
+  margin-top: 20px !important;
+}
 
+.expandable:hover{
+    color: $highlight-color;
 }

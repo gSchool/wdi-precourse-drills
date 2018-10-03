@@ -9,9 +9,9 @@
   <!-- popper js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <!--bootstrap css  -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="Assets\Stylesheets\css\bootstrap.min.css" rel="stylesheet">
   <!-- bootstrap js -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="Assets\script\bootstrap.js"></script>
   <!-- my script -->
   <script src="Assets\script\script.js"></script>
   <!-- select2(allows selection search) style -->
@@ -31,31 +31,31 @@
     </div>
   <nav class="navbar navbar-default" id = "navnav">
     <div class="container-fluid">
-      <div class="navbar-header">
+      <!-- <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-      </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+      </div> -->
+    <!-- <div class="collapse navbar-collapse" id="myNavbar"> -->
       <ul class="nav navbar-nav">
-        <li class="active"><a href="about.html">About</a></li>
-        <li><a href="Future">Future</a></li>
+        <li class="active" id="navactive"><a href="about.html">About</a></li>
+        <li><a href="future.html">Future</a></li>
       </ul>
-    </div>
+    <!-- </div> -->
   </div>
   </nav>
 
   <!-- <h1>Dr Toboggan!</h1> -->
-  <div class = "row">
-  <div class = "col-sm-8">
+  <div class = "row justify-content-center">
+  <div class = "col-8">
   <div class = "mainContent" id = "aboutMe">
     <h2>About Me</h2>
     <div id = "imgMe">
       <img src = "Assets\Images\me_ell.jpg" alt = "Photo of me hiking">
     </div>
-    <div class = "contentDrawer">
+    <div class = "contentDrawer" id = "bioDrawer">
       <p>
         What up nerds, I'm Nancy. I'm 25 and I've spent most my life in the Northwest: I grew up in Washington, and went to college in Oregon. I love the PNW, but I'm looking forward to spending the winter in Phoenix.
       </p>
@@ -66,16 +66,24 @@
         I spend most of my free time at the gym: I'm passionate about health and fitness, I love strength training, and I'm always learning more about the nutrition side. I also enjoy cooking when it fits with my diet plan, hiking while the weather's nice, reading comfy fantasy, and messing with my aquariums. You can check out some of my photographic proof below.
       </p>
     </div>
-    <h2>Recent Hikes</h2>
+    <h2 class="expandable">Recent Hikes</h2>
     <div class = "contentDrawer" id = "hikingDrawer">
+      <div class = "row">
+      <div class = "col-sm-4">
       <a href="https://flic.kr/s/aHskED8RF5" target = "_blank"><img src = "Assets\Images\43457090851_f889999f37_o.jpg" class = "hikingPhoto" width = "32%"></a>
-      <a href = "https://flic.kr/s/aHsmoMDhvE" target = "_blank"><img src="Assets\Images\42670511615_6173a97639_o.jpg" class = "hikingPhoto" width = "32%"></a>
-      <a href = "https://flic.kr/s/aHsmm542vr" target = "_blank"><img src="Assets\Images\28395816407_1a16f00d46_o.jpg" class = "hikingPhoto" width = "32%"></a>
       <h6 id = "ellinorDesc">Mt Ellinor, Olympic National Park</h6>
-      <h6 id = "lakeDesc">Eunice Lake, Mount Ranier National Park</h6>
-      <h6 id = "knobDesc" >Noble Knob, Norse Peak Wilderness</h6>
     </div>
-    <h2>Aquariums</h2>
+    <div class = "col-sm-4">
+      <a href = "https://flic.kr/s/aHsmoMDhvE" target = "_blank"><img src="Assets\Images\42670511615_6173a97639_o.jpg" class = "hikingPhoto" width = "32%"></a>
+      <h6 id = "lakeDesc">Eunice Lake, Mount Ranier National Park</h6>
+    </div>
+    <div class = "col-sm-4">
+      <a href = "https://flic.kr/s/aHsmm542vr" target = "_blank"><img src="Assets\Images\28395816407_1a16f00d46_o.jpg" class = "hikingPhoto" width = "32%"></a>
+        <h6 id = "knobDesc" >Noble Knob, Norse Peak Wilderness</h6>
+    </div>
+  </div>
+    </div>
+    <h2 class ="expandable">Aquariums</h2>
     <div class = "contentDrawer" id = "aqDrawer">
       <h3>20 Gallon Long<h3>
       <h4>Walstad-style dirted tank, stocked with uncountable hordes of white cloud minnows and snails</h4>
@@ -91,5 +99,5 @@
 </div>
 </div>
 </div>
-  </body>
+</body>
 </html>
