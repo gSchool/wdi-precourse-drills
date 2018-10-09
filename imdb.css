@@ -1,0 +1,19 @@
+.movie1 {
+	background:green;
+	}
+	
+.movie2 {
+	background:red;
+	}
+
+.movie3 {
+	background:yellow;
+	}
+	
+.column1 {
+	float:left;
+	}
+	
+.column2 {
+	float:right;
+	}
