@@ -1,0 +1,15 @@
+.alternating {
+  background-color: #FF0;
+}
+
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 50%
+}
+
+div {
+  float: right;
+  margin-right: 100px;
+
+}
