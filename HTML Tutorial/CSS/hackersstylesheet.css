@@ -23,55 +23,15 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
-.navigation ul {
-		margin: 0;
-		padding: 0;
-		text-transform; uppercase;
-		}		
-.navigation li {
-		display inline-block;
-		padding-left: none:
-		}		
-.navigation a {
-		background: #395870
-		background: linear-gradient(#49708f, #293f50);
-		border-right: 1px solid rgba(0, 0, 0, .3);
-		color: #fff;
-		padding: 12px 20px;
-		text-decoration: none;
-		}
-.navigation a:hover {
-		background: #314b60;
-		box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
-		}
-.navigation li:first-child a {
-		border-radius: 4px 0 0 4px;
-		}
-.navigation li:last-child a {
-		border-right: 0;
-		border-radius: 0 4px 4px 0;
-		}
+tbody tr:nth-child(even) {
+	background: #f0f0f2;
+}
+.group-left {
+	float: left;
+	width: 60%;
+}
+.group-right {
+	float: right;
+	width: 40%;
+}
