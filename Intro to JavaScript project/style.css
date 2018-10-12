@@ -1,0 +1,57 @@
+/* .container {
+ max-width: 960px;
+ margin: - auto;
+ background: #f9f9f9;
+ font-size: 24px;
+ padding: 25px
+} */
+
+
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/18222585_10105070340009873_1861940127978963523_n.jpg?_nc_cat=102&oh=1f3b1875fe8a05ada26441420896c43a&oe=5C627B55");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+p {
+ height: 100px;
+ background-color: white;
+text-transform: full-width;
+text-align: center;
+font-weight: bold;
+font-family: fantasy;
+
+}
+
+
+.parallax1 {
+    /* The image used */
+    background-image: url("https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/18194246_10105070340024843_1494291524887687827_n.jpg?_nc_cat=106&oh=e02fa76cd834e8218897452f2897e1c1&oe=5C5A73AE");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
