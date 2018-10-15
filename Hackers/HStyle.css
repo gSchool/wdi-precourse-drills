@@ -1,0 +1,13 @@
+ol {
+	list-style-type: none;
+}
+ul {
+	list-style-type: disc;
+}
+.sublist {
+	list-style-type: circle;
+}
+img {
+	height: 32px;
+	width: 44px;
+}
