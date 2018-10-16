@@ -1,0 +1,35 @@
+ol {
+	list-style-type: none;
+}
+ul {
+	list-style-type: disc;
+}
+.sublist {
+	list-style-type: circle;
+}
+img {
+	height: 32px;
+	width: 44px;
+}
+tr:nth-of-type(even){
+	background: rgb(255,245,245);
+}
+tr:nth-of-type(odd){
+	background: rgb(255,210,210);
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+td {
+	border: 0.5px solid #000000;
+}
+section {
+	float: right;
+}
+.first{
+	float:left;
+}
+body {
+	background: rgb(245,220,220);
+}
