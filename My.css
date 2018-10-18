@@ -1,0 +1,14 @@
+body {
+  background: #999;
+}
+h1 {
+  background-color: yellow;
+  border-radius: 20px
+}
+.grid,.col-1-2
+,.col-2-2{
+  display: inline-grid;
+  vertical-align: top;
+  padding-left: 20px;
+  padding-right: 20px;
+}
