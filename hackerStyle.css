@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(255, 175, 175);
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.first img {
+  height: 44px;
+  width: 32px;
+}
+
+.first h2 {
+/*  background-color: rgb(226, 226, 255);*/
+  margin-left: 25px;
+}
+
+.first a {
+  margin-left: 10px;
+}
+table {
+    margin-left: 30px;
+}
+
+tr:nth-of-type(even) {
+  background: rgb(201, 194, 237);
+}
+
+tr:nth-of-type(odd) {
+  background: rgb(226, 226, 255);
+}
+
+.first ul {
+  list-style-type: none;
+}
+
+section {
+  float: left;
+  position: relative;
+  margin-left: 05%;
+}
+
+.second {
+  float: right;
+  margin-right: 13%;
+}
+.second h2 {
+  margin-left: 25px;
+}
+.second ul {
+  list-style-type: circle;
+  margin-left: 10px;
+}
+
+.second ul.secondary {
+  list-style-type: disc;
+}

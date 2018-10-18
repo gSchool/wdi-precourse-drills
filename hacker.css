@@ -1,0 +1,16 @@
+.first img {
+  height: 44px;
+  width: 32px;
+}
+
+.first a {
+  margin-left: 10px;
+}
+
+.second ul {
+  list-style-type: none;
+}
+
+.third ul {
+  list-style-type: circle;
+}
