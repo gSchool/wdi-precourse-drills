@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="HM.css">
+  <head>
+  <body>
+    <img src="Stickman.jpg">
+    <h1>Hangman Game</h1>
+    <h2> <a href="Hangman.html">Play Again</a></h2>
+    <p>The words used in this version of the game include: <ul>
+                                                            <li>"animal"</li>
+                                                            <li>"planet"</li>
+                                                            <li>"space"</li>
+                                                            <li>"earth"</li>
+                                                            <li>"human"</li>
+                                                            <li>"ground"</li>
+                                                            <li>"wind"</li>
+                                                            <li>"fire"</li>
+                                                            <li>"water"</li>
+                                                            <li>"elecricity"</li>
+                                                            <li>"dog"</li>
+                                                            <li>"cat"</li>
+                                                            <li>"parrot"</li>
+                                                            <li>"monkey"</li>
+                                                            <li>"tiger"</li>
+                                                            <li>"elephant"</li>
+                                                            <li>"hippo"</li>
+                                                            <li>"lion"</li>
+                                                            <li>"needle"</li>
+                                                            <li>"teacher"</li>
+                                                            <li>"garden"</li>
+                                                            <li>"patio"</li>
+                                                            <li>"barn"</li>
+                                                            <li>"car"</li>
+                                                            <li>"truck"</li>
+                                                            <li>"man"</li>
+                                                            <li>"woman"</li>
+                                                            <li>"child"</li>
+                                                            <li>"parent"</li>
+                                                            <li>"guardian"</li></lu></p>
+    <script>
+        function pickWord() {
+          var words = ["animal", "planet", "space", "earth", "human", "ground", "wind", "fire", "water", "elecricity", "dog", "cat", "parrot", "monkey", "tiger", "elephant", "hippo", "lion", "needle", "teacher", "garden", "patio", "barn", "car", "truck", "man", "woman", "child", "parent", "guardian"];
+          return words[Math.floor(Math.random() * words.length)];
+        };
+        function setupAnswerArray(word) {
+          answerArray = [];
+          for(var i = 0; i < word.length;i++) {
+            answerArray[i] = "_";
+          }
+          return answerArray;
+        };
+        function showPlayerProgress(answerArray) {
+          alert(answerArray.join(" "));
+        };
+        function getGuess() {
+          return prompt("Guess a letter or press cancel to quit.");
+          };
+        function updateGameState(guess, word, answerArray) {
+          var correctLetter = 0;
+          for(var j = 0; j < word.length;j++) {
+            if (word[j] === guess && answerArray[j] !== guess) {
+              answerArray[j] = guess;
+              correctLetter++;
+            }
+
+
+          } return correctLetter;
+        }
+        function showAnswerAndCongratulatePlayer(answerArray) {
+          alert("Congratulations! You guessed the word " + answerArray.join("") + "! Reload or press \"Play Again\" to try again!");
+        };
+        function showAnswerAndConsolePlayer(word) {
+          alert("I'm sorry! You didn't guess the word \"" + word + "\"! Reload or press \"Play Again\" to try again!");
+        };
+        var word = pickWord();
+        var answerArray = setupAnswerArray(word);
+        var remainingLetters = word.length;
+        var guessesLeft = 6;
+
+        while (remainingLetters > 0 && guessesLeft > 0) {
+          showPlayerProgress(answerArray);
+          var guess = getGuess();
+          if (guess === null) {
+            break;
+          } else if (guess.length !== 1) {
+            alert("Please enter a single letter");
+          } else {
+            var correctGuesses = updateGameState(guess, word, answerArray);
+            if (correctGuesses > 0) {
+              remainingLetters -= correctGuesses;
+              alert("Good Job! " + guess + " is a letter in the word!");
+          } else {
+              guessesLeft--;
+              alert("Sorry! No " + guess + "'s in the word. You have " + guessesLeft + " guesses left!");
+          }
+        }}
+        if(remainingLetters === 0) {
+          showAnswerAndCongratulatePlayer(answerArray);
+        } else if(guessesLeft === 0) {
+          showAnswerAndConsolePlayer(word);
+        }
+
+    </script>
+  <body>
+<html>
