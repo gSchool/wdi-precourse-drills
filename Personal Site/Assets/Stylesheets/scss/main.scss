@@ -1,0 +1,228 @@
+$text-background-color: rgba(218, 230, 232, 1); //colors background of text boxes
+$drawer-text-background-color: rgba(225,233,234, 1);
+
+$background-color: rgba(44, 54, 57, 1); //backgurond and text color
+
+$border-color: rgba(118, 116, 107, 1);
+
+$highlight-color: rgba(121, 209, 168, 1);
+
+/*GENERAL*/
+
+body{
+  background-color: $background-color;
+//  border-left: 5px solid rgba(24, 34, 47, 1);
+  //border-right: 5px solid rgba(24, 34, 47, 1);
+  //border-top: 2px double rgba(24, 34, 47, 1);
+  margin-top: 0px;
+  font-family: "courier new";
+  font-size: 10pt;
+
+  }
+  .mainContent{
+    background-color: $text-background-color;
+    border-left: 2px solid $border-color;
+    border-right: 2px solid $border-color;
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -95px;
+    min-height: 600px;
+    height: auto !important;
+    height: 1000px;
+    color: $background-color;
+    padding-bottom: 10px;
+    }
+  .contentDrawer{
+    background-color: $drawer-text-background-color;
+    /* border-top: 1px solid rgba(14, 24, 37, 0.5); */
+    border-bottom: 1px solid $border-color;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 300px;
+    padding: 0px;
+    margin: 8px;
+    margin-left: 0px;
+    }
+
+/*TITLE*/
+h1{
+  text-align: center;
+  background-color: rgba(10, 200, 10, 0.5);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+// /*NAVIGATION BAR */
+// #navBar{
+//   display: block;
+//   margin-left: 0;
+//   margin-right: 0;
+//   padding: 0;
+//   width: 100%;
+//   /* position: fixed; */
+//   margin-top: 100px;
+//   border-bottom: 2px solid rgba(22, 26, 43, 1);
+//   border-top: 2px solid rgba(22, 26, 43, 1);
+// }
+//
+//
+#navBar li:hover:not(.active) {
+    background-color: $highlight-color;
+}
+#navactive a{
+  //color: $highlight-color;
+    background-color: $drawer-text-background-color;
+    opacity:1;
+    //border: 1px solid $border-color;
+    // border-top: 3px double $border-color;
+    // border-bottom: 3px double $border-color;
+}
+#navBar a{
+  color: $text-background-color;
+  text-decoration: none;
+}
+.navbar-default{
+  bottom: 55px;
+  opacity: .8;
+  background-color: $text-background-color;
+  border-radius: 0px;
+
+
+}
+
+#headerBG{
+  //position: absolute;
+  height: 150px;
+  margin: 0 auto;
+  width: 100%;
+//  top: -2px;
+//  z-index: -1;
+  padding: 0px;
+  background-image: url("Evening_pan.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#headerBG img{
+  min-width: 100%;
+  position: relative;
+  top: -150px;
+}
+
+/*ABOUT ME*/
+#aboutMe .contentDrawer{
+  min-height: 300px;
+  color: $background-color;
+}
+#aboutMe h2{
+    text-align:right;
+    position:relative;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    top: 10px;
+    font-size: 140%;
+    border-bottom: 3px double $border-color;
+  }
+
+#aboutMe p{
+  margin-top: 5px;
+  margin-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  text-align: justify;
+  color: $border-color
+//  position: relative;
+}
+#imgMe{
+  float:left;
+  max-width: 40%;
+  max-height: 280px;
+  padding: 0px;
+  margin: 8px;
+  margin-right: 8px;
+  margin-top: 15px;
+  border-top: 3px double $border-color;
+  border-bottom: 3px double $border-color;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  overflow: hidden;
+  object-fit: contain;
+}
+#imgMe img{
+  max-height: 300px
+}
+
+#bioDrawer{
+  overflow:scroll;
+  width: 75%;
+  display: inline;
+}
+
+#hikingDrawer, #aqDrawer{
+  display:none;
+}
+.hikingPhoto{
+  margin-top: 50px;
+  margin-left:3px;
+  border-top: 3px double $border-color;
+  border-bottom: 3px double $border-color;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  width: 99%;
+}
+h6{
+  font-weight: normal;
+  font-size: 90%;
+  padding: 0px;
+  display: inline;
+  position: relative;
+}
+
+
+#aqDrawer{
+  height: 200px;
+}
+.aqPhoto{
+  width:100%;
+  border-top: 3px double $border-color;
+  border-bottom: 3px double $border-color;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  display: none;
+}
+h3{
+  float: right;
+  font-size: 90%;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-right: 5px;
+}
+h4{
+  float: right;
+  width: 100%;
+  text-align: right;
+  font-size: 85%;
+  font-weight: normal;
+  font-style: italic;
+  position: relative;
+  padding-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid $border-color;
+}
+#highRow{
+  position:relative;
+  margin-top: 20px !important;
+}
+
+.expandable:hover{
+    color: $highlight-color;
+}
