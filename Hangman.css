@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  margin-left: 110px;
+  position: absolute;
+  z-index: -3;
+}
+
+.inverse img {
+  margin-left: -700px;
+  position: absolute;
+  z-index: -3;
+}
+
+.words {
+    margin-top: 100px;
+    list-style: none;
+    list-style-type: none;
+}

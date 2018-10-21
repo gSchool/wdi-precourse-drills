@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="Hangman.css">
+  </head>
+  <body>
+    <h1>Hangman: Halloween!</h1>
+    <h3>Guess the spooky word!</h3>
+    <h2><a href = "hangman.html">Play Again!</a><h2>
+    <h1><img src= "jack_skellington_in_his__pumpkin_king__form_by_bloatenator-d8n1al4.jpg"></h1>
+    <div class="inverse">
+    <h1><img src= "jack_skellington_in_his__pumpkin_king__form_by_bloatenator-d8n1al4 copy.jpg"></h1>
+    </div>
+    <div class="words">
+      <h2> Potential Solutions <h2>
+        <li>vampire</li>
+        <li>witch</li>
+        <li>coven</li>
+        <li>spells</li>
+        <li>charmed</li>
+        <li>ghouls</li>
+        <li>costumes</li>
+        <li>zombies</li>
+    </div>
+    <script>
+
+       var pickWord = function() {
+         var words = [
+           "vampire",
+           "witch",
+           "coven",
+           "spells",
+           "charmed",
+           "ghouls",
+           "costumes",
+           "zombies"
+         ];
+         return words[Math.floor(Math.random() * words.length)];
+       };
+
+       var word = pickWord();
+
+       var setupAnswerArray = function(word) {
+       var answerArray = [];
+         for (var i = 0; i < word.length; i++) {
+           answerArray[i] = "_";
+         }
+         return answerArray;
+       };
+
+       var showPlayerProgress = function(answerArray) {
+           alert(answerArray.join(" "));
+       };
+
+       var getGuess = function() {
+         return prompt("Guess a letter, or click Cancel to stop playing.");
+       };
+
+       var updateGameState = function(guess, word, answerArray) {
+         var rightLetter = 0;
+         for (var j = 0; j < word.length; j++) {
+           if (word[j] === guess) {
+             answerArray[j] = guess;
+               rightLetter++;
+           }
+          } return rightLetter;
+        };
+       var showAnswerAndCongratulatePlayer = function(answerArray){
+         return("Congrats!" + answerArray.join("") + " is the right answer!");
+       };
+
+       var showAnswerAndLostPlayer = function(answerArray){
+         return("Oh no! " + answerArray.join("") + " is the right answer. Hit Play Again to start over.");
+       };
+       var remainingGuesses = 7;
+       var remainingLetters = word.length;
+       var answerArray = setupAnswerArray(word);
+// The Game Loop
+       while (remainingLetters > 0 && remainingGuesses > 0) {
+         showPlayerProgress(answerArray);
+         var guess = getGuess(guess);
+      //   var guess = guess.toLowerCase();
+         if (guess === null) {
+           break;
+         } else if (guess.length !== 1) {
+             alert("Please enter a single letter.");
+         } else {
+           var rightGuess = updateGameState(guess, word, answerArray);
+             if (rightGuess > 0) {
+               remainingLetters -= rightGuess;
+               alert("Way to go! " + guess + " Is a letter in the word");
+             } else {
+               remainingGuesses--;
+               alert("Nope! " + guess + " is not in the word. There are" + remainingGuesses + " left.");
+             }
+              }
+            }
+          if (remainingLetters === 0) {
+            showAnswerAndCongratulatePlayer(answerArray);
+        } else if (remainingGuesses === 0) {
+            showAnswerAndLostPlayer(answerArray);
+       }
+       // alert(answerArray.join(" "));
+       // alert("Good Job! The answer was " + word);
+    </script>
+  </body>
+</html>
