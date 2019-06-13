@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hangman!</title>
+</head>
+<body>
+  <h1>Hangman!</h1>
+  <script>
+// REWRITE Starts Here
+///// Functions that encompass rewrite /////
+
+
+var pickWord = function () {
+  var words = [
+         "javascript",
+         "monkey",
+         "amazing",
+         "pancake"
+       ];
+
+  return words[Math.floor(Math.random()* words.length)];
+  };
+
+var setupAnswerArray = function (word) {
+  // Return the answer array
+   var answerArray = [];
+  for (var i = 0; i < word.length; i++) {
+      answerArray[i] = "_";
+  }
+      return answerArray;
+};
+
+var showPlayerProgress = function (answerArray) {
+  return alert(answerArray.join(" "));
+};
+
+var getGuess = function () {
+  return prompt("Guess a letter, or click Cancel to stop playing. Good Luck!");
+};
+
+var updateGameState = function (guess, word, answerArray) {
+  var showings = 0;
+     for (var j = 0; j < word.length ; j++) {
+     if (word[j] === guess) {
+       answerArray[j] = guess;
+       showings++;
+  }
+}
+    return showings;
+};
+
+var showAnswerAndCongratulatePlayer = function (answerArray) {
+   showPlayerProgress(answerArray);
+       alert("Good Job , The answer was " + answerArray.join(""));
+};
+
+
+
+
+/////
+var word = pickWord();
+var answerArray = setupAnswerArray(word);
+var remainingLetters = word.length;
+
+while (remainingLetters > 0) {
+  showPlayerProgress(answerArray);
+  var guess = getGuess();
+  if (guess === null) {
+    break;
+  } else if (guess.length !==1) {
+    alert("Please Enter a Single Letter.");
+  } else {
+    var correctGuesses = updateGameState(guess, word, answerArray);
+    remainingLetters -= correctGuesses;
+  }
+}
+
+
+showAnswerAndCongratulatePlayer(answerArray);
+
+
+
+
+
+
+
+//REWrite work Ends here
+
+</script>
+</body>
+</html>
