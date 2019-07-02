@@ -1,0 +1,18 @@
+img {
+	height:44px;
+	width: 32px;
+}
+tbody tr:nth-child(odd) {
+	background: rgb(120, 183, 217)
+}
+tbody tr:nth-child(even) {
+	background: rgb(197, 229, 252)
+}
+.results {
+  width: 63%;
+	float:left;
+}
+.additional-search {
+  width: 33%;
+	float: right;
+}

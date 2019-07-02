@@ -1,0 +1,101 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Heebo', sans-serif; 
+    font-size: 100%;
+    padding: 0 20px 20px 20px;
+    background-image: url("./images/maroonbells.jpg");
+    background-color: #ffffff;
+}
+h1 {
+    background-color: #546270e6;
+    color: #ffffff;
+    font-size: 2.9em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 8px;
+}
+h2 {
+    font-size: 1.8em;
+    color: #eaf5ff;
+    margin-bottom: 4px;
+}
+h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+h4 {
+    font-size: 1.25em;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+p {
+    margin-top: 2px;
+}
+div.states {
+    float: left;
+    width: 70%;
+}
+div.plans {
+    float: left;
+    width: 70%;  
+}
+div.sidebar {
+    float: right;
+    width: 25%;
+}
+section {
+    background-color: #ededede6;
+    width: 100%;
+    margin: 5px 5px;
+    padding: 1px 7px;
+    border-radius: 20px;
+    float: left;
+}
+aside {
+    background-color: #eaf5ffe6;
+    font-size: .85em;
+    margin: 5px 5px;
+    padding: 1px 7px;
+    border-radius: 20px;
+    
+}
+aside a{
+    color: #000000;
+}
+.clearfix {
+    clear: both;
+  }
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li.pageLinks {
+    float: left;
+}
+li.pageLinks a {
+    display: block;
+    padding: 8px;
+    color: #ffffff;
+    padding: 12px 12px;
+    text-align: center; /*why doesn't this work?*/
+}
+footer {
+    font-size: .75em;
+    color: #ffffff;
+}
+img.pets {
+    display: block;
+    width: 400px;
+    height: auto;
+  }
+  section.pets {
+    background-color: #ededed;
+    width: 100%;
+    margin: 5px 5px;
+    padding: 1px 7px;
+    border-radius: 20px;
+  }
