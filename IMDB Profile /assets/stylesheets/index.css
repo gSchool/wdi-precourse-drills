@@ -1,0 +1,29 @@
+
+.unnumbered {
+	list-style-type: none;
+}
+.return-multiple {
+	display: block;
+}
+
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+	vertical-align: top;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+section {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	vertical-align: top;
+	width: 33.33%;
+	margin: 0 1.5%;
+}

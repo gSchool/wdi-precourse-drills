@@ -1,0 +1,87 @@
+body {
+	background-color: lightgray;
+}
+
+h1, h2 {
+	text-align: center
+}
+
+h1 {
+       color: green;
+}
+
+
+div {
+	clear: left;
+}
+ol {
+	list-style-type: disc;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ footer {
+ 	clear: both;
+ 	height: 30px;
+ 	background-color: #FF00FF;
+	background-opacity: 0.1;
+	background-filter: alpha(opacity=10);
+	text-align: center;
+	padding-top: 4px;
+}
+
+.violin {
+	display: inline;
+	height: auto;
+	width: auto;
+}
+.portait {
+	display: block;
+	margin-left: 20em;
+	margin-right: auto;
+    width: 1%;
+}
+.gallery {
+
+  	display: inline-block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 60%;
+  	height: 60%;
+  }
+
+.facts {
+	background-opacity: .02;
+
+}
+.federation {
+	background-color: purple;
+}
+
+.final {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.strengths, .weaknesses {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+.strengths {
+	background-color: red;
+	color: blue;
+	float: left;
+	width: 49%;
+}
+
+.weaknesses {
+	color: red;
+	background-color: blue;
+    width: 49%;
+    float: right;
+}
