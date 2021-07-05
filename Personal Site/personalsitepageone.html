@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>An Introduction to the Life of Natalie</title>
+   <link rel="stylesheet" type="text/css" href="personalsite.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+   clicked = true;
+   $(document).ready(function() {
+   $("#width").mouseenter(function() {
+   alert("Welcome to Natalie's page!");
+});
+ $("button").click(function(){
+            if(clicked){
+                $(this).css('background-color', 'red');
+                clicked  = false;
+            } else {
+                $(this).css('background-color', 'blue');
+                clicked  = true;
+            }   });
+});
+</script>      
+</head>
+
+<body>
+<section>
+<div>
+
+  </div>
+<div class="container">
+  <img id="width" src="glacier.jpg" alt="Mountains in Glacier National Park">
+  <div class="centered"><h1>An Introduction to the Life of Natalie</h1><br>
+  <a href="#whoIAm" type="button" class="sideBySide">Who I Am</a>
+  <a href="personalsitepagetwo.html" type="button" class="sideBySide">Where I'm Going</a>
+  </div>
+  </div>
+  </section>
+ <!-- <h1>An Introduction to the Life of Natalie</h1>-->
+<!-- <section>-->
+ <br>
+
+  <h2 class="Natalie"><strong><a id="whoIAm">Hi, I'm Natalie.</a></strong></h2>
+  <br>
+	<br>
+ <!--add labels over the picture-->
+    <p class="left">I was born in Anchorage, AK and moved to Denver, CO in January 2016. I worked in the staffing 
+    industry until I decided to attend Galvanize. One of my best friends, Rachel, works as a software engineer after completing a bootcamp called Hack Reactor. 
+    Her success is part of what inspired me to go to Galvanize. Here we are with some of our friends from Alaska:</p>
+    <img class="right" src="friends.jpg" alt="Rachel and I with three non developer friends."/>
+    <div>
+    </div>
+    <p class="left">If you would like to learn more, you can select from the following options: </p>
+    <!--</section>-->
+      <ul class="links">
+   <li class="hobbies">Hobbies</li>
+  
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#plants">Plants</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#cooking">Cooking</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#games">Games</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#camping">Camping</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#hiking">Hiking</a></li>
+      
+        <li><a href="#hometown">Hometown</a></li>
+        <li><a href="#family">Family</a></li>
+        <li><a href="#friends">Friends</a><li>
+   <li><a href="personalsitepagetwo.html">Future</a></li>
+  </ul>
+ 
+<div class="clear"></div>
+      <h3 class="morePadding"><a id="plants">Plants</a></h3>
+      <br>
+      <p>I enjoy collecting a variety of succulent plants. My collection includes but is not limited to:</p>
+      <div class="clear"></div>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Picture</th>
+          </tr>
+          <tr>
+            <th>Jade</th>
+            <td>Jade plants have small pink or white flowers and are common houseplants worldwide. Much of their popularity is due to the 
+            low levels of care required. The Jade plant needs little water and can survive in most indoor conditions.</td>
+            <td><img class="hundred" src="Jade.jpg" alt="Jade plant"></td>
+          </tr>
+          <tr>
+            <th>Crown of Thorns</th>
+            <td>A species of flowering plant, native to Madagascar. Crown of Thorns plants are succulent shrubs that feature bright green leaves, 
+            petal-like red or yellow bracts, and thick sharp black thorns. </td>
+            <td><img class="hundred" src="crownofthorns.jpg" alt="Crown of Thorns plant"></td>
+          </tr>
+          <tr>
+            <th>African Milk Tree</th>
+            <td>A perennial plant that originally comes from Central Africa. The latex sap from the plant is poisonous and can cause skin irritations.
+            </td>
+            <td><img class = "hundred" src="africanMilkTree.jpg" alt="African Milk Tree"></td>
+          </tr>
+          <tr>
+            <th>Bunny Ear Cactus</th>
+            <td>An edible cactus, the most common culinary species is the Indian Fig Opuntia. Most culinary uses of the term "prickly pear" refer to 
+            this species. </td>
+            <th><img class =  "hundred" src="bunnyEarCactus.jpg" alt="Bunny Ear Cactus"></th>
+          </tr>
+          <tr>
+            <th>Fire Sticks</th>
+            <td>Fire Sticks have a wide distribution in Africa. They are a hydrocarbon plant that produces a poisonous latex which can, with little 
+            effort, be converted to the equivalent of gasoline.</td>
+            <td><img class ="hundred" src="fireSticks.jpg" alt="Fire Sticks"></td>
+          </tr>
+          <tr>
+            <th>Stapelia</th>
+            <td>Stapelia plants are low-growing, spineless, stem succulents. Most Stapelia flowers are visibly hairy and smell of rotten flesh when 
+            they bloom. Such odors serve to attract pollinators including blow flies.</td>
+            <td><img class="hundred" src="stapelia.jpg" alt="Stapelia plant"></td>
+          </tr>
+           </table>
+        <h3><a id="cooking">Cooking</a></h3>
+          <p>I'm definitely a beginner when it comes to cooking. After years of eating out almost exclusively, I've finally transitioned into cooking 
+          most of my meals. One of my favorite meals to make is soup. </p>
+        <h3><a id="games">Games</a></h3>
+          <p>I'm a very competitive person and I enjoy nerding out with different card and board games. 3 of my former coworkers and I have been 
+          in a Settlers of Catan competition for over a year and a half now. My all time favorite game is Hearts and I recently learned Canasta which is great
+          fun also!</p>
+        <h3><a id="camping">Camping</a></h3>
+          <p>Like many residents of Colorado, one of the main reasons I moved here was outdoor activities! I love camping in the summer. Last year I 
+          went a couple times a month and even made it up to Wyoming to see the solar eclipse. </p>
+        <h3><a id="hiking">Hiking</a></h3>
+          <p>Hiking in Colorado is great as there are so many options in terms of landscape and difficulties. If only I had a dog to come along with me!
+    	 </p>
+    <h2 class="char"><a id="hometown">Hometown</a></h2>
+    	<p>I grew up in Anchorage, AK. Yes, I can sleep like a baby with ALL of the lights on, moose go into my parents' yard about once a week, and
+    	my dad owned an ocean fishing boat until he sunk it last summer.</p>
+    <h2 class="char"><a id="family">Family</a></h2>
+      <p>My immediate family is still in AK. My extended family is in California. I live with my cat, Charlie, my roommate, Maggie, and Maggie's cat
+      Roxy. </p>
+    <h2 class="char"><a id="friends">Friends</a></h2>
+      <p>My friends are broken up into three main groups:
+       My best friends from AK are named Christina and Rachel. They now live in San Francisco, CA. 
+          My college friends live in Montana. They are all from Montana originally, went to school there, and still live there. I can see why, 
+          Montana is great!
+          My Denver friends are mostly broken into work friends and outside of work friends. The work friends are all sales people so the 
+          competition with them is fabulous!</p>
+
+ 
+</body>
+</html>
+
+  
