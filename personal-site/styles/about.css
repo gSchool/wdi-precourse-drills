@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+table {
+  width: 400px;
+}
+
+th {
+  font-family: Oswald, sans-serif;
+  font-size: 1.5em;
+  color: black;
+  background-color: white;
+  padding: 30px 0px 30px 0px;
+}
+
+td {
+  padding: 10px;
+}
+
+.time-remaining {
+  padding: 10px;
+}
+
+.flex-tables {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-nav {
+  position: fixed;
+  height: 100%;
+  background-color: #B000A8;
+  color: white;
+  min-width: 125px;
+  width: 10%;
+}
+
+.bg-img {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.gif {
+  margin-bottom: 50px;
+}
+
+.main-head {
+  background-color: black;
+  color: white;
+}
