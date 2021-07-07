@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Results for "Hackers"</title>
+  </head>
+  <body>
+    <h1>Results for "Hackers"</h1>
+  <section>
+    <h2>Titles</h2>
+    <table>
+      <tr>
+        <td><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-files/gSchool/fs-precourse/learn/html-images/hackers.jpg" style="width: 32px; height: 42px;"></td>
+        <td><a href="README.md" target="_blank">Hackers (1995)</a></td>
+      </tr>
+      <tr class="alternaterow">
+        <td><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-files/gSchool/fs-precourse/learn/html-images/2000.jpg" style="width: 32px; height: 42px;"></td>
+        <td><a href="README.md" target="_blank">2000 AD (2000) <i>aka "Hackers"</i></a></td>
+      </tr>
+      <tr>
+        <td><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-files/gSchool/fs-precourse/learn/html-images/frontline.jpg" style="width: 32px; height: 42px;"></td>
+        <td><a href="README.md" target="_blank">Hackers (2001) (TV Episode) - Frontline (1983) (TV Series)</a></td>
+      </tr>
+      <tr class="alternaterow">
+        <td><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-files/gSchool/fs-precourse/learn/html-images/hackersgame.jpg" style="width: 32px; height: 42px;"></td>
+        <td><a href="README.md" target="_blank">Hackers Game (2015) <i>aka "The Hackers"</i></a></td>
+      </tr>
+    </table>
+    <h2>Names</h2>
+    <p><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-files/gSchool/fs-precourse/learn/html-images/amyacker.jpg" style="width: 32px; height: 42px;"> <a href="https://www.imdb.com/name/nm0009918/" target="_blank">Amy Acker</a> (Actress, Angel (1999))</p>
+    <p><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-files/gSchool/fs-precourse/learn/html-images/drewvan.jpg" style="width: 32px; height: 42px;"> <a href="https://www.imdb.com/name/nm3216408/" target="_blank">Drew Van Acker</a> (Actor, Pretty Little Liars (2010))</p>
+    <p><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-files/gSchool/fs-precourse/learn/html-images/buddyhackett.jpg" style="width: 32px; height: 42px;"> <a href="https://www.imdb.com/name/nm0004983/" target="_blank">Buddy Hackett</a> (Actor, The Little Mermaid (1989))</p>
+    <p><img src="https://s3-us-west-2.amazonaws.com/learn.galvanize.com/learn-files/gSchool/fs-precourse/learn/html-images/emilywickersham.jpg" style="width: 32px; height: 42px;"> <a href="https://www.imdb.com/name/nm2278978/" target="_blank">Emily Wickersham</a> (Actress, I Am Number Four (2011))</p>
+    <h2>Keywords</h2>
+    <p>hacker (180 titles)</p>
+    <h2>Companies</h2>
+    <p>Douglas, Gorman, Rothacker & Wilhelm (DGRW)</p>
+    <p>Crackerjack Management</p>
+    <p>Bleeker Street Media</p>
+    <p>Bleeker Street Entertainment</p>
+  </section>
+  <aside>
+    <h2>Category Search</h2>
+    <ul>
+      <li>All</li>
+      <li>Name</li>
+      <li>Title</li>
+      <ul>
+        <li>Movie</li>
+        <li>TV</li>
+        <li>TV Episode</li>
+        <li>Video Game</li>
+      </ul>
+      <li>Character</li>
+      <li>Company</li>
+      <li>Keyword</li>
+      <li>Plot Summaries</li>
+      <li>Biographies</li>
+      <li>Quotes</li>
+    </ul>
+    <h2>Additional Search Options</h2>
+    <ul>
+      <li>Advanced Search</li>
+      <li>Advanced Title Search</li>
+      <li>Advanced Name Search</li>
+    </ul>
+  </aside>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+.alternaterow {
+  background: #E5E5E9;
+}
+
+section {
+  float: left;
+}
+
+aside {
+  float: right;
+}
