@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <h1>Hangman!</h1>
+    <script>
+
+    // Functions
+    let pickWord = function(){
+      let words = ["noodles", "peacock", "ginger", "wreath", "hopscotch"];
+      let randomWord = words[Math.floor(Math.random() * words.length)];
+        return randomWord
+    }
+
+    let setUpAnswerArray = function(randomWord){
+      let answerArray = [];
+      for (let i=0; i<randomWord.length; i++){
+        answerArray[i] = "_";
+      }
+      return answerArray;
+    }
+
+    let showPlayerProgress = function (answerArray){
+      alert(answerArray.join(" "));
+    }
+
+    let getGuess = function (){
+      let guess = prompt("Guess a letter, or click Cancel to stop playing.");
+        return guess;
+    }
+
+    let updateGameState = function (generateWord, guess, answerArray){
+      for (let i = 0; i < generateWord.length; i++) {
+        console.log(guess);
+        console.log(i);
+        console.log(generateWord[i]);
+        if (generateWord[i] === guess) {
+          answerArray[i] = guess;
+          remainingLetters--;
+        }
+      }
+    }
+
+    let showAnswerAndCongratulatePlayer = function(answerArray, generateWord){
+      alert(answerArray.join(" "));
+      alert(`Good job! The answer is ${generateWord}.`);
+    }
+
+
+    // Executions
+    let generateWord = pickWord();
+    console.log(generateWord);
+    let answerArray = setUpAnswerArray(generateWord);
+    console.log(answerArray);
+
+    // Variable decl
+    let remainingLetters = generateWord.length;
+
+    // The game loop
+    while (remainingLetters > 0) {
+      showPlayerProgress(answerArray);
+      // Get a guess from the player
+      let guess = getGuess();
+      if (guess === null) {
+        // Exit the game loop
+        break;
+      } else if (guess.length !== 1) {
+        alert("Please enter a single letter.");
+      } else {
+        updateGameState(generateWord, guess, answerArray);
+      }
+
+    }
+
+    showAnswerAndCongratulatePlayer(answerArray, generateWord);
+  </script>
+</body>
+</html>
